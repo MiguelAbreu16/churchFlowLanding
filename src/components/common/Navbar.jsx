@@ -108,7 +108,7 @@ export default function Navbar() {
             <Box sx={{ ml: 1, mr: 1, height: 16, width: 1, bgcolor: "divider" }} />
             <Button
               variant="text"
-              onClick={() => window.location.href = import.meta.env.VITE_APP_URL || "http://localhost:5173/login"}
+              onClick={() => window.location.href = `${import.meta.env.VITE_APP_URL || "http://localhost:5173"}/login`}
               sx={{ fontWeight: 600, color: "#475569" }}
             >
               Iniciar Sesión
