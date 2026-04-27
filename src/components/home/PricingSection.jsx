@@ -1,62 +1,10 @@
-import { Box, Container, Grid, Typography, alpha, useTheme } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import PricingCard from "../pricing/PricingCard";
 
-export const PLANS = [
-  {
-    id: "basic",
-    name: "Básico",
-    price: 29,
-    period: "mes",
-    description: "Ideal para ministerios que inician su digitalización",
-    features: [
-      "Hasta 200 asientos",
-      "1 layout de mapa interactivo",
-      "Gestión de hasta 3 ujeres",
-      "Métricas de asistencia base",
-      "Soporte por email 24/7",
-    ],
-    color: "#64748B", // Slate
-    popular: false,
-  },
-  {
-    id: "professional",
-    name: "Profesional",
-    price: 79,
-    period: "mes",
-    description: "La solución completa para iglesias en pleno crecimiento",
-    features: [
-      "Hasta 1,000 asientos",
-      "Layouts ilimitados",
-      "Ujeres ilimitados",
-      "Analítica avanzada y exportación",
-      "Boletería integrada para eventos",
-      "Soporte técnico prioritario",
-    ],
-    color: "#2563EB", // Primary Blue
-    popular: true,
-  },
-  {
-    id: "enterprise",
-    name: "Enterprise",
-    price: null,
-    period: null,
-    description: "Para grandes ministerios con múltiples sedes",
-    features: [
-      "Asientos ilimitados",
-      "Gestión multi-sede centralizada",
-      "Integración vía API",
-      "Acuerdo de nivel de servicio (SLA)",
-      "Onboarding personalizado",
-      "Gestor de cuenta dedicado",
-    ],
-    color: "#1E293B", // Navy
-    popular: false,
-  },
-];
+import { PLANS } from "../../constants/plans";
 
 export default function PricingSection() {
-  const theme = useTheme();
   const navigate = useNavigate();
 
   return (
