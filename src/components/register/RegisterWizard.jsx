@@ -10,7 +10,6 @@ import {
   Step,
   StepLabel,
   Typography,
-  useTheme,
 } from "@mui/material";
 import Church from "@mui/icons-material/Church";
 import Person from "@mui/icons-material/Person";
@@ -37,7 +36,6 @@ const INITIAL_FORM = {
 };
 
 export default function RegisterWizard() {
-  const theme = useTheme();
   const navigate = useNavigate();
   const [params] = useSearchParams();
 
@@ -51,7 +49,6 @@ export default function RegisterWizard() {
   const [registerChurch, { loading }] = useMutation(REGISTER_CHURCH, {
     onCompleted: ({ registerChurch: payload }) => {
       // Pass the token to the main app via query param for auto-login
-      const appUrl = import.meta.env.VITE_APP_URL || "http://localhost:5173";
       sessionStorage.setItem("cf_token", payload.token);
       navigate("/success?plan=" + form.plan);
     },

@@ -13,7 +13,7 @@ import {
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import Lock from "@mui/icons-material/Lock";
 import Rocket from "@mui/icons-material/Rocket";
-import { PLANS } from "../home/PricingSection";
+import { PLANS } from "../../constants/plans";
 import PricingCard from "../pricing/PricingCard";
 
 export default function StepPlanPayment({

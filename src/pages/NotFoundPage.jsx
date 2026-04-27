@@ -1,11 +1,10 @@
-import { Box, Container, Typography, Button, useTheme } from "@mui/material";
+import { Box, Container, Typography, Button } from "@mui/material";
 import Home from "@mui/icons-material/Home";
 import SentimentVeryDissatisfied from "@mui/icons-material/SentimentVeryDissatisfied";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/common/Navbar";
 
 export default function NotFoundPage() {
-  const theme = useTheme();
   const navigate = useNavigate();
 
   return (

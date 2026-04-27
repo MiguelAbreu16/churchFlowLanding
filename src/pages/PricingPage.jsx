@@ -1,10 +1,9 @@
-import { Box, Container, Typography, alpha, useTheme } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import PricingSection from "../components/home/PricingSection";
 
 export default function PricingPage() {
-  const theme = useTheme();
 
   return (
     <>

@@ -17,7 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Bolt from "@mui/icons-material/Bolt";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Funcionalidades", to: "/#features" },
@@ -28,7 +28,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
-  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {

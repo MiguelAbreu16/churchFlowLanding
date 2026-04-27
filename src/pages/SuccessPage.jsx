@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Box, Container, Typography, Button, Paper, alpha, useTheme } from "@mui/material";
 import CheckCircleOutlined from "@mui/icons-material/CheckCircleOutlined";
 import RocketLaunch from "@mui/icons-material/RocketLaunch";
-import ArrowForward from "@mui/icons-material/ArrowForward";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Navbar from "../components/common/Navbar";
 

@@ -1,0 +1,52 @@
+export const PLANS = [
+  {
+    id: "basic",
+    name: "Plan Semilla",
+    price: 29,
+    period: "mes",
+    description: "Digitaliza tu iglesia hoy y optimiza tu primer nivel",
+    features: [
+      "Hasta 500 asientos por evento",
+      "1 Nivel de plano (Santuario)",
+      "5 Ugieres activos",
+      "Monitoreo en tiempo real",
+      "Soporte por correo electrónico",
+    ],
+    color: "#64748B",
+    popular: false,
+  },
+  {
+    id: "pro",
+    name: "Plan Crecimiento",
+    price: 79,
+    period: "mes",
+    description: "Gestión avanzada y seguridad para congregaciones activas",
+    features: [
+      "Hasta 2,000 asientos",
+      "Niveles e iglesias ilimitadas",
+      "20 Ugieres activos",
+      "Protocolos de incidentes críticos",
+      "Analítica de ocupación por zona",
+      "Soporte prioritario 24/7",
+    ],
+    color: "#eab308", // Amber/Gold
+    popular: true,
+  },
+  {
+    id: "enterprise",
+    name: "Plan Reino",
+    price: 199,
+    period: "mes",
+    description: "Solución total multisede para ministerios globales",
+    features: [
+      "Asientos ilimitados",
+      "Sedes ilimitadas (Multisitio)",
+      "Ugieres ilimitados",
+      "Logs de auditoría completos",
+      "Acceso a API externa",
+      "Gerente de cuenta dedicado",
+    ],
+    color: "#1E293B",
+    popular: false,
+  },
+];

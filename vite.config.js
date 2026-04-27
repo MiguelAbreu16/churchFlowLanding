@@ -9,7 +9,6 @@ export default defineConfig({
   },
   preview: {
     host: '0.0.0.0',
-    allowedHosts: ['churchflowlanding-production.up.railway.app', '.up.railway.app'],
   },
   ssr: {
     noExternal: ["@apollo/client"],
