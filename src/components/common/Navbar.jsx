@@ -61,19 +61,11 @@ export default function Navbar() {
               color: "#0F172A",
             }}
           >
-            <Box
-              sx={{
-                width: 32,
-                height: 32,
-                borderRadius: 1.5,
-                background: theme.palette.primary.main,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Bolt sx={{ color: "white", fontSize: 20 }} />
-            </Box>
+            <img
+              src="/logo.png"
+              alt="Logo"
+              style={{ width: 32, height: 32, objectFit: "contain" }}
+            />
             <Typography
               variant="h6"
               sx={{
