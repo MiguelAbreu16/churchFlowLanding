@@ -19,22 +19,11 @@ export default function RegisterPage() {
       >
         <Container maxWidth="md">
           <Box sx={{ textAlign: "center", mb: 6 }}>
-            <Box
-              sx={{
-                width: 48,
-                height: 48,
-                borderRadius: 2,
-                bgcolor: "primary.main",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#fff",
-                mb: 2,
-                boxShadow: "0 8px 16px -4px rgba(37, 99, 235, 0.3)",
-              }}
-            >
-              <Bolt sx={{ fontSize: 28 }} />
-            </Box>
+            <img
+              src="/logo.png"
+              alt="Logo"
+              style={{ width: 48, height: 48, objectFit: "contain", marginBottom: 16 }}
+            />
             <Typography variant="h3" sx={{ fontWeight: 800, mb: 1.5 }}>
               Comienza tu transformación
             </Typography>

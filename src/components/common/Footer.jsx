@@ -44,19 +44,11 @@ export default function Footer() {
         <Grid container spacing={8} sx={{ mb: 8 }}>
           <Grid item xs={12} md={5}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
-              <Box
-                sx={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 1,
-                  bgcolor: "primary.main",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Bolt sx={{ color: "white", fontSize: 20 }} />
-              </Box>
+                <img
+                  src="/logo.png"
+                  alt="Logo"
+                  style={{ width: 32, height: 32, objectFit: "contain" }}
+                />
               <Typography variant="h6" sx={{ fontWeight: 900, letterSpacing: -0.5 }}>
                 ChurchFlow
               </Typography>
