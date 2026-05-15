@@ -44,7 +44,7 @@ export default function CTABanner() {
               fontSize: "1.1rem"
             }}
           >
-            Únete a cientos de iglesias que ya confían en la infraestructura operativa de ChurchFlow.
+            Únete a cientos de iglesias que ya confían en la infraestructura operativa de Kahal Zerem.
             Tu prueba gratuita de 14 días te espera.
           </Typography>
 

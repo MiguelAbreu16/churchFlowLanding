@@ -23,7 +23,7 @@ export default function StepChurchInfo({ form, errors, onChange, onNext }) {
         Cuéntanos sobre tu iglesia
       </Typography>
       <Typography color="text.secondary" sx={{ mb: 4 }}>
-        Esta información nos ayuda a configurar ChurchFlow para tus necesidades.
+        Esta información nos ayuda a configurar Kahal Zerem para tus necesidades.
       </Typography>
 
       <Stack spacing={3}>

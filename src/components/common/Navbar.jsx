@@ -74,7 +74,7 @@ export default function Navbar() {
                 fontSize: "1.25rem",
               }}
             >
-              ChurchFlow
+              Kahal Zerem
             </Typography>
           </Box>
 

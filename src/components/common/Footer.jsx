@@ -50,7 +50,7 @@ export default function Footer() {
                   style={{ width: 32, height: 32, objectFit: "contain" }}
                 />
               <Typography variant="h6" sx={{ fontWeight: 900, letterSpacing: -0.5 }}>
-                ChurchFlow
+                Kahal Zerem
               </Typography>
             </Box>
             <Typography
@@ -115,7 +115,7 @@ export default function Footer() {
           }}
         >
           <Typography variant="caption" color="text.disabled">
-            © {new Date().getFullYear()} ChurchFlow. Todos los derechos reservados.
+            © {new Date().getFullYear()} Kahal Zerem. Todos los derechos reservados.
           </Typography>
           <Typography variant="caption" color="text.disabled">
             Hecho con ❤️ para la Iglesia global.

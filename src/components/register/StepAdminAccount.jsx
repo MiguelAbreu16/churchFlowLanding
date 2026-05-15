@@ -47,7 +47,7 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
         Crea tu cuenta de administrador
       </Typography>
       <Typography color="text.secondary" sx={{ mb: 4 }}>
-        Esta será la cuenta principal con acceso completo a ChurchFlow.
+        Esta será la cuenta principal con acceso completo a Kahal Zerem.
       </Typography>
 
       <Stack spacing={3}>

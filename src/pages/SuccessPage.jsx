@@ -71,7 +71,7 @@ export default function SuccessPage() {
             </Typography>
             
             <Typography color="text.secondary" sx={{ mb: 4, lineHeight: 1.6 }}>
-              Tu entorno de ChurchFlow para el plan{" "}
+              Tu entorno de Kahal Zerem para el plan{" "}
               <Box component="span" sx={{ fontWeight: 700, color: "primary.main" }}>
                 {plan}
               </Box>{" "}

@@ -78,7 +78,7 @@ export default function HeroSection() {
                   lineHeight: 1.7,
                 }}
               >
-                ChurchFlow es la plataforma líder para la gestión operativa de servicios. 
+                Kahal Zerem es la plataforma líder para la gestión operativa de servicios. 
                 Optimiza la asistencia, coordina tus equipos y toma decisiones basadas en datos reales.
               </Typography>
 
