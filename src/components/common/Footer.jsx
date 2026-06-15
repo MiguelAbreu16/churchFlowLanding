@@ -21,9 +21,9 @@ const FOOTER_LINKS = {
     { label: "Video Demo", to: "#" },
   ],
   Compañía: [
-    { label: "Sobre nosotros", to: "#" },
-    { label: "Privacidad", to: "#" },
-    { label: "Términos", to: "#" },
+    { label: "Sobre nosotros", to: "/#features" },
+    { label: "Privacidad", to: "/legal/privacidad" },
+    { label: "Términos", to: "/legal/terminos" },
   ],
 };
 

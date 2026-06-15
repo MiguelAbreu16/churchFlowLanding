@@ -9,21 +9,18 @@ export default function SuccessPage() {
   const theme = useTheme();
   const navigate = useNavigate();
   const [params] = useSearchParams();
-  const plan = params.get("plan") || "professional";
+  const plan = params.get("plan") || "pro";
+  const code = params.get("code");
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    sessionStorage.removeItem("cf_token");
   }, []);
 
   const handleGoToApp = () => {
-    const token = sessionStorage.getItem("cf_token");
     const appUrl = import.meta.env.VITE_APP_URL || "http://localhost:5173";
-    
-    if (token) {
-      window.location.href = `${appUrl}?token=${token}`;
-    } else {
-      window.location.href = appUrl;
-    }
+    const qs = code ? `?code=${encodeURIComponent(code)}` : "";
+    window.location.href = `${appUrl.replace(/\/$/, "")}/verify-email-pending${qs}`;
   };
 
   return (
@@ -46,56 +43,29 @@ export default function SuccessPage() {
               textAlign: "center",
               borderRadius: 4,
               border: `1px solid ${theme.palette.divider}`,
-              bgcolor: "#fff",
-              boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
             }}
           >
-            <Box
-              sx={{
-                width: 72,
-                height: 72,
-                borderRadius: "50%",
-                bgcolor: alpha(theme.palette.success.main, 0.1),
-                color: "success.main",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                mb: 3,
-              }}
-            >
-              <CheckCircleOutlined sx={{ fontSize: 40 }} />
-            </Box>
-            
+            <CheckCircleOutlined
+              sx={{ fontSize: 48, color: "success.main", mb: 2 }}
+            />
             <Typography variant="h4" sx={{ fontWeight: 800, mb: 1.5 }}>
-              ¡Iglesia Registrada!
+              ¡Cuenta creada!
             </Typography>
-            
-            <Typography color="text.secondary" sx={{ mb: 4, lineHeight: 1.6 }}>
-              Tu entorno de Kahal Zerem para el plan{" "}
-              <Box component="span" sx={{ fontWeight: 700, color: "primary.main" }}>
-                {plan}
-              </Box>{" "}
-              está listo. Ya puedes configurar tus zonas y equipos.
+            <Typography color="text.secondary" sx={{ mb: 4 }}>
+              Plan <strong>{plan}</strong> con prueba de 14 días. Revisa tu
+              correo para verificar tu cuenta antes de usar el panel.
             </Typography>
-
             <Button
               variant="contained"
-              color="primary"
               size="large"
               fullWidth
               endIcon={<RocketLaunch />}
               onClick={handleGoToApp}
-              sx={{ py: 1.8, fontSize: "1rem", mb: 2 }}
+              sx={{ py: 1.8, mb: 2 }}
             >
-              Acceder a mi Dashboard
+              Ir a la aplicación
             </Button>
-            
-            <Button
-              variant="text"
-              fullWidth
-              onClick={() => navigate("/")}
-              sx={{ color: "text.secondary", fontWeight: 600 }}
-            >
+            <Button fullWidth onClick={() => navigate("/")}>
               Volver al inicio
             </Button>
           </Paper>
