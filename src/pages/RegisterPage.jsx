@@ -28,7 +28,7 @@ export default function RegisterPage() {
               Comienza tu transformación
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 500, mx: "auto" }}>
-              Únete a las más de 500 iglesias que ya están optimizando su operación con ChurchFlow.
+              Únete a las más de 500 iglesias que ya están optimizando su operación con Kahal Zerem.
             </Typography>
           </Box>
 

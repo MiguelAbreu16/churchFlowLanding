@@ -1,5 +1,5 @@
 {
-  "name": "churchflowlanding",
+  "name": "churchflow-landing",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
     "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.2",
     "@apollo/client": "^3.9.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",

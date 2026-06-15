@@ -47,7 +47,7 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
         Crea tu cuenta de administrador
       </Typography>
       <Typography color="text.secondary" sx={{ mb: 4 }}>
-        Esta será la cuenta principal con acceso completo a ChurchFlow.
+        Esta será la cuenta principal con acceso completo a Kahal Zerem.
       </Typography>
 
       <Stack spacing={3}>
@@ -145,22 +145,7 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
             }
             label={
               <Typography variant="body2" color="text.secondary">
-                Acepto los{" "}
-                <Box
-                  component="a"
-                  href="#"
-                  sx={{ color: "primary.light", textDecoration: "none" }}
-                >
-                  Términos de Uso
-                </Box>{" "}
-                y la{" "}
-                <Box
-                  component="a"
-                  href="#"
-                  sx={{ color: "primary.light", textDecoration: "none" }}
-                >
-                  Política de Privacidad
-                </Box>
+                Acepto los Términos de Uso y la Política de Privacidad
               </Typography>
             }
           />
@@ -169,6 +154,20 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
               {errors.acceptTerms}
             </FormHelperText>
           )}
+          <FormControlLabel
+            control={
+              <Checkbox
+                id="register-marketing-opt-in"
+                checked={form.marketingOptIn}
+                onChange={(e) => onChange("marketingOptIn", e.target.checked)}
+              />
+            }
+            label={
+              <Typography variant="body2" color="text.secondary">
+                Deseo recibir novedades y correos promocionales (opcional)
+              </Typography>
+            }
+          />
         </Box>
       </Stack>
 
