@@ -7,6 +7,7 @@ import SuccessPage from "./pages/SuccessPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/legal/terminos" element={<TermsPage />} />
         <Route path="/legal/privacidad" element={<PrivacyPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>

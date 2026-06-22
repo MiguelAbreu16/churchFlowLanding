@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "modules": "Módulos",
+    "pricing": "Planes",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "startTrial": "Comenzar Prueba",
+    "freeTrial": "Prueba Gratuita"
+  },
+  "hero": {
+    "badge": "Plataforma operativa para el ministerio",
+    "title": "Opera cada domingo",
+    "titleHighlight": "con claridad pastoral y control operativo",
+    "subtitle": "Kahal Zerem une la visión del ministerio con herramientas profesionales: asientos en vivo, equipos de ujieres, incidentes y capacidad — para que tu staff cuide de la congregación, no de la logística.",
+    "ctaTrial": "Probar gratis 14 días",
+    "ctaProduct": "Ver el producto",
+    "proof1": "Diseñado para equipos de servicio dominicales",
+    "proof2": "Listo para congregaciones en crecimiento",
+    "proof3": "Sin estadísticas inventadas — producto real"
+  },
+  "socialProof": {
+    "eyebrow": "Hecho para la iglesia local",
+    "title": "Infraestructura operativa con corazón pastoral",
+    "subtitle": "Nacimos para servir a la iglesia local con la solidez de un SaaS moderno: ocupación en tiempo real, zonas, ujieres e incidentes en un solo panel."
+  },
+  "modules": {
+    "eyebrow": "Módulos del producto",
+    "title": "Todo lo que opera tu iglesia",
+    "subtitle": "Explora cada área de la plataforma. Los módulos marcados con + están incluidos desde Plan Crecimiento.",
+    "tabs": {
+      "liveOps": "Operaciones en vivo",
+      "layouts": "Layouts y capacidad",
+      "teams": "Equipos y roles",
+      "events": "Eventos y boletos",
+      "parking": "Estacionamiento y miembros",
+      "analytics": "Analítica"
+    },
+    "liveOps": {
+      "title": "Dashboard, incidentes y terminal",
+      "desc": "Monitorea ocupación por zona en tiempo real, gestiona incidentes con prioridad y da a tus ujieres una vista táctica desde el terminal.",
+      "bullets": ["Mapa de asientos en vivo vía WebSocket", "Feed de incidentes con escalamiento", "Vista terminal para ujieres en piso"]
+    },
+    "layouts": {
+      "title": "Editor de layouts y niveles",
+      "desc": "Diseña santuario, balcones y zonas. Activa el layout del servicio y controla la capacidad real de cada nivel.",
+      "bullets": ["Constructor visual de asientos", "Múltiples niveles y zonas", "Activación de layout por servicio"]
+    },
+    "teams": {
+      "title": "Ujieres, roles y permisos",
+      "desc": "Asigna zonas, define quién ve qué y coordina al equipo de servicio con permisos granulares.",
+      "bullets": ["Directorio de ujieres", "Asignación por zona", "Roles admin, ujier y más"]
+    },
+    "events": {
+      "title": "Eventos, boletos y check-in",
+      "desc": "Vende entradas, genera códigos QR y registra asistencia a eventos especiales sin herramientas externas.",
+      "badge": "Crecimiento+",
+      "bullets": ["Calendario de eventos", "Boletos con QR", "Check-in en puerta"]
+    },
+    "parking": {
+      "title": "Estacionamiento y miembros",
+      "desc": "Coordina lotes con mapa visual y lleva un registro de miembros conectado a tu operación.",
+      "badge": "Crecimiento+",
+      "bullets": ["Mapa de lotes y espacios", "Coordinador en vivo", "Directorio de miembros"]
+    },
+    "analytics": {
+      "title": "Métricas y tendencias",
+      "desc": "Snapshots por servicio, ocupación por zona y tendencias históricas para decisiones pastorales informadas.",
+      "badge": "Crecimiento+",
+      "bullets": ["Pico de asistencia por servicio", "Ocupación por zona", "Historial de servicios"]
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Cómo funciona",
+    "title": "Del registro al domingo en 3 pasos",
+    "steps": {
+      "register": { "title": "Regístrate", "desc": "Crea tu iglesia, elige plan y verifica tu correo." },
+      "trial": { "title": "Prueba 14 días", "desc": "Configura tu layout y equipo sin tarjeta obligatoria al inicio." },
+      "operate": { "title": "Opera el domingo", "desc": "Activa el servicio, monitorea en vivo y cierra con métricas." }
+    }
+  },
+  "productTour": {
+    "eyebrow": "Tour del producto",
+    "title": "Capturas reales de Kahal Zerem",
+    "subtitle": "Así se ve la plataforma en operación durante un servicio en vivo.",
+    "openLightbox": "Ampliar"
+  },
+  "screenshots": {
+    "dashboard": { "alt": "Dashboard en vivo con mapa de asientos", "caption": "Panel de operaciones con ocupación por zona en tiempo real" },
+    "layoutBuilder": { "alt": "Gestión de diseños de templo", "caption": "Planos del santuario con capacidad por nivel" },
+    "incidents": { "alt": "Centro de incidentes en vivo", "caption": "Cola de alertas con tiempos de respuesta para tu equipo" },
+    "parking": { "alt": "Coordinador de estacionamiento", "caption": "Mapa de lote con espacios y estado en vivo" },
+    "events": { "alt": "Gestión de eventos", "caption": "Eventos especiales con boletos y check-in" },
+    "analytics": { "alt": "Panel de analítica", "caption": "Métricas de asistencia y tendencias por servicio" }
+  },
+  "pricing": {
+    "eyebrow": "Inversión",
+    "title": "Planes adaptados a tu",
+    "titleHighlight": "etapa ministerial",
+    "subtitle": "Prueba cualquier plan gratis por 14 días. Sin contratos forzosos ni cargos ocultos.",
+    "compareTitle": "Comparación de planes",
+    "contactCustom": "¿Necesitas algo a medida?",
+    "contactLink": "Contáctanos para un presupuesto personalizado",
+    "pageEyebrow": "Precios transparentes",
+    "pageTitle": "Sin sorpresas.",
+    "pageTitleHighlight": "Sin letra pequeña.",
+    "pageSubtitle": "Elige el plan que mejor se adapta al tamaño de tu iglesia. Cambia o cancela en cualquier momento."
+  },
+  "plans": {
+    "period": "mes",
+    "periodAnnual": "año",
+    "popular": "Más popular",
+    "comingSoon": "Próximamente",
+    "startTrial": "Comenzar prueba gratis",
+    "talkSales": "Hablar con ventas",
+    "basic": {
+      "name": "Plan Semilla",
+      "description": "Operaciones en vivo para tu primer nivel",
+      "features": {
+        "seats": "Hasta 500 asientos por evento",
+        "layouts": "1 layout (santuario)",
+        "ushers": "5 ujieres activos",
+        "liveOps": "Dashboard, incidentes y terminal",
+        "emailSupport": "Soporte por correo"
+      }
+    },
+    "pro": {
+      "name": "Plan Crecimiento",
+      "description": "Eventos, analítica y estacionamiento para congregaciones activas",
+      "features": {
+        "seats": "Hasta 2,000 asientos",
+        "layouts": "Hasta 5 layouts",
+        "ushers": "20 ujieres activos",
+        "events": "Eventos, boletos y check-in",
+        "analytics": "Analítica de ocupación por zona",
+        "parkingMembers": "Estacionamiento y miembros",
+        "prioritySupport": "Soporte prioritario"
+      }
+    },
+    "enterprise": {
+      "name": "Plan Reino",
+      "description": "Límites ampliados y soporte dedicado para ministerios en expansión",
+      "features": {
+        "seats": "Hasta 10,000 asientos por layout",
+        "layouts": "Hasta 50 layouts",
+        "ushers": "Ujieres sin límite práctico",
+        "audit": "Logs de auditoría completos",
+        "dedicatedSupport": "Soporte dedicado",
+        "apiComingSoon": "API externa — Próximamente",
+        "multisiteComingSoon": "Multisede — Próximamente"
+      }
+    },
+    "compare": {
+      "labels": {
+        "seats": "Asientos por layout",
+        "layouts": "Layouts",
+        "ushers": "Ujieres activos",
+        "liveOps": "Dashboard en vivo",
+        "incidents": "Incidentes y alertas",
+        "terminal": "Vista terminal",
+        "events": "Eventos",
+        "tickets": "Boletos",
+        "checkIn": "Check-in",
+        "analytics": "Analítica",
+        "parking": "Estacionamiento",
+        "members": "Miembros",
+        "audit": "Auditoría",
+        "api": "API externa",
+        "multisite": "Multisede"
+      },
+      "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
+      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "Ilimitado" }
+    }
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Lo que más nos preguntan",
+    "items": {
+      "trial": { "q": "¿Cómo funciona la prueba de 14 días?", "a": "Al registrarte activas el plan elegido sin cobro inmediato. Recibes correo de verificación y acceso completo durante el trial. Al finalizar, configuras PayPal para continuar." },
+      "paypal": { "q": "¿Cómo pago después del trial?", "a": "La suscripción se gestiona con PayPal de forma segura. Puedes cancelar desde tu panel de facturación en cualquier momento." },
+      "email": { "q": "¿Debo verificar mi correo?", "a": "Sí. Por seguridad enviamos un enlace de verificación al registrarte. Sin verificar, el acceso al panel queda limitado." },
+      "plans": { "q": "¿Puedo cambiar de plan?", "a": "Sí. Desde facturación puedes subir o bajar de plan según las necesidades de tu iglesia." },
+      "cancel": { "q": "¿Puedo cancelar cuando quiera?", "a": "Sí, sin penalización. Tu acceso continúa hasta el fin del período pagado." },
+      "reino": { "q": "¿Qué incluye Plan Reino hoy?", "a": "Límites superiores, auditoría y soporte dedicado. API externa y multisede están en roadmap y aparecen marcados como Próximamente." }
+    }
+  },
+  "cta": {
+    "title": "¿Listo para operar el próximo domingo?",
+    "titleLine2": "con más claridad",
+    "subtitle": "Regístrate en minutos o escríbenos si tu iglesia necesita una implementación guiada con nuestro equipo.",
+    "start": "Comenzar ahora",
+    "viewPlans": "Ver planes",
+    "contact": "Contactar ventas"
+  },
+  "footer": {
+    "tagline": "Plataforma operativa para iglesias — asientos, equipos e incidentes en un solo lugar.",
+    "product": "Producto",
+    "company": "Compañía",
+    "modules": "Módulos",
+    "productTour": "Tour del producto",
+    "about": "Sobre nosotros",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "madeFor": "Hecho para la Iglesia global."
+  },
+  "contact": {
+    "title": "Hablemos de tu iglesia",
+    "subtitle": "Cuéntanos tu contexto y te respondemos desde soporte en 1–2 días hábiles.",
+    "name": "Nombre",
+    "church": "Iglesia",
+    "email": "Correo",
+    "plan": "Plan de interés",
+    "planAny": "Aún no sé",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "¡Mensaje enviado! Te contactaremos pronto.",
+    "error": "No pudimos enviar el mensaje. Intenta de nuevo o escríbenos a kahalzerem@gmail.com"
+  },
+  "register": {
+    "title": "Comienza tu transformación",
+    "subtitle": "Configura tu iglesia en Kahal Zerem y opera tu próximo servicio con claridad.",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "login": "Inicia sesión aquí"
+  },
+  "carousel": {
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "slide": "Diapositiva"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "back": "Volver al inicio"
+  }
+}

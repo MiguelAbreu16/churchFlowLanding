@@ -12,11 +12,14 @@ import {
 } from "@mui/material";
 import Check from "@mui/icons-material/Check";
 import ArrowForward from "@mui/icons-material/ArrowForward";
+import { useTranslation } from "react-i18next";
 
 export default function PricingCard({ plan, onSelect, selected = false }) {
   const theme = useTheme();
+  const { t } = useTranslation();
 
   const isPrimary = plan.popular || selected;
+  const features = plan.featureKeys.map((key) => t(key));
 
   return (
     <Box
@@ -32,7 +35,7 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
         transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         display: "flex",
         flexDirection: "column",
-        boxShadow: isPrimary 
+        boxShadow: isPrimary
           ? `0 20px 25px -5px ${alpha(theme.palette.primary.main, 0.1)}, 0 8px 10px -6px ${alpha(theme.palette.primary.main, 0.1)}`
           : "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
         "&:hover": onSelect
@@ -44,10 +47,9 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
           : {},
       }}
     >
-      {/* Popular badge */}
       {plan.popular && (
         <Chip
-          label="MÁS RECOMENDADO"
+          label={t("plans.popular")}
           size="small"
           sx={{
             position: "absolute",
@@ -83,20 +85,18 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
         />
       )}
 
-      {/* Plan name */}
       <Box sx={{ mb: 3 }}>
         <Typography
           variant="h6"
           sx={{ fontWeight: 800, color: isPrimary ? "primary.main" : "text.primary", mb: 0.5 }}
         >
-          {plan.name}
+          {t(plan.nameKey)}
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ minHeight: 40 }}>
-          {plan.description}
+          {t(plan.descriptionKey)}
         </Typography>
       </Box>
 
-      {/* Price */}
       <Box sx={{ mb: 2 }}>
         {plan.price !== null ? (
           <Box sx={{ display: "flex", alignItems: "baseline", gap: 0.5 }}>
@@ -111,39 +111,35 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
               ${plan.price}
             </Typography>
             <Typography variant="subtitle2" color="text.disabled" sx={{ fontWeight: 600 }}>
-              /{plan.period}
+              /{plan.billingAnnual ? t("plans.periodAnnual") : t(plan.periodKey)}
             </Typography>
           </Box>
         ) : (
-          <Typography
-            sx={{
-              fontWeight: 800,
-              fontSize: "1.75rem",
-              color: "text.primary",
-              py: 1,
-            }}
-          >
-            Personalizado
+          <Typography sx={{ fontWeight: 800, fontSize: "1.75rem", color: "text.primary", py: 1 }}>
+            {t("plans.talkSales")}
           </Typography>
         )}
       </Box>
 
-      {/* Features */}
       <List dense sx={{ flex: 1, mb: 3, p: 0 }}>
-        {plan.features.map((feat) => (
+        {features.map((feat) => (
           <ListItem key={feat} disableGutters sx={{ alignItems: "flex-start", py: 0.5 }}>
             <ListItemIcon sx={{ minWidth: 32, mt: 0.2 }}>
               <Check sx={{ color: "primary.main", fontSize: 18 }} />
             </ListItemIcon>
             <ListItemText
               primary={feat}
-              primaryTypographyProps={{ fontSize: "0.9rem", color: "text.secondary", lineHeight: 1.4 }}
+              primaryTypographyProps={{
+                fontSize: "0.9rem",
+                color: feat.includes(t("plans.comingSoon")) ? "warning.dark" : "text.secondary",
+                lineHeight: 1.4,
+                fontWeight: feat.includes(t("plans.comingSoon")) ? 600 : 400,
+              }}
             />
           </ListItem>
         ))}
       </List>
 
-      {/* CTA */}
       {onSelect && (
         <Button
           fullWidth
@@ -153,17 +149,19 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
           sx={{
             py: 1.5,
             fontSize: "0.95rem",
-            ...(isPrimary ? {} : {
-              color: "text.primary",
-              borderColor: "#E2E8F0",
-              "&:hover": {
-                borderColor: "primary.main",
-                color: "primary.main",
-              }
-            })
+            ...(isPrimary
+              ? {}
+              : {
+                  color: "text.primary",
+                  borderColor: "#E2E8F0",
+                  "&:hover": {
+                    borderColor: "primary.main",
+                    color: "primary.main",
+                  },
+                }),
           }}
         >
-          {plan.price ? "Comenzar Prueba Gratis" : "Hablar con Ventas"}
+          {plan.price ? t("plans.startTrial") : t("plans.talkSales")}
         </Button>
       )}
     </Box>

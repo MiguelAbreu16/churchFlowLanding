@@ -65,3 +65,21 @@ export const ATTACH_PAYPAL = gql`
     }
   }
 `;
+
+export const SUBMIT_CONTACT_INQUIRY = gql`
+  mutation SubmitContactInquiry(
+    $name: String!
+    $churchName: String!
+    $email: String!
+    $message: String!
+    $planInterest: String
+  ) {
+    submitContactInquiry(
+      name: $name
+      churchName: $churchName
+      email: $email
+      message: $message
+      planInterest: $planInterest
+    )
+  }
+`;

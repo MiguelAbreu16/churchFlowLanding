@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "modules": "Modules",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Log in",
+    "startTrial": "Start trial",
+    "freeTrial": "Free trial"
+  },
+  "hero": {
+    "badge": "Operational platform for ministry",
+    "title": "Run every Sunday",
+    "titleHighlight": "with pastoral clarity and operational control",
+    "subtitle": "Kahal Zerem bridges ministry vision with professional tools: live seating, usher teams, incidents, and capacity — so your staff cares for the congregation, not the logistics.",
+    "ctaTrial": "Try free for 14 days",
+    "ctaProduct": "See the product",
+    "proof1": "Built for Sunday service teams",
+    "proof2": "Ready for growing congregations",
+    "proof3": "No fake stats — real product"
+  },
+  "socialProof": {
+    "eyebrow": "Built for the local church",
+    "title": "Operational infrastructure with a pastoral heart",
+    "subtitle": "Built for the local church with the reliability of modern SaaS: real-time occupancy, zones, ushers, and incidents in one panel."
+  },
+  "modules": {
+    "eyebrow": "Product modules",
+    "title": "Everything your church operates",
+    "subtitle": "Explore each area of the platform. Modules marked with + are included from Growth plan.",
+    "tabs": {
+      "liveOps": "Live operations",
+      "layouts": "Layouts & capacity",
+      "teams": "Teams & roles",
+      "events": "Events & tickets",
+      "parking": "Parking & members",
+      "analytics": "Analytics"
+    },
+    "liveOps": {
+      "title": "Dashboard, incidents & terminal",
+      "desc": "Monitor zone occupancy in real time, manage prioritized incidents, and give ushers a tactical floor view.",
+      "bullets": ["Live seat map via WebSocket", "Incident feed with escalation", "Terminal view for floor teams"]
+    },
+    "layouts": {
+      "title": "Layout editor & levels",
+      "desc": "Design sanctuary, balconies, and zones. Activate the service layout and control real capacity per level.",
+      "bullets": ["Visual seat builder", "Multiple levels and zones", "Per-service layout activation"]
+    },
+    "teams": {
+      "title": "Ushers, roles & permissions",
+      "desc": "Assign zones, define who sees what, and coordinate your service team with granular permissions.",
+      "bullets": ["Usher directory", "Zone assignment", "Admin, usher, and more roles"]
+    },
+    "events": {
+      "title": "Events, tickets & check-in",
+      "desc": "Sell tickets, generate QR codes, and track attendance for special events without external tools.",
+      "badge": "Growth+",
+      "bullets": ["Event calendar", "QR tickets", "Door check-in"]
+    },
+    "parking": {
+      "title": "Parking & members",
+      "desc": "Coordinate lots with a visual map and keep a member directory connected to your operations.",
+      "badge": "Growth+",
+      "bullets": ["Lot map and spaces", "Live coordinator", "Member directory"]
+    },
+    "analytics": {
+      "title": "Metrics & trends",
+      "desc": "Per-service snapshots, zone occupancy, and historical trends for informed pastoral decisions.",
+      "badge": "Growth+",
+      "bullets": ["Peak attendance per service", "Zone occupancy", "Service history"]
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "From signup to Sunday in 3 steps",
+    "steps": {
+      "register": { "title": "Sign up", "desc": "Create your church, pick a plan, and verify your email." },
+      "trial": { "title": "14-day trial", "desc": "Set up your layout and team — no card required upfront." },
+      "operate": { "title": "Run Sunday", "desc": "Start the service, monitor live, and close with metrics." }
+    }
+  },
+  "productTour": {
+    "eyebrow": "Product tour",
+    "title": "Real Kahal Zerem screenshots",
+    "subtitle": "This is what the platform looks like during a live service.",
+    "openLightbox": "Expand"
+  },
+  "screenshots": {
+    "dashboard": { "alt": "Live dashboard with seat map", "caption": "Operations panel with real-time zone occupancy" },
+    "layoutBuilder": { "alt": "Temple layout management", "caption": "Sanctuary plans with capacity per level" },
+    "incidents": { "alt": "Live incident center", "caption": "Priority alert queue with response times for your team" },
+    "parking": { "alt": "Parking coordinator", "caption": "Lot map with live space status" },
+    "events": { "alt": "Event management", "caption": "Special events with tickets and check-in" },
+    "analytics": { "alt": "Analytics panel", "caption": "Attendance metrics and service trends" }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Plans for your",
+    "titleHighlight": "ministry stage",
+    "subtitle": "Try any plan free for 14 days. No long-term contracts or hidden fees.",
+    "compareTitle": "Plan comparison",
+    "contactCustom": "Need something custom?",
+    "contactLink": "Contact us for a tailored quote",
+    "pageEyebrow": "Transparent pricing",
+    "pageTitle": "No surprises.",
+    "pageTitleHighlight": "No fine print.",
+    "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime."
+  },
+  "plans": {
+    "period": "mo",
+    "periodAnnual": "yr",
+    "popular": "Most popular",
+    "comingSoon": "Coming soon",
+    "startTrial": "Start free trial",
+    "talkSales": "Talk to sales",
+    "basic": {
+      "name": "Seed Plan",
+      "description": "Live operations for your first level",
+      "features": {
+        "seats": "Up to 500 seats per event",
+        "layouts": "1 layout (sanctuary)",
+        "ushers": "5 active ushers",
+        "liveOps": "Dashboard, incidents & terminal",
+        "emailSupport": "Email support"
+      }
+    },
+    "pro": {
+      "name": "Growth Plan",
+      "description": "Events, analytics & parking for active congregations",
+      "features": {
+        "seats": "Up to 2,000 seats",
+        "layouts": "Up to 5 layouts",
+        "ushers": "20 active ushers",
+        "events": "Events, tickets & check-in",
+        "analytics": "Zone occupancy analytics",
+        "parkingMembers": "Parking & members",
+        "prioritySupport": "Priority support"
+      }
+    },
+    "enterprise": {
+      "name": "Kingdom Plan",
+      "description": "Higher limits and dedicated support for expanding ministries",
+      "features": {
+        "seats": "Up to 10,000 seats per layout",
+        "layouts": "Up to 50 layouts",
+        "ushers": "Practically unlimited ushers",
+        "audit": "Full audit logs",
+        "dedicatedSupport": "Dedicated support",
+        "apiComingSoon": "External API — Coming soon",
+        "multisiteComingSoon": "Multi-site — Coming soon"
+      }
+    },
+    "compare": {
+      "labels": {
+        "seats": "Seats per layout",
+        "layouts": "Layouts",
+        "ushers": "Active ushers",
+        "liveOps": "Live dashboard",
+        "incidents": "Incidents & alerts",
+        "terminal": "Terminal view",
+        "events": "Events",
+        "tickets": "Tickets",
+        "checkIn": "Check-in",
+        "analytics": "Analytics",
+        "parking": "Parking",
+        "members": "Members",
+        "audit": "Audit",
+        "api": "External API",
+        "multisite": "Multi-site"
+      },
+      "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
+      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "Unlimited" }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Common questions",
+    "items": {
+      "trial": { "q": "How does the 14-day trial work?", "a": "When you sign up you activate the chosen plan with no immediate charge. You get a verification email and full access during the trial. After it ends, set up PayPal to continue." },
+      "paypal": { "q": "How do I pay after the trial?", "a": "Subscription is managed securely via PayPal. You can cancel anytime from your billing panel." },
+      "email": { "q": "Do I need to verify my email?", "a": "Yes. For security we send a verification link when you register. Without verification, panel access stays limited." },
+      "plans": { "q": "Can I change plans?", "a": "Yes. From billing you can upgrade or downgrade as your church needs change." },
+      "cancel": { "q": "Can I cancel anytime?", "a": "Yes, with no penalty. Access continues until the end of the paid period." },
+      "reino": { "q": "What does Kingdom plan include today?", "a": "Higher limits, audit logs, and dedicated support. External API and multi-site are on the roadmap and marked Coming soon." }
+    }
+  },
+  "cta": {
+    "title": "Ready to run next Sunday",
+    "titleLine2": "with more clarity?",
+    "subtitle": "Sign up in minutes or write to us if your church needs guided onboarding with our team.",
+    "start": "Get started",
+    "viewPlans": "View plans",
+    "contact": "Contact sales"
+  },
+  "footer": {
+    "tagline": "Operational platform for churches — seating, teams, and incidents in one place.",
+    "product": "Product",
+    "company": "Company",
+    "modules": "Modules",
+    "productTour": "Product tour",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "madeFor": "Made for the global Church."
+  },
+  "contact": {
+    "title": "Let's talk about your church",
+    "subtitle": "Tell us your context and we'll reply from support within 1–2 business days.",
+    "name": "Name",
+    "church": "Church",
+    "email": "Email",
+    "plan": "Plan of interest",
+    "planAny": "Not sure yet",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent! We'll be in touch soon.",
+    "error": "We couldn't send your message. Try again or email kahalzerem@gmail.com"
+  },
+  "register": {
+    "title": "Start your transformation",
+    "subtitle": "Set up your church on Kahal Zerem and run your next service with clarity.",
+    "hasAccount": "Already have an account?",
+    "login": "Log in here"
+  },
+  "carousel": {
+    "prev": "Previous",
+    "next": "Next",
+    "slide": "Slide"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}

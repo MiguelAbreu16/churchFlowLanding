@@ -1,15 +1,18 @@
 import { Box, Container, Paper, Typography, alpha, useTheme } from "@mui/material";
-import Bolt from "@mui/icons-material/Bolt";
+import { useTranslation } from "react-i18next";
 import Navbar from "../components/common/Navbar";
 import RegisterWizard from "../components/register/RegisterWizard";
 
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:5173";
+
 export default function RegisterPage() {
   const theme = useTheme();
+  const { t } = useTranslation();
 
   return (
     <Box sx={{ bgcolor: "background.default", minHeight: "100vh" }}>
       <Navbar />
-      
+
       <Box
         sx={{
           pt: { xs: 12, md: 16 },
@@ -21,14 +24,14 @@ export default function RegisterPage() {
           <Box sx={{ textAlign: "center", mb: 6 }}>
             <img
               src="/logo.png"
-              alt="Logo"
+              alt="Kahal Zerem"
               style={{ width: 48, height: 48, objectFit: "contain", marginBottom: 16 }}
             />
             <Typography variant="h3" sx={{ fontWeight: 800, mb: 1.5 }}>
-              Comienza tu transformación
+              {t("register.title")}
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 500, mx: "auto" }}>
-              Únete a las más de 500 iglesias que ya están optimizando su operación con Kahal Zerem.
+              {t("register.subtitle")}
             </Typography>
           </Box>
 
@@ -47,7 +50,14 @@ export default function RegisterPage() {
 
           <Box sx={{ mt: 4, textAlign: "center" }}>
             <Typography variant="body2" color="text.secondary">
-              ¿Ya tienes cuenta? <Box component="span" sx={{ color: "primary.main", fontWeight: 700, cursor: "pointer" }}>Inicia Sesión aquí</Box>
+              {t("register.hasAccount")}{" "}
+              <Box
+                component="a"
+                href={`${APP_URL}/login`}
+                sx={{ color: "primary.main", fontWeight: 700, textDecoration: "none" }}
+              >
+                {t("register.login")}
+              </Box>
             </Typography>
           </Box>
         </Container>

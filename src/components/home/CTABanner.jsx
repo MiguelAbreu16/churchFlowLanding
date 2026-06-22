@@ -1,10 +1,13 @@
 import { Box, Container, Typography, Button, alpha, useTheme } from "@mui/material";
 import ArrowForward from "@mui/icons-material/ArrowForward";
+import Email from "@mui/icons-material/Email";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function CTABanner() {
   const theme = useTheme();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <Box className="section" sx={{ bgcolor: "#fff" }}>
@@ -29,43 +32,42 @@ export default function CTABanner() {
               fontWeight: 800,
             }}
           >
-            ¿Listo para llevar tu ministerio
+            {t("cta.title")}
             <br />
-            al siguiente nivel?
+            {t("cta.titleLine2")}
           </Typography>
 
           <Typography
-            sx={{ 
-              maxWidth: 540, 
-              mx: "auto", 
-              mb: 5, 
-              lineHeight: 1.8, 
+            sx={{
+              maxWidth: 540,
+              mx: "auto",
+              mb: 5,
+              lineHeight: 1.8,
               color: "rgba(255,255,255,0.8)",
-              fontSize: "1.1rem"
+              fontSize: "1.1rem",
             }}
           >
-            Únete a cientos de iglesias que ya confían en la infraestructura operativa de Kahal Zerem.
-            Tu prueba gratuita de 14 días te espera.
+            {t("cta.subtitle")}
           </Typography>
 
           <Box sx={{ display: "flex", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
             <Button
               variant="contained"
-              sx={{ 
-                bgcolor: "#fff", 
+              sx={{
+                bgcolor: "#fff",
                 color: "primary.main",
-                px: 5, 
-                py: 2, 
+                px: 5,
+                py: 2,
                 fontSize: "1rem",
                 "&:hover": {
                   bgcolor: alpha("#fff", 0.9),
                   transform: "translateY(-2px)",
-                }
+                },
               }}
               endIcon={<ArrowForward />}
               onClick={() => navigate("/register")}
             >
-              Comenzar Ahora
+              {t("cta.start")}
             </Button>
             <Button
               variant="outlined"
@@ -83,7 +85,26 @@ export default function CTABanner() {
                 },
               }}
             >
-              Ver Planes
+              {t("cta.viewPlans")}
+            </Button>
+            <Button
+              variant="outlined"
+              size="large"
+              startIcon={<Email />}
+              onClick={() => navigate("/contacto")}
+              sx={{
+                px: 5,
+                py: 2,
+                fontSize: "1rem",
+                borderColor: "rgba(255,255,255,0.3)",
+                color: "#fff",
+                "&:hover": {
+                  borderColor: "#fff",
+                  bgcolor: "rgba(255,255,255,0.05)",
+                },
+              }}
+            >
+              {t("cta.contact")}
             </Button>
           </Box>
         </Box>

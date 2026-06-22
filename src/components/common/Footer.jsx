@@ -4,31 +4,28 @@ import {
   Grid,
   Typography,
   Stack,
-  alpha,
   useTheme,
-  IconButton,
 } from "@mui/material";
-import Bolt from "@mui/icons-material/Bolt";
-import GitHub from "@mui/icons-material/GitHub";
-import Twitter from "@mui/icons-material/Twitter";
-import LinkedIn from "@mui/icons-material/LinkedIn";
 import { Link as RouterLink } from "react-router-dom";
-
-const FOOTER_LINKS = {
-  Producto: [
-    { label: "Funcionalidades", to: "/#features" },
-    { label: "Planes", to: "/pricing" },
-    { label: "Video Demo", to: "#" },
-  ],
-  Compañía: [
-    { label: "Sobre nosotros", to: "/#features" },
-    { label: "Privacidad", to: "/legal/privacidad" },
-    { label: "Términos", to: "/legal/terminos" },
-  ],
-};
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const theme = useTheme();
+  const { t } = useTranslation();
+
+  const FOOTER_LINKS = {
+    [t("footer.product")]: [
+      { label: t("footer.modules"), to: "/#modules" },
+      { label: t("nav.pricing"), to: "/pricing" },
+      { label: t("footer.productTour"), to: "/#product-tour" },
+    ],
+    [t("footer.company")]: [
+      { label: t("footer.about"), to: "/#modules" },
+      { label: t("footer.contact"), to: "/contacto" },
+      { label: t("footer.privacy"), to: "/legal/privacidad" },
+      { label: t("footer.terms"), to: "/legal/terminos" },
+    ],
+  };
 
   return (
     <Box
@@ -44,48 +41,28 @@ export default function Footer() {
         <Grid container spacing={8} sx={{ mb: 8 }}>
           <Grid item xs={12} md={5}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
-                <img
-                  src="/logo.png"
-                  alt="Logo"
-                  style={{ width: 32, height: 32, objectFit: "contain" }}
-                />
+              <img src="/logo.png" alt="Kahal Zerem" style={{ width: 32, height: 32, objectFit: "contain" }} />
               <Typography variant="h6" sx={{ fontWeight: 900, letterSpacing: -0.5 }}>
                 Kahal Zerem
               </Typography>
             </Box>
-            <Typography
-              variant="body2"
-              color="text.secondary"
-              sx={{ maxWidth: 300, mb: 4, lineHeight: 1.8 }}
-            >
-              La plataforma de infraestructura operativa diseñada para potenciar el ministerio 
-              y la experiencia de tu congregación.
+            <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 320, lineHeight: 1.8 }}>
+              {t("footer.tagline")}
             </Typography>
-            <Stack direction="row" spacing={1.5}>
-              {[GitHub, Twitter, LinkedIn].map((Icon, i) => (
-                <IconButton
-                  key={i}
-                  size="small"
-                  sx={{
-                    color: "text.secondary",
-                    "&:hover": { color: "primary.main", bgcolor: alpha(theme.palette.primary.main, 0.05) },
-                  }}
-                >
-                  <Icon fontSize="small" />
-                </IconButton>
-              ))}
-            </Stack>
           </Grid>
 
           {Object.entries(FOOTER_LINKS).map(([title, links]) => (
             <Grid item xs={6} md={3} key={title}>
-              <Typography variant="subtitle2" sx={{ fontWeight: 800, mb: 3, textTransform: "uppercase", letterSpacing: 1 }}>
+              <Typography
+                variant="subtitle2"
+                sx={{ fontWeight: 800, mb: 3, textTransform: "uppercase", letterSpacing: 1 }}
+              >
                 {title}
               </Typography>
               <Stack spacing={2}>
                 {links.map((link) => (
                   <Typography
-                    key={link.label}
+                    key={link.to}
                     component={RouterLink}
                     to={link.to}
                     variant="body2"
@@ -115,10 +92,10 @@ export default function Footer() {
           }}
         >
           <Typography variant="caption" color="text.disabled">
-            © {new Date().getFullYear()} Kahal Zerem. Todos los derechos reservados.
+            © {new Date().getFullYear()} Kahal Zerem. {t("footer.rights")}
           </Typography>
           <Typography variant="caption" color="text.disabled">
-            Hecho con ❤️ para la Iglesia global.
+            {t("footer.madeFor")}
           </Typography>
         </Box>
       </Container>

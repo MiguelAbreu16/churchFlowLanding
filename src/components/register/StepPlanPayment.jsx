@@ -111,7 +111,7 @@ export default function StepPlanPayment({
                     form.billingCycle === "annual"
                       ? Math.round(plan.price * 12 * 0.8)
                       : plan.price,
-                  period: form.billingCycle === "annual" ? "año" : "mes",
+                  billingAnnual: form.billingCycle === "annual",
                 }}
                 selected={form.plan === plan.id}
                 onSelect={() => onChange("plan", plan.id)}
