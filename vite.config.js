@@ -11,6 +11,13 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: 5174,
+    // Custom domain (Cloudflare) + Railway default URLs
+    allowedHosts: [
+      "kahalzerem.com",
+      "www.kahalzerem.com",
+      ".up.railway.app",
+      "localhost",
+    ],
   },
   ssr: {
     noExternal: ["@apollo/client"],
