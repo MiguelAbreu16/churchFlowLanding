@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { BRAND } from "../../constants/branding";
 
 export default function Footer() {
   const theme = useTheme();
@@ -40,11 +41,13 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Grid container spacing={8} sx={{ mb: 8 }}>
           <Grid item xs={12} md={5}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
-              <img src="/logo.png" alt="Kahal Zerem" style={{ width: 32, height: 32, objectFit: "contain" }} />
-              <Typography variant="h6" sx={{ fontWeight: 900, letterSpacing: -0.5 }}>
-                Kahal Zerem
-              </Typography>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+              <Box
+                component="img"
+                src={BRAND.horizontal}
+                alt="Kahal Zerem"
+                sx={{ height: 36, width: "auto", maxWidth: 220 }}
+              />
             </Box>
             <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 320, lineHeight: 1.8 }}>
               {t("footer.tagline")}

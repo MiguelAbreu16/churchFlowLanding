@@ -2,6 +2,7 @@ import { Box, Container, Paper, Typography, alpha, useTheme } from "@mui/materia
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/common/Navbar";
 import RegisterWizard from "../components/register/RegisterWizard";
+import { BRAND } from "../constants/branding";
 
 const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:5173";
 
@@ -22,10 +23,11 @@ export default function RegisterPage() {
       >
         <Container maxWidth="md">
           <Box sx={{ textAlign: "center", mb: 6 }}>
-            <img
-              src="/logo.png"
+            <Box
+              component="img"
+              src={BRAND.vertical}
               alt="Kahal Zerem"
-              style={{ width: 48, height: 48, objectFit: "contain", marginBottom: 16 }}
+              sx={{ height: { xs: 72, md: 96 }, width: "auto", mx: "auto", mb: 2, display: "block" }}
             />
             <Typography variant="h3" sx={{ fontWeight: 800, mb: 1.5 }}>
               {t("register.title")}

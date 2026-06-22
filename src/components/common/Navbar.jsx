@@ -3,7 +3,6 @@ import {
   AppBar,
   Box,
   Toolbar,
-  Typography,
   Button,
   Container,
   IconButton,
@@ -19,6 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LangToggle from "./LangToggle";
+import { BRAND } from "../../constants/branding";
 
 const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:5173";
 
@@ -62,19 +62,29 @@ export default function Navbar() {
             sx={{
               display: "flex",
               alignItems: "center",
-              gap: 1.2,
               textDecoration: "none",
-              color: "#0F172A",
             }}
           >
-            <img
-              src="/logo.png"
+            <Box
+              component="img"
+              src={BRAND.horizontal}
               alt="Kahal Zerem"
-              style={{ width: 32, height: 32, objectFit: "contain" }}
+              sx={{
+                height: { xs: 32, md: 40 },
+                width: "auto",
+                display: { xs: "none", sm: "block" },
+              }}
             />
-            <Typography variant="h6" sx={{ fontWeight: 900, letterSpacing: -0.5, fontSize: "1.25rem" }}>
-              Kahal Zerem
-            </Typography>
+            <Box
+              component="img"
+              src={BRAND.icon}
+              alt="Kahal Zerem"
+              sx={{
+                height: 36,
+                width: "auto",
+                display: { xs: "block", sm: "none" },
+              }}
+            />
           </Box>
 
           <Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", gap: 2 }}>
