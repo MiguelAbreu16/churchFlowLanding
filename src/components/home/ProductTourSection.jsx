@@ -10,7 +10,7 @@ import {
 import Close from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
 import { PRODUCT_TOUR_SLIDES } from "../../constants/screenshots";
-import ProductScreenshotCarousel from "./ProductScreenshotCarousel";
+import ProductScreenshotCarousel, { SCREENSHOT_ASPECT } from "./ProductScreenshotCarousel";
 
 export default function ProductTourSection() {
   const { t } = useTranslation();
@@ -57,23 +57,24 @@ export default function ProductTourSection() {
       <Dialog
         open={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
-        maxWidth="lg"
+        maxWidth="md"
         fullWidth
-        PaperProps={{ sx: { bgcolor: "#0f172a", borderRadius: 3 } }}
+        PaperProps={{ sx: { bgcolor: "#f8fafc", borderRadius: 3 } }}
       >
         <IconButton
           onClick={() => setLightboxOpen(false)}
-          sx={{ position: "absolute", right: 8, top: 8, color: "#fff", zIndex: 2 }}
+          sx={{ position: "absolute", right: 8, top: 8, color: "text.primary", zIndex: 2 }}
           aria-label="close"
         >
           <Close />
         </IconButton>
-        <DialogContent sx={{ p: { xs: 2, md: 4 }, pt: 6 }}>
+        <DialogContent sx={{ p: { xs: 2, md: 3 }, pt: 5 }}>
           <ProductScreenshotCarousel
             slides={PRODUCT_TOUR_SLIDES}
             autoPlayMs={0}
-            aspectRatio="16/9"
             startIndex={lightboxIndex}
+            aspectRatio={SCREENSHOT_ASPECT}
+            frameBg="#f8fafc"
           />
         </DialogContent>
       </Dialog>

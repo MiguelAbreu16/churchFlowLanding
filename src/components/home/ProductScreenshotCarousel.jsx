@@ -13,11 +13,16 @@ import { useTranslation } from "react-i18next";
 
 const MotionBox = motion.create(Box);
 
+/** Matches real app screenshots (~1024×476) */
+export const SCREENSHOT_ASPECT = "1024 / 476";
+
 export default function ProductScreenshotCarousel({
   slides,
   autoPlayMs = 6000,
   showCaption = true,
-  aspectRatio = "16/10",
+  aspectRatio = SCREENSHOT_ASPECT,
+  objectFit = "contain",
+  frameBg = "#f1f5f9",
   onSlideClick,
   startIndex = 0,
 }) {
@@ -65,8 +70,8 @@ export default function ProductScreenshotCarousel({
           borderRadius: 3,
           overflow: "hidden",
           border: `1px solid ${theme.palette.divider}`,
-          bgcolor: "#0f172a",
-          boxShadow: "0 25px 50px -12px rgba(0,0,0,0.25)",
+          bgcolor: frameBg,
+          boxShadow: "0 20px 40px -16px rgba(15,23,42,0.18)",
           aspectRatio,
         }}
         onClick={onSlideClick ? () => onSlideClick(index) : undefined}
@@ -76,27 +81,33 @@ export default function ProductScreenshotCarousel({
         <AnimatePresence mode="wait">
           <MotionBox
             key={slide.id}
-            initial={{ opacity: 0, x: 24 }}
+            initial={{ opacity: 0, x: 16 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -24 }}
-            transition={{ duration: 0.35 }}
+            exit={{ opacity: 0, x: -16 }}
+            transition={{ duration: 0.3 }}
             sx={{
               position: "absolute",
               inset: 0,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              p: { xs: 0.5, md: 1 },
             }}
           >
             <Box
               component="img"
               src={slide.src}
               alt={t(slide.altKey)}
+              loading="lazy"
+              decoding="async"
               sx={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
+                maxWidth: "100%",
+                maxHeight: "100%",
+                width: "auto",
+                height: "auto",
+                objectFit,
                 display: "block",
+                borderRadius: 1,
               }}
             />
           </MotionBox>
@@ -115,7 +126,8 @@ export default function ProductScreenshotCarousel({
                 left: 8,
                 top: "50%",
                 transform: "translateY(-50%)",
-                bgcolor: alpha("#fff", 0.9),
+                bgcolor: alpha("#fff", 0.95),
+                boxShadow: 1,
                 "&:hover": { bgcolor: "#fff" },
               }}
               size="small"
@@ -133,7 +145,8 @@ export default function ProductScreenshotCarousel({
                 right: 8,
                 top: "50%",
                 transform: "translateY(-50%)",
-                bgcolor: alpha("#fff", 0.9),
+                bgcolor: alpha("#fff", 0.95),
+                boxShadow: 1,
                 "&:hover": { bgcolor: "#fff" },
               }}
               size="small"

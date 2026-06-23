@@ -17,6 +17,7 @@ import {
 import Check from "@mui/icons-material/Check";
 import { useTranslation } from "react-i18next";
 import { MODULE_PREVIEWS } from "../../constants/screenshots";
+import { SCREENSHOT_ASPECT } from "./ProductScreenshotCarousel";
 
 const TAB_KEYS = ["liveOps", "layouts", "teams", "events", "parking", "analytics"];
 const PREMIUM_TABS = new Set(["events", "parking", "analytics"]);
@@ -113,13 +114,29 @@ export default function FeatureModulesSection() {
                 overflow: "hidden",
                 border: `1px solid ${theme.palette.divider}`,
                 boxShadow: `0 20px 40px -15px ${alpha(theme.palette.primary.main, 0.15)}`,
+                bgcolor: "#f1f5f9",
+                aspectRatio: SCREENSHOT_ASPECT,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                p: 1,
               }}
             >
               <Box
                 component="img"
                 src={MODULE_PREVIEWS[activeKey]}
                 alt={t(`modules.${activeKey}.title`)}
-                sx={{ width: "100%", display: "block", aspectRatio: "16/10", objectFit: "cover" }}
+                loading="lazy"
+                decoding="async"
+                sx={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                  display: "block",
+                  borderRadius: 1,
+                }}
               />
             </Box>
           </Grid>

@@ -18,7 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LangToggle from "./LangToggle";
-import { BRAND } from "../../constants/branding";
+import LogoMark from "./LogoMark";
 
 const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:5173";
 
@@ -55,36 +55,14 @@ export default function Navbar() {
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
+        <Toolbar disableGutters sx={{ justifyContent: "space-between", minHeight: { xs: 64, md: 72 } }}>
           <Box
             component={Link}
             to="/"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              textDecoration: "none",
-            }}
+            aria-label="Kahal Zerem"
+            sx={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}
           >
-            <Box
-              component="img"
-              src={BRAND.horizontal}
-              alt="Kahal Zerem"
-              sx={{
-                height: { xs: 32, md: 40 },
-                width: "auto",
-                display: { xs: "none", sm: "block" },
-              }}
-            />
-            <Box
-              component="img"
-              src={BRAND.icon}
-              alt="Kahal Zerem"
-              sx={{
-                height: 36,
-                width: "auto",
-                display: { xs: "block", sm: "none" },
-              }}
-            />
+            <LogoMark size={52} markSize={46} showLabel />
           </Box>
 
           <Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", gap: 2 }}>
