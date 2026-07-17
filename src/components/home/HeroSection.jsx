@@ -11,12 +11,14 @@ import {
 } from "@mui/material";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import Visibility from "@mui/icons-material/Visibility";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { HERO_SLIDES } from "../../constants/screenshots";
-import ProductScreenshotCarousel from "./ProductScreenshotCarousel";
+import LogoMark from "../common/LogoMark";
+import SeatMapDemo from "./SeatMapDemo";
+import { BRAND } from "../../constants/branding";
 
-const PROOF_KEYS = ["proof1", "proof2", "proof3"];
+const TRUST_KEYS = ["trust1", "trust2", "trust3"];
 
 export default function HeroSection() {
   const theme = useTheme();
@@ -24,25 +26,57 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   const scrollToTour = () => {
-    document.getElementById("product-tour")?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("product-tour")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <Box
       sx={{
-        pt: { xs: 12, md: 18 },
-        pb: { xs: 8, md: 12 },
+        pt: { xs: 11, md: 14 },
+        pb: { xs: 6, md: 10 },
         position: "relative",
         overflow: "hidden",
         backgroundColor: "background.default",
-        backgroundImage: `radial-gradient(${alpha(theme.palette.primary.main, 0.05)} 1px, transparent 1px)`,
-        backgroundSize: "40px 40px",
+        backgroundImage: `
+          linear-gradient(180deg, ${alpha(theme.palette.primary.main, 0.06)} 0%, transparent 42%),
+          radial-gradient(${alpha(theme.palette.primary.main, 0.05)} 1px, transparent 1px)
+        `,
+        backgroundSize: "auto, 40px 40px",
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={8} alignItems="center">
-          <Grid item xs={12} lg={6}>
-            <Box sx={{ textAlign: { xs: "center", lg: "left" } }}>
+        <Grid container spacing={{ xs: 4, lg: 8 }} alignItems="center">
+          <Grid size={{ xs: 12, lg: 6 }}>
+            <Box
+              component={motion.div}
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.55 }}
+              sx={{ textAlign: { xs: "center", lg: "left" } }}
+            >
+              <Stack
+                direction="row"
+                spacing={1.5}
+                alignItems="center"
+                justifyContent={{ xs: "center", lg: "flex-start" }}
+                sx={{ mb: 2.5 }}
+              >
+                <LogoMark size={56} markSize={46} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Outfit", "Inter", sans-serif',
+                    fontWeight: 900,
+                    fontSize: { xs: "1.65rem", md: "2rem" },
+                    letterSpacing: "-0.04em",
+                    color: "text.primary",
+                  }}
+                >
+                  {BRAND.name}
+                </Typography>
+              </Stack>
+
               <Chip
                 label={t("hero.badge")}
                 size="small"
@@ -50,35 +84,36 @@ export default function HeroSection() {
                   bgcolor: alpha(theme.palette.primary.main, 0.08),
                   color: "primary.main",
                   fontWeight: 700,
-                  fontSize: "0.8rem",
-                  mb: 3,
-                  px: 1,
+                  fontSize: "0.75rem",
+                  mb: 2.5,
                 }}
               />
+
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "2.5rem", md: "3.5rem" },
-                  lineHeight: 1.1,
-                  mb: 2.5,
+                  fontFamily: '"Outfit", "Inter", sans-serif',
+                  fontSize: { xs: "2.15rem", sm: "2.6rem", md: "3.25rem" },
+                  lineHeight: 1.08,
+                  mb: 2,
+                  letterSpacing: "-0.03em",
                 }}
               >
-                {t("hero.title")}
-                <br />
+                {t("hero.title")}{" "}
                 <Box component="span" sx={{ color: "primary.main" }}>
                   {t("hero.titleHighlight")}
                 </Box>
               </Typography>
+
               <Typography
-                variant="h5"
                 sx={{
                   color: "text.secondary",
-                  mb: 4.5,
-                  maxWidth: 560,
+                  mb: 3.5,
+                  maxWidth: 520,
                   mx: { xs: "auto", lg: 0 },
                   fontWeight: 400,
-                  lineHeight: 1.7,
-                  fontSize: { xs: "1.05rem", md: "1.15rem" },
+                  lineHeight: 1.65,
+                  fontSize: { xs: "1rem", md: "1.1rem" },
                 }}
               >
                 {t("hero.subtitle")}
@@ -86,8 +121,9 @@ export default function HeroSection() {
 
               <Stack
                 direction={{ xs: "column", sm: "row" }}
-                spacing={2}
+                spacing={1.5}
                 justifyContent={{ xs: "center", lg: "flex-start" }}
+                sx={{ mb: 3 }}
               >
                 <Button
                   variant="contained"
@@ -95,7 +131,7 @@ export default function HeroSection() {
                   size="large"
                   onClick={() => navigate("/register")}
                   endIcon={<ArrowForward />}
-                  sx={{ px: 4, py: 1.8 }}
+                  sx={{ px: 3.5, py: 1.6, fontWeight: 800 }}
                 >
                   {t("hero.ctaTrial")}
                 </Button>
@@ -104,24 +140,20 @@ export default function HeroSection() {
                   size="large"
                   startIcon={<Visibility />}
                   onClick={scrollToTour}
-                  sx={{ px: 4, py: 1.8 }}
+                  sx={{ px: 3.5, py: 1.6 }}
                 >
                   {t("hero.ctaProduct")}
                 </Button>
               </Stack>
 
-              <Box
-                sx={{
-                  mt: 6,
-                  pt: 4,
-                  borderTop: `1px solid ${theme.palette.divider}`,
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 1.5,
-                  alignItems: { xs: "center", lg: "flex-start" },
-                }}
+              <Stack
+                direction={{ xs: "column", sm: "row" }}
+                spacing={{ xs: 1, sm: 2.5 }}
+                justifyContent={{ xs: "center", lg: "flex-start" }}
+                flexWrap="wrap"
+                useFlexGap
               >
-                {PROOF_KEYS.map((key) => (
+                {TRUST_KEYS.map((key) => (
                   <Typography
                     key={key}
                     variant="body2"
@@ -130,12 +162,19 @@ export default function HeroSection() {
                     ✓ {t(`hero.${key}`)}
                   </Typography>
                 ))}
-              </Box>
+              </Stack>
             </Box>
           </Grid>
 
-          <Grid item xs={12} lg={6}>
-            <ProductScreenshotCarousel slides={HERO_SLIDES} autoPlayMs={7000} />
+          <Grid size={{ xs: 12, lg: 6 }}>
+            <Box
+              component={motion.div}
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <SeatMapDemo />
+            </Box>
           </Grid>
         </Grid>
       </Container>

@@ -23,7 +23,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 const STEPS = [
   { label: "Tu Iglesia", icon: <Church /> },
   { label: "Tu Cuenta", icon: <Person /> },
-  { label: "Plan y Pago", icon: <CreditCard /> },
+  { label: "Tu Plan", icon: <CreditCard /> },
 ];
 
 const INITIAL_FORM = {
@@ -149,6 +149,19 @@ export default function RegisterWizard() {
     }));
   };
 
+  const navigateToSuccess = (session) => {
+    const code =
+      sessionStorage.getItem("cf_exchange") ||
+      session?.exchangeCode ||
+      authSession?.exchangeCode;
+    navigate(`/success?plan=${form.plan}${code ? `&code=${code}` : ""}`);
+  };
+
+  const handleStartTrial = async () => {
+    const session = await handlePrepareAccount();
+    navigateToSuccess(session);
+  };
+
   const handlePayPalApprove = async (subscriptionId) => {
     await attachPayPal({
       variables: {
@@ -162,7 +175,17 @@ export default function RegisterWizard() {
 
   return (
     <Box>
-      <Stepper activeStep={activeStep} sx={{ mb: 6 }}>
+      <Stepper
+        activeStep={activeStep}
+        alternativeLabel={false}
+        orientation="horizontal"
+        sx={{
+          mb: { xs: 3, md: 6 },
+          "& .MuiStepLabel-label": {
+            display: { xs: "none", sm: "block" },
+          },
+        }}
+      >
         {STEPS.map((step, i) => (
           <Step key={step.label} completed={i < activeStep}>
             <StepLabel
@@ -213,6 +236,7 @@ export default function RegisterWizard() {
           catalog={catalog}
           authSession={authSession}
           onPrepareAccount={handlePrepareAccount}
+          onStartTrial={handleStartTrial}
           onPayPalApprove={handlePayPalApprove}
           loading={registering || attaching}
         />

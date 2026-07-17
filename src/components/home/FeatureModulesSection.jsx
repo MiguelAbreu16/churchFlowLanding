@@ -89,7 +89,7 @@ export default function FeatureModulesSection() {
         </Tabs>
 
         <Grid container spacing={4} alignItems="center">
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Typography variant="h5" sx={{ fontWeight: 800, mb: 2 }}>
               {t(`modules.${activeKey}.title`)}
             </Typography>
@@ -107,7 +107,7 @@ export default function FeatureModulesSection() {
               ))}
             </List>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
                 borderRadius: 3,

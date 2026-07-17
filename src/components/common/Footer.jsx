@@ -40,7 +40,7 @@ export default function Footer() {
     >
       <Container maxWidth="lg">
         <Grid container spacing={8} sx={{ mb: 8 }}>
-          <Grid item xs={12} md={5}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <Box sx={{ mb: 3 }}>
               <LogoMark size={48} markSize={42} showLabel />
             </Box>
@@ -50,7 +50,7 @@ export default function Footer() {
           </Grid>
 
           {Object.entries(FOOTER_LINKS).map(([title, links]) => (
-            <Grid item xs={6} md={3} key={title}>
+            <Grid size={{ xs: 6, md: 3 }} key={title}>
               <Typography
                 variant="subtitle2"
                 sx={{ fontWeight: 800, mb: 3, textTransform: "uppercase", letterSpacing: 1 }}

@@ -14,7 +14,7 @@ export default function SocialProofSection() {
     <Box sx={{ py: 6, bgcolor: "background.default", borderBottom: "1px solid", borderColor: "divider" }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center">
-          <Grid item xs={12} md={5}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <Typography
               variant="caption"
               sx={{
@@ -35,10 +35,10 @@ export default function SocialProofSection() {
               {t("socialProof.subtitle")}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid size={{ xs: 12, md: 7 }}>
             <Grid container spacing={2}>
               {items.map((text) => (
-                <Grid item xs={12} sm={4} key={text}>
+                <Grid size={{ xs: 12, md: 4 }} key={text}>
                   <Box
                     sx={{
                       p: 2.5,

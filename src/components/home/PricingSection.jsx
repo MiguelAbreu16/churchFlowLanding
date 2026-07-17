@@ -40,7 +40,7 @@ export default function PricingSection({ showComparison = true }) {
 
         <Grid container spacing={2} alignItems="stretch">
           {PLANS.map((plan) => (
-            <Grid item xs={12} sm={4} key={plan.id}>
+            <Grid size={{ xs: 12, md: 4 }} key={plan.id}>
               <PricingCard
                 plan={plan}
                 onSelect={() => navigate(`/register?plan=${plan.id}`)}

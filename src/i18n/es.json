@@ -10,13 +10,36 @@
   "hero": {
     "badge": "Plataforma operativa para el ministerio",
     "title": "Opera cada domingo",
-    "titleHighlight": "con claridad pastoral y control operativo",
-    "subtitle": "Kahal Zerem une la visión del ministerio con herramientas profesionales: asientos en vivo, equipos de ujieres, incidentes y capacidad — para que tu staff cuide de la congregación, no de la logística.",
+    "titleHighlight": "con claridad pastoral",
+    "subtitle": "Asientos en vivo, ujieres e incidentes en un solo panel — para que tu staff cuide de la congregación, no de la logística.",
     "ctaTrial": "Probar gratis 14 días",
     "ctaProduct": "Ver el producto",
+    "trust1": "14 días gratis",
+    "trust2": "Sin tarjeta al inicio",
+    "trust3": "Cancela cuando quieras",
     "proof1": "Diseñado para equipos de servicio dominicales",
     "proof2": "Listo para congregaciones en crecimiento",
     "proof3": "Sin estadísticas inventadas — producto real"
+  },
+  "demo": {
+    "title": "Mapa en vivo (demo)",
+    "occupied": "ocupado",
+    "tapFree": "Liberar asiento",
+    "tapOccupy": "Marcar ocupado",
+    "hint": "Toca un asiento para simular la operación de un ujier."
+  },
+  "roi": {
+    "eyebrow": "Calculadora",
+    "title": "¿Cuánto tiempo recupera tu equipo?",
+    "subtitle": "Estima horas ahorradas en coordinación de ujieres por mes.",
+    "ushers": "Ujieres por servicio",
+    "services": "Servicios al mes",
+    "hoursMonth": "Horas estimadas al mes",
+    "estimate": "≈ {{weekly}} h/semana · {{minutes}} minutos de coordinación al mes",
+    "cta": "Empezar prueba gratis"
+  },
+  "sticky": {
+    "cta": "Probar gratis 14 días"
   },
   "socialProof": {
     "eyebrow": "Hecho para la iglesia local",

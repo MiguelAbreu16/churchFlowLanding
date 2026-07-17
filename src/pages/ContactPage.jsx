@@ -8,16 +8,47 @@ import {
   Button,
   MenuItem,
   Alert,
+  Stack,
+  IconButton,
   alpha,
   useTheme,
 } from "@mui/material";
 import Send from "@mui/icons-material/Send";
+import AttachFile from "@mui/icons-material/AttachFile";
+import Close from "@mui/icons-material/Close";
 import { useMutation } from "@apollo/client";
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import { SUBMIT_CONTACT_INQUIRY } from "../graphql/operations";
 import { PLANS } from "../constants/plans";
+
+const MAX_ATTACHMENTS = 3;
+const MAX_BYTES = 400 * 1024;
+const ALLOWED = ["image/jpeg", "image/png", "image/webp", "image/gif"];
+
+function readFileAsAttachment(file) {
+  return new Promise((resolve, reject) => {
+    if (!ALLOWED.includes(file.type)) {
+      reject(new Error("Solo se permiten imágenes JPG, PNG, WEBP o GIF"));
+      return;
+    }
+    if (file.size > MAX_BYTES) {
+      reject(new Error("Cada imagen debe pesar menos de 400KB"));
+      return;
+    }
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      resolve({
+        name: file.name,
+        mimeType: file.type,
+        dataUrl: reader.result,
+      });
+    };
+    reader.onerror = () => reject(new Error("No se pudo leer la imagen"));
+    reader.readAsDataURL(file);
+  });
+}
 
 export default function ContactPage() {
   const theme = useTheme();
@@ -29,6 +60,8 @@ export default function ContactPage() {
     planInterest: "",
     message: "",
   });
+  const [attachments, setAttachments] = useState([]);
+  const [attachError, setAttachError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const [submit, { loading, error }] = useMutation(SUBMIT_CONTACT_INQUIRY);
@@ -37,10 +70,34 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [field]: e.target.value }));
   };
 
+  const handleFiles = async (e) => {
+    const files = Array.from(e.target.files || []);
+    e.target.value = "";
+    setAttachError("");
+    if (!files.length) return;
+    try {
+      const next = [...attachments];
+      for (const file of files) {
+        if (next.length >= MAX_ATTACHMENTS) break;
+        next.push(await readFileAsAttachment(file));
+      }
+      setAttachments(next.slice(0, MAX_ATTACHMENTS));
+    } catch (err) {
+      setAttachError(err.message || "Error al adjuntar");
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await submit({ variables: form });
+      await submit({
+        variables: {
+          ...form,
+          pageUrl: window.location.href,
+          userAgent: navigator.userAgent,
+          attachments,
+        },
+      });
       setSubmitted(true);
     } catch {
       /* error state from Apollo */
@@ -124,6 +181,71 @@ export default function ContactPage() {
                   onChange={handleChange("message")}
                   fullWidth
                 />
+                <Box>
+                  <Button
+                    component="label"
+                    variant="outlined"
+                    startIcon={<AttachFile />}
+                    sx={{ textTransform: "none" }}
+                  >
+                    Adjuntar imágenes (máx. {MAX_ATTACHMENTS})
+                    <input
+                      type="file"
+                      hidden
+                      accept="image/jpeg,image/png,image/webp,image/gif"
+                      multiple
+                      onChange={handleFiles}
+                    />
+                  </Button>
+                  {attachError && (
+                    <Alert severity="warning" sx={{ mt: 1 }}>
+                      {attachError}
+                    </Alert>
+                  )}
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    sx={{ mt: 1, flexWrap: "wrap" }}
+                    useFlexGap
+                  >
+                    {attachments.map((att, idx) => (
+                      <Box
+                        key={`${att.name}-${idx}`}
+                        sx={{ position: "relative" }}
+                      >
+                        <Box
+                          component="img"
+                          src={att.dataUrl}
+                          alt={att.name}
+                          sx={{
+                            width: 72,
+                            height: 72,
+                            objectFit: "cover",
+                            borderRadius: 2,
+                            border: `1px solid ${theme.palette.divider}`,
+                          }}
+                        />
+                        <IconButton
+                          size="small"
+                          onClick={() =>
+                            setAttachments((prev) =>
+                              prev.filter((_, i) => i !== idx),
+                            )
+                          }
+                          sx={{
+                            position: "absolute",
+                            top: -8,
+                            right: -8,
+                            bgcolor: "background.paper",
+                            boxShadow: 1,
+                          }}
+                        >
+                          <Close fontSize="small" />
+                        </IconButton>
+                      </Box>
+                    ))}
+                  </Stack>
+                </Box>
                 {error && <Alert severity="error">{t("contact.error")}</Alert>}
                 <Button
                   type="submit"

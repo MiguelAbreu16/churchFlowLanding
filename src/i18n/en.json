@@ -10,13 +10,36 @@
   "hero": {
     "badge": "Operational platform for ministry",
     "title": "Run every Sunday",
-    "titleHighlight": "with pastoral clarity and operational control",
-    "subtitle": "Kahal Zerem bridges ministry vision with professional tools: live seating, usher teams, incidents, and capacity — so your staff cares for the congregation, not the logistics.",
+    "titleHighlight": "with pastoral clarity",
+    "subtitle": "Live seating, ushers, and incidents in one panel — so your staff cares for people, not logistics.",
     "ctaTrial": "Try free for 14 days",
     "ctaProduct": "See the product",
+    "trust1": "14-day free trial",
+    "trust2": "No card upfront",
+    "trust3": "Cancel anytime",
     "proof1": "Built for Sunday service teams",
     "proof2": "Ready for growing congregations",
     "proof3": "No fake stats — real product"
+  },
+  "demo": {
+    "title": "Live map (demo)",
+    "occupied": "occupied",
+    "tapFree": "Free seat",
+    "tapOccupy": "Mark occupied",
+    "hint": "Tap a seat to simulate usher operations."
+  },
+  "roi": {
+    "eyebrow": "Calculator",
+    "title": "How much time does your team get back?",
+    "subtitle": "Estimate hours saved coordinating ushers each month.",
+    "ushers": "Ushers per service",
+    "services": "Services per month",
+    "hoursMonth": "Estimated hours / month",
+    "estimate": "≈ {{weekly}} h/week · {{minutes}} coordination minutes / month",
+    "cta": "Start free trial"
+  },
+  "sticky": {
+    "cta": "Try free for 14 days"
   },
   "socialProof": {
     "eyebrow": "Built for the local church",

@@ -73,6 +73,9 @@ export const SUBMIT_CONTACT_INQUIRY = gql`
     $email: String!
     $message: String!
     $planInterest: String
+    $pageUrl: String
+    $userAgent: String
+    $attachments: [SupportTicketAttachmentInput!]
   ) {
     submitContactInquiry(
       name: $name
@@ -80,6 +83,9 @@ export const SUBMIT_CONTACT_INQUIRY = gql`
       email: $email
       message: $message
       planInterest: $planInterest
+      pageUrl: $pageUrl
+      userAgent: $userAgent
+      attachments: $attachments
     )
   }
 `;

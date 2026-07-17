@@ -9,12 +9,19 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Outfit", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
   background-color: #f8fafc;
   color: #0f172a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Scrollbar */
@@ -32,7 +39,6 @@ body {
   background: #94a3b8;
 }
 
-/* Utility animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -48,7 +54,6 @@ body {
   animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Professional Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
   -webkit-background-clip: text;
@@ -56,27 +61,29 @@ body {
   background-clip: text;
 }
 
-/* Elegant glass card for light theme */
 .glass-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(226, 232, 240, 0.8);
   border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
-/* Section spacing */
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 @media (max-width: 600px) {
   .section {
-    padding: 80px 0;
+    padding: 64px 0;
   }
 }
 
-/* Better typography contrast */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #0f172a;
 }

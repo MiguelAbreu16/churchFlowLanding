@@ -82,7 +82,7 @@ export default function FeaturesSection() {
         {/* Feature Cards */}
         <Grid container spacing={4}>
           {FEATURES.map((f, i) => (
-            <Grid item xs={12} sm={6} md={4} key={i}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={i}>
               <Box
                 sx={{
                   p: 4,

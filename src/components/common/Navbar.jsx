@@ -65,29 +65,63 @@ export default function Navbar() {
             <LogoMark size={52} markSize={46} showLabel />
           </Box>
 
-          <Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", gap: 2 }}>
-            {NAV_LINKS.map((link) => (
-              <Box
-                key={link.to}
-                component={Link}
-                to={link.to}
-                sx={{
-                  color: "#475569",
-                  textDecoration: "none",
-                  fontWeight: 600,
-                  fontSize: "0.9rem",
-                  "&:hover": { color: "primary.main" },
-                }}
-              >
-                {link.label}
-              </Box>
-            ))}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              gap: { md: 1, lg: 2 },
+              flexWrap: "nowrap",
+              flexShrink: 0,
+              minWidth: 0,
+            }}
+          >
+            <Box
+              sx={{
+                display: { xs: "none", lg: "flex" },
+                alignItems: "center",
+                gap: 2,
+              }}
+            >
+              {NAV_LINKS.map((link) => (
+                <Box
+                  key={link.to}
+                  component={Link}
+                  to={link.to}
+                  sx={{
+                    color: "#475569",
+                    textDecoration: "none",
+                    fontWeight: 600,
+                    fontSize: "0.9rem",
+                    whiteSpace: "nowrap",
+                    "&:hover": { color: "primary.main" },
+                  }}
+                >
+                  {link.label}
+                </Box>
+              ))}
+            </Box>
             <LangToggle />
-            <Box sx={{ ml: 0.5, mr: 0.5, height: 16, width: 1, bgcolor: "divider" }} />
+            <Box
+              sx={{
+                mx: 0.5,
+                width: "1px",
+                height: 16,
+                bgcolor: "divider",
+                flexShrink: 0,
+              }}
+            />
             <Button
               variant="text"
-              onClick={() => { window.location.href = loginUrl; }}
-              sx={{ fontWeight: 600, color: "#475569" }}
+              onClick={() => {
+                window.location.href = loginUrl;
+              }}
+              sx={{
+                fontWeight: 600,
+                color: "#475569",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
+                px: { md: 1.5, lg: 2 },
+              }}
             >
               {t("nav.login")}
             </Button>
@@ -96,7 +130,12 @@ export default function Navbar() {
               color="primary"
               size="small"
               onClick={() => navigate("/register")}
-              sx={{ px: 2.5, py: 1 }}
+              sx={{
+                px: { md: 1.75, lg: 2.5 },
+                py: 1,
+                whiteSpace: "nowrap",
+                flexShrink: 0,
+              }}
             >
               {t("nav.startTrial")}
             </Button>

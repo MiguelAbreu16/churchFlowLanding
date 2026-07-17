@@ -37,7 +37,7 @@ export default function HowItWorksSection() {
 
         <Grid container spacing={4}>
           {STEPS.map(({ key, icon: Icon, color }, i) => (
-            <Grid item xs={12} md={4} key={key}>
+            <Grid size={{ xs: 12, md: 4 }} key={key}>
               <Box
                 sx={{
                   p: 4,
