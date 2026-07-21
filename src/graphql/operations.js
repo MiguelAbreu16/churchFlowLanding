@@ -89,3 +89,31 @@ export const SUBMIT_CONTACT_INQUIRY = gql`
     )
   }
 `;
+
+export const REGISTER_APOSTOL_ONLY = gql`
+  # Deprecated: Apóstol is included in Plan Reino. Prefer register?plan=enterprise.
+  mutation RegisterApostolOnly(
+    $networkName: String!
+    $adminName: String!
+    $email: String!
+    $password: String!
+  ) {
+    registerApostolOnly(
+      networkName: $networkName
+      adminName: $adminName
+      email: $email
+      password: $password
+    ) {
+      token
+      exchangeCode
+      user {
+        id
+        name
+        email
+        role
+        churchId
+        activeNetworkId
+      }
+    }
+  }
+`;

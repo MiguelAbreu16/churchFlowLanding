@@ -126,7 +126,10 @@
     "pageEyebrow": "Transparent pricing",
     "pageTitle": "No surprises.",
     "pageTitleHighlight": "No fine print.",
-    "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime."
+    "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime.",
+    "addonEyebrow": "Included in Kingdom",
+    "addonTitle": "Apostle — multi-site network",
+    "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee."
   },
   "plans": {
     "period": "mo",
@@ -169,7 +172,18 @@
         "audit": "Full audit logs",
         "dedicatedSupport": "Dedicated support",
         "apiComingSoon": "External API — Coming soon",
-        "multisiteComingSoon": "Multi-site — Coming soon"
+        "addonHint": "Apostle multi-site included"
+      }
+    },
+    "apostol": {
+      "name": "Apostle / Multi-site",
+      "description": "Included in Kingdom Plan — daughter-church network",
+      "features": {
+        "network": "Network panel with daughter church list",
+        "campuses": "Create daughter churches with their own plan or trial",
+        "switcher": "Church switcher (no impersonation)",
+        "billing": "Consolidated PayPal charge summary",
+        "seatOptional": "With a Kingdom Plan seat church"
       }
     },
     "compare": {
@@ -192,7 +206,11 @@
       },
       "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
       "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
-      "ushers": { "basic": "5", "pro": "20", "enterprise": "Unlimited" }
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "Unlimited" },
+      "multisite": {
+        "addon": "Not included",
+        "included": "Included in Kingdom"
+      }
     }
   },
   "faq": {
@@ -204,7 +222,8 @@
       "email": { "q": "Do I need to verify my email?", "a": "Yes. For security we send a verification link when you register. Without verification, panel access stays limited." },
       "plans": { "q": "Can I change plans?", "a": "Yes. From billing you can upgrade or downgrade as your church needs change." },
       "cancel": { "q": "Can I cancel anytime?", "a": "Yes, with no penalty. Access continues until the end of the paid period." },
-      "reino": { "q": "What does Kingdom plan include today?", "a": "Higher limits, audit logs, and dedicated support. External API and multi-site are on the roadmap and marked Coming soon." }
+      "reino": { "q": "What does Kingdom plan include today?", "a": "Higher limits, audit logs, dedicated support, and Apostle multi-site included (network panel and daughter churches). External API remains on the roadmap. Each daughter church can have its own plan." },
+      "apostol": { "q": "What is Apostle / Multi-site?", "a": "It is the multi-site network included in Kingdom Plan: manage daughter churches with a network panel and church switcher. Each daughter pays its own plan (or trial). There is no separate Apostle fee." }
     }
   },
   "cta": {

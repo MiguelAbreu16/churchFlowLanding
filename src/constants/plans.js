@@ -46,12 +46,15 @@ export const PLANS = [
       "plans.enterprise.features.audit",
       "plans.enterprise.features.dedicatedSupport",
       "plans.enterprise.features.apiComingSoon",
-      "plans.enterprise.features.multisiteComingSoon",
+      "plans.enterprise.features.addonHint",
     ],
     color: "#1E293B",
     popular: false,
   },
 ];
+
+/** @deprecated Apóstol is included in Plan Reino; kept for legacy imports. */
+export const APOSTOL_ADDON = null;
 
 /** Rows for PricingComparisonTable — values are i18n keys or plan field keys */
 export const PLAN_COMPARISON_ROWS = [
@@ -69,7 +72,12 @@ export const PLAN_COMPARISON_ROWS = [
   { key: "members", basic: false, pro: true, enterprise: true },
   { key: "audit", basic: false, pro: false, enterprise: true },
   { key: "api", basic: false, pro: false, enterprise: "comingSoon" },
-  { key: "multisite", basic: false, pro: false, enterprise: "comingSoon" },
+  {
+    key: "multisite",
+    basic: "plans.compare.multisite.addon",
+    pro: "plans.compare.multisite.addon",
+    enterprise: "plans.compare.multisite.included",
+  },
 ];
 
 export const PLAN_COMPARISON_LABELS = {

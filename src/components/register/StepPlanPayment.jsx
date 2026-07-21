@@ -86,13 +86,13 @@ export default function StepPlanPayment({
     setLocalError("");
     if (!HAS_PAYPAL_CLIENT) {
       setLocalError(
-        "PayPal no está configurado (falta VITE_PAYPAL_CLIENT_ID). Puedes empezar la prueba gratis sin PayPal.",
+        "El pago con PayPal no está disponible en este momento. Puedes empezar tu prueba gratis de 14 días y conectar el pago más adelante.",
       );
       return;
     }
     if (!planIdsConfigured) {
       setLocalError(
-        "Los planes de PayPal aún no están configurados en el servidor. Empieza la prueba gratis o contacta soporte.",
+        "Aún no podemos conectar el cobro en línea. Empieza la prueba gratis o escribe a soporte si necesitas ayuda.",
       );
       return;
     }
@@ -205,9 +205,9 @@ export default function StepPlanPayment({
             </Typography>
             {!HAS_PAYPAL_CLIENT && (
               <Alert severity="info" sx={{ mb: 2, textAlign: "left" }}>
-                PayPal no está configurado en este entorno (
-                <code>VITE_PAYPAL_CLIENT_ID</code>). Usa la prueba gratis o
-                configura el Client ID de sandbox.
+                El cobro con PayPal no está disponible aquí por ahora. Usa la
+                prueba gratis de 14 días; podrás conectar el pago más adelante
+                desde tu panel.
               </Alert>
             )}
             {HAS_PAYPAL_CLIENT &&
@@ -217,9 +217,9 @@ export default function StepPlanPayment({
                   ? catalogEntry.paypalPlanIdAnnual
                   : catalogEntry.paypalPlanIdMonthly,
               ) && (
-                <Alert severity="warning" sx={{ mb: 2, textAlign: "left" }}>
-                  Los Plan IDs de PayPal en el backend son placeholders. Define{" "}
-                  <code>PAYPAL_PLAN_*</code> en Railway.
+                <Alert severity="info" sx={{ mb: 2, textAlign: "left" }}>
+                  Aún no podemos completar el cobro en línea para este plan.
+                  Empieza la prueba gratis y vuelve cuando el pago esté listo.
                 </Alert>
               )}
             <Button
@@ -240,7 +240,8 @@ export default function StepPlanPayment({
       ) : (
         <Box sx={{ mb: 3, minHeight: 120 }}>
           <Alert severity="success" sx={{ mb: 2 }}>
-            Cuenta creada. Completa PayPal para vincular la suscripción.
+            Cuenta creada. Confirma el pago con PayPal para vincular tu
+            suscripción, o continúa solo con la prueba.
           </Alert>
           {paypalPlanId && HAS_PAYPAL_CLIENT ? (
             <PayPalButtons
@@ -252,13 +253,16 @@ export default function StepPlanPayment({
                 })
               }
               onApprove={(data) => onPayPalApprove(data.subscriptionID)}
-              onError={(err) =>
-                setLocalError(err?.message || "Error en PayPal")
+              onError={() =>
+                setLocalError(
+                  "No se pudo completar el pago. Inténtalo de nuevo o continúa con la prueba gratis.",
+                )
               }
             />
           ) : (
-            <Alert severity="warning">
-              No se puede mostrar PayPal: falta Client ID o Plan ID válido.
+            <Alert severity="info">
+              No podemos mostrar el botón de pago ahora. Continúa con la prueba
+              gratis y conecta el cobro más adelante.
             </Alert>
           )}
           <Button
