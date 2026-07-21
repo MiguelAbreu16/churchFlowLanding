@@ -1,0 +1,279 @@
+{
+  "nav": {
+    "modules": "Módulos",
+    "pricing": "Preços",
+    "contact": "Contato",
+    "login": "Entrar",
+    "startTrial": "Começar teste",
+    "freeTrial": "Teste grátis"
+  },
+  "hero": {
+    "badge": "Plataforma operacional para o ministério",
+    "title": "Conduza cada domingo",
+    "titleHighlight": "com clareza pastoral",
+    "subtitle": "Assentos ao vivo, porteiros e incidentes em um só painel — para que sua equipe cuide das pessoas, não da logística.",
+    "ctaTrial": "Experimente grátis por 14 dias",
+    "ctaProduct": "Ver o produto",
+    "trust1": "14 dias de teste grátis",
+    "trust2": "Sem cartão no início",
+    "trust3": "Cancele quando quiser",
+    "proof1": "Feito para equipes de culto de domingo",
+    "proof2": "Pronto para congregações em crescimento",
+    "proof3": "Sem estatísticas falsas — produto real"
+  },
+  "demo": {
+    "title": "Mapa ao vivo (demo)",
+    "occupied": "ocupado",
+    "tapFree": "Assento livre",
+    "tapOccupy": "Marcar ocupado",
+    "hint": "Toque em um assento para simular a operação dos porteiros."
+  },
+  "roi": {
+    "eyebrow": "Calculadora",
+    "title": "Quanto tempo sua equipe recupera?",
+    "subtitle": "Estime as horas economizadas na coordenação de porteiros a cada mês.",
+    "ushers": "Porteiros por culto",
+    "services": "Cultos por mês",
+    "hoursMonth": "Horas estimadas / mês",
+    "estimate": "≈ {{weekly}} h/semana · {{minutes}} minutos de coordenação / mês",
+    "cta": "Começar teste grátis"
+  },
+  "sticky": {
+    "cta": "Experimente grátis por 14 dias"
+  },
+  "socialProof": {
+    "eyebrow": "Feito para a igreja local",
+    "title": "Infraestrutura operacional com coração pastoral",
+    "subtitle": "Feito para a igreja local com a confiabilidade de um SaaS moderno: ocupação em tempo real, zonas, porteiros e incidentes em um só painel."
+  },
+  "modules": {
+    "eyebrow": "Módulos do produto",
+    "title": "Tudo o que sua igreja opera",
+    "subtitle": "Explore cada área da plataforma. Módulos marcados com + estão incluídos a partir do plano Growth.",
+    "tabs": {
+      "liveOps": "Operações ao vivo",
+      "layouts": "Layouts e capacidade",
+      "teams": "Equipes e funções",
+      "events": "Eventos e ingressos",
+      "parking": "Estacionamento e membros",
+      "analytics": "Análises"
+    },
+    "liveOps": {
+      "title": "Painel, incidentes e terminal",
+      "desc": "Monitore a ocupação das zonas em tempo real, gerencie incidentes priorizados e ofereça aos porteiros uma visão tática do salão.",
+      "bullets": ["Mapa de assentos ao vivo via WebSocket", "Feed de incidentes com escalonamento", "Visão de terminal para equipes do salão"]
+    },
+    "layouts": {
+      "title": "Editor de layout e níveis",
+      "desc": "Projete o santuário, balcões e zonas. Ative o layout do culto e controle a capacidade real por nível.",
+      "bullets": ["Construtor visual de assentos", "Vários níveis e zonas", "Ativação de layout por culto"]
+    },
+    "teams": {
+      "title": "Porteiros, funções e permissões",
+      "desc": "Atribua zonas, defina quem vê o quê e coordene a equipe do culto com permissões granulares.",
+      "bullets": ["Diretório de porteiros", "Atribuição de zonas", "Admin, porteiro e outras funções"]
+    },
+    "events": {
+      "title": "Eventos, ingressos e check-in",
+      "desc": "Venda ingressos, gere códigos QR e acompanhe a presença em eventos especiais sem ferramentas externas.",
+      "badge": "Growth+",
+      "bullets": ["Calendário de eventos", "Ingressos QR", "Check-in na porta"]
+    },
+    "parking": {
+      "title": "Estacionamento e membros",
+      "desc": "Coordene estacionamentos com um mapa visual e mantenha um diretório de membros conectado às suas operações.",
+      "badge": "Growth+",
+      "bullets": ["Mapa de vagas e espaços", "Coordenador ao vivo", "Diretório de membros"]
+    },
+    "analytics": {
+      "title": "Métricas e tendências",
+      "desc": "Instantâneos por culto, ocupação por zona e tendências históricas para decisões pastorais informadas.",
+      "badge": "Growth+",
+      "bullets": ["Pico de presença por culto", "Ocupação por zona", "Histórico de cultos"]
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Como funciona",
+    "title": "Do cadastro ao domingo em 3 passos",
+    "steps": {
+      "register": { "title": "Cadastre-se", "desc": "Crie sua igreja, escolha um plano e verifique seu e-mail." },
+      "trial": { "title": "Teste de 14 dias", "desc": "Configure seu layout e equipe — sem cartão no início." },
+      "operate": { "title": "Conduza o domingo", "desc": "Inicie o culto, monitore ao vivo e encerre com métricas." }
+    }
+  },
+  "productTour": {
+    "eyebrow": "Tour do produto",
+    "title": "Telas reais do Kahal Zerem",
+    "subtitle": "É assim que a plataforma parece durante um culto ao vivo.",
+    "openLightbox": "Expandir"
+  },
+  "screenshots": {
+    "dashboard": { "alt": "Painel ao vivo com mapa de assentos", "caption": "Painel de operações com ocupação de zonas em tempo real" },
+    "layoutBuilder": { "alt": "Gestão de layout do templo", "caption": "Plantas do santuário com capacidade por nível" },
+    "incidents": { "alt": "Central de incidentes ao vivo", "caption": "Fila de alertas prioritários com tempos de resposta da equipe" },
+    "parking": { "alt": "Coordenador de estacionamento", "caption": "Mapa do estacionamento com status das vagas ao vivo" },
+    "events": { "alt": "Gestão de eventos", "caption": "Eventos especiais com ingressos e check-in" },
+    "analytics": { "alt": "Painel de análises", "caption": "Métricas de presença e tendências de cultos" }
+  },
+  "pricing": {
+    "eyebrow": "Preços",
+    "title": "Planos para o",
+    "titleHighlight": "estágio do seu ministério",
+    "subtitle": "Experimente qualquer plano grátis por 14 dias. Sem contratos longos nem taxas ocultas.",
+    "compareTitle": "Comparação de planos",
+    "contactCustom": "Precisa de algo personalizado?",
+    "contactLink": "Fale conosco para um orçamento sob medida",
+    "pageEyebrow": "Preços transparentes",
+    "pageTitle": "Sem surpresas.",
+    "pageTitleHighlight": "Sem letra miúda.",
+    "pageSubtitle": "Escolha o plano que cabe na sua igreja. Altere ou cancele quando quiser.",
+    "addonEyebrow": "Incluído no Kingdom",
+    "addonTitle": "Apostle — rede multi-sede",
+    "addonSubtitle": "Gerencie igrejas filhas com um painel de rede e seletor de igreja. Incluído no Kingdom Plan; sem taxa separada."
+  },
+  "plans": {
+    "period": "mês",
+    "periodAnnual": "ano",
+    "popular": "Mais popular",
+    "comingSoon": "Em breve",
+    "startTrial": "Começar teste grátis",
+    "talkSales": "Falar com vendas",
+    "basic": {
+      "name": "Seed Plan",
+      "description": "Operações ao vivo para o seu primeiro nível",
+      "features": {
+        "seats": "Até 500 assentos por evento",
+        "layouts": "1 layout (santuário)",
+        "ushers": "5 porteiros ativos",
+        "liveOps": "Painel, incidentes e terminal",
+        "emailSupport": "Suporte por e-mail"
+      }
+    },
+    "pro": {
+      "name": "Growth Plan",
+      "description": "Eventos, análises e estacionamento para congregações ativas",
+      "features": {
+        "seats": "Até 2.000 assentos",
+        "layouts": "Até 5 layouts",
+        "ushers": "20 porteiros ativos",
+        "events": "Eventos, ingressos e check-in",
+        "analytics": "Análises de ocupação por zona",
+        "parkingMembers": "Estacionamento e membros",
+        "prioritySupport": "Suporte prioritário"
+      }
+    },
+    "enterprise": {
+      "name": "Kingdom Plan",
+      "description": "Limites maiores e suporte dedicado para ministérios em expansão",
+      "features": {
+        "seats": "Até 10.000 assentos por layout",
+        "layouts": "Até 50 layouts",
+        "ushers": "Porteiros praticamente ilimitados",
+        "audit": "Logs de auditoria completos",
+        "dedicatedSupport": "Suporte dedicado",
+        "apiComingSoon": "API externa — Em breve",
+        "addonHint": "Apostle multi-sede incluído"
+      }
+    },
+    "apostol": {
+      "name": "Apostle / Multi-sede",
+      "description": "Incluído no Kingdom Plan — rede de igrejas filhas",
+      "features": {
+        "network": "Painel de rede com lista de igrejas filhas",
+        "campuses": "Crie igrejas filhas com plano ou teste próprio",
+        "switcher": "Seletor de igreja (sem personificação)",
+        "billing": "Resumo consolidado de cobranças PayPal",
+        "seatOptional": "Com uma igreja sede no Kingdom Plan"
+      }
+    },
+    "compare": {
+      "labels": {
+        "seats": "Assentos por layout",
+        "layouts": "Layouts",
+        "ushers": "Porteiros ativos",
+        "liveOps": "Painel ao vivo",
+        "incidents": "Incidentes e alertas",
+        "terminal": "Visão de terminal",
+        "events": "Eventos",
+        "tickets": "Ingressos",
+        "checkIn": "Check-in",
+        "analytics": "Análises",
+        "parking": "Estacionamento",
+        "members": "Membros",
+        "audit": "Auditoria",
+        "api": "API externa",
+        "multisite": "Multi-sede"
+      },
+      "seats": { "basic": "500", "pro": "2.000", "enterprise": "10.000" },
+      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "Ilimitado" },
+      "multisite": {
+        "addon": "Não incluído",
+        "included": "Incluído no Kingdom"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Perguntas frequentes",
+    "items": {
+      "trial": { "q": "Como funciona o teste de 14 dias?", "a": "Ao se cadastrar, você ativa o plano escolhido sem cobrança imediata. Você recebe um e-mail de verificação e acesso completo durante o teste. Depois que terminar, configure o PayPal para continuar." },
+      "paypal": { "q": "Como pago depois do teste?", "a": "A assinatura é gerenciada com segurança via PayPal. Você pode cancelar a qualquer momento no painel de cobrança." },
+      "email": { "q": "Preciso verificar meu e-mail?", "a": "Sim. Por segurança, enviamos um link de verificação no cadastro. Sem verificação, o acesso ao painel permanece limitado." },
+      "plans": { "q": "Posso mudar de plano?", "a": "Sim. Em cobrança você pode fazer upgrade ou downgrade conforme as necessidades da sua igreja mudarem." },
+      "cancel": { "q": "Posso cancelar a qualquer momento?", "a": "Sim, sem multa. O acesso continua até o fim do período pago." },
+      "reino": { "q": "O que o Kingdom Plan inclui hoje?", "a": "Limites maiores, logs de auditoria, suporte dedicado e Apostle multi-sede incluído (painel de rede e igrejas filhas). A API externa permanece no roadmap. Cada igreja filha pode ter seu próprio plano." },
+      "apostol": { "q": "O que é Apostle / Multi-sede?", "a": "É a rede multi-sede incluída no Kingdom Plan: gerencie igrejas filhas com um painel de rede e seletor de igreja. Cada filha paga o próprio plano (ou teste). Não há taxa separada do Apostle." }
+    }
+  },
+  "cta": {
+    "title": "Pronto para conduzir o próximo domingo",
+    "titleLine2": "com mais clareza?",
+    "subtitle": "Cadastre-se em minutos ou escreva para nós se sua igreja precisa de onboarding guiado com nossa equipe.",
+    "start": "Começar",
+    "viewPlans": "Ver planos",
+    "contact": "Falar com vendas"
+  },
+  "footer": {
+    "tagline": "Plataforma operacional para igrejas — assentos, equipes e incidentes em um só lugar.",
+    "product": "Produto",
+    "company": "Empresa",
+    "modules": "Módulos",
+    "productTour": "Tour do produto",
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados.",
+    "madeFor": "Feito para a Igreja global."
+  },
+  "contact": {
+    "title": "Vamos falar sobre a sua igreja",
+    "subtitle": "Conte-nos o seu contexto e responderemos pelo suporte em 1–2 dias úteis.",
+    "name": "Nome",
+    "church": "Igreja",
+    "email": "E-mail",
+    "plan": "Plano de interesse",
+    "planAny": "Ainda não sei",
+    "message": "Mensagem",
+    "send": "Enviar mensagem",
+    "sending": "Enviando…",
+    "success": "Mensagem enviada! Entraremos em contato em breve.",
+    "error": "Não foi possível enviar sua mensagem. Tente de novo ou escreva para kahalzerem@gmail.com"
+  },
+  "register": {
+    "title": "Comece a sua transformação",
+    "subtitle": "Configure sua igreja no Kahal Zerem e conduza o próximo culto com clareza.",
+    "hasAccount": "Já tem uma conta?",
+    "login": "Entre aqui"
+  },
+  "carousel": {
+    "prev": "Anterior",
+    "next": "Próximo",
+    "slide": "Slide"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "back": "Voltar ao início"
+  }
+}

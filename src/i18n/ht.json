@@ -1,0 +1,279 @@
+{
+  "nav": {
+    "modules": "Modil",
+    "pricing": "Pri",
+    "contact": "Kontak",
+    "login": "Konekte",
+    "startTrial": "Kòmanse esè",
+    "freeTrial": "Esè gratis"
+  },
+  "hero": {
+    "badge": "Platfòm operasyonèl pou ministè a",
+    "title": "Dirije chak dimanch",
+    "titleHighlight": "ak klète pastoral",
+    "subtitle": "Syèj an dirèk, ovrè, ak ensidan nan yon sèl panèl — pou ekip ou a okipe moun yo, pa lojistik la.",
+    "ctaTrial": "Eseye gratis pandan 14 jou",
+    "ctaProduct": "Wè pwodwi a",
+    "trust1": "Esè gratis 14 jou",
+    "trust2": "Pa gen kat nan kòmansman",
+    "trust3": "Anile nenpòt lè",
+    "proof1": "Fèt pou ekip sèvis dimanch",
+    "proof2": "Pare pou kongregasyon k ap grandi",
+    "proof3": "Pa gen fo estatistik — pwodwi reyèl"
+  },
+  "demo": {
+    "title": "Kat an dirèk (demo)",
+    "occupied": "okipe",
+    "tapFree": "Syèj lib",
+    "tapOccupy": "Make okipe",
+    "hint": "Tape yon syèj pou simule operasyon ovrè yo."
+  },
+  "roi": {
+    "eyebrow": "Kalkilatè",
+    "title": "Konbyen tan ekip ou a jwenn tounen?",
+    "subtitle": "Estime èdtan yo ekonomize nan kowòdone ovrè chak mwa.",
+    "ushers": "Ovrè pou chak sèvis",
+    "services": "Sèvis pa mwa",
+    "hoursMonth": "Èdtan estime / mwa",
+    "estimate": "≈ {{weekly}} èdtan/semèn · {{minutes}} minit kowòdinasyon / mwa",
+    "cta": "Kòmanse esè gratis"
+  },
+  "sticky": {
+    "cta": "Eseye gratis pandan 14 jou"
+  },
+  "socialProof": {
+    "eyebrow": "Fèt pou legliz lokal la",
+    "title": "Enfrastrikti operasyonèl ak yon kè pastoral",
+    "subtitle": "Fèt pou legliz lokal la ak fyabilite yon SaaS modèn: okipasyon an tan reyèl, zòn, ovrè, ak ensidan nan yon sèl panèl."
+  },
+  "modules": {
+    "eyebrow": "Modil pwodwi",
+    "title": "Tout sa legliz ou a opere",
+    "subtitle": "Eksplore chak zòn nan platfòm nan. Modil ki make ak + yo enkli depi plan Growth.",
+    "tabs": {
+      "liveOps": "Operasyon an dirèk",
+      "layouts": "Layout ak kapasite",
+      "teams": "Ekip ak wòl",
+      "events": "Evènman ak tikè",
+      "parking": "Parking ak manm",
+      "analytics": "Analiz"
+    },
+    "liveOps": {
+      "title": "Tablo, ensidan ak tèminal",
+      "desc": "Siveye okipasyon zòn yo an tan reyèl, jere ensidan ki gen priyorite, epi bay ovrè yo yon vizyon taktik nan sal la.",
+      "bullets": ["Kat syèj an dirèk atravè WebSocket", "Fil ensidan ak eskalad", "Vizyon tèminal pou ekip sal la"]
+    },
+    "layouts": {
+      "title": "Editè layout ak nivo",
+      "desc": "Desine tanp, balkon, ak zòn. Aktive layout sèvis la epi kontwole kapasite reyèl pou chak nivo.",
+      "bullets": ["Konstriktè vizyèl syèj", "Plizyè nivo ak zòn", "Aktivasyon layout pou chak sèvis"]
+    },
+    "teams": {
+      "title": "Ovrè, wòl ak pèmisyon",
+      "desc": "Asiyen zòn, defini kiyès ki wè kisa, epi kowòdone ekip sèvis ou a ak pèmisyon detaye.",
+      "bullets": ["Anyè ovrè", "Asiyasyon zòn", "Admin, ovrè, ak plis wòl"]
+    },
+    "events": {
+      "title": "Evènman, tikè ak check-in",
+      "desc": "Vann tikè, jenere kòd QR, epi swiv prezans pou evènman espesyal san zouti ekstèn.",
+      "badge": "Growth+",
+      "bullets": ["Kalandriye evènman", "Tikè QR", "Check-in nan pòt la"]
+    },
+    "parking": {
+      "title": "Parking ak manm",
+      "desc": "Kowòdone parking yo ak yon kat vizyèl epi kenbe yon anyè manm ki konekte ak operasyon ou yo.",
+      "badge": "Growth+",
+      "bullets": ["Kat parking ak espas", "Kowòdonatè an dirèk", "Anyè manm"]
+    },
+    "analytics": {
+      "title": "Metrik ak tandans",
+      "desc": "Foto pou chak sèvis, okipasyon zòn, ak tandans istorik pou desizyon pastoral ki enfòme.",
+      "badge": "Growth+",
+      "bullets": ["Pik prezans pou chak sèvis", "Okipasyon zòn", "Istwa sèvis"]
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Kijan li mache",
+    "title": "Depi enskripsyon rive dimanch nan 3 etap",
+    "steps": {
+      "register": { "title": "Enskri", "desc": "Kreye legliz ou, chwazi yon plan, epi verifye imèl ou." },
+      "trial": { "title": "Esè 14 jou", "desc": "Konfigire layout ak ekip ou — pa gen kat nan kòmansman." },
+      "operate": { "title": "Dirije dimanch", "desc": "Kòmanse sèvis la, siveye an dirèk, epi fèmen ak metrik." }
+    }
+  },
+  "productTour": {
+    "eyebrow": "Tou pwodwi",
+    "title": "Screenshot reyèl Kahal Zerem",
+    "subtitle": "Se sa platfòm nan sanble pandan yon sèvis an dirèk.",
+    "openLightbox": "Agrandi"
+  },
+  "screenshots": {
+    "dashboard": { "alt": "Tablo an dirèk ak kat syèj", "caption": "Panèl operasyon ak okipasyon zòn an tan reyèl" },
+    "layoutBuilder": { "alt": "Jesyon layout tanp", "caption": "Plan tanp ak kapasite pou chak nivo" },
+    "incidents": { "alt": "Sant ensidan an dirèk", "caption": "Fil alèt priyorite ak tan repons pou ekip ou a" },
+    "parking": { "alt": "Kowòdonatè parking", "caption": "Kat parking ak estati espas an dirèk" },
+    "events": { "alt": "Jesyon evènman", "caption": "Evènman espesyal ak tikè ak check-in" },
+    "analytics": { "alt": "Panèl analiz", "caption": "Metrik prezans ak tandans sèvis" }
+  },
+  "pricing": {
+    "eyebrow": "Pri",
+    "title": "Plan pou",
+    "titleHighlight": "etap ministè ou",
+    "subtitle": "Eseye nenpòt plan gratis pandan 14 jou. Pa gen kontra long tèm ni frè kache.",
+    "compareTitle": "Konparezon plan",
+    "contactCustom": "Bezwen yon bagay pèsonalize?",
+    "contactLink": "Kontakte nou pou yon devis adapte",
+    "pageEyebrow": "Pri transparan",
+    "pageTitle": "Pa gen sipriz.",
+    "pageTitleHighlight": "Pa gen ti lèt kache.",
+    "pageSubtitle": "Chwazi plan ki koresponn ak legliz ou. Chanje oswa anile nenpòt lè.",
+    "addonEyebrow": "Enkli nan Kingdom",
+    "addonTitle": "Apostle — rezo milti-sit",
+    "addonSubtitle": "Jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Enkli nan Kingdom Plan; pa gen frè separe."
+  },
+  "plans": {
+    "period": "mwa",
+    "periodAnnual": "ane",
+    "popular": "Pi popilè",
+    "comingSoon": "Byento",
+    "startTrial": "Kòmanse esè gratis",
+    "talkSales": "Pale ak lavant",
+    "basic": {
+      "name": "Seed Plan",
+      "description": "Operasyon an dirèk pou premye nivo ou",
+      "features": {
+        "seats": "Jiska 500 syèj pou chak evènman",
+        "layouts": "1 layout (tanp)",
+        "ushers": "5 ovrè aktif",
+        "liveOps": "Tablo, ensidan ak tèminal",
+        "emailSupport": "Sipò pa imèl"
+      }
+    },
+    "pro": {
+      "name": "Growth Plan",
+      "description": "Evènman, analiz ak parking pou kongregasyon aktif",
+      "features": {
+        "seats": "Jiska 2,000 syèj",
+        "layouts": "Jiska 5 layout",
+        "ushers": "20 ovrè aktif",
+        "events": "Evènman, tikè ak check-in",
+        "analytics": "Analiz okipasyon zòn",
+        "parkingMembers": "Parking ak manm",
+        "prioritySupport": "Sipò priyorite"
+      }
+    },
+    "enterprise": {
+      "name": "Kingdom Plan",
+      "description": "Limit pi wo ak sipò dedye pou ministè k ap elaji",
+      "features": {
+        "seats": "Jiska 10,000 syèj pou chak layout",
+        "layouts": "Jiska 50 layout",
+        "ushers": "Ovrè pratikman san limit",
+        "audit": "Jounal audit konplè",
+        "dedicatedSupport": "Sipò dedye",
+        "apiComingSoon": "API ekstèn — Byento",
+        "addonHint": "Apostle milti-sit enkli"
+      }
+    },
+    "apostol": {
+      "name": "Apostle / Milti-sit",
+      "description": "Enkli nan Kingdom Plan — rezo legliz pitit",
+      "features": {
+        "network": "Panèl rezo ak lis legliz pitit",
+        "campuses": "Kreye legliz pitit ak pwòp plan oswa esè yo",
+        "switcher": "Switcher legliz (san impersonation)",
+        "billing": "Rezime konsolide chaj PayPal",
+        "seatOptional": "Avèk yon legliz chèz Kingdom Plan"
+      }
+    },
+    "compare": {
+      "labels": {
+        "seats": "Syèj pou chak layout",
+        "layouts": "Layout",
+        "ushers": "Ovrè aktif",
+        "liveOps": "Tablo an dirèk",
+        "incidents": "Ensidan ak alèt",
+        "terminal": "Vizyon tèminal",
+        "events": "Evènman",
+        "tickets": "Tikè",
+        "checkIn": "Check-in",
+        "analytics": "Analiz",
+        "parking": "Parking",
+        "members": "Manm",
+        "audit": "Audit",
+        "api": "API ekstèn",
+        "multisite": "Milti-sit"
+      },
+      "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
+      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "San limit" },
+      "multisite": {
+        "addon": "Pa enkli",
+        "included": "Enkli nan Kingdom"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Kesyon komen",
+    "items": {
+      "trial": { "q": "Kijan esè 14 jou a mache?", "a": "Lè ou enskri, ou aktive plan ou chwazi a san chaj imedya. Ou resevwa yon imèl verifikasyon ak aksè konplè pandan esè a. Apre li fini, konfigire PayPal pou kontinye." },
+      "paypal": { "q": "Kijan mwen peye apre esè a?", "a": "Abònman an jere san danje atravè PayPal. Ou ka anile nenpòt lè nan panèl bòdwo ou." },
+      "email": { "q": "Èske mwen bezwen verifye imèl mwen?", "a": "Wi. Pou sekirite, nou voye yon lyen verifikasyon lè ou enskri. San verifikasyon, aksè panèl la rete limite." },
+      "plans": { "q": "Èske mwen ka chanje plan?", "a": "Wi. Nan bòdwo, ou ka monte oswa desann plan selon bezwen legliz ou yo chanje." },
+      "cancel": { "q": "Èske mwen ka anile nenpòt lè?", "a": "Wi, san penalite. Aksè a kontinye jiska fen peryòd ou peye a." },
+      "reino": { "q": "Kisa Kingdom Plan enkli jodi a?", "a": "Limit pi wo, jounal audit, sipò dedye, ak Apostle milti-sit enkli (panèl rezo ak legliz pitit). API ekstèn lan rete sou roadmap. Chak legliz pitit ka gen pwòp plan li." },
+      "apostol": { "q": "Kisa Apostle / Milti-sit ye?", "a": "Se rezo milti-sit ki enkli nan Kingdom Plan: jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Chak pitit peye pwòp plan li (oswa esè). Pa gen frè Apostle separe." }
+    }
+  },
+  "cta": {
+    "title": "Pare pou dirije pwochen dimanch",
+    "titleLine2": "ak plis klète?",
+    "subtitle": "Enskri nan kèk minit oswa ekri nou si legliz ou bezwen yon akonpayman gide ak ekip nou an.",
+    "start": "Kòmanse",
+    "viewPlans": "Wè plan yo",
+    "contact": "Kontakte lavant"
+  },
+  "footer": {
+    "tagline": "Platfòm operasyonèl pou legliz — syèj, ekip, ak ensidan nan yon sèl kote.",
+    "product": "Pwodwi",
+    "company": "Konpayi",
+    "modules": "Modil",
+    "productTour": "Tou pwodwi",
+    "about": "Sou nou",
+    "privacy": "Vi prive",
+    "terms": "Kondisyon",
+    "contact": "Kontak",
+    "rights": "Tout dwa rezève.",
+    "madeFor": "Fèt pou Legliz mondyal la."
+  },
+  "contact": {
+    "title": "Ann pale sou legliz ou",
+    "subtitle": "Di nou kontèks ou epi n ap reponn depi sipò nan 1–2 jou ouvrab.",
+    "name": "Non",
+    "church": "Legliz",
+    "email": "Imèl",
+    "plan": "Plan ki enterese ou",
+    "planAny": "M poko sèten",
+    "message": "Mesaj",
+    "send": "Voye mesaj",
+    "sending": "Ap voye…",
+    "success": "Mesaj voye! N ap kontakte ou byento.",
+    "error": "Nou pa t kapab voye mesaj ou. Eseye ankò oswa ekri kahalzerem@gmail.com"
+  },
+  "register": {
+    "title": "Kòmanse transfòmasyon ou",
+    "subtitle": "Konfigire legliz ou sou Kahal Zerem epi dirije pwochen sèvis ou ak klète.",
+    "hasAccount": "Ou deja gen yon kont?",
+    "login": "Konekte isit la"
+  },
+  "carousel": {
+    "prev": "Precedan",
+    "next": "Pwochen",
+    "slide": "Slide"
+  },
+  "notFound": {
+    "title": "Paj pa jwenn",
+    "back": "Retounen lakay"
+  }
+}

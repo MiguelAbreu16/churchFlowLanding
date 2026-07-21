@@ -126,7 +126,10 @@
     "pageEyebrow": "Precios transparentes",
     "pageTitle": "Sin sorpresas.",
     "pageTitleHighlight": "Sin letra pequeña.",
-    "pageSubtitle": "Elige el plan que mejor se adapta al tamaño de tu iglesia. Cambia o cancela en cualquier momento."
+    "pageSubtitle": "Elige el plan que mejor se adapta al tamaño de tu iglesia. Cambia o cancela en cualquier momento.",
+    "addonEyebrow": "Incluido en Reino",
+    "addonTitle": "Apóstol — red multisede",
+    "addonSubtitle": "Administra iglesias hijas con panel de red y selector de iglesia. Incluido en Plan Reino; no se cobra aparte."
   },
   "plans": {
     "period": "mes",
@@ -169,7 +172,18 @@
         "audit": "Logs de auditoría completos",
         "dedicatedSupport": "Soporte dedicado",
         "apiComingSoon": "API externa — Próximamente",
-        "multisiteComingSoon": "Multisede — Próximamente"
+        "addonHint": "Multisede Apóstol incluido"
+      }
+    },
+    "apostol": {
+      "name": "Apóstol / Multisede",
+      "description": "Incluido en Plan Reino — red de iglesias hijas",
+      "features": {
+        "network": "Panel de red con lista de iglesias hijas",
+        "campuses": "Crear iglesias hijas con plan o trial propio",
+        "switcher": "Selector de iglesia (sin impersonación)",
+        "billing": "Resumen consolidado de cargos PayPal",
+        "seatOptional": "Con iglesia sede en Plan Reino"
       }
     },
     "compare": {
@@ -192,7 +206,11 @@
       },
       "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
       "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
-      "ushers": { "basic": "5", "pro": "20", "enterprise": "Ilimitado" }
+      "ushers": { "basic": "5", "pro": "20", "enterprise": "Ilimitado" },
+      "multisite": {
+        "addon": "No incluido",
+        "included": "Incluido en Reino"
+      }
     }
   },
   "faq": {
@@ -204,7 +222,8 @@
       "email": { "q": "¿Debo verificar mi correo?", "a": "Sí. Por seguridad enviamos un enlace de verificación al registrarte. Sin verificar, el acceso al panel queda limitado." },
       "plans": { "q": "¿Puedo cambiar de plan?", "a": "Sí. Desde facturación puedes subir o bajar de plan según las necesidades de tu iglesia." },
       "cancel": { "q": "¿Puedo cancelar cuando quiera?", "a": "Sí, sin penalización. Tu acceso continúa hasta el fin del período pagado." },
-      "reino": { "q": "¿Qué incluye Plan Reino hoy?", "a": "Límites superiores, auditoría y soporte dedicado. API externa y multisede están en roadmap y aparecen marcados como Próximamente." }
+      "reino": { "q": "¿Qué incluye Plan Reino hoy?", "a": "Límites superiores, auditoría, soporte dedicado y multisede Apóstol incluido (panel de red e iglesias hijas). API externa sigue en roadmap. Cada iglesia hija puede tener su propio plan." },
+      "apostol": { "q": "¿Qué es Apóstol / Multisede?", "a": "Es la red multisede incluida en Plan Reino: administras iglesias hijas con panel de red y selector de iglesia. Cada hija paga su propio plan (o trial). No hay cobro aparte por Apóstol." }
     }
   },
   "cta": {

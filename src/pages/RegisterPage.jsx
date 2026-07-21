@@ -3,12 +3,21 @@ import { useTranslation } from "react-i18next";
 import Navbar from "../components/common/Navbar";
 import RegisterWizard from "../components/register/RegisterWizard";
 import LogoMark from "../components/common/LogoMark";
+import { Navigate, useSearchParams } from "react-router-dom";
 
 const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:5173";
 
 export default function RegisterPage() {
   const theme = useTheme();
   const { t } = useTranslation();
+  const [params] = useSearchParams();
+  const plan = params.get("plan");
+  const mode = params.get("mode");
+
+  // Legacy Apóstol add-on signup → Plan Reino (enterprise)
+  if (plan === "apostol" || mode === "apostol") {
+    return <Navigate to="/register?plan=enterprise" replace />;
+  }
 
   return (
     <Box sx={{ bgcolor: "background.default", minHeight: "100vh" }}>
