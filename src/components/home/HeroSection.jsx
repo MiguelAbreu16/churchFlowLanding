@@ -1,4 +1,4 @@
-import {
+﻿import {
   Box,
   Container,
   Typography,
@@ -62,7 +62,7 @@ export default function HeroSection() {
                 justifyContent={{ xs: "center", lg: "flex-start" }}
                 sx={{ mb: 2.5 }}
               >
-                <LogoMark size={56} markSize={48} variant="horizontal" />
+                <LogoMark size={72} markSize={68} variant="horizontal" />
               </Stack>
 
               <Chip
@@ -147,7 +147,7 @@ export default function HeroSection() {
                     variant="body2"
                     sx={{ color: "text.secondary", fontWeight: 600 }}
                   >
-                    ✓ {t(`hero.${key}`)}
+                    âœ“ {t(`hero.${key}`)}
                   </Typography>
                 ))}
               </Stack>
@@ -169,3 +169,4 @@ export default function HeroSection() {
     </Box>
   );
 }
+
