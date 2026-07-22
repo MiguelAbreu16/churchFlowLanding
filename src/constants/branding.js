@@ -2,6 +2,7 @@
 export const BRAND = {
   name: "Kahal Zerem",
   icon: "/logo-icon.png",
+  text: "/logo-text.png",
   horizontal: "/logo-horizontal.png",
   vertical: "/logo-brand.png",
   dark: "/logo-dark.png",
