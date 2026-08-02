@@ -1,30 +1,54 @@
 import { Box } from "@mui/material";
 import { BRAND } from "../../constants/branding";
 
-/** Fixed-size logo slot — scales mark inside without shifting navbar layout */
-export default function LogoMark({ size = 52, markSize = 44, showLabel = false }) {
+const VARIANT_SRC = {
+  icon: BRAND.icon,
+  text: BRAND.text,
+  horizontal: BRAND.horizontal,
+  vertical: BRAND.vertical,
+};
+
+/**
+ * Transparent PNG brand mark. `horizontal`/`vertical` are the stacked lockup (square).
+ * `text` is the wide wordmark.
+ */
+export default function LogoMark({
+  size = 52,
+  markSize = 44,
+  showLabel = false,
+  variant = "icon",
+}) {
+  const src = VARIANT_SRC[variant] || BRAND.icon;
+  const isWordmark = variant === "text";
+  const isLockup = variant === "horizontal" || variant === "vertical";
+  const imgW = isWordmark ? Math.round(markSize * 4.5) : markSize;
+  const imgH = isWordmark ? Math.round(markSize * 0.65) : markSize;
+  const slotW = isWordmark ? Math.round(size * 4.2) : size;
+  const slotH = isLockup ? size : isWordmark ? Math.round(size * 0.7) : size;
+
   return (
     <Box sx={{ display: "flex", alignItems: "center", gap: 1.25, flexShrink: 0 }}>
       <Box
         sx={{
-          width: size,
-          height: size,
-          borderRadius: 2,
-          bgcolor: "#0b0f1a",
+          width: slotW,
+          height: slotH,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          overflow: "hidden",
           flexShrink: 0,
-          boxShadow: "0 2px 8px rgba(15,23,42,0.12)",
         }}
       >
         <Box
           component="img"
-          src={BRAND.icon}
+          src={src}
           alt=""
           aria-hidden
-          sx={{ width: markSize, height: markSize, objectFit: "contain", display: "block" }}
+          sx={{
+            width: imgW,
+            height: imgH,
+            objectFit: "contain",
+            display: "block",
+          }}
         />
       </Box>
       {showLabel && (

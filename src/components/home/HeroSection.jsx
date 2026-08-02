@@ -16,7 +16,6 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LogoMark from "../common/LogoMark";
 import SeatMapDemo from "./SeatMapDemo";
-import { BRAND } from "../../constants/branding";
 
 const TRUST_KEYS = ["trust1", "trust2", "trust3"];
 
@@ -63,18 +62,7 @@ export default function HeroSection() {
                 justifyContent={{ xs: "center", lg: "flex-start" }}
                 sx={{ mb: 2.5 }}
               >
-                <LogoMark size={56} markSize={46} />
-                <Typography
-                  sx={{
-                    fontFamily: '"Outfit", "Inter", sans-serif',
-                    fontWeight: 900,
-                    fontSize: { xs: "1.65rem", md: "2rem" },
-                    letterSpacing: "-0.04em",
-                    color: "text.primary",
-                  }}
-                >
-                  {BRAND.name}
-                </Typography>
+                <LogoMark size={72} markSize={68} variant="horizontal" />
               </Stack>
 
               <Chip
@@ -159,7 +147,7 @@ export default function HeroSection() {
                     variant="body2"
                     sx={{ color: "text.secondary", fontWeight: 600 }}
                   >
-                    ✓ {t(`hero.${key}`)}
+                    âœ“ {t(`hero.${key}`)}
                   </Typography>
                 ))}
               </Stack>
@@ -181,3 +169,4 @@ export default function HeroSection() {
     </Box>
   );
 }
+
