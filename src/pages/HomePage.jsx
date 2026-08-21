@@ -3,7 +3,9 @@ import Footer from "../components/common/Footer";
 import StickyMobileCta from "../components/common/StickyMobileCta";
 import HeroSection from "../components/home/HeroSection";
 import SocialProofSection from "../components/home/SocialProofSection";
+import LiveDemosSection from "../components/home/LiveDemosSection";
 import FeatureModulesSection from "../components/home/FeatureModulesSection";
+import GrowthSection from "../components/home/GrowthSection";
 import HowItWorksSection from "../components/home/HowItWorksSection";
 import ProductTourSection from "../components/home/ProductTourSection";
 import ValueCalculator from "../components/home/ValueCalculator";
@@ -18,7 +20,9 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <SocialProofSection />
+        <LiveDemosSection />
         <FeatureModulesSection />
+        <GrowthSection />
         <HowItWorksSection />
         <ProductTourSection />
         <ValueCalculator />

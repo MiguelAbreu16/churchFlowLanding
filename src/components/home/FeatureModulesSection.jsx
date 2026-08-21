@@ -19,14 +19,30 @@ import { useTranslation } from "react-i18next";
 import { MODULE_PREVIEWS } from "../../constants/screenshots";
 import { SCREENSHOT_ASPECT } from "./ProductScreenshotCarousel";
 
-const TAB_KEYS = ["liveOps", "layouts", "teams", "events", "parking", "analytics"];
-const PREMIUM_TABS = new Set(["events", "parking", "analytics"]);
+const TAB_KEYS = [
+  "liveOps",
+  "layouts",
+  "events",
+  "parking",
+  "camps",
+  "network",
+  "analytics",
+];
+const PREMIUM_TABS = new Set([
+  "events",
+  "parking",
+  "camps",
+  "network",
+  "analytics",
+]);
 
 export default function FeatureModulesSection() {
   const theme = useTheme();
   const { t } = useTranslation();
   const [tab, setTab] = useState(0);
   const activeKey = TAB_KEYS[tab];
+  const bullets = t(`modules.${activeKey}.bullets`, { returnObjects: true });
+  const bulletList = Array.isArray(bullets) ? bullets : [0, 1, 2].map((i) => t(`modules.${activeKey}.bullets.${i}`));
 
   return (
     <Box id="modules" className="section" sx={{ bgcolor: "#fff" }}>
@@ -88,7 +104,7 @@ export default function FeatureModulesSection() {
           ))}
         </Tabs>
 
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={4} sx={{ alignItems: "center" }}>
           <Grid size={{ xs: 12, md: 6 }}>
             <Typography variant="h5" sx={{ fontWeight: 800, mb: 2 }}>
               {t(`modules.${activeKey}.title`)}
@@ -97,12 +113,12 @@ export default function FeatureModulesSection() {
               {t(`modules.${activeKey}.desc`)}
             </Typography>
             <List dense disablePadding>
-              {[0, 1, 2].map((i) => (
+              {bulletList.map((text, i) => (
                 <ListItem key={i} disableGutters sx={{ py: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
                     <Check sx={{ color: "primary.main", fontSize: 20 }} />
                   </ListItemIcon>
-                  <ListItemText primary={t(`modules.${activeKey}.bullets.${i}`)} />
+                  <ListItemText primary={text} />
                 </ListItem>
               ))}
             </List>

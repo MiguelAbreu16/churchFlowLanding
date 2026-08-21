@@ -13,7 +13,7 @@ export default function SocialProofSection() {
   return (
     <Box sx={{ py: 6, bgcolor: "background.default", borderBottom: "1px solid", borderColor: "divider" }}>
       <Container maxWidth="lg">
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={4} sx={{ alignItems: "center" }}>
           <Grid size={{ xs: 12, md: 5 }}>
             <Typography
               variant="caption"

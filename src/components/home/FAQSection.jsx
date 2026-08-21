@@ -9,7 +9,16 @@ import {
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import { useTranslation } from "react-i18next";
 
-const FAQ_KEYS = ["trial", "paypal", "email", "plans", "cancel", "reino", "apostol"];
+const FAQ_KEYS = [
+  "trial",
+  "paypal",
+  "email",
+  "plans",
+  "cancel",
+  "camps",
+  "reino",
+  "apostol",
+];
 
 export default function FAQSection() {
   const { t } = useTranslation();

@@ -30,6 +30,7 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const NAV_LINKS = [
+    { label: t("nav.demos"), to: "/#live-demos" },
     { label: t("nav.modules"), to: "/#modules" },
     { label: t("nav.pricing"), to: "/pricing" },
     { label: t("nav.contact"), to: "/contacto" },
@@ -171,7 +172,10 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               sx={{ mb: 1, borderRadius: 2 }}
             >
-              <ListItemText primary={link.label} primaryTypographyProps={{ fontWeight: 600 }} />
+              <ListItemText
+                primary={link.label}
+                slotProps={{ primary: { sx: { fontWeight: 600 } } }}
+              />
             </ListItem>
           ))}
           <Box sx={{ mt: 4 }}>

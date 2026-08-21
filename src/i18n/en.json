@@ -5,13 +5,14 @@
     "contact": "Contact",
     "login": "Log in",
     "startTrial": "Start trial",
-    "freeTrial": "Free trial"
+    "freeTrial": "Free trial",
+    "demos": "Demos"
   },
   "hero": {
-    "badge": "Operational platform for ministry",
+    "badge": "Operations, camps, and network in one place",
     "title": "Run every Sunday",
-    "titleHighlight": "with pastoral clarity",
-    "subtitle": "Live seating, ushers, and incidents in one panel — so your staff cares for people, not logistics.",
+    "titleHighlight": "and every retreat",
+    "subtitle": "Live seating, parking, camps, and daughter churches — so your staff cares for people, not logistics.",
     "ctaTrial": "Try free for 14 days",
     "ctaProduct": "See the product",
     "trust1": "14-day free trial",
@@ -26,7 +27,9 @@
     "occupied": "occupied",
     "tapFree": "Free seat",
     "tapOccupy": "Mark occupied",
-    "hint": "Tap a seat to simulate usher operations."
+    "hint": "Tap a seat to simulate an usher on the floor.",
+    "legendFree": "Free",
+    "legendOccupied": "Occupied"
   },
   "roi": {
     "eyebrow": "Calculator",
@@ -44,76 +47,185 @@
   "socialProof": {
     "eyebrow": "Built for the local church",
     "title": "Operational infrastructure with a pastoral heart",
-    "subtitle": "Built for the local church with the reliability of modern SaaS: real-time occupancy, zones, ushers, and incidents in one panel."
+    "subtitle": "Live service, parking, camps & retreats, and multi-site network — one SaaS designed for ministry."
   },
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Explore each area of the platform. Modules marked with + are included from Growth plan.",
+    "subtitle": "Explore every area. Camps is an add-on; Apostle Network comes with Reino.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
-      "teams": "Teams & roles",
       "events": "Events & tickets",
-      "parking": "Parking & members",
-      "analytics": "Analytics"
+      "parking": "Parking",
+      "camps": "Camps",
+      "network": "Apostle Network",
+      "analytics": "Analytics",
+      "teams": "Teams & roles"
     },
     "liveOps": {
       "title": "Dashboard, incidents & terminal",
       "desc": "Monitor zone occupancy in real time, manage prioritized incidents, and give ushers a tactical floor view.",
-      "bullets": ["Live seat map via WebSocket", "Incident feed with escalation", "Terminal view for floor teams"]
+      "bullets": [
+        "Live seat map via WebSocket",
+        "Incident feed with escalation",
+        "Terminal view for floor teams"
+      ]
     },
     "layouts": {
       "title": "Layout editor & levels",
       "desc": "Design sanctuary, balconies, and zones. Activate the service layout and control real capacity per level.",
-      "bullets": ["Visual seat builder", "Multiple levels and zones", "Per-service layout activation"]
+      "bullets": [
+        "Visual seat builder",
+        "Multiple levels and zones",
+        "Per-service layout activation"
+      ]
     },
     "teams": {
       "title": "Ushers, roles & permissions",
       "desc": "Assign zones, define who sees what, and coordinate your service team with granular permissions.",
-      "bullets": ["Usher directory", "Zone assignment", "Admin, usher, and more roles"]
+      "bullets": [
+        "Usher directory",
+        "Zone assignment",
+        "Admin, usher, and more roles"
+      ]
     },
     "events": {
       "title": "Events, tickets & check-in",
       "desc": "Sell tickets, generate QR codes, and track attendance for special events without external tools.",
       "badge": "Growth+",
-      "bullets": ["Event calendar", "QR tickets", "Door check-in"]
+      "bullets": [
+        "Event calendar",
+        "QR tickets",
+        "Door check-in"
+      ]
     },
     "parking": {
       "title": "Parking & members",
       "desc": "Coordinate lots with a visual map and keep a member directory connected to your operations.",
       "badge": "Growth+",
-      "bullets": ["Lot map and spaces", "Live coordinator", "Member directory"]
+      "bullets": [
+        "Lot map and spaces",
+        "Live coordinator",
+        "Member directory"
+      ]
     },
     "analytics": {
       "title": "Metrics & trends",
       "desc": "Per-service snapshots, zone occupancy, and historical trends for informed pastoral decisions.",
       "badge": "Growth+",
-      "bullets": ["Peak attendance per service", "Zone occupancy", "Service history"]
+      "bullets": [
+        "Peak attendance per service",
+        "Zone occupancy",
+        "Service history"
+      ]
+    },
+    "camps": {
+      "title": "Camps & retreats",
+      "desc": "Run the retreat end to end: bed plans, campers, payments, buses, live itinerary, health, and staff chat.",
+      "badge": "Add-on",
+      "bullets": [
+        "Building, floor, and bed maps",
+        "Sign-ups, payments, and roll call",
+        "Buses, itinerary, alerts, and health"
+      ]
+    },
+    "network": {
+      "title": "Apostle multi-site network",
+      "desc": "Manage daughter churches, invitations, and network metrics from one hub.",
+      "badge": "Reino",
+      "bullets": [
+        "Daughter churches and invitations",
+        "Compared metrics across campuses",
+        "Included with Reino plan"
+      ]
     }
   },
   "howItWorks": {
     "eyebrow": "How it works",
     "title": "From signup to Sunday in 3 steps",
     "steps": {
-      "register": { "title": "Sign up", "desc": "Create your church, pick a plan, and verify your email." },
-      "trial": { "title": "14-day trial", "desc": "Set up your layout and team — no card required upfront." },
-      "operate": { "title": "Run Sunday", "desc": "Start the service, monitor live, and close with metrics." }
+      "register": {
+        "title": "Sign up",
+        "desc": "Create your church, pick a plan, and verify your email."
+      },
+      "trial": {
+        "title": "14-day trial",
+        "desc": "Set up your layout and team — no card required upfront."
+      },
+      "operate": {
+        "title": "Run Sunday",
+        "desc": "Start the service, monitor live, and close with metrics."
+      }
     }
   },
   "productTour": {
     "eyebrow": "Product tour",
     "title": "Real Kahal Zerem screenshots",
-    "subtitle": "This is what the platform looks like during a live service.",
-    "openLightbox": "Expand"
+    "subtitle": "See the platform: live service, camps, network, and metrics.",
+    "openLightbox": "Enlarge"
   },
   "screenshots": {
-    "dashboard": { "alt": "Live dashboard with seat map", "caption": "Operations panel with real-time zone occupancy" },
-    "layoutBuilder": { "alt": "Temple layout management", "caption": "Sanctuary plans with capacity per level" },
-    "incidents": { "alt": "Live incident center", "caption": "Priority alert queue with response times for your team" },
-    "parking": { "alt": "Parking coordinator", "caption": "Lot map with live space status" },
-    "events": { "alt": "Event management", "caption": "Special events with tickets and check-in" },
-    "analytics": { "alt": "Analytics panel", "caption": "Attendance metrics and service trends" }
+    "dashboard": {
+      "alt": "Live seating command center",
+      "caption": "Real-time occupancy from the operations hub"
+    },
+    "layoutBuilder": {
+      "alt": "Sanctuary zone map",
+      "caption": "Zones, altar, and visual capacity by level"
+    },
+    "incidents": {
+      "alt": "Incident center",
+      "caption": "Priority queue for technical and medical alerts"
+    },
+    "parking": {
+      "alt": "Parking layout builder",
+      "caption": "Design spaces, entrances, and parking zones"
+    },
+    "events": {
+      "alt": "Events billboard",
+      "caption": "Upcoming events with tickets and reservations"
+    },
+    "analytics": {
+      "alt": "Live occupancy panel",
+      "caption": "Free, occupied, and reserved with ops view"
+    },
+    "campsMap": {
+      "alt": "Camp campus map",
+      "caption": "Place pavilions and see bed occupancy on the grounds"
+    },
+    "campsDashboard": {
+      "alt": "Camp overview",
+      "caption": "Active day, live activity, and alerts"
+    },
+    "campsAttendance": {
+      "alt": "Roll call",
+      "caption": "Mark present, absent, or sick in seconds"
+    },
+    "campsItinerary": {
+      "alt": "Retreat itinerary",
+      "caption": "Day timeline with live statuses"
+    },
+    "network": {
+      "alt": "Apostle Network",
+      "caption": "Daughter churches, invitations, and multi-site control"
+    },
+    "networkMetrics": {
+      "alt": "Network metrics",
+      "caption": "Compare occupancy and ops across campuses"
+    },
+    "eventsScanner": {
+      "alt": "Entrance scanner",
+      "caption": "QR or manual check-in in Staff Mode"
+    },
+    "campsBeds": {
+      "alt": "Dorm floor plan with beds",
+      "caption": "Design floors and assign beds on the plan"
+    },
+    "campsCampers": {
+      "alt": "Camper profiles",
+      "caption": "Allergies, contacts, and each camper file"
+    }
   },
   "pricing": {
     "eyebrow": "Pricing",
@@ -129,7 +241,9 @@
     "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime.",
     "addonEyebrow": "Included in Kingdom",
     "addonTitle": "Apostle — multi-site network",
-    "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee."
+    "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee.",
+    "campsAddonTitle": "Camps & Retreats",
+    "campsAddonSubtitle": "Add-on module for full retreat logistics. Activated per church — check your panel or talk to sales."
   },
   "plans": {
     "period": "mo",
@@ -172,7 +286,8 @@
         "audit": "Full audit logs",
         "dedicatedSupport": "Dedicated support",
         "apiComingSoon": "External API — Coming soon",
-        "addonHint": "Apostle multi-site included"
+        "addonHint": "Apostle multi-site included",
+        "campsHint": "Camps available as an add-on"
       }
     },
     "apostol": {
@@ -202,14 +317,30 @@
         "members": "Members",
         "audit": "Audit",
         "api": "External API",
-        "multisite": "Multi-site"
+        "multisite": "Multi-site",
+        "camps": "Camps & retreats"
       },
-      "seats": { "basic": "500", "pro": "2,000", "enterprise": "10,000" },
-      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
-      "ushers": { "basic": "5", "pro": "20", "enterprise": "Unlimited" },
+      "seats": {
+        "basic": "500",
+        "pro": "2,000",
+        "enterprise": "10,000"
+      },
+      "layouts": {
+        "basic": "1",
+        "pro": "5",
+        "enterprise": "50"
+      },
+      "ushers": {
+        "basic": "5",
+        "pro": "20",
+        "enterprise": "Unlimited"
+      },
       "multisite": {
         "addon": "Not included",
         "included": "Included in Kingdom"
+      },
+      "camps": {
+        "addon": "Add-on available"
       }
     }
   },
@@ -217,25 +348,50 @@
     "eyebrow": "FAQ",
     "title": "Common questions",
     "items": {
-      "trial": { "q": "How does the 14-day trial work?", "a": "When you sign up you activate the chosen plan with no immediate charge. You get a verification email and full access during the trial. After it ends, set up PayPal to continue." },
-      "paypal": { "q": "How do I pay after the trial?", "a": "Subscription is managed securely via PayPal. You can cancel anytime from your billing panel." },
-      "email": { "q": "Do I need to verify my email?", "a": "Yes. For security we send a verification link when you register. Without verification, panel access stays limited." },
-      "plans": { "q": "Can I change plans?", "a": "Yes. From billing you can upgrade or downgrade as your church needs change." },
-      "cancel": { "q": "Can I cancel anytime?", "a": "Yes, with no penalty. Access continues until the end of the paid period." },
-      "reino": { "q": "What does Kingdom plan include today?", "a": "Higher limits, audit logs, dedicated support, and Apostle multi-site included (network panel and daughter churches). External API remains on the roadmap. Each daughter church can have its own plan." },
-      "apostol": { "q": "What is Apostle / Multi-site?", "a": "It is the multi-site network included in Kingdom Plan: manage daughter churches with a network panel and church switcher. Each daughter pays its own plan (or trial). There is no separate Apostle fee." }
+      "trial": {
+        "q": "How does the 14-day trial work?",
+        "a": "When you sign up you activate the chosen plan with no immediate charge. You get a verification email and full access during the trial. After it ends, set up PayPal to continue."
+      },
+      "paypal": {
+        "q": "How do I pay after the trial?",
+        "a": "Subscription is managed securely via PayPal. You can cancel anytime from your billing panel."
+      },
+      "email": {
+        "q": "Do I need to verify my email?",
+        "a": "Yes. For security we send a verification link when you register. Without verification, panel access stays limited."
+      },
+      "plans": {
+        "q": "Can I change plans?",
+        "a": "Yes. From billing you can upgrade or downgrade as your church needs change."
+      },
+      "cancel": {
+        "q": "Can I cancel anytime?",
+        "a": "Yes, with no penalty. Access continues until the end of the paid period."
+      },
+      "reino": {
+        "q": "What does Kingdom plan include today?",
+        "a": "Higher limits, audit logs, dedicated support, and Apostle multi-site included (network panel and daughter churches). External API remains on the roadmap. Each daughter church can have its own plan."
+      },
+      "apostol": {
+        "q": "What is Apostle / Multi-site?",
+        "a": "It is the multi-site network included in Kingdom Plan: manage daughter churches with a network panel and church switcher. Each daughter pays its own plan (or trial). There is no separate Apostle fee."
+      },
+      "camps": {
+        "q": "What does the Camps module include?",
+        "a": "It's a platform add-on: map/floor plan, campers, sign-ups and payments, roll call, buses, live itinerary, alerts, health, and staff chat. Activated per church via PayPal (camps module)."
+      }
     }
   },
   "cta": {
     "title": "Ready to run next Sunday",
     "titleLine2": "with more clarity?",
-    "subtitle": "Sign up in minutes or write to us if your church needs guided onboarding with our team.",
+    "subtitle": "Sign up in minutes. Run Sunday, the retreat, and the network with the same clarity.",
     "start": "Get started",
     "viewPlans": "View plans",
     "contact": "Contact sales"
   },
   "footer": {
-    "tagline": "Operational platform for churches — seating, teams, and incidents in one place.",
+    "tagline": "Church ops platform — live service, camps, and multi-site network.",
     "product": "Product",
     "company": "Company",
     "modules": "Modules",
@@ -275,5 +431,75 @@
   "notFound": {
     "title": "Page not found",
     "back": "Back to home"
+  },
+  "liveDemos": {
+    "eyebrow": "Try it now",
+    "title": "Interactive demos",
+    "subtitle": "Tap, assign, and free spots. Feel live ops for seats, parking, or camp beds.",
+    "tabs": {
+      "seats": "Seats",
+      "parking": "Parking",
+      "camps": "Camp"
+    },
+    "parking": {
+      "title": "Live parking (demo)",
+      "occupied": "occupied",
+      "tapFree": "Free spot",
+      "tapOccupy": "Mark occupied",
+      "hint": "Tap a spot to see details (driver and plate).",
+      "legendFree": "Free",
+      "legendOccupied": "Occupied",
+      "spot": "Spot {{label}}",
+      "statusOccupied": "Occupied",
+      "statusFree": "Free",
+      "driver": "Driver",
+      "plate": "Plate",
+      "emptyDetail": "Open spot. Assign a demo vehicle."
+    },
+    "camps": {
+      "title": "Dorm beds (demo)",
+      "roomLabel": "Dorm · Floor 1",
+      "tapFree": "Free bed",
+      "tapAssign": "Assign bed",
+      "hint": "Tap a bed to see the assigned camper.",
+      "bed": "Bed {{n}}",
+      "age": "{{n}} years old",
+      "allergy": "Allergy: {{value}}",
+      "noAllergy": "No allergies",
+      "emptyDetail": "Free bed. Assign a demo camper.",
+      "camper": "Camper"
+    }
+  },
+  "growth": {
+    "eyebrow": "Growth",
+    "title": "From one campus to a network with central control",
+    "subtitle": "Apostle Network lets you open daughter churches, compare occupancy, and run multiple sites without losing pastoral clarity.",
+    "cta": "Explore Reino plan",
+    "panelTitle": "Network snapshot (example)",
+    "panelHint": "Illustrative numbers — in the app you see your real churches.",
+    "statChurchesValue": "2+",
+    "statChurches": "Churches",
+    "statOccupancyValue": "63%",
+    "statOccupancy": "Occupancy",
+    "statPeopleValue": "∞",
+    "statPeople": "Reach",
+    "benefits": [
+      {
+        "title": "Daughter churches",
+        "desc": "Create or invite campuses with their own plan and ops."
+      },
+      {
+        "title": "Church switcher",
+        "desc": "Jump between campuses in seconds without impersonation."
+      },
+      {
+        "title": "Compared metrics",
+        "desc": "Occupancy, events, and parking across the network."
+      },
+      {
+        "title": "Consolidated billing",
+        "desc": "See charges and status for each daughter church."
+      }
+    ]
   }
 }

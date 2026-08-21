@@ -148,11 +148,19 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
             </ListItemIcon>
             <ListItemText
               primary={feat}
-              primaryTypographyProps={{
-                fontSize: "0.9rem",
-                color: feat.includes(t("plans.comingSoon")) ? "warning.dark" : "text.secondary",
-                lineHeight: 1.4,
-                fontWeight: feat.includes(t("plans.comingSoon")) ? 600 : 400,
+              slotProps={{
+                primary: {
+                  sx: {
+                    fontSize: "0.9rem",
+                    color: feat.includes(t("plans.comingSoon"))
+                      ? "warning.dark"
+                      : "text.secondary",
+                    lineHeight: 1.4,
+                    fontWeight: feat.includes(t("plans.comingSoon"))
+                      ? 600
+                      : 400,
+                  },
+                },
               }}
             />
           </ListItem>

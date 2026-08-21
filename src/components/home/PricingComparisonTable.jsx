@@ -85,9 +85,11 @@ function MobilePlanCards({ t }) {
           >
             <Stack
               direction="row"
-              alignItems="center"
-              justifyContent="space-between"
-              sx={{ mb: 2 }}
+              sx={{
+                mb: 2,
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
             >
               <Typography variant="subtitle1" sx={{ fontWeight: 800 }}>
                 {t(plan.nameKey)}
@@ -106,9 +108,11 @@ function MobilePlanCards({ t }) {
                 <Stack
                   key={row.key}
                   direction="row"
-                  justifyContent="space-between"
-                  alignItems="center"
                   spacing={2}
+                  sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
                 >
                   <Typography
                     variant="body2"

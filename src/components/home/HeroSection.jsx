@@ -11,6 +11,7 @@
 } from "@mui/material";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import Visibility from "@mui/icons-material/Visibility";
+import CheckCircleOutlined from "@mui/icons-material/CheckCircleOutlined";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -46,7 +47,11 @@ export default function HeroSection() {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={{ xs: 4, lg: 8 }} alignItems="center">
+        <Grid
+          container
+          spacing={{ xs: 4, lg: 8 }}
+          sx={{ alignItems: "center" }}
+        >
           <Grid size={{ xs: 12, lg: 6 }}>
             <Box
               component={motion.div}
@@ -58,9 +63,11 @@ export default function HeroSection() {
               <Stack
                 direction="row"
                 spacing={1.5}
-                alignItems="center"
-                justifyContent={{ xs: "center", lg: "flex-start" }}
-                sx={{ mb: 2.5 }}
+                sx={{
+                  mb: 2.5,
+                  alignItems: "center",
+                  justifyContent: { xs: "center", lg: "flex-start" },
+                }}
               >
                 <LogoMark size={72} markSize={68} variant="horizontal" />
               </Stack>
@@ -110,8 +117,10 @@ export default function HeroSection() {
               <Stack
                 direction={{ xs: "column", sm: "row" }}
                 spacing={1.5}
-                justifyContent={{ xs: "center", lg: "flex-start" }}
-                sx={{ mb: 3 }}
+                sx={{
+                  mb: 3,
+                  justifyContent: { xs: "center", lg: "flex-start" },
+                }}
               >
                 <Button
                   variant="contained"
@@ -137,18 +146,36 @@ export default function HeroSection() {
               <Stack
                 direction={{ xs: "column", sm: "row" }}
                 spacing={{ xs: 1, sm: 2.5 }}
-                justifyContent={{ xs: "center", lg: "flex-start" }}
-                flexWrap="wrap"
                 useFlexGap
+                sx={{
+                  justifyContent: { xs: "center", lg: "flex-start" },
+                  flexWrap: "wrap",
+                }}
               >
                 {TRUST_KEYS.map((key) => (
-                  <Typography
+                  <Stack
                     key={key}
-                    variant="body2"
-                    sx={{ color: "text.secondary", fontWeight: 600 }}
+                    direction="row"
+                    spacing={0.75}
+                    sx={{
+                      alignItems: "center",
+                      justifyContent: { xs: "center", lg: "flex-start" },
+                    }}
                   >
-                    âœ“ {t(`hero.${key}`)}
-                  </Typography>
+                    <CheckCircleOutlined
+                      sx={{
+                        fontSize: 18,
+                        color: "secondary.main",
+                        flexShrink: 0,
+                      }}
+                    />
+                    <Typography
+                      variant="body2"
+                      sx={{ color: "text.secondary", fontWeight: 600 }}
+                    >
+                      {t(`hero.${key}`)}
+                    </Typography>
+                  </Stack>
                 ))}
               </Stack>
             </Box>

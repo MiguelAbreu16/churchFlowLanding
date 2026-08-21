@@ -38,7 +38,7 @@ export default function PricingSection({ showComparison = true }) {
           </Typography>
         </Box>
 
-        <Grid container spacing={2} alignItems="stretch">
+        <Grid container spacing={2} sx={{ alignItems: "stretch" }}>
           {PLANS.map((plan) => (
             <Grid size={{ xs: 12, md: 4 }} key={plan.id}>
               <PricingCard
@@ -50,6 +50,25 @@ export default function PricingSection({ showComparison = true }) {
         </Grid>
 
         {showComparison && <PricingComparisonTable />}
+
+        <Box
+          sx={{
+            mt: 6,
+            p: { xs: 2.5, md: 3 },
+            borderRadius: 3,
+            border: "1px solid",
+            borderColor: "divider",
+            bgcolor: "background.paper",
+            textAlign: "center",
+          }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
+            {t("pricing.campsAddonTitle")}
+          </Typography>
+          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto" }}>
+            {t("pricing.campsAddonSubtitle")}
+          </Typography>
+        </Box>
 
         <Box sx={{ mt: 8, textAlign: "center" }}>
           <Typography variant="body2" color="text.secondary">

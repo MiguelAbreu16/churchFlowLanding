@@ -5,13 +5,14 @@
     "contact": "Contato",
     "login": "Entrar",
     "startTrial": "Começar teste",
-    "freeTrial": "Teste grátis"
+    "freeTrial": "Teste grátis",
+    "demos": "Demos"
   },
   "hero": {
-    "badge": "Plataforma operacional para o ministério",
-    "title": "Conduza cada domingo",
-    "titleHighlight": "com clareza pastoral",
-    "subtitle": "Assentos ao vivo, porteiros e incidentes em um só painel — para que sua equipe cuide das pessoas, não da logística.",
+    "badge": "Operações, acampamentos e rede em um só lugar",
+    "title": "Opere cada domingo",
+    "titleHighlight": "e cada retiro",
+    "subtitle": "Assentos ao vivo, estacionamento, acampamentos e igrejas filhas — para que sua equipe cuide das pessoas, não da logística.",
     "ctaTrial": "Experimente grátis por 14 dias",
     "ctaProduct": "Ver o produto",
     "trust1": "14 dias de teste grátis",
@@ -24,9 +25,11 @@
   "demo": {
     "title": "Mapa ao vivo (demo)",
     "occupied": "ocupado",
-    "tapFree": "Assento livre",
+    "tapFree": "Liberar assento",
     "tapOccupy": "Marcar ocupado",
-    "hint": "Toque em um assento para simular a operação dos porteiros."
+    "hint": "Toque em um assento para simular a operação de um porteiro.",
+    "legendFree": "Livre",
+    "legendOccupied": "Ocupado"
   },
   "roi": {
     "eyebrow": "Calculadora",
@@ -44,76 +47,185 @@
   "socialProof": {
     "eyebrow": "Feito para a igreja local",
     "title": "Infraestrutura operacional com coração pastoral",
-    "subtitle": "Feito para a igreja local com a confiabilidade de um SaaS moderno: ocupação em tempo real, zonas, porteiros e incidentes em um só painel."
+    "subtitle": "Culto ao vivo, estacionamento, acampamentos e retiros, e rede multissede: um SaaS pensado para o ministério."
   },
   "modules": {
     "eyebrow": "Módulos do produto",
     "title": "Tudo o que sua igreja opera",
-    "subtitle": "Explore cada área da plataforma. Módulos marcados com + estão incluídos a partir do plano Growth.",
+    "subtitle": "Explore cada área. Acampamentos é um módulo adicional; Rede Apóstol vem com o Plano Reino.",
     "tabs": {
       "liveOps": "Operações ao vivo",
       "layouts": "Layouts e capacidade",
-      "teams": "Equipes e funções",
       "events": "Eventos e ingressos",
-      "parking": "Estacionamento e membros",
-      "analytics": "Análises"
+      "parking": "Estacionamento",
+      "camps": "Acampamentos",
+      "network": "Rede Apóstol",
+      "analytics": "Analítica",
+      "teams": "Equipes e papéis"
     },
     "liveOps": {
       "title": "Painel, incidentes e terminal",
       "desc": "Monitore a ocupação das zonas em tempo real, gerencie incidentes priorizados e ofereça aos porteiros uma visão tática do salão.",
-      "bullets": ["Mapa de assentos ao vivo via WebSocket", "Feed de incidentes com escalonamento", "Visão de terminal para equipes do salão"]
+      "bullets": [
+        "Mapa de assentos ao vivo via WebSocket",
+        "Feed de incidentes com escalonamento",
+        "Visão de terminal para equipes do salão"
+      ]
     },
     "layouts": {
       "title": "Editor de layout e níveis",
       "desc": "Projete o santuário, balcões e zonas. Ative o layout do culto e controle a capacidade real por nível.",
-      "bullets": ["Construtor visual de assentos", "Vários níveis e zonas", "Ativação de layout por culto"]
+      "bullets": [
+        "Construtor visual de assentos",
+        "Vários níveis e zonas",
+        "Ativação de layout por culto"
+      ]
     },
     "teams": {
       "title": "Porteiros, funções e permissões",
       "desc": "Atribua zonas, defina quem vê o quê e coordene a equipe do culto com permissões granulares.",
-      "bullets": ["Diretório de porteiros", "Atribuição de zonas", "Admin, porteiro e outras funções"]
+      "bullets": [
+        "Diretório de porteiros",
+        "Atribuição de zonas",
+        "Admin, porteiro e outras funções"
+      ]
     },
     "events": {
       "title": "Eventos, ingressos e check-in",
       "desc": "Venda ingressos, gere códigos QR e acompanhe a presença em eventos especiais sem ferramentas externas.",
       "badge": "Growth+",
-      "bullets": ["Calendário de eventos", "Ingressos QR", "Check-in na porta"]
+      "bullets": [
+        "Calendário de eventos",
+        "Ingressos QR",
+        "Check-in na porta"
+      ]
     },
     "parking": {
       "title": "Estacionamento e membros",
       "desc": "Coordene estacionamentos com um mapa visual e mantenha um diretório de membros conectado às suas operações.",
       "badge": "Growth+",
-      "bullets": ["Mapa de vagas e espaços", "Coordenador ao vivo", "Diretório de membros"]
+      "bullets": [
+        "Mapa de vagas e espaços",
+        "Coordenador ao vivo",
+        "Diretório de membros"
+      ]
     },
     "analytics": {
       "title": "Métricas e tendências",
       "desc": "Instantâneos por culto, ocupação por zona e tendências históricas para decisões pastorais informadas.",
       "badge": "Growth+",
-      "bullets": ["Pico de presença por culto", "Ocupação por zona", "Histórico de cultos"]
+      "bullets": [
+        "Pico de presença por culto",
+        "Ocupação por zona",
+        "Histórico de cultos"
+      ]
+    },
+    "camps": {
+      "title": "Acampamentos e retiros",
+      "desc": "Planeje o retiro de ponta a ponta: planta de camas, campistas, cobranças, ônibus, itinerário ao vivo, saúde e chat da equipe.",
+      "badge": "Add-on",
+      "bullets": [
+        "Mapa de edifícios, andares e camas",
+        "Inscrições, cobranças e chamada",
+        "Ônibus, itinerário, alertas e saúde"
+      ]
+    },
+    "network": {
+      "title": "Rede Apóstol multissede",
+      "desc": "Administre igrejas filhas, convide sedes e compare métricas da rede em um painel central.",
+      "badge": "Reino",
+      "bullets": [
+        "Painel de igrejas filhas e convites",
+        "Métricas comparadas entre sedes",
+        "Incluído no Plano Reino"
+      ]
     }
   },
   "howItWorks": {
     "eyebrow": "Como funciona",
     "title": "Do cadastro ao domingo em 3 passos",
     "steps": {
-      "register": { "title": "Cadastre-se", "desc": "Crie sua igreja, escolha um plano e verifique seu e-mail." },
-      "trial": { "title": "Teste de 14 dias", "desc": "Configure seu layout e equipe — sem cartão no início." },
-      "operate": { "title": "Conduza o domingo", "desc": "Inicie o culto, monitore ao vivo e encerre com métricas." }
+      "register": {
+        "title": "Cadastre-se",
+        "desc": "Crie sua igreja, escolha um plano e verifique seu e-mail."
+      },
+      "trial": {
+        "title": "Teste de 14 dias",
+        "desc": "Configure seu layout e equipe — sem cartão no início."
+      },
+      "operate": {
+        "title": "Conduza o domingo",
+        "desc": "Inicie o culto, monitore ao vivo e encerre com métricas."
+      }
     }
   },
   "productTour": {
     "eyebrow": "Tour do produto",
-    "title": "Telas reais do Kahal Zerem",
-    "subtitle": "É assim que a plataforma parece durante um culto ao vivo.",
-    "openLightbox": "Expandir"
+    "title": "Capturas reais do Kahal Zerem",
+    "subtitle": "Assim é a plataforma: culto ao vivo, acampamentos, rede e métricas.",
+    "openLightbox": "Ampliar"
   },
   "screenshots": {
-    "dashboard": { "alt": "Painel ao vivo com mapa de assentos", "caption": "Painel de operações com ocupação de zonas em tempo real" },
-    "layoutBuilder": { "alt": "Gestão de layout do templo", "caption": "Plantas do santuário com capacidade por nível" },
-    "incidents": { "alt": "Central de incidentes ao vivo", "caption": "Fila de alertas prioritários com tempos de resposta da equipe" },
-    "parking": { "alt": "Coordenador de estacionamento", "caption": "Mapa do estacionamento com status das vagas ao vivo" },
-    "events": { "alt": "Gestão de eventos", "caption": "Eventos especiais com ingressos e check-in" },
-    "analytics": { "alt": "Painel de análises", "caption": "Métricas de presença e tendências de cultos" }
+    "dashboard": {
+      "alt": "Command Center com mapa de assentos ao vivo",
+      "caption": "Ocupação em tempo real no centro de operações"
+    },
+    "layoutBuilder": {
+      "alt": "Mapa de zonas do santuário",
+      "caption": "Zonas, altar e capacidade visual por nível"
+    },
+    "incidents": {
+      "alt": "Centro de incidentes",
+      "caption": "Fila prioritária de alertas técnicas e médicas"
+    },
+    "parking": {
+      "alt": "Construtor de estacionamento",
+      "caption": "Desenhe vagas, entradas e zonas do estacionamento"
+    },
+    "events": {
+      "alt": "Cartaz de eventos",
+      "caption": "Próximos eventos com ingressos e gestão de reservas"
+    },
+    "analytics": {
+      "alt": "Painel de ocupação ao vivo",
+      "caption": "Livres, ocupados e reservados com visão operacional"
+    },
+    "campsMap": {
+      "alt": "Mapa do acampamento",
+      "caption": "Coloque pavilhões e veja a ocupação de camas no terreno"
+    },
+    "campsDashboard": {
+      "alt": "Resumo do acampamento",
+      "caption": "Dia ativo, atividade em curso e alertas ao vivo"
+    },
+    "campsAttendance": {
+      "alt": "Chamada do acampamento",
+      "caption": "Marque presente, ausente ou doente em segundos"
+    },
+    "campsItinerary": {
+      "alt": "Itinerário do retiro",
+      "caption": "Linha do tempo por dias com status ao vivo"
+    },
+    "network": {
+      "alt": "Rede Apóstol",
+      "caption": "Igrejas filhas, convites e controle multissede"
+    },
+    "networkMetrics": {
+      "alt": "Métricas da rede",
+      "caption": "Compare ocupação e operação entre sedes"
+    },
+    "eventsScanner": {
+      "alt": "Scanner de entrada",
+      "caption": "Check-in com QR ou código manual no Modo Staff"
+    },
+    "campsBeds": {
+      "alt": "Planta do dormitório com camas",
+      "caption": "Desenhe andares e atribua camas no plano"
+    },
+    "campsCampers": {
+      "alt": "Fichas de campistas",
+      "caption": "Alergias, contato e ficha de cada campista"
+    }
   },
   "pricing": {
     "eyebrow": "Preços",
@@ -129,7 +241,9 @@
     "pageSubtitle": "Escolha o plano que cabe na sua igreja. Altere ou cancele quando quiser.",
     "addonEyebrow": "Incluído no Kingdom",
     "addonTitle": "Apostle — rede multi-sede",
-    "addonSubtitle": "Gerencie igrejas filhas com um painel de rede e seletor de igreja. Incluído no Kingdom Plan; sem taxa separada."
+    "addonSubtitle": "Gerencie igrejas filhas com um painel de rede e seletor de igreja. Incluído no Kingdom Plan; sem taxa separada.",
+    "campsAddonTitle": "Acampamentos e Retiros",
+    "campsAddonSubtitle": "Módulo adicional: logística completa de retiros. Ativa-se por igreja; consulte no painel ou com vendas."
   },
   "plans": {
     "period": "mês",
@@ -172,7 +286,8 @@
         "audit": "Logs de auditoria completos",
         "dedicatedSupport": "Suporte dedicado",
         "apiComingSoon": "API externa — Em breve",
-        "addonHint": "Apostle multi-sede incluído"
+        "addonHint": "Apostle multi-sede incluído",
+        "campsHint": "Campamentos disponible como add-on"
       }
     },
     "apostol": {
@@ -202,14 +317,30 @@
         "members": "Membros",
         "audit": "Auditoria",
         "api": "API externa",
-        "multisite": "Multi-sede"
+        "multisite": "Multi-sede",
+        "camps": "Campamentos y retiros"
       },
-      "seats": { "basic": "500", "pro": "2.000", "enterprise": "10.000" },
-      "layouts": { "basic": "1", "pro": "5", "enterprise": "50" },
-      "ushers": { "basic": "5", "pro": "20", "enterprise": "Ilimitado" },
+      "seats": {
+        "basic": "500",
+        "pro": "2.000",
+        "enterprise": "10.000"
+      },
+      "layouts": {
+        "basic": "1",
+        "pro": "5",
+        "enterprise": "50"
+      },
+      "ushers": {
+        "basic": "5",
+        "pro": "20",
+        "enterprise": "Ilimitado"
+      },
       "multisite": {
         "addon": "Não incluído",
         "included": "Incluído no Kingdom"
+      },
+      "camps": {
+        "addon": "Add-on disponible"
       }
     }
   },
@@ -217,25 +348,50 @@
     "eyebrow": "FAQ",
     "title": "Perguntas frequentes",
     "items": {
-      "trial": { "q": "Como funciona o teste de 14 dias?", "a": "Ao se cadastrar, você ativa o plano escolhido sem cobrança imediata. Você recebe um e-mail de verificação e acesso completo durante o teste. Depois que terminar, configure o PayPal para continuar." },
-      "paypal": { "q": "Como pago depois do teste?", "a": "A assinatura é gerenciada com segurança via PayPal. Você pode cancelar a qualquer momento no painel de cobrança." },
-      "email": { "q": "Preciso verificar meu e-mail?", "a": "Sim. Por segurança, enviamos um link de verificação no cadastro. Sem verificação, o acesso ao painel permanece limitado." },
-      "plans": { "q": "Posso mudar de plano?", "a": "Sim. Em cobrança você pode fazer upgrade ou downgrade conforme as necessidades da sua igreja mudarem." },
-      "cancel": { "q": "Posso cancelar a qualquer momento?", "a": "Sim, sem multa. O acesso continua até o fim do período pago." },
-      "reino": { "q": "O que o Kingdom Plan inclui hoje?", "a": "Limites maiores, logs de auditoria, suporte dedicado e Apostle multi-sede incluído (painel de rede e igrejas filhas). A API externa permanece no roadmap. Cada igreja filha pode ter seu próprio plano." },
-      "apostol": { "q": "O que é Apostle / Multi-sede?", "a": "É a rede multi-sede incluída no Kingdom Plan: gerencie igrejas filhas com um painel de rede e seletor de igreja. Cada filha paga o próprio plano (ou teste). Não há taxa separada do Apostle." }
+      "trial": {
+        "q": "Como funciona o teste de 14 dias?",
+        "a": "Ao se cadastrar, você ativa o plano escolhido sem cobrança imediata. Você recebe um e-mail de verificação e acesso completo durante o teste. Depois que terminar, configure o PayPal para continuar."
+      },
+      "paypal": {
+        "q": "Como pago depois do teste?",
+        "a": "A assinatura é gerenciada com segurança via PayPal. Você pode cancelar a qualquer momento no painel de cobrança."
+      },
+      "email": {
+        "q": "Preciso verificar meu e-mail?",
+        "a": "Sim. Por segurança, enviamos um link de verificação no cadastro. Sem verificação, o acesso ao painel permanece limitado."
+      },
+      "plans": {
+        "q": "Posso mudar de plano?",
+        "a": "Sim. Em cobrança você pode fazer upgrade ou downgrade conforme as necessidades da sua igreja mudarem."
+      },
+      "cancel": {
+        "q": "Posso cancelar a qualquer momento?",
+        "a": "Sim, sem multa. O acesso continua até o fim do período pago."
+      },
+      "reino": {
+        "q": "O que o Kingdom Plan inclui hoje?",
+        "a": "Limites maiores, logs de auditoria, suporte dedicado e Apostle multi-sede incluído (painel de rede e igrejas filhas). A API externa permanece no roadmap. Cada igreja filha pode ter seu próprio plano."
+      },
+      "apostol": {
+        "q": "O que é Apostle / Multi-sede?",
+        "a": "É a rede multi-sede incluída no Kingdom Plan: gerencie igrejas filhas com um painel de rede e seletor de igreja. Cada filha paga o próprio plano (ou teste). Não há taxa separada do Apostle."
+      },
+      "camps": {
+        "q": "O que inclui o módulo de Acampamentos?",
+        "a": "É um add-on da plataforma: mapa/planta, campistas, inscrições e pagamentos, chamada, ônibus, itinerário ao vivo, alertas, saúde e chat da equipe. Ativa-se por igreja via PayPal (módulo camps)."
+      }
     }
   },
   "cta": {
     "title": "Pronto para conduzir o próximo domingo",
     "titleLine2": "com mais clareza?",
-    "subtitle": "Cadastre-se em minutos ou escreva para nós se sua igreja precisa de onboarding guiado com nossa equipe.",
+    "subtitle": "Cadastre-se em minutos. Opere o domingo, o retiro e a rede com a mesma clareza.",
     "start": "Começar",
     "viewPlans": "Ver planos",
     "contact": "Falar com vendas"
   },
   "footer": {
-    "tagline": "Plataforma operacional para igrejas — assentos, equipes e incidentes em um só lugar.",
+    "tagline": "Plataforma operacional para igrejas — culto ao vivo, acampamentos e rede multissede.",
     "product": "Produto",
     "company": "Empresa",
     "modules": "Módulos",
@@ -275,5 +431,75 @@
   "notFound": {
     "title": "Página não encontrada",
     "back": "Voltar ao início"
+  },
+  "liveDemos": {
+    "eyebrow": "Experimente agora",
+    "title": "Demos interativas",
+    "subtitle": "Toque, atribua e libere. Assim é operar o mapa ao vivo — assentos, estacionamento ou camas do acampamento.",
+    "tabs": {
+      "seats": "Assentos",
+      "parking": "Estacionamento",
+      "camps": "Acampamento"
+    },
+    "parking": {
+      "title": "Estacionamento ao vivo (demo)",
+      "occupied": "ocupado",
+      "tapFree": "Liberar vaga",
+      "tapOccupy": "Marcar ocupado",
+      "hint": "Toque em uma vaga para ver detalhes (motorista e placa).",
+      "legendFree": "Livre",
+      "legendOccupied": "Ocupado",
+      "spot": "Vaga {{label}}",
+      "statusOccupied": "Ocupada",
+      "statusFree": "Livre",
+      "driver": "Motorista",
+      "plate": "Placa",
+      "emptyDetail": "Vaga livre. Atribua um veículo de demo."
+    },
+    "camps": {
+      "title": "Camas do dormitório (demo)",
+      "roomLabel": "Dormitório · Andar 1",
+      "tapFree": "Liberar cama",
+      "tapAssign": "Atribuir cama",
+      "hint": "Toque em uma cama para ver o campista atribuído.",
+      "bed": "Cama {{n}}",
+      "age": "{{n}} anos",
+      "allergy": "Alergia: {{value}}",
+      "noAllergy": "Sem alergias",
+      "emptyDetail": "Cama livre. Atribua um campista de demo.",
+      "camper": "Campista"
+    }
+  },
+  "growth": {
+    "eyebrow": "Crescimento",
+    "title": "De uma sede a uma rede com controle central",
+    "subtitle": "A Rede Apóstol permite abrir igrejas filhas, comparar ocupação e operar várias sedes sem perder o pulso pastoral.",
+    "cta": "Explorar Plano Reino",
+    "panelTitle": "Visão da rede (exemplo)",
+    "panelHint": "Números ilustrativos — no app você vê suas igrejas reais.",
+    "statChurchesValue": "2+",
+    "statChurches": "Igrejas",
+    "statOccupancyValue": "63%",
+    "statOccupancy": "Ocupação",
+    "statPeopleValue": "∞",
+    "statPeople": "Alcance",
+    "benefits": [
+      {
+        "title": "Igrejas filhas",
+        "desc": "Crie ou convide sedes com plano e operação próprios."
+      },
+      {
+        "title": "Seletor de igreja",
+        "desc": "Troque de sede em segundos sem impersonar usuários."
+      },
+      {
+        "title": "Métricas comparadas",
+        "desc": "Ocupação, eventos e estacionamento entre igrejas da rede."
+      },
+      {
+        "title": "Faturamento consolidado",
+        "desc": "Visibilidade de cobranças e status de cada filha."
+      }
+    ]
   }
 }

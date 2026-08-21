@@ -73,9 +73,7 @@ export default function SeatMapDemo() {
     >
       <Stack
         direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2, justifyContent: "space-between", alignItems: "center" }}
       >
         <Typography sx={{ fontWeight: 800, fontSize: "0.95rem" }}>
           {t("demo.title")}
@@ -160,6 +158,35 @@ export default function SeatMapDemo() {
           );
         })}
       </Box>
+
+      <Stack direction="row" spacing={2} sx={{ mb: 1.5 }}>
+        <Stack direction="row" spacing={0.75} sx={{ alignItems: "center" }}>
+          <Box
+            sx={{
+              width: 12,
+              height: 12,
+              borderRadius: 0.5,
+              bgcolor: alpha("#fff", 0.12),
+            }}
+          />
+          <Typography variant="caption" sx={{ color: alpha("#fff", 0.65) }}>
+            {t("demo.legendFree")}
+          </Typography>
+        </Stack>
+        <Stack direction="row" spacing={0.75} sx={{ alignItems: "center" }}>
+          <Box
+            sx={{
+              width: 12,
+              height: 12,
+              borderRadius: 0.5,
+              bgcolor: theme.palette.primary.main,
+            }}
+          />
+          <Typography variant="caption" sx={{ color: alpha("#fff", 0.65) }}>
+            {t("demo.legendOccupied")}
+          </Typography>
+        </Stack>
+      </Stack>
 
       <Typography
         variant="caption"

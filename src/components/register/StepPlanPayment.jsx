@@ -171,7 +171,7 @@ export default function StepPlanPayment({
       </Box>
 
       {!readyForPayPal ? (
-        <Stack spacing={2} sx={{ mb: 3 }} alignItems="stretch">
+        <Stack spacing={2} sx={{ mb: 3, alignItems: "stretch" }}>
           <Button
             variant="contained"
             size="large"

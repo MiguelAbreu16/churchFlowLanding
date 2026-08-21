@@ -70,6 +70,12 @@ export const PLAN_COMPARISON_ROWS = [
   { key: "analytics", basic: false, pro: true, enterprise: true },
   { key: "parking", basic: false, pro: true, enterprise: true },
   { key: "members", basic: false, pro: true, enterprise: true },
+  {
+    key: "camps",
+    basic: "plans.compare.camps.addon",
+    pro: "plans.compare.camps.addon",
+    enterprise: "plans.compare.camps.addon",
+  },
   { key: "audit", basic: false, pro: false, enterprise: true },
   { key: "api", basic: false, pro: false, enterprise: "comingSoon" },
   {
@@ -93,6 +99,7 @@ export const PLAN_COMPARISON_LABELS = {
   analytics: "plans.compare.labels.analytics",
   parking: "plans.compare.labels.parking",
   members: "plans.compare.labels.members",
+  camps: "plans.compare.labels.camps",
   audit: "plans.compare.labels.audit",
   api: "plans.compare.labels.api",
   multisite: "plans.compare.labels.multisite",

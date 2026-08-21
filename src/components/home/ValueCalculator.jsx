@@ -114,7 +114,10 @@ export default function ValueCalculator() {
               />
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Stack spacing={2} height="100%" justifyContent="center">
+              <Stack
+                spacing={2}
+                sx={{ height: "100%", justifyContent: "center" }}
+              >
                 <Box
                   sx={{
                     p: 2.5,
