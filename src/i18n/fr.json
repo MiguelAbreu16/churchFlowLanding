@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Modules du produit",
     "title": "Tout ce que votre église opère",
-    "subtitle": "Explorez chaque domaine. Camps est un module complémentaire ; le Réseau Apôtre est inclus dans le plan Reino.",
+    "subtitle": "Explorez chaque domaine. Camps et Réseau Apôtre sont inclus dans le plan Reino ; sur Semilla/Crecimiento, Camps est un add-on.",
     "tabs": {
       "liveOps": "Opérations en direct",
       "layouts": "Plans et capacité",
@@ -123,11 +123,11 @@
     "camps": {
       "title": "Camps et retraites",
       "desc": "Planifiez la retraite de bout en bout : plan des lits, campeurs, paiements, bus, itinéraire en direct, santé et chat d’équipe.",
-      "badge": "Add-on",
+      "badge": "Reino",
       "bullets": [
         "Carte des bâtiments, étages et lits",
         "Inscriptions, paiements et appel",
-        "Bus, itinéraire, alertes et santé"
+        "Inclus dans le plan Reino (add-on sur les autres plans)"
       ]
     },
     "network": {
@@ -243,7 +243,7 @@
     "addonTitle": "Apostle — réseau multi-sites",
     "addonSubtitle": "Gérez les églises filles avec un panneau réseau et un sélecteur d'église. Inclus dans le Kingdom Plan ; aucun frais séparé.",
     "campsAddonTitle": "Camps et retraites",
-    "campsAddonSubtitle": "Module complémentaire : logistique complète des retraites. Activé par église ; consultez votre panneau ou les ventes."
+    "campsAddonSubtitle": "Inclus dans le plan Reino. Sur Semilla et Crecimiento, c'est un add-on à 20 $/mois via PayPal."
   },
   "plans": {
     "period": "mois",
@@ -287,7 +287,7 @@
         "dedicatedSupport": "Support dédié",
         "apiComingSoon": "API externe — Bientôt disponible",
         "addonHint": "Apostle multi-sites inclus",
-        "campsHint": "Campamentos disponible como add-on"
+        "campsHint": "Camps et Retraites inclus"
       }
     },
     "apostol": {
@@ -340,7 +340,8 @@
         "included": "Inclus dans Kingdom"
       },
       "camps": {
-        "addon": "Add-on disponible"
+        "addon": "Add-on disponible",
+        "included": "Inclus dans Reino"
       }
     }
   },
@@ -370,7 +371,7 @@
       },
       "reino": {
         "q": "Que comprend le Kingdom Plan aujourd'hui ?",
-        "a": "Des limites plus élevées, des journaux d'audit, un support dédié et Apostle multi-sites inclus (panneau réseau et églises filles). L'API externe reste sur la feuille de route. Chaque église fille peut avoir son propre plan."
+        "a": "Des limites plus élevées, des journaux d'audit, un support dédié, Apostle multi-sites et Camps et Retraites inclus. L'API externe reste sur la feuille de route. Chaque église fille peut avoir son propre plan."
       },
       "apostol": {
         "q": "Qu'est-ce qu'Apostle / Multi-sites ?",
@@ -378,7 +379,7 @@
       },
       "camps": {
         "q": "Que comprend le module Camps ?",
-        "a": "C’est un add-on de la plateforme : carte/plan, campeurs, inscriptions et paiements, appel, bus, itinéraire en direct, alertes, santé et chat d’équipe. Activé par église via PayPal (module camps)."
+        "a": "Logistique des retraites : carte/plan, campeurs, inscriptions et paiements, appel, bus, itinéraire en direct, alertes, santé et chat d'équipe. Inclus dans le plan Reino ; sur Semilla/Crecimiento, add-on PayPal (20 $/mois)."
       }
     }
   },

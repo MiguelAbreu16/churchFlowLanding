@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Explore every area. Camps is an add-on; Apostle Network comes with Reino.",
+    "subtitle": "Explore every area. Camps and Apostle Network are included in Kingdom Plan; on Seed/Growth, Camps is an add-on.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
@@ -123,11 +123,11 @@
     "camps": {
       "title": "Camps & retreats",
       "desc": "Run the retreat end to end: bed plans, campers, payments, buses, live itinerary, health, and staff chat.",
-      "badge": "Add-on",
+      "badge": "Kingdom",
       "bullets": [
         "Building, floor, and bed maps",
         "Sign-ups, payments, and roll call",
-        "Buses, itinerary, alerts, and health"
+        "Included in Kingdom Plan (add-on on lower plans)"
       ]
     },
     "network": {
@@ -243,7 +243,7 @@
     "addonTitle": "Apostle — multi-site network",
     "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee.",
     "campsAddonTitle": "Camps & Retreats",
-    "campsAddonSubtitle": "Add-on module for full retreat logistics. Activated per church — check your panel or talk to sales."
+    "campsAddonSubtitle": "Included in Kingdom Plan. On Seed and Growth it is a $20/mo PayPal add-on."
   },
   "plans": {
     "period": "mo",
@@ -287,7 +287,7 @@
         "dedicatedSupport": "Dedicated support",
         "apiComingSoon": "External API — Coming soon",
         "addonHint": "Apostle multi-site included",
-        "campsHint": "Camps available as an add-on"
+        "campsHint": "Camps & Retreats included"
       }
     },
     "apostol": {
@@ -340,7 +340,8 @@
         "included": "Included in Kingdom"
       },
       "camps": {
-        "addon": "Add-on available"
+        "addon": "Add-on available",
+        "included": "Included in Kingdom"
       }
     }
   },
@@ -370,7 +371,7 @@
       },
       "reino": {
         "q": "What does Kingdom plan include today?",
-        "a": "Higher limits, audit logs, dedicated support, and Apostle multi-site included (network panel and daughter churches). External API remains on the roadmap. Each daughter church can have its own plan."
+        "a": "Higher limits, audit logs, dedicated support, Apostle multi-site, and Camps & Retreats included. External API remains on the roadmap. Each daughter church can have its own plan."
       },
       "apostol": {
         "q": "What is Apostle / Multi-site?",
@@ -378,7 +379,7 @@
       },
       "camps": {
         "q": "What does the Camps module include?",
-        "a": "It's a platform add-on: map/floor plan, campers, sign-ups and payments, roll call, buses, live itinerary, alerts, health, and staff chat. Activated per church via PayPal (camps module)."
+        "a": "Retreat logistics: map/floor plan, campers, sign-ups and payments, roll call, buses, live itinerary, alerts, health, and staff chat. Included in Kingdom Plan; on Seed/Growth it is a $20/mo PayPal add-on."
       }
     }
   },

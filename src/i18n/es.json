@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Módulos del producto",
     "title": "Todo lo que opera tu iglesia",
-    "subtitle": "Explora cada área. Campamentos es un módulo adicional; Red Apóstol viene con Plan Reino.",
+    "subtitle": "Explora cada área. Campamentos y Red Apóstol están incluidos en Plan Reino; en Semilla/Crecimiento Campamentos es add-on.",
     "tabs": {
       "liveOps": "Operaciones en vivo",
       "layouts": "Layouts y capacidad",
@@ -123,11 +123,11 @@
     "camps": {
       "title": "Campamentos y retiros",
       "desc": "Planifica el retiro de punta a punta: plano de camas, campistas, cobros, autobuses, itinerario en vivo, salud y chat del staff.",
-      "badge": "Add-on",
+      "badge": "Reino",
       "bullets": [
         "Mapa de edificios, plantas y camas",
         "Inscripciones, cobros y pase de lista",
-        "Autobuses, itinerario, alertas y salud"
+        "Incluido en Plan Reino (add-on en otros planes)"
       ]
     },
     "network": {
@@ -243,7 +243,7 @@
     "addonTitle": "Apóstol — red multisede",
     "addonSubtitle": "Administra iglesias hijas con panel de red, métricas y selector de iglesia. Incluido en Plan Reino; no se cobra aparte.",
     "campsAddonTitle": "Campamentos y Retiros",
-    "campsAddonSubtitle": "Módulo adicional: logística completa de retiros. Se activa por iglesia; consulta disponibilidad en tu panel o con ventas."
+    "campsAddonSubtitle": "Incluido en Plan Reino. En Semilla y Crecimiento es un add-on de $20/mes vía PayPal."
   },
   "plans": {
     "period": "mes",
@@ -287,7 +287,7 @@
         "dedicatedSupport": "Soporte dedicado",
         "apiComingSoon": "API externa — Próximamente",
         "addonHint": "Multisede Apóstol incluido",
-        "campsHint": "Campamentos disponible como add-on"
+        "campsHint": "Campamentos y Retiros incluido"
       }
     },
     "apostol": {
@@ -340,7 +340,8 @@
         "included": "Incluido en Reino"
       },
       "camps": {
-        "addon": "Add-on disponible"
+        "addon": "Add-on disponible",
+        "included": "Incluido en Reino"
       }
     }
   },
@@ -370,7 +371,7 @@
       },
       "reino": {
         "q": "¿Qué incluye Plan Reino hoy?",
-        "a": "Límites superiores, auditoría, soporte dedicado y multisede Apóstol incluido (panel de red e iglesias hijas). API externa sigue en roadmap. Cada iglesia hija puede tener su propio plan."
+        "a": "Límites superiores, auditoría, soporte dedicado, multisede Apóstol y Campamentos y Retiros incluidos. API externa sigue en roadmap. Cada iglesia hija puede tener su propio plan."
       },
       "apostol": {
         "q": "¿Qué es Apóstol / Multisede?",
@@ -378,7 +379,7 @@
       },
       "camps": {
         "q": "¿Qué incluye el módulo de Campamentos?",
-        "a": "Es un add-on de la plataforma: mapa/plano, campistas, inscripciones y cobros, pase de lista, autobuses, itinerario en vivo, alertas, salud y chat del staff. Se activa por iglesia vía PayPal (módulo camps)."
+        "a": "Logística de retiros: mapa/plano, campistas, inscripciones y cobros, pase de lista, autobuses, itinerario en vivo, alertas, salud y chat del staff. Incluido en Plan Reino; en Semilla/Crecimiento es add-on PayPal ($20/mes)."
       }
     }
   },

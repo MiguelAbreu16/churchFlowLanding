@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Modil pwodwi",
     "title": "Tout sa legliz ou a opere",
-    "subtitle": "Eksplore chak zòn. Kanps se yon add-on; Rezo Apòt la vini ak Plan Reino.",
+    "subtitle": "Eksplore chak zòn. Kanps ak Rezo Apòt enkli nan Plan Reino; nan Semilla/Crecimiento Kanps se add-on.",
     "tabs": {
       "liveOps": "Operasyon an dirèk",
       "layouts": "Layout ak kapasite",
@@ -123,11 +123,11 @@
     "camps": {
       "title": "Kanps ak retrèt",
       "desc": "Planifye retrèt la nèt: plan kabann, kanpis, peman, otobis, itinerè an dirèk, sante ak chat ekip.",
-      "badge": "Add-on",
+      "badge": "Reino",
       "bullets": [
         "Kat bilding, etaj ak kabann",
         "Enskripsyon, peman ak apel",
-        "Otobis, itinerè, alèt ak sante"
+        "Enkli nan Plan Reino (add-on nan lòt plan yo)"
       ]
     },
     "network": {
@@ -243,7 +243,7 @@
     "addonTitle": "Apostle — rezo milti-sit",
     "addonSubtitle": "Jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Enkli nan Kingdom Plan; pa gen frè separe.",
     "campsAddonTitle": "Kanps ak Retrèt",
-    "campsAddonSubtitle": "Modil adisyonèl: lojistik konplè retrèt. Aktive pa legliz; tcheke panèl ou oswa pale ak lavant."
+    "campsAddonSubtitle": "Enkli nan Plan Reino. Nan Semilla ak Crecimiento se yon add-on $20/mwa atravè PayPal."
   },
   "plans": {
     "period": "mwa",
@@ -287,7 +287,7 @@
         "dedicatedSupport": "Sipò dedye",
         "apiComingSoon": "API ekstèn — Byento",
         "addonHint": "Apostle milti-sit enkli",
-        "campsHint": "Campamentos disponible como add-on"
+        "campsHint": "Kanpo ak Retrèt enkli"
       }
     },
     "apostol": {
@@ -340,7 +340,8 @@
         "included": "Enkli nan Kingdom"
       },
       "camps": {
-        "addon": "Add-on disponible"
+        "addon": "Add-on disponib",
+        "included": "Enkli nan Reino"
       }
     }
   },
@@ -370,7 +371,7 @@
       },
       "reino": {
         "q": "Kisa Kingdom Plan enkli jodi a?",
-        "a": "Limit pi wo, jounal audit, sipò dedye, ak Apostle milti-sit enkli (panèl rezo ak legliz pitit). API ekstèn lan rete sou roadmap. Chak legliz pitit ka gen pwòp plan li."
+        "a": "Limit pi wo, jounal audit, sipò dedye, Apostle milti-sit, ak Kanpo ak Retrèt enkli. API ekstèn lan rete sou roadmap. Chak legliz pitit ka gen pwòp plan li."
       },
       "apostol": {
         "q": "Kisa Apostle / Milti-sit ye?",
@@ -378,7 +379,7 @@
       },
       "camps": {
         "q": "Kisa modil Kanps la genyen?",
-        "a": "Se yon add-on platfòm: kat/plan, kanpis, enskripsyon ak peman, apel, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Aktive pa legliz via PayPal (modil camps)."
+        "a": "Lojistik retrèt: kat/plan, kanpis, enskripsyon ak peman, apel, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Plan Reino; nan Semilla/Crecimiento se add-on PayPal ($20/mwa)."
       }
     }
   },
