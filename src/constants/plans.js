@@ -48,6 +48,7 @@ export const PLANS = [
       "plans.enterprise.features.apiComingSoon",
       "plans.enterprise.features.addonHint",
       "plans.enterprise.features.campsHint",
+      "plans.enterprise.features.kidsHint",
     ],
     color: "#1E293B",
     popular: false,
@@ -77,6 +78,12 @@ export const PLAN_COMPARISON_ROWS = [
     pro: "plans.compare.camps.addon",
     enterprise: "plans.compare.camps.included",
   },
+  {
+    key: "kids",
+    basic: "plans.compare.kids.reinoOnly",
+    pro: "plans.compare.kids.reinoOnly",
+    enterprise: "plans.compare.kids.included",
+  },
   { key: "audit", basic: false, pro: false, enterprise: true },
   { key: "api", basic: false, pro: false, enterprise: "comingSoon" },
   {
@@ -101,6 +108,7 @@ export const PLAN_COMPARISON_LABELS = {
   parking: "plans.compare.labels.parking",
   members: "plans.compare.labels.members",
   camps: "plans.compare.labels.camps",
+  kids: "plans.compare.labels.kids",
   audit: "plans.compare.labels.audit",
   api: "plans.compare.labels.api",
   multisite: "plans.compare.labels.multisite",

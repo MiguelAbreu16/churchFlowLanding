@@ -9,10 +9,10 @@
     "demos": "Demos"
   },
   "hero": {
-    "badge": "Operations, camps, and network in one place",
+    "badge": "Operations, kids ministry, camps, and network in one place",
     "title": "Run every Sunday",
     "titleHighlight": "and every retreat",
-    "subtitle": "Live seating, parking, camps, and daughter churches — so your staff cares for people, not logistics.",
+    "subtitle": "Live seating, children's church, parking, camps, and daughter churches — so your staff cares for people, not logistics.",
     "ctaTrial": "Try free for 14 days",
     "ctaProduct": "See the product",
     "trust1": "14-day free trial",
@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Explore every area. Camps and Apostle Network are included in Kingdom Plan; on Seed/Growth, Camps is an add-on.",
+    "subtitle": "Explore every area. Camps, Children's Church, and Apostle Network are included in Kingdom Plan; on Seed/Growth, Camps is an add-on.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
@@ -61,7 +61,8 @@
       "camps": "Camps",
       "network": "Apostle Network",
       "analytics": "Analytics",
-      "teams": "Teams & roles"
+      "teams": "Teams & roles",
+      "kids": "Children's Church"
     },
     "liveOps": {
       "title": "Dashboard, incidents & terminal",
@@ -139,6 +140,16 @@
         "Compared metrics across campuses",
         "Included with Reino plan"
       ]
+    },
+    "kids": {
+      "title": "Children's Church",
+      "desc": "Safe check-in and pickup: family QR codes, PIN, pickup photo, age-based rooms, and a fullscreen MISSING alarm.",
+      "badge": "Kingdom",
+      "bullets": [
+        "Individual or family (siblings) check-in",
+        "Pickup with QR, PIN, and photo",
+        "Included in Kingdom Plan (no add-on in MVP)"
+      ]
     }
   },
   "howItWorks": {
@@ -162,7 +173,7 @@
   "productTour": {
     "eyebrow": "Product tour",
     "title": "Real Kahal Zerem screenshots",
-    "subtitle": "See the platform: live service, camps, network, and metrics.",
+    "subtitle": "See the platform: live service, children's church, camps, network, and metrics.",
     "openLightbox": "Enlarge"
   },
   "screenshots": {
@@ -243,7 +254,9 @@
     "addonTitle": "Apostle — multi-site network",
     "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee.",
     "campsAddonTitle": "Camps & Retreats",
-    "campsAddonSubtitle": "Included in Kingdom Plan. On Seed and Growth it is a $20/mo PayPal add-on."
+    "campsAddonSubtitle": "Included in Kingdom Plan. On Seed and Growth it is a $20/mo PayPal add-on.",
+    "kidsIncludedTitle": "Children's Church",
+    "kidsIncludedSubtitle": "Included in Kingdom Plan: family QR check-in/pickup, PIN, rooms, and alerts. No PayPal add-on for Seed/Growth in MVP."
   },
   "plans": {
     "period": "mo",
@@ -287,7 +300,8 @@
         "dedicatedSupport": "Dedicated support",
         "apiComingSoon": "External API — Coming soon",
         "addonHint": "Apostle multi-site included",
-        "campsHint": "Camps & Retreats included"
+        "campsHint": "Camps & Retreats included",
+        "kidsHint": "Children's Church included"
       }
     },
     "apostol": {
@@ -318,7 +332,8 @@
         "audit": "Audit",
         "api": "External API",
         "multisite": "Multi-site",
-        "camps": "Camps & retreats"
+        "camps": "Camps & retreats",
+        "kids": "Children's Church"
       },
       "seats": {
         "basic": "500",
@@ -341,6 +356,10 @@
       },
       "camps": {
         "addon": "Add-on available",
+        "included": "Included in Kingdom"
+      },
+      "kids": {
+        "reinoOnly": "Kingdom Plan only",
         "included": "Included in Kingdom"
       }
     }
@@ -371,7 +390,7 @@
       },
       "reino": {
         "q": "What does Kingdom plan include today?",
-        "a": "Higher limits, audit logs, dedicated support, Apostle multi-site, and Camps & Retreats included. External API remains on the roadmap. Each daughter church can have its own plan."
+        "a": "Higher limits, audit logs, dedicated support, Apostle multi-site, Camps & Retreats, and Children's Church included. External API remains on the roadmap. Each daughter church can have its own plan."
       },
       "apostol": {
         "q": "What is Apostle / Multi-site?",
@@ -380,6 +399,10 @@
       "camps": {
         "q": "What does the Camps module include?",
         "a": "Retreat logistics: map/floor plan, campers, sign-ups and payments, roll call, buses, live itinerary, alerts, health, and staff chat. Included in Kingdom Plan; on Seed/Growth it is a $20/mo PayPal add-on."
+      },
+      "kids": {
+        "q": "What does Children's Church include?",
+        "a": "Safe kids check-in and pickup: allergies and consents, family QR codes, family check-in, PIN and pickup photo, room map, MISSING alarm, and reports. Included in Kingdom Plan; no PayPal add-on for other plans in MVP."
       }
     }
   },
@@ -392,7 +415,7 @@
     "contact": "Contact sales"
   },
   "footer": {
-    "tagline": "Church ops platform — live service, camps, and multi-site network.",
+    "tagline": "Church ops platform — live service, children's church, camps, and multi-site network.",
     "product": "Product",
     "company": "Company",
     "modules": "Modules",

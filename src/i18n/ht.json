@@ -9,10 +9,10 @@
     "demos": "Demo"
   },
   "hero": {
-    "badge": "Operasyon, kanps ak rezo nan yon sèl kote",
+    "badge": "Operasyon, timoun, kan ak rezo nan yon sèl kote",
     "title": "Jere chak dimanch",
     "titleHighlight": "ak chak retrèt",
-    "subtitle": "Chèz an dirèk, pakin, kanps ak legliz pitit — pou ekip ou okipe moun, pa lojistik la.",
+    "subtitle": "Syèj an dirèk, legliz timoun, pakin, kan ak legliz pitit — pou ekip ou a pran swen moun, pa lojistik.",
     "ctaTrial": "Eseye gratis pandan 14 jou",
     "ctaProduct": "Wè pwodwi a",
     "trust1": "Esè gratis 14 jou",
@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Modil pwodwi",
     "title": "Tout sa legliz ou a opere",
-    "subtitle": "Eksplore chak zòn. Kanps ak Rezo Apòt enkli nan Plan Reino; nan Semilla/Crecimiento Kanps se add-on.",
+    "subtitle": "Eksplore chak zòn. Kan, Legliz timoun ak Rezo Apòt enkli nan Plan Reino; nan Semilla/Crecimiento, Kan se add-on.",
     "tabs": {
       "liveOps": "Operasyon an dirèk",
       "layouts": "Layout ak kapasite",
@@ -61,7 +61,8 @@
       "camps": "Kanps",
       "network": "Rezo Apòt",
       "analytics": "Analitik",
-      "teams": "Ekip ak wòl"
+      "teams": "Ekip ak wòl",
+      "kids": "Legliz timoun"
     },
     "liveOps": {
       "title": "Tablo, ensidan ak tèminal",
@@ -139,6 +140,16 @@
         "Metrik konpare ant sit",
         "Enkli nan Plan Reino"
       ]
+    },
+    "kids": {
+      "title": "Legliz timoun",
+      "desc": "Check-in ak retire an sekirite: kòd fanmi QR, PIN, foto moun k ap retire, sal selon laj ak alèt MISSING.",
+      "badge": "Reino",
+      "bullets": [
+        "Check-in endividyèl oswa fanmi (frè/sè)",
+        "Retrè ak QR, PIN ak foto",
+        "Enkli nan Plan Reino (pa gen add-on nan MVP)"
+      ]
     }
   },
   "howItWorks": {
@@ -162,7 +173,7 @@
   "productTour": {
     "eyebrow": "Vizit pwodui",
     "title": "Screenshot reyèl Kahal Zerem",
-    "subtitle": "Men platfòm nan: sèvis an dirèk, kanps, rezo ak metrik.",
+    "subtitle": "Men platfòm nan: sèvis an dirèk, legliz timoun, kan, rezo ak métrik.",
     "openLightbox": "Agrandi"
   },
   "screenshots": {
@@ -243,7 +254,9 @@
     "addonTitle": "Apostle — rezo milti-sit",
     "addonSubtitle": "Jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Enkli nan Kingdom Plan; pa gen frè separe.",
     "campsAddonTitle": "Kanps ak Retrèt",
-    "campsAddonSubtitle": "Enkli nan Plan Reino. Nan Semilla ak Crecimiento se yon add-on $20/mwa atravè PayPal."
+    "campsAddonSubtitle": "Enkli nan Plan Reino. Nan Semilla ak Crecimiento se yon add-on $20/mwa atravè PayPal.",
+    "kidsIncludedTitle": "Legliz timoun",
+    "kidsIncludedSubtitle": "Enkli nan Plan Reino: check-in/retrè QR fanmi, PIN, sal ak alèt. Pa gen add-on PayPal pou Semilla/Crecimiento nan MVP."
   },
   "plans": {
     "period": "mwa",
@@ -287,7 +300,8 @@
         "dedicatedSupport": "Sipò dedye",
         "apiComingSoon": "API ekstèn — Byento",
         "addonHint": "Apostle milti-sit enkli",
-        "campsHint": "Kanpo ak Retrèt enkli"
+        "campsHint": "Kanpo ak Retrèt enkli",
+        "kidsHint": "Legliz timoun enkli"
       }
     },
     "apostol": {
@@ -318,7 +332,8 @@
         "audit": "Audit",
         "api": "API ekstèn",
         "multisite": "Milti-sit",
-        "camps": "Campamentos y retiros"
+        "camps": "Campamentos y retiros",
+        "kids": "Legliz timoun"
       },
       "seats": {
         "basic": "500",
@@ -341,6 +356,10 @@
       },
       "camps": {
         "addon": "Add-on disponib",
+        "included": "Enkli nan Reino"
+      },
+      "kids": {
+        "reinoOnly": "Sèlman Plan Reino",
         "included": "Enkli nan Reino"
       }
     }
@@ -371,7 +390,7 @@
       },
       "reino": {
         "q": "Kisa Kingdom Plan enkli jodi a?",
-        "a": "Limit pi wo, jounal audit, sipò dedye, Apostle milti-sit, ak Kanpo ak Retrèt enkli. API ekstèn lan rete sou roadmap. Chak legliz pitit ka gen pwòp plan li."
+        "a": "Limit pi wo, odit, sipò dediye, Apòt milti-sit, Kan ak Retrè, epi Legliz timoun enkli. API ekstèn nan roadmap. Chak legliz pitit ka gen pwòp plan li."
       },
       "apostol": {
         "q": "Kisa Apostle / Milti-sit ye?",
@@ -380,6 +399,10 @@
       "camps": {
         "q": "Kisa modil Kanps la genyen?",
         "a": "Lojistik retrèt: kat/plan, kanpis, enskripsyon ak peman, apel, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Plan Reino; nan Semilla/Crecimiento se add-on PayPal ($20/mwa)."
+      },
+      "kids": {
+        "q": "Kisa Legliz timoun enkli?",
+        "a": "Check-in ak retire an sekirite: alèji ak konsantman, kòd QR fanmi, check-in fanmi, PIN ak foto, kat sal, alèt MISSING ak rapò. Enkli nan Plan Reino; pa gen add-on PayPal pou lòt plan nan MVP."
       }
     }
   },
@@ -392,7 +415,7 @@
     "contact": "Kontakte lavant"
   },
   "footer": {
-    "tagline": "Platfòm operasyonèl pou legliz — sèvis an dirèk, kanps ak rezo milti-sit.",
+    "tagline": "Platfòm operasyon pou legliz — sèvis an dirèk, legliz timoun, kan ak rezo milti-sit.",
     "product": "Pwodwi",
     "company": "Konpayi",
     "modules": "Modil",

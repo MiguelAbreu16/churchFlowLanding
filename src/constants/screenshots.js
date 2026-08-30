@@ -101,6 +101,8 @@ export const MODULE_PREVIEWS = {
   events: "/screenshots/events.png",
   parking: "/screenshots/parking.png",
   camps: "/screenshots/camps-beds.png",
+  // Stand-in until dedicated kids screenshots ship (QR / check flow).
+  kids: "/screenshots/events-scanner.png",
   network: "/screenshots/network.png",
   analytics: "/screenshots/analytics.png",
 };

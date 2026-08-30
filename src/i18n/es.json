@@ -9,10 +9,10 @@
     "demos": "Demos"
   },
   "hero": {
-    "badge": "Operaciones, campamentos y red en un solo lugar",
+    "badge": "Operaciones, niños, campamentos y red en un solo lugar",
     "title": "Opera cada domingo",
     "titleHighlight": "y cada retiro",
-    "subtitle": "Asientos en vivo, estacionamiento, campamentos e iglesias hijas — para que tu staff cuide de las personas, no de la logística.",
+    "subtitle": "Asientos en vivo, iglesia de niños, estacionamiento, campamentos e iglesias hijas — para que tu staff cuide de las personas, no de la logística.",
     "ctaTrial": "Probar gratis 14 días",
     "ctaProduct": "Ver el producto",
     "trust1": "14 días gratis",
@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Módulos del producto",
     "title": "Todo lo que opera tu iglesia",
-    "subtitle": "Explora cada área. Campamentos y Red Apóstol están incluidos en Plan Reino; en Semilla/Crecimiento Campamentos es add-on.",
+    "subtitle": "Explora cada área. Campamentos, Iglesia de niños y Red Apóstol están incluidos en Plan Reino; en Semilla/Crecimiento Campamentos es add-on.",
     "tabs": {
       "liveOps": "Operaciones en vivo",
       "layouts": "Layouts y capacidad",
@@ -61,7 +61,8 @@
       "camps": "Campamentos",
       "network": "Red Apóstol",
       "analytics": "Analítica",
-      "teams": "Equipos y roles"
+      "teams": "Equipos y roles",
+      "kids": "Iglesia de niños"
     },
     "liveOps": {
       "title": "Dashboard, incidentes y terminal",
@@ -139,6 +140,16 @@
         "Métricas comparadas entre sedes",
         "Incluido en Plan Reino"
       ]
+    },
+    "kids": {
+      "title": "Iglesia de niños",
+      "desc": "Check-in y retiro seguro: código familiar con QR, PIN, foto de quien retira, aulas por edad y alerta MISSING a pantalla completa.",
+      "badge": "Reino",
+      "bullets": [
+        "Check-in individual o por familia (hermanos)",
+        "Retiro con QR, PIN y foto",
+        "Incluido en Plan Reino (sin add-on en MVP)"
+      ]
     }
   },
   "howItWorks": {
@@ -162,7 +173,7 @@
   "productTour": {
     "eyebrow": "Tour del producto",
     "title": "Capturas reales de Kahal Zerem",
-    "subtitle": "Así se ve la plataforma: servicio en vivo, campamentos, red y métricas.",
+    "subtitle": "Así se ve la plataforma: servicio en vivo, iglesia de niños, campamentos, red y métricas.",
     "openLightbox": "Ampliar"
   },
   "screenshots": {
@@ -243,7 +254,9 @@
     "addonTitle": "Apóstol — red multisede",
     "addonSubtitle": "Administra iglesias hijas con panel de red, métricas y selector de iglesia. Incluido en Plan Reino; no se cobra aparte.",
     "campsAddonTitle": "Campamentos y Retiros",
-    "campsAddonSubtitle": "Incluido en Plan Reino. En Semilla y Crecimiento es un add-on de $20/mes vía PayPal."
+    "campsAddonSubtitle": "Incluido en Plan Reino. En Semilla y Crecimiento es un add-on de $20/mes vía PayPal.",
+    "kidsIncludedTitle": "Iglesia de niños",
+    "kidsIncludedSubtitle": "Incluido en Plan Reino: check-in/retiro con QR familiar, PIN, aulas y alertas. En MVP no hay add-on para Semilla/Crecimiento."
   },
   "plans": {
     "period": "mes",
@@ -287,7 +300,8 @@
         "dedicatedSupport": "Soporte dedicado",
         "apiComingSoon": "API externa — Próximamente",
         "addonHint": "Multisede Apóstol incluido",
-        "campsHint": "Campamentos y Retiros incluido"
+        "campsHint": "Campamentos y Retiros incluido",
+        "kidsHint": "Iglesia de niños incluida"
       }
     },
     "apostol": {
@@ -318,7 +332,8 @@
         "audit": "Auditoría",
         "api": "API externa",
         "multisite": "Multisede",
-        "camps": "Campamentos y retiros"
+        "camps": "Campamentos y retiros",
+        "kids": "Iglesia de niños"
       },
       "seats": {
         "basic": "500",
@@ -341,6 +356,10 @@
       },
       "camps": {
         "addon": "Add-on disponible",
+        "included": "Incluido en Reino"
+      },
+      "kids": {
+        "reinoOnly": "Solo Plan Reino",
         "included": "Incluido en Reino"
       }
     }
@@ -371,7 +390,7 @@
       },
       "reino": {
         "q": "¿Qué incluye Plan Reino hoy?",
-        "a": "Límites superiores, auditoría, soporte dedicado, multisede Apóstol y Campamentos y Retiros incluidos. API externa sigue en roadmap. Cada iglesia hija puede tener su propio plan."
+        "a": "Límites superiores, auditoría, soporte dedicado, multisede Apóstol, Campamentos y Retiros e Iglesia de niños incluidos. API externa sigue en roadmap. Cada iglesia hija puede tener su propio plan."
       },
       "apostol": {
         "q": "¿Qué es Apóstol / Multisede?",
@@ -380,6 +399,10 @@
       "camps": {
         "q": "¿Qué incluye el módulo de Campamentos?",
         "a": "Logística de retiros: mapa/plano, campistas, inscripciones y cobros, pase de lista, autobuses, itinerario en vivo, alertas, salud y chat del staff. Incluido en Plan Reino; en Semilla/Crecimiento es add-on PayPal ($20/mes)."
+      },
+      "kids": {
+        "q": "¿Qué incluye Iglesia de niños?",
+        "a": "Check-in y retiro seguro de niños: registro con alergias y consentimientos, código familiar con QR, check-in por familia, PIN y foto al retirar, plano de aulas, alerta MISSING y reportes. Incluido en Plan Reino; en MVP no hay add-on PayPal para otros planes."
       }
     }
   },
@@ -392,7 +415,7 @@
     "contact": "Contactar ventas"
   },
   "footer": {
-    "tagline": "Plataforma operativa para iglesias — servicio en vivo, campamentos y red multisede.",
+    "tagline": "Plataforma operativa para iglesias — servicio en vivo, iglesia de niños, campamentos y red multisede.",
     "product": "Producto",
     "company": "Compañía",
     "modules": "Módulos",

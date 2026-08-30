@@ -16,6 +16,7 @@ const FAQ_KEYS = [
   "plans",
   "cancel",
   "camps",
+  "kids",
   "reino",
   "apostol",
 ];

@@ -25,6 +25,7 @@ const TAB_KEYS = [
   "events",
   "parking",
   "camps",
+  "kids",
   "network",
   "analytics",
 ];
@@ -32,6 +33,7 @@ const PREMIUM_TABS = new Set([
   "events",
   "parking",
   "camps",
+  "kids",
   "network",
   "analytics",
 ]);

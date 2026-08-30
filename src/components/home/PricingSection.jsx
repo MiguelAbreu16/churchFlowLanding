@@ -65,8 +65,14 @@ export default function PricingSection({ showComparison = true }) {
           <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
             {t("pricing.campsAddonTitle")}
           </Typography>
-          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto" }}>
+          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto", mb: 3 }}>
             {t("pricing.campsAddonSubtitle")}
+          </Typography>
+          <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
+            {t("pricing.kidsIncludedTitle")}
+          </Typography>
+          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto" }}>
+            {t("pricing.kidsIncludedSubtitle")}
           </Typography>
         </Box>
 

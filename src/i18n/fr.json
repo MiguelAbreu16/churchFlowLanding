@@ -9,10 +9,10 @@
     "demos": "Démos"
   },
   "hero": {
-    "badge": "Opérations, camps et réseau en un seul endroit",
+    "badge": "Opérations, enfants, camps et réseau en un seul endroit",
     "title": "Gérez chaque dimanche",
     "titleHighlight": "et chaque retraite",
-    "subtitle": "Sièges en direct, parking, camps et églises filles — pour que votre équipe prenne soin des personnes, pas de la logistique.",
+    "subtitle": "Sièges en direct, église des enfants, parking, camps et églises filles — pour que votre équipe prenne soin des personnes, pas de la logistique.",
     "ctaTrial": "Essayer gratuitement 14 jours",
     "ctaProduct": "Voir le produit",
     "trust1": "Essai gratuit de 14 jours",
@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Modules du produit",
     "title": "Tout ce que votre église opère",
-    "subtitle": "Explorez chaque domaine. Camps et Réseau Apôtre sont inclus dans le plan Reino ; sur Semilla/Crecimiento, Camps est un add-on.",
+    "subtitle": "Explorez chaque domaine. Camps, Église des enfants et Réseau Apôtre sont inclus dans le plan Reino ; sur Semilla/Crecimiento, Camps est un add-on.",
     "tabs": {
       "liveOps": "Opérations en direct",
       "layouts": "Plans et capacité",
@@ -61,7 +61,8 @@
       "camps": "Camps",
       "network": "Réseau Apôtre",
       "analytics": "Analytique",
-      "teams": "Équipes et rôles"
+      "teams": "Équipes et rôles",
+      "kids": "Église des enfants"
     },
     "liveOps": {
       "title": "Tableau de bord, incidents et terminal",
@@ -139,6 +140,16 @@
         "Métriques comparées entre campuses",
         "Inclus dans le plan Reino"
       ]
+    },
+    "kids": {
+      "title": "Église des enfants",
+      "desc": "Check-in et retrait sécurisés : QR familial, PIN, photo au retrait, salles par âge et alarme MISSING plein écran.",
+      "badge": "Reino",
+      "bullets": [
+        "Check-in individuel ou familial (frères/sœurs)",
+        "Retrait avec QR, PIN et photo",
+        "Inclus dans le plan Reino (pas d'add-on en MVP)"
+      ]
     }
   },
   "howItWorks": {
@@ -162,7 +173,7 @@
   "productTour": {
     "eyebrow": "Visite du produit",
     "title": "Captures réelles de Kahal Zerem",
-    "subtitle": "Voici la plateforme : culte en direct, camps, réseau et métriques.",
+    "subtitle": "Voici la plateforme : culte en direct, église des enfants, camps, réseau et métriques.",
     "openLightbox": "Agrandir"
   },
   "screenshots": {
@@ -243,7 +254,9 @@
     "addonTitle": "Apostle — réseau multi-sites",
     "addonSubtitle": "Gérez les églises filles avec un panneau réseau et un sélecteur d'église. Inclus dans le Kingdom Plan ; aucun frais séparé.",
     "campsAddonTitle": "Camps et retraites",
-    "campsAddonSubtitle": "Inclus dans le plan Reino. Sur Semilla et Crecimiento, c'est un add-on à 20 $/mois via PayPal."
+    "campsAddonSubtitle": "Inclus dans le plan Reino. Sur Semilla et Crecimiento, c'est un add-on à 20 $/mois via PayPal.",
+    "kidsIncludedTitle": "Église des enfants",
+    "kidsIncludedSubtitle": "Inclus dans le plan Reino : check-in/retrait QR familial, PIN, salles et alertes. Pas d'add-on PayPal pour Semilla/Crecimiento en MVP."
   },
   "plans": {
     "period": "mois",
@@ -287,7 +300,8 @@
         "dedicatedSupport": "Support dédié",
         "apiComingSoon": "API externe — Bientôt disponible",
         "addonHint": "Apostle multi-sites inclus",
-        "campsHint": "Camps et Retraites inclus"
+        "campsHint": "Camps et Retraites inclus",
+        "kidsHint": "Église des enfants incluse"
       }
     },
     "apostol": {
@@ -318,7 +332,8 @@
         "audit": "Audit",
         "api": "API externe",
         "multisite": "Multi-sites",
-        "camps": "Campamentos y retiros"
+        "camps": "Campamentos y retiros",
+        "kids": "Église des enfants"
       },
       "seats": {
         "basic": "500",
@@ -341,6 +356,10 @@
       },
       "camps": {
         "addon": "Add-on disponible",
+        "included": "Inclus dans Reino"
+      },
+      "kids": {
+        "reinoOnly": "Plan Reino seulement",
         "included": "Inclus dans Reino"
       }
     }
@@ -371,7 +390,7 @@
       },
       "reino": {
         "q": "Que comprend le Kingdom Plan aujourd'hui ?",
-        "a": "Des limites plus élevées, des journaux d'audit, un support dédié, Apostle multi-sites et Camps et Retraites inclus. L'API externe reste sur la feuille de route. Chaque église fille peut avoir son propre plan."
+        "a": "Des limites plus élevées, des journaux d'audit, un support dédié, Apostle multi-sites, Camps et Retraites et Église des enfants inclus. L'API externe reste sur la feuille de route. Chaque église fille peut avoir son propre plan."
       },
       "apostol": {
         "q": "Qu'est-ce qu'Apostle / Multi-sites ?",
@@ -380,6 +399,10 @@
       "camps": {
         "q": "Que comprend le module Camps ?",
         "a": "Logistique des retraites : carte/plan, campeurs, inscriptions et paiements, appel, bus, itinéraire en direct, alertes, santé et chat d'équipe. Inclus dans le plan Reino ; sur Semilla/Crecimiento, add-on PayPal (20 $/mois)."
+      },
+      "kids": {
+        "q": "Que comprend l'Église des enfants ?",
+        "a": "Check-in et retrait sécurisés : allergies et consentements, codes QR familiaux, check-in familial, PIN et photo, plan des salles, alarme MISSING et rapports. Inclus dans le plan Reino ; pas d'add-on PayPal pour les autres plans en MVP."
       }
     }
   },
@@ -392,7 +415,7 @@
     "contact": "Contacter les ventes"
   },
   "footer": {
-    "tagline": "Plateforme opérationnelle pour églises — culte en direct, camps et réseau multi-sites.",
+    "tagline": "Plateforme opérationnelle pour églises — culte en direct, église des enfants, camps et réseau multi-sites.",
     "product": "Produit",
     "company": "Entreprise",
     "modules": "Modules",
