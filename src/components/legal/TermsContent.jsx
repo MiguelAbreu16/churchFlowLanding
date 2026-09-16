@@ -1,4 +1,4 @@
-import { CURRENT_TERMS_VERSION } from "../constants/legal";
+import { CURRENT_TERMS_VERSION } from "../../constants/legal";
 
 /** Shared TyC body — used by TermsPage and register scroll modal. */
 export default function TermsContent() {
