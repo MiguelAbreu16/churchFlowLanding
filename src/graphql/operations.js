@@ -24,6 +24,8 @@ export const REGISTER_CHURCH = gql`
     $memberCount: String
     $marketingOptIn: Boolean
     $billingCycle: String
+    $acceptTerms: Boolean!
+    $termsVersion: String!
   ) {
     registerChurch(
       name: $name
@@ -34,6 +36,8 @@ export const REGISTER_CHURCH = gql`
       memberCount: $memberCount
       marketingOptIn: $marketingOptIn
       billingCycle: $billingCycle
+      acceptTerms: $acceptTerms
+      termsVersion: $termsVersion
     ) {
       token
       exchangeCode

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -11,11 +12,17 @@ import {
   InputAdornment,
   IconButton,
   LinearProgress,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Link,
 } from "@mui/material";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import TermsContent from "../legal/TermsContent";
 
 function getPasswordStrength(password) {
   if (!password) return 0;
@@ -37,9 +44,28 @@ function getStrengthLabel(score) {
 export default function StepAdminAccount({ form, errors, onChange, onNext, onBack }) {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [termsOpen, setTermsOpen] = useState(false);
+  const [termsRead, setTermsRead] = useState(Boolean(form.termsRead));
+  const scrollRef = useRef(null);
 
   const strength = getPasswordStrength(form.password);
   const { label: strengthLabel, color: strengthColor } = getStrengthLabel(strength);
+
+  const handleTermsScroll = () => {
+    const el = scrollRef.current;
+    if (!el || termsRead) return;
+    const nearBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 24;
+    if (nearBottom) {
+      setTermsRead(true);
+      onChange("termsRead", true);
+    }
+  };
+
+  const markReadAndClose = () => {
+    setTermsRead(true);
+    onChange("termsRead", true);
+    setTermsOpen(false);
+  };
 
   return (
     <Box>
@@ -134,18 +160,40 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
         />
 
         <Box>
+          <Button
+            id="register-open-terms"
+            variant="outlined"
+            size="small"
+            onClick={() => setTermsOpen(true)}
+            sx={{ mb: 1 }}
+          >
+            Leer Términos y Condiciones
+          </Button>
+          {!termsRead && (
+            <Typography variant="caption" display="block" color="text.secondary" sx={{ mb: 1 }}>
+              Debes abrir y leer los términos (desplázate hasta el final) antes de aceptarlos.
+            </Typography>
+          )}
           <FormControlLabel
             control={
               <Checkbox
                 id="register-accept-terms"
                 checked={form.acceptTerms}
+                disabled={!termsRead}
                 onChange={(e) => onChange("acceptTerms", e.target.checked)}
                 sx={{ color: errors.acceptTerms ? "error.main" : undefined }}
               />
             }
             label={
               <Typography variant="body2" color="text.secondary">
-                Acepto los Términos de Uso y la Política de Privacidad
+                Acepto los{" "}
+                <Link component={RouterLink} to="/legal/terminos" target="_blank" rel="noopener">
+                  Términos de Uso
+                </Link>{" "}
+                y la{" "}
+                <Link component={RouterLink} to="/legal/privacidad" target="_blank" rel="noopener">
+                  Política de Privacidad
+                </Link>
               </Typography>
             }
           />
@@ -170,6 +218,34 @@ export default function StepAdminAccount({ form, errors, onChange, onNext, onBac
           />
         </Box>
       </Stack>
+
+      <Dialog
+        open={termsOpen}
+        onClose={() => setTermsOpen(false)}
+        fullWidth
+        maxWidth="md"
+        aria-labelledby="terms-dialog-title"
+      >
+        <DialogTitle id="terms-dialog-title">Términos y Condiciones</DialogTitle>
+        <DialogContent
+          dividers
+          ref={scrollRef}
+          onScroll={handleTermsScroll}
+          sx={{ maxHeight: "60vh" }}
+        >
+          <TermsContent />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setTermsOpen(false)}>Cerrar</Button>
+          <Button
+            id="register-terms-confirm-read"
+            variant="contained"
+            onClick={markReadAndClose}
+          >
+            He leído los términos
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       <Box sx={{ mt: 5, display: "flex", justifyContent: "space-between" }}>
         <Button

@@ -5,6 +5,7 @@ import {
   ATTACH_PAYPAL,
   PLAN_CATALOG,
 } from "../../graphql/operations";
+import { CURRENT_TERMS_VERSION } from "../../constants/legal";
 import StepChurchInfo from "./StepChurchInfo";
 import StepAdminAccount from "./StepAdminAccount";
 import StepPlanPayment from "./StepPlanPayment";
@@ -36,6 +37,7 @@ const INITIAL_FORM = {
   password: "",
   confirmPassword: "",
   acceptTerms: false,
+  termsRead: false,
   marketingOptIn: false,
   plan: "pro",
   billingCycle: "monthly",
@@ -115,6 +117,9 @@ export default function RegisterWizard() {
         newErrors.confirmPassword = "Las contraseñas no coinciden";
       if (!form.acceptTerms)
         newErrors.acceptTerms = "Debes aceptar los términos";
+      if (!form.termsRead)
+        newErrors.acceptTerms =
+          "Debes leer los Términos y Condiciones antes de aceptarlos";
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -141,6 +146,8 @@ export default function RegisterWizard() {
         memberCount: form.memberCount,
         marketingOptIn: form.marketingOptIn,
         billingCycle: form.billingCycle,
+        acceptTerms: form.acceptTerms,
+        termsVersion: CURRENT_TERMS_VERSION,
       },
     }).then(({ data }) => ({
       token: data.registerChurch.token,
