@@ -10,6 +10,7 @@ export const PLANS = [
       "plans.basic.features.layouts",
       "plans.basic.features.ushers",
       "plans.basic.features.liveOps",
+      "plans.basic.features.finances",
       "plans.basic.features.emailSupport",
     ],
     color: "#64748B",
@@ -28,6 +29,7 @@ export const PLANS = [
       "plans.pro.features.events",
       "plans.pro.features.analytics",
       "plans.pro.features.parkingMembers",
+      "plans.pro.features.finances",
       "plans.pro.features.prioritySupport",
     ],
     color: "#eab308",
@@ -44,6 +46,7 @@ export const PLANS = [
       "plans.enterprise.features.layouts",
       "plans.enterprise.features.ushers",
       "plans.enterprise.features.audit",
+      "plans.enterprise.features.financesHint",
       "plans.enterprise.features.dedicatedSupport",
       "plans.enterprise.features.apiComingSoon",
       "plans.enterprise.features.addonHint",
@@ -60,9 +63,24 @@ export const APOSTOL_ADDON = null;
 
 /** Rows for PricingComparisonTable — values are i18n keys or plan field keys */
 export const PLAN_COMPARISON_ROWS = [
-  { key: "seats", basic: "plans.compare.seats.basic", pro: "plans.compare.seats.pro", enterprise: "plans.compare.seats.enterprise" },
-  { key: "layouts", basic: "plans.compare.layouts.basic", pro: "plans.compare.layouts.pro", enterprise: "plans.compare.layouts.enterprise" },
-  { key: "ushers", basic: "plans.compare.ushers.basic", pro: "plans.compare.ushers.pro", enterprise: "plans.compare.ushers.enterprise" },
+  {
+    key: "seats",
+    basic: "plans.compare.seats.basic",
+    pro: "plans.compare.seats.pro",
+    enterprise: "plans.compare.seats.enterprise",
+  },
+  {
+    key: "layouts",
+    basic: "plans.compare.layouts.basic",
+    pro: "plans.compare.layouts.pro",
+    enterprise: "plans.compare.layouts.enterprise",
+  },
+  {
+    key: "ushers",
+    basic: "plans.compare.ushers.basic",
+    pro: "plans.compare.ushers.pro",
+    enterprise: "plans.compare.ushers.enterprise",
+  },
   { key: "liveOps", basic: true, pro: true, enterprise: true },
   { key: "incidents", basic: true, pro: true, enterprise: true },
   { key: "terminal", basic: true, pro: true, enterprise: true },
@@ -84,6 +102,7 @@ export const PLAN_COMPARISON_ROWS = [
     pro: "plans.compare.kids.reinoOnly",
     enterprise: "plans.compare.kids.included",
   },
+  { key: "finances", basic: true, pro: true, enterprise: true },
   { key: "audit", basic: false, pro: false, enterprise: true },
   { key: "api", basic: false, pro: false, enterprise: "comingSoon" },
   {
@@ -109,6 +128,7 @@ export const PLAN_COMPARISON_LABELS = {
   members: "plans.compare.labels.members",
   camps: "plans.compare.labels.camps",
   kids: "plans.compare.labels.kids",
+  finances: "plans.compare.labels.finances",
   audit: "plans.compare.labels.audit",
   api: "plans.compare.labels.api",
   multisite: "plans.compare.labels.multisite",

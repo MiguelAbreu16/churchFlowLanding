@@ -273,7 +273,8 @@
         "layouts": "1 layout (santuário)",
         "ushers": "5 porteiros ativos",
         "liveOps": "Painel, incidentes e terminal",
-        "emailSupport": "Suporte por e-mail"
+        "emailSupport": "Suporte por e-mail",
+        "finances": "Finanças (receitas e despesas)"
       }
     },
     "pro": {
@@ -286,7 +287,8 @@
         "events": "Eventos, ingressos e check-in",
         "analytics": "Análises de ocupação por zona",
         "parkingMembers": "Estacionamento e membros",
-        "prioritySupport": "Suporte prioritário"
+        "prioritySupport": "Suporte prioritário",
+        "finances": "Finanças e relatórios"
       }
     },
     "enterprise": {
@@ -301,7 +303,8 @@
         "apiComingSoon": "API externa — Em breve",
         "addonHint": "Apostle multi-sede incluído",
         "campsHint": "Acampamentos e Retiros incluído",
-        "kidsHint": "Igreja infantil incluída"
+        "kidsHint": "Igreja infantil incluída",
+        "financesHint": "Finanças / tesouraria incluída"
       }
     },
     "apostol": {
@@ -333,7 +336,8 @@
         "api": "API externa",
         "multisite": "Multi-sede",
         "camps": "Campamentos y retiros",
-        "kids": "Igreja infantil"
+        "kids": "Igreja infantil",
+        "finances": "Finanças / tesouraria"
       },
       "seats": {
         "basic": "500",

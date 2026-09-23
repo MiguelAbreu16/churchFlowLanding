@@ -273,7 +273,8 @@
         "layouts": "1 layout (sanctuary)",
         "ushers": "5 active ushers",
         "liveOps": "Dashboard, incidents & terminal",
-        "emailSupport": "Email support"
+        "emailSupport": "Email support",
+        "finances": "Finances (income & expenses)"
       }
     },
     "pro": {
@@ -286,7 +287,8 @@
         "events": "Events, tickets & check-in",
         "analytics": "Zone occupancy analytics",
         "parkingMembers": "Parking & members",
-        "prioritySupport": "Priority support"
+        "prioritySupport": "Priority support",
+        "finances": "Finances and reports"
       }
     },
     "enterprise": {
@@ -301,7 +303,8 @@
         "apiComingSoon": "External API — Coming soon",
         "addonHint": "Apostle multi-site included",
         "campsHint": "Camps & Retreats included",
-        "kidsHint": "Children's Church included"
+        "kidsHint": "Children's Church included",
+        "financesHint": "Finances / treasury included"
       }
     },
     "apostol": {
@@ -333,7 +336,8 @@
         "api": "External API",
         "multisite": "Multi-site",
         "camps": "Camps & retreats",
-        "kids": "Children's Church"
+        "kids": "Children's Church",
+        "finances": "Finances / treasury"
       },
       "seats": {
         "basic": "500",

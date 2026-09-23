@@ -273,7 +273,8 @@
         "layouts": "1 layout (tanp)",
         "ushers": "5 ovrè aktif",
         "liveOps": "Tablo, ensidan ak tèminal",
-        "emailSupport": "Sipò pa imèl"
+        "emailSupport": "Sipò pa imèl",
+        "finances": "Finans (antre ak soti)"
       }
     },
     "pro": {
@@ -286,7 +287,8 @@
         "events": "Evènman, tikè ak check-in",
         "analytics": "Analiz okipasyon zòn",
         "parkingMembers": "Parking ak manm",
-        "prioritySupport": "Sipò priyorite"
+        "prioritySupport": "Sipò priyorite",
+        "finances": "Finans ak rapò"
       }
     },
     "enterprise": {
@@ -301,7 +303,8 @@
         "apiComingSoon": "API ekstèn — Byento",
         "addonHint": "Apostle milti-sit enkli",
         "campsHint": "Kanpo ak Retrèt enkli",
-        "kidsHint": "Legliz timoun enkli"
+        "kidsHint": "Legliz timoun enkli",
+        "financesHint": "Finans / trezò enkli"
       }
     },
     "apostol": {
@@ -333,7 +336,8 @@
         "api": "API ekstèn",
         "multisite": "Milti-sit",
         "camps": "Campamentos y retiros",
-        "kids": "Legliz timoun"
+        "kids": "Legliz timoun",
+        "finances": "Finans / trezò"
       },
       "seats": {
         "basic": "500",
