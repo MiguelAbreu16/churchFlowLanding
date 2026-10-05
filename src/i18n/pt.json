@@ -253,10 +253,14 @@
     "addonEyebrow": "Incluído no Kingdom",
     "addonTitle": "Apostle — rede multi-sede",
     "addonSubtitle": "Gerencie igrejas filhas com um painel de rede e seletor de igreja. Incluído no Kingdom Plan; sem taxa separada.",
-    "campsAddonTitle": "Acampamentos e Retiros",
-    "campsAddonSubtitle": "Incluído no Plano Reino. Em Semilla e Crecimiento é um add-on de $20/mês via PayPal.",
-    "kidsIncludedTitle": "Igreja infantil",
-    "kidsIncludedSubtitle": "Incluído no Plano Reino: check-in/retirada com QR familiar, PIN, salas e alertas. Sem add-on PayPal para Semilla/Crecimiento no MVP."
+    "addonsTitle": "Add-ons e multissede",
+    "addonsSubtitle": "Adicione só o módulo que falta, sem trocar de plano.",
+    "addonsList": {
+      "kids": "Crianças: $19/mês no Crescimento (incluído no Reino)",
+      "parking": "Estacionamento: $15/mês no Semente (incluído a partir do Crescimento)",
+      "camps": "Acampamentos: $20/mês no Semente e Crescimento (incluído no Reino)",
+      "campusDiscount": "Reino: 20% de desconto por cada campus da sua rede"
+    }
   },
   "plans": {
     "period": "mês",
@@ -266,46 +270,16 @@
     "startTrial": "Começar teste grátis",
     "talkSales": "Falar com vendas",
     "basic": {
-      "name": "Seed Plan",
-      "description": "Operações ao vivo para o seu primeiro nível",
-      "features": {
-        "seats": "Até 500 assentos por evento",
-        "layouts": "1 layout (santuário)",
-        "ushers": "5 porteiros ativos",
-        "liveOps": "Painel, incidentes e terminal",
-        "emailSupport": "Suporte por e-mail",
-        "finances": "Finanças (receitas e despesas)"
-      }
+      "name": "Plano Semente",
+      "description": "Para igrejas pequenas que começam a digitalizar seus cultos e pessoas."
     },
     "pro": {
-      "name": "Growth Plan",
-      "description": "Eventos, análises e estacionamento para congregações ativas",
-      "features": {
-        "seats": "Até 2.000 assentos",
-        "layouts": "Até 5 layouts",
-        "ushers": "20 porteiros ativos",
-        "events": "Eventos, ingressos e check-in",
-        "analytics": "Análises de ocupação por zona",
-        "parkingMembers": "Estacionamento e membros",
-        "prioritySupport": "Suporte prioritário",
-        "finances": "Finanças e relatórios"
-      }
+      "name": "Plano Crescimento",
+      "description": "Para congregações em crescimento com eventos, finanças e vários ministérios."
     },
     "enterprise": {
-      "name": "Kingdom Plan",
-      "description": "Limites maiores e suporte dedicado para ministérios em expansão",
-      "features": {
-        "seats": "Até 10.000 assentos por layout",
-        "layouts": "Até 50 layouts",
-        "ushers": "Porteiros praticamente ilimitados",
-        "audit": "Logs de auditoria completos",
-        "dedicatedSupport": "Suporte dedicado",
-        "apiComingSoon": "API externa — Em breve",
-        "addonHint": "Apostle multi-sede incluído",
-        "campsHint": "Acampamentos e Retiros incluído",
-        "kidsHint": "Igreja infantil incluída",
-        "financesHint": "Finanças / tesouraria incluída"
-      }
+      "name": "Plano Reino",
+      "description": "Para igrejas grandes, redes e multissedes que precisam de tudo."
     },
     "apostol": {
       "name": "Apostle / Multi-sede",
@@ -320,52 +294,47 @@
     },
     "compare": {
       "labels": {
-        "seats": "Assentos por layout",
-        "layouts": "Layouts",
-        "ushers": "Porteiros ativos",
-        "liveOps": "Painel ao vivo",
-        "incidents": "Incidentes e alertas",
-        "terminal": "Visão de terminal",
-        "events": "Eventos",
-        "tickets": "Ingressos",
-        "checkIn": "Check-in",
-        "analytics": "Análises",
-        "parking": "Estacionamento",
         "members": "Membros",
-        "audit": "Auditoria",
-        "api": "API externa",
-        "multisite": "Multi-sede",
-        "camps": "Campamentos y retiros",
-        "kids": "Igreja infantil",
-        "finances": "Finanças / tesouraria"
+        "users": "Usuários da equipe",
+        "layouts": "Plantas",
+        "seats": "Assentos por planta",
+        "ushers": "Introdutores ativos",
+        "campusDiscount": "Desconto por campus",
+        "prioritySupport": "Suporte prioritário"
       },
-      "seats": {
-        "basic": "500",
-        "pro": "2.000",
-        "enterprise": "10.000"
-      },
-      "layouts": {
-        "basic": "1",
-        "pro": "5",
-        "enterprise": "50"
-      },
-      "ushers": {
-        "basic": "5",
-        "pro": "20",
-        "enterprise": "Ilimitado"
-      },
-      "multisite": {
-        "addon": "Não incluído",
-        "included": "Incluído no Kingdom"
-      },
-      "camps": {
-        "addon": "Add-on disponível",
-        "included": "Incluído no Reino"
-      },
-      "kids": {
-        "reinoOnly": "Somente Plano Reino",
-        "included": "Incluído no Reino"
-      }
+      "unlimited": "Ilimitado",
+      "addon": "Add-on ${{price}}/mês"
+    },
+    "modules": {
+      "churchLife": "Vida da igreja",
+      "visits": "Visitas",
+      "shifts": "Escalas",
+      "worship": "Louvor",
+      "liveService": "Culto ao vivo",
+      "publicSignup": "Cadastro público",
+      "notifications": "Notificações",
+      "studies": "Estudos",
+      "finances": "Finanças",
+      "events": "Eventos e ingressos",
+      "parking": "Estacionamento",
+      "analytics": "Análises",
+      "pulse": "Pulso",
+      "kids": "Crianças",
+      "camps": "Acampamentos",
+      "network": "Rede / Sedes"
+    },
+    "features": {
+      "members": "Até {{n}} membros",
+      "membersUnlimited": "Membros ilimitados",
+      "users": "{{n}} usuários da equipe",
+      "usersUnlimited": "Usuários ilimitados",
+      "layouts": "{{layouts}} planta(s) de até {{seats}} assentos",
+      "ushers": "{{n}} introdutores ativos",
+      "ushersUnlimited": "Introdutores ilimitados",
+      "everythingIn": "Tudo do {{plan}}, mais:",
+      "campusDiscount": "{{pct}}% de desconto por campus",
+      "prioritySupport": "Suporte prioritário",
+      "addOn": "Add-on {{module}}: ${{price}}/mês"
     }
   },
   "faq": {
@@ -393,20 +362,28 @@
         "a": "Sim, sem multa. O acesso continua até o fim do período pago."
       },
       "reino": {
-        "q": "O que o Kingdom Plan inclui hoje?",
-        "a": "Limites maiores, auditoria, suporte dedicado, Apóstolo multi-sede, Acampamentos e Retiros e Igreja infantil incluídos. API externa continua no roadmap. Cada igreja filha pode ter seu próprio plano."
+        "q": "O que inclui o Plano Reino?",
+        "a": "Todos os módulos (incluindo Crianças, Acampamentos e a rede multissede Apóstolo), membros, usuários e introdutores ilimitados, até 50 plantas de 10.000 assentos, 20% de desconto por campus e suporte prioritário."
       },
       "apostol": {
-        "q": "O que é Apostle / Multi-sede?",
-        "a": "É a rede multi-sede incluída no Kingdom Plan: gerencie igrejas filhas com um painel de rede e seletor de igreja. Cada filha paga o próprio plano (ou teste). Não há taxa separada do Apostle."
+        "q": "O que é Apóstolo / Multissede?",
+        "a": "É a rede multissede incluída no Plano Reino: você gerencia igrejas filhas com painel de rede e seletor de igreja. Cada filha tem seu próprio plano, com 20% de desconto por campus."
       },
       "camps": {
         "q": "O que inclui o módulo de Acampamentos?",
-        "a": "Logística de retiros: mapa/planta, campistas, inscrições e pagamentos, chamada, ônibus, itinerário ao vivo, alertas, saúde e chat da equipe. Incluído no Plano Reino; em Semilla/Crecimiento é add-on PayPal ($20/mês)."
+        "a": "Logística de retiros: mapa/planta, campistas, inscrições e cobranças, chamada, ônibus, itinerário ao vivo, alertas, saúde e chat da equipe. Incluído no Reino; add-on de $20/mês no Semente e Crescimento."
       },
       "kids": {
-        "q": "O que inclui a Igreja infantil?",
-        "a": "Check-in e retirada seguros: alergias e consentimentos, códigos QR familiares, check-in familiar, PIN e foto, mapa de salas, alarme MISSING e relatórios. Incluído no Plano Reino; sem add-on PayPal para outros planos no MVP."
+        "q": "O que inclui Igreja das crianças?",
+        "a": "Check-in e retirada segura de crianças: cadastro com alergias e consentimentos, código familiar com QR, PIN e foto na retirada, planta de salas, alerta MISSING e relatórios. Incluído no Reino; add-on de $19/mês no Crescimento."
+      },
+      "addons": {
+        "q": "O que são add-ons?",
+        "a": "Módulos que você pode somar ao seu plano sem trocá-lo: Crianças ($19/mês no Crescimento), Estacionamento ($15/mês no Semente) e Acampamentos ($20/mês no Semente e Crescimento). Ative ou cancele em Faturamento."
+      },
+      "limits": {
+        "q": "O que acontece se eu atingir o limite do plano?",
+        "a": "Nada é apagado. Você só não poderá adicionar mais membros, usuários, plantas ou introdutores até melhorar o plano. Semente: 150 membros e 5 usuários; Crescimento: 600 membros e 20 usuários; Reino: ilimitado."
       }
     }
   },

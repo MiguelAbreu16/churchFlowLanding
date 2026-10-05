@@ -253,10 +253,14 @@
     "addonEyebrow": "Included in Kingdom",
     "addonTitle": "Apostle — multi-site network",
     "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee.",
-    "campsAddonTitle": "Camps & Retreats",
-    "campsAddonSubtitle": "Included in Kingdom Plan. On Seed and Growth it is a $20/mo PayPal add-on.",
-    "kidsIncludedTitle": "Children's Church",
-    "kidsIncludedSubtitle": "Included in Kingdom Plan: family QR check-in/pickup, PIN, rooms, and alerts. No PayPal add-on for Seed/Growth in MVP."
+    "addonsTitle": "Add-ons and multi-site",
+    "addonsSubtitle": "Add just the module you need without switching plans.",
+    "addonsList": {
+      "kids": "Kids: $19/mo on Growth (included in Kingdom)",
+      "parking": "Parking: $15/mo on Seed (included from Growth)",
+      "camps": "Camps: $20/mo on Seed and Growth (included in Kingdom)",
+      "campusDiscount": "Kingdom: 20% discount for every campus in your network"
+    }
   },
   "plans": {
     "period": "mo",
@@ -267,45 +271,15 @@
     "talkSales": "Talk to sales",
     "basic": {
       "name": "Seed Plan",
-      "description": "Live operations for your first level",
-      "features": {
-        "seats": "Up to 500 seats per event",
-        "layouts": "1 layout (sanctuary)",
-        "ushers": "5 active ushers",
-        "liveOps": "Dashboard, incidents & terminal",
-        "emailSupport": "Email support",
-        "finances": "Finances (income & expenses)"
-      }
+      "description": "For small churches starting to digitize their services and people."
     },
     "pro": {
       "name": "Growth Plan",
-      "description": "Events, analytics & parking for active congregations",
-      "features": {
-        "seats": "Up to 2,000 seats",
-        "layouts": "Up to 5 layouts",
-        "ushers": "20 active ushers",
-        "events": "Events, tickets & check-in",
-        "analytics": "Zone occupancy analytics",
-        "parkingMembers": "Parking & members",
-        "prioritySupport": "Priority support",
-        "finances": "Finances and reports"
-      }
+      "description": "For growing congregations with events, finances and several ministries."
     },
     "enterprise": {
       "name": "Kingdom Plan",
-      "description": "Higher limits and dedicated support for expanding ministries",
-      "features": {
-        "seats": "Up to 10,000 seats per layout",
-        "layouts": "Up to 50 layouts",
-        "ushers": "Practically unlimited ushers",
-        "audit": "Full audit logs",
-        "dedicatedSupport": "Dedicated support",
-        "apiComingSoon": "External API — Coming soon",
-        "addonHint": "Apostle multi-site included",
-        "campsHint": "Camps & Retreats included",
-        "kidsHint": "Children's Church included",
-        "financesHint": "Finances / treasury included"
-      }
+      "description": "For large churches, networks and multi-site ministries that need it all."
     },
     "apostol": {
       "name": "Apostle / Multi-site",
@@ -320,52 +294,47 @@
     },
     "compare": {
       "labels": {
-        "seats": "Seats per layout",
-        "layouts": "Layouts",
-        "ushers": "Active ushers",
-        "liveOps": "Live dashboard",
-        "incidents": "Incidents & alerts",
-        "terminal": "Terminal view",
-        "events": "Events",
-        "tickets": "Tickets",
-        "checkIn": "Check-in",
-        "analytics": "Analytics",
-        "parking": "Parking",
         "members": "Members",
-        "audit": "Audit",
-        "api": "External API",
-        "multisite": "Multi-site",
-        "camps": "Camps & retreats",
-        "kids": "Children's Church",
-        "finances": "Finances / treasury"
+        "users": "Team users",
+        "layouts": "Layouts",
+        "seats": "Seats per layout",
+        "ushers": "Active ushers",
+        "campusDiscount": "Campus discount",
+        "prioritySupport": "Priority support"
       },
-      "seats": {
-        "basic": "500",
-        "pro": "2,000",
-        "enterprise": "10,000"
-      },
-      "layouts": {
-        "basic": "1",
-        "pro": "5",
-        "enterprise": "50"
-      },
-      "ushers": {
-        "basic": "5",
-        "pro": "20",
-        "enterprise": "Unlimited"
-      },
-      "multisite": {
-        "addon": "Not included",
-        "included": "Included in Kingdom"
-      },
-      "camps": {
-        "addon": "Add-on available",
-        "included": "Included in Kingdom"
-      },
-      "kids": {
-        "reinoOnly": "Kingdom Plan only",
-        "included": "Included in Kingdom"
-      }
+      "unlimited": "Unlimited",
+      "addon": "Add-on ${{price}}/mo"
+    },
+    "modules": {
+      "churchLife": "Church life",
+      "visits": "Visits",
+      "shifts": "Shifts",
+      "worship": "Worship",
+      "liveService": "Live service",
+      "publicSignup": "Public signup",
+      "notifications": "Notifications",
+      "studies": "Studies",
+      "finances": "Finances",
+      "events": "Events & tickets",
+      "parking": "Parking",
+      "analytics": "Analytics",
+      "pulse": "Pulse",
+      "kids": "Kids",
+      "camps": "Camps",
+      "network": "Network / Campuses"
+    },
+    "features": {
+      "members": "Up to {{n}} members",
+      "membersUnlimited": "Unlimited members",
+      "users": "{{n}} team users",
+      "usersUnlimited": "Unlimited users",
+      "layouts": "{{layouts}} layout(s) up to {{seats}} seats",
+      "ushers": "{{n}} active ushers",
+      "ushersUnlimited": "Unlimited ushers",
+      "everythingIn": "Everything in {{plan}}, plus:",
+      "campusDiscount": "{{pct}}% campus discount",
+      "prioritySupport": "Priority support",
+      "addOn": "{{module}} add-on: ${{price}}/mo"
     }
   },
   "faq": {
@@ -393,20 +362,28 @@
         "a": "Yes, with no penalty. Access continues until the end of the paid period."
       },
       "reino": {
-        "q": "What does Kingdom plan include today?",
-        "a": "Higher limits, audit logs, dedicated support, Apostle multi-site, Camps & Retreats, and Children's Church included. External API remains on the roadmap. Each daughter church can have its own plan."
+        "q": "What does the Kingdom Plan include?",
+        "a": "Every module (including Kids, Camps and the Apostle multi-site network), unlimited members, users and ushers, up to 50 layouts of 10,000 seats, a 20% campus discount and priority support."
       },
       "apostol": {
         "q": "What is Apostle / Multi-site?",
-        "a": "It is the multi-site network included in Kingdom Plan: manage daughter churches with a network panel and church switcher. Each daughter pays its own plan (or trial). There is no separate Apostle fee."
+        "a": "The multi-site network included in the Kingdom Plan: manage child churches with a network panel and church switcher. Each child church has its own plan, with a 20% campus discount."
       },
       "camps": {
         "q": "What does the Camps module include?",
-        "a": "Retreat logistics: map/floor plan, campers, sign-ups and payments, roll call, buses, live itinerary, alerts, health, and staff chat. Included in Kingdom Plan; on Seed/Growth it is a $20/mo PayPal add-on."
+        "a": "Retreat logistics: map/layout, campers, registrations and payments, roll call, buses, live itinerary, alerts, health and staff chat. Included in Kingdom; a $20/mo add-on on Seed and Growth."
       },
       "kids": {
-        "q": "What does Children's Church include?",
-        "a": "Safe kids check-in and pickup: allergies and consents, family QR codes, family check-in, PIN and pickup photo, room map, MISSING alarm, and reports. Included in Kingdom Plan; no PayPal add-on for other plans in MVP."
+        "q": "What does Kids Church include?",
+        "a": "Secure kids check-in and pick-up: registration with allergies and consents, family QR code, PIN and photo at pick-up, room map, MISSING alert and reports. Included in Kingdom; a $19/mo add-on on Growth."
+      },
+      "addons": {
+        "q": "What are add-ons?",
+        "a": "Modules you can add to your plan without changing it: Kids ($19/mo on Growth), Parking ($15/mo on Seed) and Camps ($20/mo on Seed and Growth). Turn them on or off from Billing."
+      },
+      "limits": {
+        "q": "What happens if I reach my plan limit?",
+        "a": "Nothing is deleted. You just can't add more members, users, layouts or ushers until you upgrade. Seed: 150 members and 5 users; Growth: 600 members and 20 users; Kingdom: unlimited."
       }
     }
   },

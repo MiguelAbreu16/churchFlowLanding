@@ -1,135 +1,194 @@
+/**
+ * Static fallback mirroring backend/src/config/plans.ts (PLAN_ENTITLEMENTS).
+ * Live prices / limits / modules come from the `planCatalog` query (see usePlans).
+ */
+const SEED_MODULES = [
+  "churchLife",
+  "visits",
+  "shifts",
+  "worship",
+  "liveService",
+  "publicSignup",
+  "notifications",
+];
+const GROWTH_MODULES = [
+  ...SEED_MODULES,
+  "studies",
+  "finances",
+  "events",
+  "parking",
+  "analytics",
+  "pulse",
+];
+const KINGDOM_MODULES = [...GROWTH_MODULES, "kids", "camps", "network"];
+
 export const PLANS = [
   {
     id: "basic",
+    planCode: "SEMILLA",
     nameKey: "plans.basic.name",
     descriptionKey: "plans.basic.description",
     price: 29,
+    priceAnnual: 278,
     periodKey: "plans.period",
-    featureKeys: [
-      "plans.basic.features.seats",
-      "plans.basic.features.layouts",
-      "plans.basic.features.ushers",
-      "plans.basic.features.liveOps",
-      "plans.basic.features.finances",
-      "plans.basic.features.emailSupport",
+    modules: SEED_MODULES,
+    limits: {
+      maxMembers: 150,
+      maxUsers: 5,
+      maxLayouts: 1,
+      maxSeatsPerLayout: 500,
+      maxUshers: 5,
+    },
+    addOns: [
+      { key: "camps", priceMonthly: 20 },
+      { key: "parking", priceMonthly: 15 },
     ],
+    campusDiscountPct: 0,
+    prioritySupport: false,
     color: "#64748B",
     popular: false,
   },
   {
     id: "pro",
+    planCode: "STANDARD",
     nameKey: "plans.pro.name",
     descriptionKey: "plans.pro.description",
     price: 79,
+    priceAnnual: 758,
     periodKey: "plans.period",
-    featureKeys: [
-      "plans.pro.features.seats",
-      "plans.pro.features.layouts",
-      "plans.pro.features.ushers",
-      "plans.pro.features.events",
-      "plans.pro.features.analytics",
-      "plans.pro.features.parkingMembers",
-      "plans.pro.features.finances",
-      "plans.pro.features.prioritySupport",
+    modules: GROWTH_MODULES,
+    limits: {
+      maxMembers: 600,
+      maxUsers: 20,
+      maxLayouts: 5,
+      maxSeatsPerLayout: 2000,
+      maxUshers: 20,
+    },
+    addOns: [
+      { key: "camps", priceMonthly: 20 },
+      { key: "kids", priceMonthly: 19 },
     ],
+    campusDiscountPct: 0,
+    prioritySupport: false,
     color: "#eab308",
     popular: true,
   },
   {
     id: "enterprise",
+    planCode: "ENTERPRISE",
     nameKey: "plans.enterprise.name",
     descriptionKey: "plans.enterprise.description",
     price: 199,
+    priceAnnual: 1910,
     periodKey: "plans.period",
-    featureKeys: [
-      "plans.enterprise.features.seats",
-      "plans.enterprise.features.layouts",
-      "plans.enterprise.features.ushers",
-      "plans.enterprise.features.audit",
-      "plans.enterprise.features.financesHint",
-      "plans.enterprise.features.dedicatedSupport",
-      "plans.enterprise.features.apiComingSoon",
-      "plans.enterprise.features.addonHint",
-      "plans.enterprise.features.campsHint",
-      "plans.enterprise.features.kidsHint",
-    ],
+    modules: KINGDOM_MODULES,
+    limits: {
+      maxMembers: null,
+      maxUsers: null,
+      maxLayouts: 50,
+      maxSeatsPerLayout: 10000,
+      maxUshers: null,
+    },
+    addOns: [],
+    campusDiscountPct: 20,
+    prioritySupport: true,
     color: "#1E293B",
     popular: false,
   },
 ];
 
-/** @deprecated Apóstol is included in Plan Reino; kept for legacy imports. */
-export const APOSTOL_ADDON = null;
-
-/** Rows for PricingComparisonTable — values are i18n keys or plan field keys */
-export const PLAN_COMPARISON_ROWS = [
-  {
-    key: "seats",
-    basic: "plans.compare.seats.basic",
-    pro: "plans.compare.seats.pro",
-    enterprise: "plans.compare.seats.enterprise",
-  },
-  {
-    key: "layouts",
-    basic: "plans.compare.layouts.basic",
-    pro: "plans.compare.layouts.pro",
-    enterprise: "plans.compare.layouts.enterprise",
-  },
-  {
-    key: "ushers",
-    basic: "plans.compare.ushers.basic",
-    pro: "plans.compare.ushers.pro",
-    enterprise: "plans.compare.ushers.enterprise",
-  },
-  { key: "liveOps", basic: true, pro: true, enterprise: true },
-  { key: "incidents", basic: true, pro: true, enterprise: true },
-  { key: "terminal", basic: true, pro: true, enterprise: true },
-  { key: "events", basic: false, pro: true, enterprise: true },
-  { key: "tickets", basic: false, pro: true, enterprise: true },
-  { key: "checkIn", basic: false, pro: true, enterprise: true },
-  { key: "analytics", basic: false, pro: true, enterprise: true },
-  { key: "parking", basic: false, pro: true, enterprise: true },
-  { key: "members", basic: false, pro: true, enterprise: true },
-  {
-    key: "camps",
-    basic: "plans.compare.camps.addon",
-    pro: "plans.compare.camps.addon",
-    enterprise: "plans.compare.camps.included",
-  },
-  {
-    key: "kids",
-    basic: "plans.compare.kids.reinoOnly",
-    pro: "plans.compare.kids.reinoOnly",
-    enterprise: "plans.compare.kids.included",
-  },
-  { key: "finances", basic: true, pro: true, enterprise: true },
-  { key: "audit", basic: false, pro: false, enterprise: true },
-  { key: "api", basic: false, pro: false, enterprise: "comingSoon" },
-  {
-    key: "multisite",
-    basic: "plans.compare.multisite.addon",
-    pro: "plans.compare.multisite.addon",
-    enterprise: "plans.compare.multisite.included",
-  },
+const LIMIT_KEYS = [
+  "maxMembers",
+  "maxUsers",
+  "maxLayouts",
+  "maxSeatsPerLayout",
+  "maxUshers",
 ];
 
-export const PLAN_COMPARISON_LABELS = {
-  seats: "plans.compare.labels.seats",
-  layouts: "plans.compare.labels.layouts",
-  ushers: "plans.compare.labels.ushers",
-  liveOps: "plans.compare.labels.liveOps",
-  incidents: "plans.compare.labels.incidents",
-  terminal: "plans.compare.labels.terminal",
-  events: "plans.compare.labels.events",
-  tickets: "plans.compare.labels.tickets",
-  checkIn: "plans.compare.labels.checkIn",
-  analytics: "plans.compare.labels.analytics",
-  parking: "plans.compare.labels.parking",
-  members: "plans.compare.labels.members",
-  camps: "plans.compare.labels.camps",
-  kids: "plans.compare.labels.kids",
-  finances: "plans.compare.labels.finances",
-  audit: "plans.compare.labels.audit",
-  api: "plans.compare.labels.api",
-  multisite: "plans.compare.labels.multisite",
-};
+/** Overlay live `planCatalog` rows on the static plans. */
+export function mergeCatalog(catalog) {
+  if (!catalog?.length) return PLANS;
+  return PLANS.map((plan) => {
+    const row = catalog.find(
+      (c) => c.planCode === plan.planCode || c.landingId === plan.id,
+    );
+    if (!row?.modules) return plan;
+    return {
+      ...plan,
+      price: row.priceMonthly,
+      priceAnnual: row.priceAnnual,
+      modules: row.modules,
+      limits: Object.fromEntries(LIMIT_KEYS.map((k) => [k, row[k]])),
+      addOns: row.addOns || [],
+      campusDiscountPct: row.campusDiscountPct,
+      prioritySupport: row.prioritySupport,
+    };
+  });
+}
+
+const fmt = (n) => n.toLocaleString("en-US");
+const limitText = (t, key, n) =>
+  n === null || n === undefined
+    ? t(`plans.features.${key}Unlimited`)
+    : t(`plans.features.${key}`, { n: fmt(n) });
+
+/** Card bullet list: limits, modules new vs. the previous plan, perks and add-ons. */
+export function planFeatures(plan, t) {
+  const index = PLANS.findIndex((p) => p.id === plan.id);
+  const prev = PLANS[index - 1];
+  const { limits } = plan;
+  return [
+    limitText(t, "members", limits.maxMembers),
+    limitText(t, "users", limits.maxUsers),
+    t("plans.features.layouts", {
+      layouts: limits.maxLayouts,
+      seats: fmt(limits.maxSeatsPerLayout),
+    }),
+    limitText(t, "ushers", limits.maxUshers),
+    prev && t("plans.features.everythingIn", { plan: t(prev.nameKey) }),
+    ...plan.modules
+      .filter((m) => !prev?.modules.includes(m))
+      .map((m) => t(`plans.modules.${m}`)),
+    plan.campusDiscountPct > 0 &&
+      t("plans.features.campusDiscount", { pct: plan.campusDiscountPct }),
+    plan.prioritySupport && t("plans.features.prioritySupport"),
+    ...plan.addOns.map((a) =>
+      t("plans.features.addOn", {
+        module: t(`plans.modules.${a.key}`),
+        price: a.priceMonthly,
+      }),
+    ),
+  ].filter(Boolean);
+}
+
+const limitCell = (n) =>
+  n === null || n === undefined ? { key: "plans.compare.unlimited" } : fmt(n);
+
+/** Comparison table rows generated from limits + the module matrix. */
+export function comparisonRows(plans) {
+  const row = (labelKey, cell) => ({
+    labelKey,
+    cells: plans.map((p) => cell(p)),
+  });
+  const moduleCell = (m) => (p) => {
+    if (p.modules.includes(m)) return true;
+    const addOn = p.addOns.find((a) => a.key === m);
+    return addOn
+      ? { key: "plans.compare.addon", params: { price: addOn.priceMonthly } }
+      : false;
+  };
+  return [
+    row("plans.compare.labels.members", (p) => limitCell(p.limits.maxMembers)),
+    row("plans.compare.labels.users", (p) => limitCell(p.limits.maxUsers)),
+    row("plans.compare.labels.layouts", (p) => limitCell(p.limits.maxLayouts)),
+    row("plans.compare.labels.seats", (p) =>
+      limitCell(p.limits.maxSeatsPerLayout),
+    ),
+    row("plans.compare.labels.ushers", (p) => limitCell(p.limits.maxUshers)),
+    ...KINGDOM_MODULES.map((m) => row(`plans.modules.${m}`, moduleCell(m))),
+    row("plans.compare.labels.campusDiscount", (p) =>
+      p.campusDiscountPct > 0 ? `${p.campusDiscountPct}%` : false,
+    ),
+    row("plans.compare.labels.prioritySupport", (p) => p.prioritySupport),
+  ];
+}

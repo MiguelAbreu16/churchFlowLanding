@@ -10,6 +10,18 @@ export const PLAN_CATALOG = gql`
       landingId
       paypalPlanIdMonthly
       paypalPlanIdAnnual
+      modules
+      maxMembers
+      maxUsers
+      maxLayouts
+      maxSeatsPerLayout
+      maxUshers
+      campusDiscountPct
+      prioritySupport
+      addOns {
+        key
+        priceMonthly
+      }
     }
   }
 `;

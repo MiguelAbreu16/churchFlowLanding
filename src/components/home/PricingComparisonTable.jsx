@@ -17,11 +17,8 @@ import {
 import Check from "@mui/icons-material/Check";
 import Close from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
-import {
-  PLANS,
-  PLAN_COMPARISON_ROWS,
-  PLAN_COMPARISON_LABELS,
-} from "../../constants/plans";
+import { comparisonRows } from "../../constants/plans";
+import { usePlans } from "../../hooks/usePlans";
 
 function CellValue({ value, t }) {
   const theme = useTheme();
@@ -36,24 +33,10 @@ function CellValue({ value, t }) {
       />
     );
   }
-  if (value === "comingSoon") {
-    return (
-      <Chip
-        label={t("plans.comingSoon")}
-        size="small"
-        sx={{
-          fontWeight: 700,
-          fontSize: "0.7rem",
-          bgcolor: alpha(theme.palette.warning.main, 0.12),
-          color: "warning.dark",
-        }}
-      />
-    );
-  }
-  if (typeof value === "string" && value.startsWith("plans.")) {
+  if (value?.key) {
     return (
       <Typography variant="body2" sx={{ fontWeight: 600 }}>
-        {t(value)}
+        {t(value.key, value.params)}
       </Typography>
     );
   }
@@ -64,14 +47,12 @@ function CellValue({ value, t }) {
   );
 }
 
-function MobilePlanCards({ t }) {
+function MobilePlanCards({ t, plans, rows }) {
   const theme = useTheme();
-  const planCols = ["basic", "pro", "enterprise"];
 
   return (
     <Stack spacing={2} sx={{ mt: 2 }}>
-      {PLANS.map((plan) => {
-        const col = planCols.find((c) => c === plan.id) || plan.id;
+      {plans.map((plan, col) => {
         return (
           <Paper
             key={plan.id}
@@ -104,9 +85,9 @@ function MobilePlanCards({ t }) {
               )}
             </Stack>
             <Stack spacing={1.25}>
-              {PLAN_COMPARISON_ROWS.map((row) => (
+              {rows.map((row) => (
                 <Stack
-                  key={row.key}
+                  key={row.labelKey}
                   direction="row"
                   spacing={2}
                   sx={{
@@ -119,10 +100,10 @@ function MobilePlanCards({ t }) {
                     color="text.secondary"
                     sx={{ flex: 1 }}
                   >
-                    {t(PLAN_COMPARISON_LABELS[row.key])}
+                    {t(row.labelKey)}
                   </Typography>
                   <Box sx={{ minWidth: 72, textAlign: "right" }}>
-                    <CellValue value={row[col]} t={t} />
+                    <CellValue value={row.cells[col]} t={t} />
                   </Box>
                 </Stack>
               ))}
@@ -138,7 +119,8 @@ export default function PricingComparisonTable() {
   const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const planCols = ["basic", "pro", "enterprise"];
+  const plans = usePlans();
+  const rows = comparisonRows(plans);
 
   return (
     <Box sx={{ mt: 6 }}>
@@ -150,7 +132,7 @@ export default function PricingComparisonTable() {
       </Typography>
 
       {isMobile ? (
-        <MobilePlanCards t={t} />
+        <MobilePlanCards t={t} plans={plans} rows={rows} />
       ) : (
         <TableContainer
           sx={{
@@ -163,7 +145,7 @@ export default function PricingComparisonTable() {
             <TableHead>
               <TableRow>
                 <TableCell sx={{ fontWeight: 800, width: "28%" }} />
-                {PLANS.map((plan) => (
+                {plans.map((plan) => (
                   <TableCell key={plan.id} align="center">
                     <Typography variant="subtitle2" sx={{ fontWeight: 800 }}>
                       {t(plan.nameKey)}
@@ -181,14 +163,14 @@ export default function PricingComparisonTable() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {PLAN_COMPARISON_ROWS.map((row) => (
-                <TableRow key={row.key} hover>
+              {rows.map((row) => (
+                <TableRow key={row.labelKey} hover>
                   <TableCell sx={{ fontWeight: 600 }}>
-                    {t(PLAN_COMPARISON_LABELS[row.key])}
+                    {t(row.labelKey)}
                   </TableCell>
-                  {planCols.map((col) => (
+                  {row.cells.map((cell, col) => (
                     <TableCell key={col} align="center">
-                      <CellValue value={row[col]} t={t} />
+                      <CellValue value={cell} t={t} />
                     </TableCell>
                   ))}
                 </TableRow>

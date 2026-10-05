@@ -3,11 +3,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import PricingCard from "../pricing/PricingCard";
 import PricingComparisonTable from "./PricingComparisonTable";
-import { PLANS } from "../../constants/plans";
+import { usePlans } from "../../hooks/usePlans";
 
 export default function PricingSection({ showComparison = true }) {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const plans = usePlans();
 
   return (
     <Box id="pricing" className="section" sx={{ bgcolor: "background.default" }}>
@@ -39,7 +40,7 @@ export default function PricingSection({ showComparison = true }) {
         </Box>
 
         <Grid container spacing={2} sx={{ alignItems: "stretch" }}>
-          {PLANS.map((plan) => (
+          {plans.map((plan) => (
             <Grid size={{ xs: 12, md: 4 }} key={plan.id}>
               <PricingCard
                 plan={plan}
@@ -63,17 +64,16 @@ export default function PricingSection({ showComparison = true }) {
           }}
         >
           <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
-            {t("pricing.campsAddonTitle")}
+            {t("pricing.addonsTitle")}
           </Typography>
-          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto", mb: 3 }}>
-            {t("pricing.campsAddonSubtitle")}
+          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto", mb: 2 }}>
+            {t("pricing.addonsSubtitle")}
           </Typography>
-          <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
-            {t("pricing.kidsIncludedTitle")}
-          </Typography>
-          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto" }}>
-            {t("pricing.kidsIncludedSubtitle")}
-          </Typography>
+          {["kids", "parking", "camps", "campusDiscount"].map((key) => (
+            <Typography key={key} variant="body2" sx={{ fontWeight: 600, mb: 0.5 }}>
+              {t(`pricing.addonsList.${key}`)}
+            </Typography>
+          ))}
         </Box>
 
         <Box sx={{ mt: 8, textAlign: "center" }}>

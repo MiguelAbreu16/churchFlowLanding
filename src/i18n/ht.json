@@ -253,10 +253,14 @@
     "addonEyebrow": "Enkli nan Kingdom",
     "addonTitle": "Apostle — rezo milti-sit",
     "addonSubtitle": "Jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Enkli nan Kingdom Plan; pa gen frè separe.",
-    "campsAddonTitle": "Kanps ak Retrèt",
-    "campsAddonSubtitle": "Enkli nan Plan Reino. Nan Semilla ak Crecimiento se yon add-on $20/mwa atravè PayPal.",
-    "kidsIncludedTitle": "Legliz timoun",
-    "kidsIncludedSubtitle": "Enkli nan Plan Reino: check-in/retrè QR fanmi, PIN, sal ak alèt. Pa gen add-on PayPal pou Semilla/Crecimiento nan MVP."
+    "addonsTitle": "Add-on ak plizyè sit",
+    "addonsSubtitle": "Ajoute sèlman modil ou bezwen an, san chanje plan.",
+    "addonsList": {
+      "kids": "Timoun: $19/mwa nan Kwasans (enkli nan Wayòm)",
+      "parking": "Pakin: $15/mwa nan Semans (enkli depi Kwasans)",
+      "camps": "Kan: $20/mwa nan Semans ak Kwasans (enkli nan Wayòm)",
+      "campusDiscount": "Wayòm: 20% rabè pou chak sit nan rezo ou"
+    }
   },
   "plans": {
     "period": "mwa",
@@ -266,46 +270,16 @@
     "startTrial": "Kòmanse esè gratis",
     "talkSales": "Pale ak lavant",
     "basic": {
-      "name": "Seed Plan",
-      "description": "Operasyon an dirèk pou premye nivo ou",
-      "features": {
-        "seats": "Jiska 500 syèj pou chak evènman",
-        "layouts": "1 layout (tanp)",
-        "ushers": "5 ovrè aktif",
-        "liveOps": "Tablo, ensidan ak tèminal",
-        "emailSupport": "Sipò pa imèl",
-        "finances": "Finans (antre ak soti)"
-      }
+      "name": "Plan Semans",
+      "description": "Pou ti legliz k ap kòmanse dijitalize sèvis yo ak moun yo."
     },
     "pro": {
-      "name": "Growth Plan",
-      "description": "Evènman, analiz ak parking pou kongregasyon aktif",
-      "features": {
-        "seats": "Jiska 2,000 syèj",
-        "layouts": "Jiska 5 layout",
-        "ushers": "20 ovrè aktif",
-        "events": "Evènman, tikè ak check-in",
-        "analytics": "Analiz okipasyon zòn",
-        "parkingMembers": "Parking ak manm",
-        "prioritySupport": "Sipò priyorite",
-        "finances": "Finans ak rapò"
-      }
+      "name": "Plan Kwasans",
+      "description": "Pou kongregasyon k ap grandi ak evènman, finans ak plizyè ministè."
     },
     "enterprise": {
-      "name": "Kingdom Plan",
-      "description": "Limit pi wo ak sipò dedye pou ministè k ap elaji",
-      "features": {
-        "seats": "Jiska 10,000 syèj pou chak layout",
-        "layouts": "Jiska 50 layout",
-        "ushers": "Ovrè pratikman san limit",
-        "audit": "Jounal audit konplè",
-        "dedicatedSupport": "Sipò dedye",
-        "apiComingSoon": "API ekstèn — Byento",
-        "addonHint": "Apostle milti-sit enkli",
-        "campsHint": "Kanpo ak Retrèt enkli",
-        "kidsHint": "Legliz timoun enkli",
-        "financesHint": "Finans / trezò enkli"
-      }
+      "name": "Plan Wayòm",
+      "description": "Pou gwo legliz, rezo ak legliz ki gen plizyè sit ki bezwen tout bagay."
     },
     "apostol": {
       "name": "Apostle / Milti-sit",
@@ -320,52 +294,47 @@
     },
     "compare": {
       "labels": {
-        "seats": "Syèj pou chak layout",
-        "layouts": "Layout",
-        "ushers": "Ovrè aktif",
-        "liveOps": "Tablo an dirèk",
-        "incidents": "Ensidan ak alèt",
-        "terminal": "Vizyon tèminal",
-        "events": "Evènman",
-        "tickets": "Tikè",
-        "checkIn": "Check-in",
-        "analytics": "Analiz",
-        "parking": "Parking",
         "members": "Manm",
-        "audit": "Audit",
-        "api": "API ekstèn",
-        "multisite": "Milti-sit",
-        "camps": "Campamentos y retiros",
-        "kids": "Legliz timoun",
-        "finances": "Finans / trezò"
+        "users": "Itilizatè ekip",
+        "layouts": "Plan sal",
+        "seats": "Chèz pa plan",
+        "ushers": "Asistan aktif",
+        "campusDiscount": "Rabè pa sit",
+        "prioritySupport": "Sipò priyorite"
       },
-      "seats": {
-        "basic": "500",
-        "pro": "2,000",
-        "enterprise": "10,000"
-      },
-      "layouts": {
-        "basic": "1",
-        "pro": "5",
-        "enterprise": "50"
-      },
-      "ushers": {
-        "basic": "5",
-        "pro": "20",
-        "enterprise": "San limit"
-      },
-      "multisite": {
-        "addon": "Pa enkli",
-        "included": "Enkli nan Kingdom"
-      },
-      "camps": {
-        "addon": "Add-on disponib",
-        "included": "Enkli nan Reino"
-      },
-      "kids": {
-        "reinoOnly": "Sèlman Plan Reino",
-        "included": "Enkli nan Reino"
-      }
+      "unlimited": "San limit",
+      "addon": "Add-on ${{price}}/mwa"
+    },
+    "modules": {
+      "churchLife": "Lavi legliz",
+      "visits": "Vizit",
+      "shifts": "Woulman",
+      "worship": "Lwanj",
+      "liveService": "Sèvis an dirèk",
+      "publicSignup": "Enskripsyon piblik",
+      "notifications": "Notifikasyon",
+      "studies": "Etid",
+      "finances": "Finans",
+      "events": "Evènman ak tikè",
+      "parking": "Pakin",
+      "analytics": "Analitik",
+      "pulse": "Pouls",
+      "kids": "Timoun",
+      "camps": "Kan",
+      "network": "Rezo / Sit"
+    },
+    "features": {
+      "members": "Jiska {{n}} manm",
+      "membersUnlimited": "Manm san limit",
+      "users": "{{n}} itilizatè ekip",
+      "usersUnlimited": "Itilizatè san limit",
+      "layouts": "{{layouts}} plan jiska {{seats}} chèz",
+      "ushers": "{{n}} asistan aktif",
+      "ushersUnlimited": "Asistan san limit",
+      "everythingIn": "Tout sa ki nan {{plan}}, plis:",
+      "campusDiscount": "{{pct}}% rabè pa sit",
+      "prioritySupport": "Sipò priyorite",
+      "addOn": "Add-on {{module}}: ${{price}}/mwa"
     }
   },
   "faq": {
@@ -393,20 +362,28 @@
         "a": "Wi, san penalite. Aksè a kontinye jiska fen peryòd ou peye a."
       },
       "reino": {
-        "q": "Kisa Kingdom Plan enkli jodi a?",
-        "a": "Limit pi wo, odit, sipò dediye, Apòt milti-sit, Kan ak Retrè, epi Legliz timoun enkli. API ekstèn nan roadmap. Chak legliz pitit ka gen pwòp plan li."
+        "q": "Kisa Plan Wayòm genyen?",
+        "a": "Tout modil yo (ladan l Timoun, Kan ak rezo plizyè sit Apot la), manm, itilizatè ak asistan san limit, jiska 50 plan sal 10,000 chèz, 20% rabè pa sit ak sipò priyorite."
       },
       "apostol": {
-        "q": "Kisa Apostle / Milti-sit ye?",
-        "a": "Se rezo milti-sit ki enkli nan Kingdom Plan: jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Chak pitit peye pwòp plan li (oswa esè). Pa gen frè Apostle separe."
+        "q": "Kisa Apot / Plizyè sit ye?",
+        "a": "Se rezo plizyè sit ki enkli nan Plan Wayòm: ou jere legliz pitit ak yon panno rezo ak yon seleksyonè legliz. Chak legliz pitit gen pwòp plan li, ak 20% rabè pa sit."
       },
       "camps": {
-        "q": "Kisa modil Kanps la genyen?",
-        "a": "Lojistik retrèt: kat/plan, kanpis, enskripsyon ak peman, apel, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Plan Reino; nan Semilla/Crecimiento se add-on PayPal ($20/mwa)."
+        "q": "Kisa modil Kan an genyen?",
+        "a": "Lojistik retrèt: plan, kanpè, enskripsyon ak peman, apèl, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Wayòm; add-on $20/mwa nan Semans ak Kwasans."
       },
       "kids": {
-        "q": "Kisa Legliz timoun enkli?",
-        "a": "Check-in ak retire an sekirite: alèji ak konsantman, kòd QR fanmi, check-in fanmi, PIN ak foto, kat sal, alèt MISSING ak rapò. Enkli nan Plan Reino; pa gen add-on PayPal pou lòt plan nan MVP."
+        "q": "Kisa Legliz timoun genyen?",
+        "a": "Check-in ak retrè timoun an sekirite: enskripsyon ak alèji ak konsantman, kòd fanmi QR, PIN ak foto lè w ap retire, plan sal, alèt MISSING ak rapò. Enkli nan Wayòm; add-on $19/mwa nan Kwasans."
+      },
+      "addons": {
+        "q": "Kisa add-on yo ye?",
+        "a": "Modil ou ka ajoute nan plan ou san chanje l: Timoun ($19/mwa nan Kwasans), Pakin ($15/mwa nan Semans) ak Kan ($20/mwa nan Semans ak Kwasans). Aktive oswa anile yo nan Faktirasyon."
+      },
+      "limits": {
+        "q": "Kisa k ap pase si m rive nan limit plan mwen?",
+        "a": "Anyen pa efase. Ou jis pa ka ajoute plis manm, itilizatè, plan sal oswa asistan jiskaske ou amelyore plan ou. Semans: 150 manm ak 5 itilizatè; Kwasans: 600 manm ak 20 itilizatè; Wayòm: san limit."
       }
     }
   },

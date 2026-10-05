@@ -17,7 +17,7 @@ import {
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import Lock from "@mui/icons-material/Lock";
 import RocketLaunch from "@mui/icons-material/RocketLaunch";
-import { PLANS } from "../../constants/plans";
+import { mergeCatalog } from "../../constants/plans";
 import PricingCard from "../pricing/PricingCard";
 
 const PAYPAL_CLIENT_ID = (import.meta.env.VITE_PAYPAL_CLIENT_ID || "").trim();
@@ -55,7 +55,8 @@ export default function StepPlanPayment({
   const [startingTrial, setStartingTrial] = useState(false);
   const [localError, setLocalError] = useState("");
 
-  const selectedPlan = PLANS.find((p) => p.id === form.plan) || PLANS[1];
+  const plans = useMemo(() => mergeCatalog(catalog), [catalog]);
+  const selectedPlan = plans.find((p) => p.id === form.plan) || plans[1];
 
   const catalogEntry = useMemo(
     () => catalog.find((c) => c.landingId === form.plan),
@@ -67,8 +68,8 @@ export default function StepPlanPayment({
 
   const displayPrice =
     form.billingCycle === "annual"
-      ? (catalogEntry?.priceAnnual ?? selectedPlan.price * 12 * 0.8)
-      : (catalogEntry?.priceMonthly ?? selectedPlan.price);
+      ? selectedPlan.priceAnnual
+      : selectedPlan.price;
 
   const handleStartTrial = async () => {
     setLocalError("");
@@ -131,15 +132,13 @@ export default function StepPlanPayment({
       </ToggleButtonGroup>
 
       <Grid container spacing={2} sx={{ mb: 4 }}>
-        {PLANS.map((plan) => (
+        {plans.map((plan) => (
           <Grid size={{ xs: 12, md: 4 }} key={plan.id}>
             <PricingCard
               plan={{
                 ...plan,
                 price:
-                  form.billingCycle === "annual"
-                    ? Math.round(plan.price * 12 * 0.8)
-                    : plan.price,
+                  form.billingCycle === "annual" ? plan.priceAnnual : plan.price,
                 billingAnnual: form.billingCycle === "annual",
               }}
               selected={form.plan === plan.id}

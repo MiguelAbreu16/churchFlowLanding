@@ -13,13 +13,14 @@ import {
 import Check from "@mui/icons-material/Check";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { useTranslation } from "react-i18next";
+import { planFeatures } from "../../constants/plans";
 
 export default function PricingCard({ plan, onSelect, selected = false }) {
   const theme = useTheme();
   const { t } = useTranslation();
 
   const isPrimary = plan.popular || selected;
-  const features = plan.featureKeys.map((key) => t(key));
+  const features = planFeatures(plan, t);
 
   return (
     <Box

@@ -14,6 +14,8 @@ const FAQ_KEYS = [
   "paypal",
   "email",
   "plans",
+  "limits",
+  "addons",
   "cancel",
   "camps",
   "kids",
