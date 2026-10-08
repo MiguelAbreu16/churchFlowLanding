@@ -15,6 +15,8 @@ export default defineConfig({
     allowedHosts: [
       "kahalzerem.com",
       "www.kahalzerem.com",
+      "qa.kahalzerem.com",
+      ".kahalzerem.com",
       ".up.railway.app",
       "localhost",
     ],
