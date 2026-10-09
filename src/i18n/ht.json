@@ -425,6 +425,7 @@
   "register": {
     "title": "Kòmanse transfòmasyon ou",
     "subtitle": "Konfigire legliz ou sou Kahal Zerem epi dirije pwochen sèvis ou ak klète.",
+    "referralNote": "Kont sa a lye ak kòd referans {{code}}. Rabè moun ki envite ou a kòmanse lè ou peye premye fakti ou.",
     "hasAccount": "Ou deja gen yon kont?",
     "login": "Konekte isit la"
   },

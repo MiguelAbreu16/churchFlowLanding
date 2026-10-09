@@ -425,6 +425,7 @@
   "register": {
     "title": "Comienza tu transformación",
     "subtitle": "Configura tu iglesia en Kahal Zerem y opera tu próximo servicio con claridad.",
+    "referralNote": "Esta cuenta queda vinculada al código de referido {{code}}. El descuento de quien te invitó se activa cuando pagues tu primera factura.",
     "hasAccount": "¿Ya tienes cuenta?",
     "login": "Inicia sesión aquí"
   },

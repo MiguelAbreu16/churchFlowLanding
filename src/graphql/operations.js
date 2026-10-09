@@ -38,6 +38,7 @@ export const REGISTER_CHURCH = gql`
     $billingCycle: String
     $acceptTerms: Boolean!
     $termsVersion: String!
+    $referralCode: String
   ) {
     registerChurch(
       name: $name
@@ -50,6 +51,7 @@ export const REGISTER_CHURCH = gql`
       billingCycle: $billingCycle
       acceptTerms: $acceptTerms
       termsVersion: $termsVersion
+      referralCode: $referralCode
     ) {
       token
       exchangeCode

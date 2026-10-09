@@ -425,6 +425,7 @@
   "register": {
     "title": "Start your transformation",
     "subtitle": "Set up your church on Kahal Zerem and run your next service with clarity.",
+    "referralNote": "This account is linked to referral code {{code}}. The inviter's discount starts when you pay your first invoice.",
     "hasAccount": "Already have an account?",
     "login": "Log in here"
   },
