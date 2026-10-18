@@ -7,6 +7,7 @@ const SEED_MODULES = [
   "visits",
   "shifts",
   "worship",
+  "dance",
   "liveService",
   "publicSignup",
   "notifications",
@@ -14,11 +15,13 @@ const SEED_MODULES = [
 const GROWTH_MODULES = [
   ...SEED_MODULES,
   "studies",
+  "library",
   "finances",
   "events",
   "parking",
   "analytics",
   "pulse",
+  "marketplace",
 ];
 const KINGDOM_MODULES = [...GROWTH_MODULES, "kids", "camps", "network"];
 
@@ -33,14 +36,15 @@ export const PLANS = [
     periodKey: "plans.period",
     modules: SEED_MODULES,
     limits: {
-      maxMembers: 150,
-      maxUsers: 5,
+      maxMembers: 500,
+      maxUsers: 10,
       maxLayouts: 1,
       maxSeatsPerLayout: 500,
       maxUshers: 5,
     },
     addOns: [
       { key: "camps", priceMonthly: 20 },
+      { key: "kids", priceMonthly: 19 },
       { key: "parking", priceMonthly: 15 },
     ],
     campusDiscountPct: 0,
@@ -58,7 +62,7 @@ export const PLANS = [
     periodKey: "plans.period",
     modules: GROWTH_MODULES,
     limits: {
-      maxMembers: 600,
+      maxMembers: 2000,
       maxUsers: 20,
       maxLayouts: 5,
       maxSeatsPerLayout: 2000,
@@ -83,7 +87,7 @@ export const PLANS = [
     periodKey: "plans.period",
     modules: KINGDOM_MODULES,
     limits: {
-      maxMembers: null,
+      maxMembers: 10000,
       maxUsers: null,
       maxLayouts: 50,
       maxSeatsPerLayout: 10000,

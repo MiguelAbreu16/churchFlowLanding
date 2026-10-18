@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Modules du produit",
     "title": "Tout ce que votre église opère",
-    "subtitle": "Explorez chaque domaine. Camps, Église des enfants et Réseau Apôtre sont inclus dans le plan Reino ; sur Semilla/Crecimiento, Camps est un add-on.",
+    "subtitle": "Enfants, camps et parking s'achètent sur Semence et Croissance si le forfait ne les inclut pas. Royaume les inclut. Le marketplace commence à Croissance.",
     "tabs": {
       "liveOps": "Opérations en direct",
       "layouts": "Plans et capacité",
@@ -148,7 +148,7 @@
       "bullets": [
         "Check-in individuel ou familial (frères/sœurs)",
         "Retrait avec QR, PIN et photo",
-        "Inclus dans le plan Reino (pas d'add-on en MVP)"
+        "Inclus dans Royaume. Add-on 19 $/mois sur Semence et Croissance"
       ]
     }
   },
@@ -256,7 +256,7 @@
     "addonsTitle": "Add-ons et multisite",
     "addonsSubtitle": "Ajoutez uniquement le module qui vous manque, sans changer de forfait.",
     "addonsList": {
-      "kids": "Enfants : 19 $/mois avec Croissance (inclus dans Royaume)",
+      "kids": "Enfants : 19 $/mois avec Semence et Croissance (inclus dans Royaume)",
       "parking": "Parking : 15 $/mois avec Semence (inclus dès Croissance)",
       "camps": "Camps : 20 $/mois avec Semence et Croissance (inclus dans Royaume)",
       "campusDiscount": "Royaume : 20 % de remise pour chaque site de votre réseau"
@@ -314,6 +314,7 @@
       "publicSignup": "Inscription publique",
       "notifications": "Notifications",
       "studies": "Études",
+      "library": "Bibliothèque",
       "finances": "Finances",
       "events": "Événements et billets",
       "parking": "Parking",
@@ -321,7 +322,8 @@
       "pulse": "Pouls",
       "kids": "Enfants",
       "camps": "Camps",
-      "network": "Réseau / Sites"
+      "network": "Réseau / Sites",
+      "marketplace": "Marketplace"
     },
     "features": {
       "members": "Jusqu'à {{n}} membres",
@@ -363,7 +365,7 @@
       },
       "reino": {
         "q": "Que comprend le Forfait Royaume ?",
-        "a": "Tous les modules (y compris Enfants, Camps et le réseau multisite Apôtre), membres, utilisateurs et placeurs illimités, jusqu'à 50 plans de 10 000 sièges, 20 % de remise par site et un support prioritaire."
+        "a": "Tous les modules (y compris Enfants, Camps, Marketplace et le réseau multisite Apôtre), jusqu'à 10 000 membres, utilisateurs et placeurs illimités, jusqu'à 50 plans de 10 000 sièges, 20 % de remise par site et un support prioritaire."
       },
       "apostol": {
         "q": "Qu'est-ce qu'Apôtre / Multisite ?",
@@ -375,15 +377,15 @@
       },
       "kids": {
         "q": "Que comprend l'Église des enfants ?",
-        "a": "Check-in et récupération sécurisés des enfants : inscription avec allergies et consentements, code familial QR, PIN et photo à la récupération, plan des salles, alerte MISSING et rapports. Inclus dans Royaume ; add-on de 19 $/mois avec Croissance."
+        "a": "Check-in et récupération sécurisés des enfants : inscription avec allergies et consentements, code familial QR, PIN et photo à la récupération, plan des salles, alerte MISSING et rapports. Inclus dans Royaume ; add-on de 19 $/mois avec Semence et Croissance."
       },
       "addons": {
         "q": "Que sont les add-ons ?",
-        "a": "Des modules à ajouter à votre forfait sans en changer : Enfants (19 $/mois avec Croissance), Parking (15 $/mois avec Semence) et Camps (20 $/mois avec Semence et Croissance). Activez-les ou annulez-les depuis Facturation."
+        "a": "Des modules à ajouter sur tout forfait qui ne les inclut pas : Enfants (19 $/mois avec Semence et Croissance), Parking (15 $/mois avec Semence ; inclus dès Croissance) et Camps (20 $/mois avec Semence et Croissance ; inclus dans Royaume). Activez-les ou annulez-les depuis Facturation."
       },
       "limits": {
         "q": "Que se passe-t-il si j'atteins la limite de mon forfait ?",
-        "a": "Rien n'est supprimé. Vous ne pourrez simplement plus ajouter de membres, utilisateurs, plans ou placeurs avant d'améliorer votre forfait. Semence : 150 membres et 5 utilisateurs ; Croissance : 600 membres et 20 utilisateurs ; Royaume : illimité."
+        "a": "Rien n'est supprimé. Vous ne pourrez simplement plus ajouter de membres, utilisateurs, plans ou placeurs avant d'améliorer votre forfait. Semence : 500 membres et 10 utilisateurs ; Croissance : 2 000 membres et 20 utilisateurs ; Royaume : 10 000 membres."
       }
     }
   },

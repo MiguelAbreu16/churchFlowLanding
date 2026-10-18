@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Explore every area. Camps, Children's Church, and Apostle Network are included in Kingdom Plan; on Seed/Growth, Camps is an add-on.",
+    "subtitle": "Kids, camps and parking can be purchased on Seed and Growth when the plan does not include them. Kingdom includes them. Marketplace starts at Growth.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
@@ -148,7 +148,7 @@
       "bullets": [
         "Individual or family (siblings) check-in",
         "Pickup with QR, PIN, and photo",
-        "Included in Kingdom Plan (no add-on in MVP)"
+        "Included in Kingdom. $19/mo add-on on Seed and Growth"
       ]
     }
   },
@@ -256,7 +256,7 @@
     "addonsTitle": "Add-ons and multi-site",
     "addonsSubtitle": "Add just the module you need without switching plans.",
     "addonsList": {
-      "kids": "Kids: $19/mo on Growth (included in Kingdom)",
+      "kids": "Kids: $19/mo on Seed and Growth (included in Kingdom)",
       "parking": "Parking: $15/mo on Seed (included from Growth)",
       "camps": "Camps: $20/mo on Seed and Growth (included in Kingdom)",
       "campusDiscount": "Kingdom: 20% discount for every campus in your network"
@@ -314,6 +314,7 @@
       "publicSignup": "Public signup",
       "notifications": "Notifications",
       "studies": "Studies",
+      "library": "Library",
       "finances": "Finances",
       "events": "Events & tickets",
       "parking": "Parking",
@@ -321,7 +322,8 @@
       "pulse": "Pulse",
       "kids": "Kids",
       "camps": "Camps",
-      "network": "Network / Campuses"
+      "network": "Network / Campuses",
+      "marketplace": "Marketplace"
     },
     "features": {
       "members": "Up to {{n}} members",
@@ -363,7 +365,7 @@
       },
       "reino": {
         "q": "What does the Kingdom Plan include?",
-        "a": "Every module (including Kids, Camps and the Apostle multi-site network), unlimited members, users and ushers, up to 50 layouts of 10,000 seats, a 20% campus discount and priority support."
+        "a": "Every module (including Kids, Camps, Marketplace and the Apostle multi-site network), up to 10,000 members, unlimited users and ushers, up to 50 layouts of 10,000 seats, a 20% campus discount and priority support."
       },
       "apostol": {
         "q": "What is Apostle / Multi-site?",
@@ -375,15 +377,15 @@
       },
       "kids": {
         "q": "What does Kids Church include?",
-        "a": "Secure kids check-in and pick-up: registration with allergies and consents, family QR code, PIN and photo at pick-up, room map, MISSING alert and reports. Included in Kingdom; a $19/mo add-on on Growth."
+        "a": "Secure kids check-in and pick-up: registration with allergies and consents, family QR code, PIN and photo at pick-up, room map, MISSING alert and reports. Included in Kingdom; a $19/mo add-on on Seed and Growth."
       },
       "addons": {
         "q": "What are add-ons?",
-        "a": "Modules you can add to your plan without changing it: Kids ($19/mo on Growth), Parking ($15/mo on Seed) and Camps ($20/mo on Seed and Growth). Turn them on or off from Billing."
+        "a": "Modules you can add on any plan that does not already include them: Kids ($19/mo on Seed and Growth), Parking ($15/mo on Seed; included from Growth) and Camps ($20/mo on Seed and Growth; included in Kingdom). Turn them on or off from Billing."
       },
       "limits": {
         "q": "What happens if I reach my plan limit?",
-        "a": "Nothing is deleted. You just can't add more members, users, layouts or ushers until you upgrade. Seed: 150 members and 5 users; Growth: 600 members and 20 users; Kingdom: unlimited."
+        "a": "Nothing is deleted. You just can't add more members, users, layouts or ushers until you upgrade. Seed: 500 members and 10 users; Growth: 2,000 members and 20 users; Kingdom: 10,000 members."
       }
     }
   },

@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Módulos do produto",
     "title": "Tudo o que sua igreja opera",
-    "subtitle": "Explore cada área. Acampamentos, Igreja infantil e Rede Apóstolo estão incluídos no Plano Reino; em Semilla/Crecimiento, Acampamentos é add-on.",
+    "subtitle": "Crianças, acampamentos e estacionamento podem ser comprados no Semente e no Crescimento quando o plano não os inclui. O Reino inclui. O marketplace começa no Crescimento.",
     "tabs": {
       "liveOps": "Operações ao vivo",
       "layouts": "Layouts e capacidade",
@@ -148,7 +148,7 @@
       "bullets": [
         "Check-in individual ou familiar (irmãos)",
         "Retirada com QR, PIN e foto",
-        "Incluído no Plano Reino (sem add-on no MVP)"
+        "Incluído no Reino. Add-on de $19/mês no Semente e no Crescimento"
       ]
     }
   },
@@ -256,7 +256,7 @@
     "addonsTitle": "Add-ons e multissede",
     "addonsSubtitle": "Adicione só o módulo que falta, sem trocar de plano.",
     "addonsList": {
-      "kids": "Crianças: $19/mês no Crescimento (incluído no Reino)",
+      "kids": "Crianças: $19/mês no Semente e no Crescimento (incluído no Reino)",
       "parking": "Estacionamento: $15/mês no Semente (incluído a partir do Crescimento)",
       "camps": "Acampamentos: $20/mês no Semente e Crescimento (incluído no Reino)",
       "campusDiscount": "Reino: 20% de desconto por cada campus da sua rede"
@@ -314,6 +314,7 @@
       "publicSignup": "Cadastro público",
       "notifications": "Notificações",
       "studies": "Estudos",
+      "library": "Biblioteca",
       "finances": "Finanças",
       "events": "Eventos e ingressos",
       "parking": "Estacionamento",
@@ -321,7 +322,8 @@
       "pulse": "Pulso",
       "kids": "Crianças",
       "camps": "Acampamentos",
-      "network": "Rede / Sedes"
+      "network": "Rede / Sedes",
+      "marketplace": "Marketplace"
     },
     "features": {
       "members": "Até {{n}} membros",
@@ -363,7 +365,7 @@
       },
       "reino": {
         "q": "O que inclui o Plano Reino?",
-        "a": "Todos os módulos (incluindo Crianças, Acampamentos e a rede multissede Apóstolo), membros, usuários e introdutores ilimitados, até 50 plantas de 10.000 assentos, 20% de desconto por campus e suporte prioritário."
+        "a": "Todos os módulos (incluindo Crianças, Acampamentos, Marketplace e a rede multissede Apóstolo), até 10.000 membros, usuários e introdutores ilimitados, até 50 plantas de 10.000 assentos, 20% de desconto por campus e suporte prioritário."
       },
       "apostol": {
         "q": "O que é Apóstolo / Multissede?",
@@ -375,15 +377,15 @@
       },
       "kids": {
         "q": "O que inclui Igreja das crianças?",
-        "a": "Check-in e retirada segura de crianças: cadastro com alergias e consentimentos, código familiar com QR, PIN e foto na retirada, planta de salas, alerta MISSING e relatórios. Incluído no Reino; add-on de $19/mês no Crescimento."
+        "a": "Check-in e retirada segura de crianças: cadastro com alergias e consentimentos, código familiar com QR, PIN e foto na retirada, planta de salas, alerta MISSING e relatórios. Incluído no Reino; add-on de $19/mês no Semente e no Crescimento."
       },
       "addons": {
         "q": "O que são add-ons?",
-        "a": "Módulos que você pode somar ao seu plano sem trocá-lo: Crianças ($19/mês no Crescimento), Estacionamento ($15/mês no Semente) e Acampamentos ($20/mês no Semente e Crescimento). Ative ou cancele em Faturamento."
+        "a": "Módulos que você pode somar em qualquer plano que não os inclua: Crianças ($19/mês no Semente e no Crescimento), Estacionamento ($15/mês no Semente; incluído a partir do Crescimento) e Acampamentos ($20/mês no Semente e Crescimento; incluído no Reino). Ative ou cancele em Faturamento."
       },
       "limits": {
         "q": "O que acontece se eu atingir o limite do plano?",
-        "a": "Nada é apagado. Você só não poderá adicionar mais membros, usuários, plantas ou introdutores até melhorar o plano. Semente: 150 membros e 5 usuários; Crescimento: 600 membros e 20 usuários; Reino: ilimitado."
+        "a": "Nada é apagado. Você só não poderá adicionar mais membros, usuários, plantas ou introdutores até melhorar o plano. Semente: 500 membros e 10 usuários; Crescimento: 2.000 membros e 20 usuários; Reino: 10.000 membros."
       }
     }
   },

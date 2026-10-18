@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Módulos del producto",
     "title": "Todo lo que opera tu iglesia",
-    "subtitle": "Explora cada área. Campamentos, Iglesia de niños y Red Apóstol están incluidos en Plan Reino; en Semilla/Crecimiento Campamentos es add-on.",
+    "subtitle": "Niños, campamentos y estacionamiento se compran en Semilla y en Crecimiento si el plan no los trae. En Reino vienen incluidos. Marketplace está desde Crecimiento.",
     "tabs": {
       "liveOps": "Operaciones en vivo",
       "layouts": "Layouts y capacidad",
@@ -148,7 +148,7 @@
       "bullets": [
         "Check-in individual o por familia (hermanos)",
         "Retiro con QR, PIN y foto",
-        "Incluido en Plan Reino (sin add-on en MVP)"
+        "Incluido en Plan Reino. Add-on de $19/mes en Semilla y Crecimiento"
       ]
     }
   },
@@ -256,7 +256,7 @@
     "addonsTitle": "Add-ons y multisede",
     "addonsSubtitle": "Agrega solo el módulo que te falta, sin cambiar de plan.",
     "addonsList": {
-      "kids": "Niños: $19/mes en Crecimiento (incluido en Reino)",
+      "kids": "Niños: $19/mes en Semilla y Crecimiento (incluido en Reino)",
       "parking": "Estacionamiento: $15/mes en Semilla (incluido desde Crecimiento)",
       "camps": "Campamentos: $20/mes en Semilla y Crecimiento (incluido en Reino)",
       "campusDiscount": "Reino: 20% de descuento por cada campus de tu red"
@@ -314,6 +314,7 @@
       "publicSignup": "Registro público",
       "notifications": "Notificaciones",
       "studies": "Estudios",
+      "library": "Biblioteca",
       "finances": "Finanzas",
       "events": "Eventos y boletos",
       "parking": "Estacionamiento",
@@ -321,7 +322,8 @@
       "pulse": "Pulso",
       "kids": "Niños",
       "camps": "Campamentos",
-      "network": "Red / Sedes"
+      "network": "Red / Sedes",
+      "marketplace": "Marketplace"
     },
     "features": {
       "members": "Hasta {{n}} miembros",
@@ -363,7 +365,7 @@
       },
       "reino": {
         "q": "¿Qué incluye Plan Reino?",
-        "a": "Todos los módulos (incluidos Niños, Campamentos y la red multisede Apóstol), miembros, usuarios y ujieres ilimitados, hasta 50 planos de 10,000 asientos, 20% de descuento por campus y soporte prioritario."
+        "a": "Todos los módulos (incluidos Niños, Campamentos, Marketplace y la red multisede Apóstol), hasta 10,000 miembros, usuarios y ujieres ilimitados, hasta 50 planos de 10,000 asientos, 20% de descuento por campus y soporte prioritario."
       },
       "apostol": {
         "q": "¿Qué es Apóstol / Multisede?",
@@ -375,15 +377,15 @@
       },
       "kids": {
         "q": "¿Qué incluye Iglesia de niños?",
-        "a": "Check-in y retiro seguro de niños: registro con alergias y consentimientos, código familiar con QR, PIN y foto al retirar, plano de aulas, alerta MISSING y reportes. Incluido en Plan Reino; en Crecimiento es un add-on de $19/mes."
+        "a": "Check-in y retiro seguro de niños: registro con alergias y consentimientos, código familiar con QR, PIN y foto al retirar, plano de aulas, alerta MISSING y reportes. Incluido en Plan Reino; en Semilla y Crecimiento es un add-on de $19/mes."
       },
       "addons": {
         "q": "¿Qué son los add-ons?",
-        "a": "Módulos que puedes sumar a tu plan sin cambiarlo: Niños ($19/mes en Crecimiento), Estacionamiento ($15/mes en Semilla) y Campamentos ($20/mes en Semilla y Crecimiento). Se activan y cancelan desde Facturación."
+        "a": "Módulos que puedes sumar en cualquier plan que no los traiga: Niños ($19/mes en Semilla y Crecimiento), Estacionamiento ($15/mes en Semilla; incluido desde Crecimiento) y Campamentos ($20/mes en Semilla y Crecimiento; incluido en Reino). Se activan y cancelan desde Facturación."
       },
       "limits": {
         "q": "¿Qué pasa si llego al límite de mi plan?",
-        "a": "Nada se borra. Solo no podrás agregar más miembros, usuarios, planos o ujieres hasta mejorar tu plan. Semilla: 150 miembros y 5 usuarios; Crecimiento: 600 miembros y 20 usuarios; Reino: ilimitado."
+        "a": "Nada se borra. Solo no podrás agregar más miembros, usuarios, planos o ujieres hasta mejorar tu plan. Semilla: 500 miembros y 10 usuarios; Crecimiento: 2,000 miembros y 20 usuarios; Reino: 10,000 miembros."
       }
     }
   },
