@@ -4,8 +4,8 @@
     "pricing": "Pricing",
     "contact": "Contact",
     "login": "Log in",
-    "startTrial": "Start trial",
-    "freeTrial": "Free trial",
+    "startTrial": "Create account",
+    "freeTrial": "Request trial",
     "demos": "Demos"
   },
   "hero": {
@@ -13,10 +13,10 @@
     "title": "Run every Sunday",
     "titleHighlight": "and every retreat",
     "subtitle": "Live seating, children's church, parking, camps, and daughter churches — so your staff cares for people, not logistics.",
-    "ctaTrial": "Try free for 14 days",
+    "ctaTrial": "Create account",
     "ctaProduct": "See the product",
-    "trust1": "14-day free trial",
-    "trust2": "No card upfront",
+    "trust1": "Trial on request",
+    "trust2": "PayPal optional at signup",
     "trust3": "Cancel anytime",
     "proof1": "Built for Sunday service teams",
     "proof2": "Ready for growing congregations",
@@ -39,10 +39,10 @@
     "services": "Services per month",
     "hoursMonth": "Estimated hours / month",
     "estimate": "≈ {{weekly}} h/week · {{minutes}} coordination minutes / month",
-    "cta": "Start free trial"
+    "cta": "Create account"
   },
   "sticky": {
-    "cta": "Try free for 14 days"
+    "cta": "Create account"
   },
   "socialProof": {
     "eyebrow": "Built for the local church",
@@ -161,8 +161,8 @@
         "desc": "Create your church, pick a plan, and verify your email."
       },
       "trial": {
-        "title": "14-day trial",
-        "desc": "Set up your layout and team — no card required upfront."
+        "title": "Request a trial or pay",
+        "desc": "Pay with PayPal for immediate access, or request a trial at KahalZerem@gmail.com."
       },
       "operate": {
         "title": "Run Sunday",
@@ -242,7 +242,7 @@
     "eyebrow": "Pricing",
     "title": "Plans for your",
     "titleHighlight": "ministry stage",
-    "subtitle": "Try any plan free for 14 days. No long-term contracts or hidden fees.",
+    "subtitle": "Create your account, pay when ready, or request a trial. No lock-in contracts or hidden fees.",
     "compareTitle": "Plan comparison",
     "contactCustom": "Need something custom?",
     "contactLink": "Contact us for a tailored quote",
@@ -267,7 +267,7 @@
     "periodAnnual": "yr",
     "popular": "Most popular",
     "comingSoon": "Coming soon",
-    "startTrial": "Start free trial",
+    "startTrial": "Create account",
     "talkSales": "Talk to sales",
     "basic": {
       "name": "Seed Plan",
@@ -344,12 +344,12 @@
     "title": "Common questions",
     "items": {
       "trial": {
-        "q": "How does the 14-day trial work?",
-        "a": "When you sign up you activate the chosen plan with no immediate charge. You get a verification email and full access during the trial. After it ends, set up PayPal to continue."
+        "q": "How do I get a free trial?",
+        "a": "Create your account and request a trial from the app, or email KahalZerem@gmail.com. If approved, we grant access for the agreed number of days."
       },
       "paypal": {
-        "q": "How do I pay after the trial?",
-        "a": "Subscription is managed securely via PayPal. You can cancel anytime from your billing panel."
+        "q": "How do I pay?",
+        "a": "You can pay with PayPal at signup or later from billing. If you pay without requesting a trial, charging and access start immediately."
       },
       "email": {
         "q": "Do I need to verify my email?",

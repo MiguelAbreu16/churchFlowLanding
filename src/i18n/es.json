@@ -4,8 +4,8 @@
     "pricing": "Planes",
     "contact": "Contacto",
     "login": "Iniciar Sesión",
-    "startTrial": "Comenzar Prueba",
-    "freeTrial": "Prueba Gratuita",
+    "startTrial": "Crear cuenta",
+    "freeTrial": "Solicitar prueba",
     "demos": "Demos"
   },
   "hero": {
@@ -13,10 +13,10 @@
     "title": "Opera cada domingo",
     "titleHighlight": "y cada retiro",
     "subtitle": "Asientos en vivo, iglesia de niños, estacionamiento, campamentos e iglesias hijas — para que tu staff cuide de las personas, no de la logística.",
-    "ctaTrial": "Probar gratis 14 días",
+    "ctaTrial": "Crear cuenta",
     "ctaProduct": "Ver el producto",
-    "trust1": "14 días gratis",
-    "trust2": "Sin tarjeta al inicio",
+    "trust1": "Prueba bajo solicitud",
+    "trust2": "PayPal opcional al inicio",
     "trust3": "Cancela cuando quieras",
     "proof1": "Diseñado para equipos de servicio dominicales",
     "proof2": "Listo para congregaciones en crecimiento",
@@ -39,10 +39,10 @@
     "services": "Servicios al mes",
     "hoursMonth": "Horas estimadas al mes",
     "estimate": "≈ {{weekly}} h/semana · {{minutes}} minutos de coordinación al mes",
-    "cta": "Empezar prueba gratis"
+    "cta": "Crear cuenta"
   },
   "sticky": {
-    "cta": "Probar gratis 14 días"
+    "cta": "Crear cuenta"
   },
   "socialProof": {
     "eyebrow": "Hecho para la iglesia local",
@@ -161,8 +161,8 @@
         "desc": "Crea tu iglesia, elige plan y verifica tu correo."
       },
       "trial": {
-        "title": "Prueba 14 días",
-        "desc": "Configura tu layout y equipo sin tarjeta obligatoria al inicio."
+        "title": "Solicita prueba o paga",
+        "desc": "Paga con PayPal para acceso inmediato, o solicita prueba a KahalZerem@gmail.com."
       },
       "operate": {
         "title": "Opera el domingo",
@@ -242,7 +242,7 @@
     "eyebrow": "Inversión",
     "title": "Planes adaptados a tu",
     "titleHighlight": "etapa ministerial",
-    "subtitle": "Prueba cualquier plan gratis por 14 días. Sin contratos forzosos ni cargos ocultos.",
+    "subtitle": "Crea tu cuenta, paga cuando quieras o solicita una prueba. Sin contratos forzosos ni cargos ocultos.",
     "compareTitle": "Comparación de planes",
     "contactCustom": "¿Necesitas algo a medida?",
     "contactLink": "Contáctanos para un presupuesto personalizado",
@@ -267,7 +267,7 @@
     "periodAnnual": "año",
     "popular": "Más popular",
     "comingSoon": "Próximamente",
-    "startTrial": "Comenzar prueba gratis",
+    "startTrial": "Crear cuenta",
     "talkSales": "Hablar con ventas",
     "basic": {
       "name": "Plan Semilla",
@@ -286,7 +286,7 @@
       "description": "Incluido en Plan Reino — red de iglesias hijas",
       "features": {
         "network": "Panel de red con lista de iglesias hijas",
-        "campuses": "Crear iglesias hijas con plan o trial propio",
+        "campuses": "Crear iglesias hijas con su propio plan",
         "switcher": "Selector de iglesia (sin impersonación)",
         "billing": "Resumen consolidado de cargos PayPal",
         "seatOptional": "Con iglesia sede en Plan Reino"
@@ -344,12 +344,12 @@
     "title": "Lo que más nos preguntan",
     "items": {
       "trial": {
-        "q": "¿Cómo funciona la prueba de 14 días?",
-        "a": "Al registrarte activas el plan elegido sin cobro inmediato. Recibes correo de verificación y acceso completo durante el trial. Al finalizar, configuras PayPal para continuar."
+        "q": "¿Cómo solicito una prueba gratis?",
+        "a": "Crea tu cuenta y solicita la prueba desde la app, o escribe a KahalZerem@gmail.com. Si la aprobamos, te damos acceso por el número de días acordado."
       },
       "paypal": {
-        "q": "¿Cómo pago después del trial?",
-        "a": "La suscripción se gestiona con PayPal de forma segura. Puedes cancelar desde tu panel de facturación en cualquier momento."
+        "q": "¿Cómo pago?",
+        "a": "Puedes pagar con PayPal al registrarte o después desde facturación. Si pagas sin pedir prueba, el cobro y el acceso comienzan de inmediato."
       },
       "email": {
         "q": "¿Debo verificar mi correo?",

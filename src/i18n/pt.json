@@ -4,8 +4,8 @@
     "pricing": "Preços",
     "contact": "Contato",
     "login": "Entrar",
-    "startTrial": "Começar teste",
-    "freeTrial": "Teste grátis",
+    "startTrial": "Criar conta",
+    "freeTrial": "Solicitar teste",
     "demos": "Demos"
   },
   "hero": {
@@ -13,10 +13,10 @@
     "title": "Opere cada domingo",
     "titleHighlight": "e cada retiro",
     "subtitle": "Assentos ao vivo, igreja infantil, estacionamento, acampamentos e igrejas filhas — para a equipe cuidar de pessoas, não da logística.",
-    "ctaTrial": "Experimente grátis por 14 dias",
+    "ctaTrial": "Criar conta",
     "ctaProduct": "Ver o produto",
-    "trust1": "14 dias de teste grátis",
-    "trust2": "Sem cartão no início",
+    "trust1": "Teste sob solicitacao",
+    "trust2": "PayPal opcional no cadastro",
     "trust3": "Cancele quando quiser",
     "proof1": "Feito para equipes de culto de domingo",
     "proof2": "Pronto para congregações em crescimento",
@@ -39,10 +39,10 @@
     "services": "Cultos por mês",
     "hoursMonth": "Horas estimadas / mês",
     "estimate": "≈ {{weekly}} h/semana · {{minutes}} minutos de coordenação / mês",
-    "cta": "Começar teste grátis"
+    "cta": "Criar conta"
   },
   "sticky": {
-    "cta": "Experimente grátis por 14 dias"
+    "cta": "Criar conta"
   },
   "socialProof": {
     "eyebrow": "Feito para a igreja local",
@@ -161,8 +161,8 @@
         "desc": "Crie sua igreja, escolha um plano e verifique seu e-mail."
       },
       "trial": {
-        "title": "Teste de 14 dias",
-        "desc": "Configure seu layout e equipe — sem cartão no início."
+        "title": "Solicite teste ou pague",
+        "desc": "Pague com PayPal para acesso imediato, ou solicite teste em KahalZerem@gmail.com."
       },
       "operate": {
         "title": "Conduza o domingo",
@@ -242,7 +242,7 @@
     "eyebrow": "Preços",
     "title": "Planos para o",
     "titleHighlight": "estágio do seu ministério",
-    "subtitle": "Experimente qualquer plano grátis por 14 dias. Sem contratos longos nem taxas ocultas.",
+    "subtitle": "Crie sua conta, pague quando quiser ou solicite um teste. Sem contratos longos nem taxas ocultas.",
     "compareTitle": "Comparação de planos",
     "contactCustom": "Precisa de algo personalizado?",
     "contactLink": "Fale conosco para um orçamento sob medida",
@@ -267,7 +267,7 @@
     "periodAnnual": "ano",
     "popular": "Mais popular",
     "comingSoon": "Em breve",
-    "startTrial": "Começar teste grátis",
+    "startTrial": "Criar conta",
     "talkSales": "Falar com vendas",
     "basic": {
       "name": "Plano Semente",
@@ -344,12 +344,12 @@
     "title": "Perguntas frequentes",
     "items": {
       "trial": {
-        "q": "Como funciona o teste de 14 dias?",
-        "a": "Ao se cadastrar, você ativa o plano escolhido sem cobrança imediata. Você recebe um e-mail de verificação e acesso completo durante o teste. Depois que terminar, configure o PayPal para continuar."
+        "q": "Como solicito um teste gratis?",
+        "a": "Crie sua conta e solicite o teste no app, ou escreva para KahalZerem@gmail.com. Se aprovarmos, damos acesso pelo numero de dias combinado."
       },
       "paypal": {
-        "q": "Como pago depois do teste?",
-        "a": "A assinatura é gerenciada com segurança via PayPal. Você pode cancelar a qualquer momento no painel de cobrança."
+        "q": "Como pago?",
+        "a": "Voce pode pagar com PayPal no cadastro ou depois em faturamento. Se pagar sem pedir teste, a cobranca e o acesso comecam imediatamente."
       },
       "email": {
         "q": "Preciso verificar meu e-mail?",

@@ -4,8 +4,8 @@
     "pricing": "Tarifs",
     "contact": "Contact",
     "login": "Connexion",
-    "startTrial": "Démarrer l'essai",
-    "freeTrial": "Essai gratuit",
+    "startTrial": "Creer un compte",
+    "freeTrial": "Demander un essai",
     "demos": "Démos"
   },
   "hero": {
@@ -13,10 +13,10 @@
     "title": "Gérez chaque dimanche",
     "titleHighlight": "et chaque retraite",
     "subtitle": "Sièges en direct, église des enfants, parking, camps et églises filles — pour que votre équipe prenne soin des personnes, pas de la logistique.",
-    "ctaTrial": "Essayer gratuitement 14 jours",
+    "ctaTrial": "Creer un compte",
     "ctaProduct": "Voir le produit",
-    "trust1": "Essai gratuit de 14 jours",
-    "trust2": "Sans carte au départ",
+    "trust1": "Essai sur demande",
+    "trust2": "PayPal optionnel a l'inscription",
     "trust3": "Résiliez à tout moment",
     "proof1": "Conçu pour les équipes du culte du dimanche",
     "proof2": "Prêt pour les congrégations en croissance",
@@ -39,10 +39,10 @@
     "services": "Cultes par mois",
     "hoursMonth": "Heures estimées / mois",
     "estimate": "≈ {{weekly}} h/semaine · {{minutes}} minutes de coordination / mois",
-    "cta": "Démarrer l'essai gratuit"
+    "cta": "Creer un compte"
   },
   "sticky": {
-    "cta": "Essayer gratuitement 14 jours"
+    "cta": "Creer un compte"
   },
   "socialProof": {
     "eyebrow": "Conçu pour l’église locale",
@@ -161,8 +161,8 @@
         "desc": "Créez votre église, choisissez un plan et vérifiez votre e-mail."
       },
       "trial": {
-        "title": "Essai de 14 jours",
-        "desc": "Configurez votre plan et votre équipe — sans carte au départ."
+        "title": "Demandez un essai ou payez",
+        "desc": "Payez avec PayPal pour un acces immediat, ou demandez un essai a KahalZerem@gmail.com."
       },
       "operate": {
         "title": "Dirigez le dimanche",
@@ -242,7 +242,7 @@
     "eyebrow": "Tarifs",
     "title": "Des plans pour",
     "titleHighlight": "l'étape de votre ministère",
-    "subtitle": "Essayez n'importe quel plan gratuitement pendant 14 jours. Pas de contrats longs ni de frais cachés.",
+    "subtitle": "Creez votre compte, payez quand vous voulez ou demandez un essai. Pas de contrats longs ni de frais caches.",
     "compareTitle": "Comparaison des plans",
     "contactCustom": "Besoin de quelque chose de sur mesure ?",
     "contactLink": "Contactez-nous pour un devis personnalisé",
@@ -267,7 +267,7 @@
     "periodAnnual": "an",
     "popular": "Le plus populaire",
     "comingSoon": "Bientôt disponible",
-    "startTrial": "Démarrer l'essai gratuit",
+    "startTrial": "Creer un compte",
     "talkSales": "Parler aux ventes",
     "basic": {
       "name": "Forfait Semence",
@@ -344,12 +344,12 @@
     "title": "Questions fréquentes",
     "items": {
       "trial": {
-        "q": "Comment fonctionne l'essai de 14 jours ?",
-        "a": "Lors de l'inscription, vous activez le plan choisi sans facturation immédiate. Vous recevez un e-mail de vérification et un accès complet pendant l'essai. À la fin, configurez PayPal pour continuer."
+        "q": "Comment demander un essai gratuit ?",
+        "a": "Creez votre compte et demandez un essai depuis l'app, ou ecrivez a KahalZerem@gmail.com. Si nous l'approuvons, nous accordons l'acces pour le nombre de jours convenu."
       },
       "paypal": {
-        "q": "Comment payer après l'essai ?",
-        "a": "L'abonnement est géré en toute sécurité via PayPal. Vous pouvez résilier à tout moment depuis votre panneau de facturation."
+        "q": "Comment payer ?",
+        "a": "Vous pouvez payer avec PayPal a l'inscription ou plus tard depuis la facturation. Si vous payez sans demander d'essai, le prelevement et l'acces commencent immediatement."
       },
       "email": {
         "q": "Dois-je vérifier mon e-mail ?",

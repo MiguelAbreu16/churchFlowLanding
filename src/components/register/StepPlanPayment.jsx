@@ -23,6 +23,7 @@ import PricingCard from "../pricing/PricingCard";
 const PAYPAL_CLIENT_ID = (import.meta.env.VITE_PAYPAL_CLIENT_ID || "").trim();
 const HAS_PAYPAL_CLIENT =
   Boolean(PAYPAL_CLIENT_ID) && PAYPAL_CLIENT_ID !== "test";
+const TRIAL_CONTACT_EMAIL = "KahalZerem@gmail.com";
 
 function resolvePaypalPlanId(catalogEntry, billingCycle) {
   if (!catalogEntry) return null;
@@ -52,7 +53,7 @@ export default function StepPlanPayment({
 }) {
   const [readyForPayPal, setReadyForPayPal] = useState(false);
   const [preparing, setPreparing] = useState(false);
-  const [startingTrial, setStartingTrial] = useState(false);
+  const [creatingAccount, setCreatingAccount] = useState(false);
   const [localError, setLocalError] = useState("");
 
   const plans = useMemo(() => mergeCatalog(catalog), [catalog]);
@@ -71,15 +72,15 @@ export default function StepPlanPayment({
       ? selectedPlan.priceAnnual
       : selectedPlan.price;
 
-  const handleStartTrial = async () => {
+  const handleCreateAccount = async () => {
     setLocalError("");
-    setStartingTrial(true);
+    setCreatingAccount(true);
     try {
       await onStartTrial();
     } catch (err) {
-      setLocalError(err?.message || "No se pudo crear la cuenta de prueba");
+      setLocalError(err?.message || "No se pudo crear la cuenta");
     } finally {
-      setStartingTrial(false);
+      setCreatingAccount(false);
     }
   };
 
@@ -87,13 +88,13 @@ export default function StepPlanPayment({
     setLocalError("");
     if (!HAS_PAYPAL_CLIENT) {
       setLocalError(
-        "El pago con PayPal no está disponible en este momento. Puedes empezar tu prueba gratis de 14 días y conectar el pago más adelante.",
+        `El pago con PayPal no está disponible ahora. Crea tu cuenta y escribe a ${TRIAL_CONTACT_EMAIL} para solicitar una prueba, o vuelve más tarde para pagar.`,
       );
       return;
     }
     if (!planIdsConfigured) {
       setLocalError(
-        "Aún no podemos conectar el cobro en línea. Empieza la prueba gratis o escribe a soporte si necesitas ayuda.",
+        `Aún no podemos conectar el cobro en línea. Crea tu cuenta o escribe a ${TRIAL_CONTACT_EMAIL}.`,
       );
       return;
     }
@@ -108,7 +109,7 @@ export default function StepPlanPayment({
     }
   };
 
-  const busy = preparing || startingTrial || loading;
+  const busy = preparing || creatingAccount || loading;
 
   const paymentBody = (
     <Box>
@@ -116,8 +117,8 @@ export default function StepPlanPayment({
         Elige tu plan
       </Typography>
       <Typography color="text.secondary" sx={{ mb: 2 }}>
-        14 días de prueba gratis. Sin tarjeta. Puedes añadir PayPal cuando
-        quieras.
+        Crea tu cuenta gratis. Puedes pagar con PayPal ahora para acceder de
+        inmediato, o solicitar una prueba escribiendo a {TRIAL_CONTACT_EMAIL}.
       </Typography>
 
       <ToggleButtonGroup
@@ -158,7 +159,7 @@ export default function StepPlanPayment({
         }}
       >
         <Typography variant="body2" color="text.secondary">
-          Total después del trial
+          Precio del plan
         </Typography>
         <Typography
           variant="h5"
@@ -175,9 +176,9 @@ export default function StepPlanPayment({
             variant="contained"
             size="large"
             disabled={busy}
-            onClick={handleStartTrial}
+            onClick={handleCreateAccount}
             startIcon={
-              startingTrial ? (
+              creatingAccount ? (
                 <CircularProgress size={18} color="inherit" />
               ) : (
                 <RocketLaunch />
@@ -185,9 +186,7 @@ export default function StepPlanPayment({
             }
             sx={{ py: 1.5, fontWeight: 800 }}
           >
-            {startingTrial
-              ? "Creando cuenta…"
-              : "Empezar prueba gratis (14 días)"}
+            {creatingAccount ? "Creando cuenta…" : "Crear cuenta"}
           </Button>
 
           <Divider>
@@ -199,14 +198,13 @@ export default function StepPlanPayment({
           <Box sx={{ textAlign: "center" }}>
             <Lock sx={{ fontSize: 28, color: "text.disabled", mb: 0.5 }} />
             <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>
-              Opcional: conecta PayPal ahora para facturar al terminar el
-              trial.
+              Opcional: paga con PayPal ahora y accede de inmediato.
             </Typography>
             {!HAS_PAYPAL_CLIENT && (
               <Alert severity="info" sx={{ mb: 2, textAlign: "left" }}>
-                El cobro con PayPal no está disponible aquí por ahora. Usa la
-                prueba gratis de 14 días; podrás conectar el pago más adelante
-                desde tu panel.
+                El cobro con PayPal no está disponible aquí por ahora. Crea tu
+                cuenta y escribe a {TRIAL_CONTACT_EMAIL} para solicitar una
+                prueba.
               </Alert>
             )}
             {HAS_PAYPAL_CLIENT &&
@@ -218,7 +216,7 @@ export default function StepPlanPayment({
               ) && (
                 <Alert severity="info" sx={{ mb: 2, textAlign: "left" }}>
                   Aún no podemos completar el cobro en línea para este plan.
-                  Empieza la prueba gratis y vuelve cuando el pago esté listo.
+                  Crea tu cuenta y contacta a {TRIAL_CONTACT_EMAIL}.
                 </Alert>
               )}
             <Button
@@ -232,15 +230,15 @@ export default function StepPlanPayment({
                 ) : null
               }
             >
-              {preparing ? "Preparando…" : "Añadir PayPal ahora (opcional)"}
+              {preparing ? "Preparando…" : "Pagar con PayPal"}
             </Button>
           </Box>
         </Stack>
       ) : (
         <Box sx={{ mb: 3, minHeight: 120 }}>
           <Alert severity="success" sx={{ mb: 2 }}>
-            Cuenta creada. Confirma el pago con PayPal para vincular tu
-            suscripción, o continúa solo con la prueba.
+            Cuenta creada. Confirma el pago con PayPal para activar el acceso
+            de inmediato, o continúa sin pagar y solicita una prueba después.
           </Alert>
           {paypalPlanId && HAS_PAYPAL_CLIENT ? (
             <PayPalButtons
@@ -254,23 +252,23 @@ export default function StepPlanPayment({
               onApprove={(data) => onPayPalApprove(data.subscriptionID)}
               onError={() =>
                 setLocalError(
-                  "No se pudo completar el pago. Inténtalo de nuevo o continúa con la prueba gratis.",
+                  "No se pudo completar el pago. Inténtalo de nuevo o continúa sin PayPal.",
                 )
               }
             />
           ) : (
             <Alert severity="info">
-              No podemos mostrar el botón de pago ahora. Continúa con la prueba
-              gratis y conecta el cobro más adelante.
+              No podemos mostrar el botón de pago ahora. Continúa sin PayPal y
+              escribe a {TRIAL_CONTACT_EMAIL} para solicitar una prueba.
             </Alert>
           )}
           <Button
             variant="text"
             sx={{ mt: 2 }}
             disabled={busy}
-            onClick={handleStartTrial}
+            onClick={handleCreateAccount}
           >
-            Continuar solo con la prueba (sin PayPal)
+            Continuar sin pagar (solicitar prueba después)
           </Button>
         </Box>
       )}

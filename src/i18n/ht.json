@@ -4,8 +4,8 @@
     "pricing": "Pri",
     "contact": "Kontak",
     "login": "Konekte",
-    "startTrial": "Kòmanse esè",
-    "freeTrial": "Esè gratis",
+    "startTrial": "Kreye kont",
+    "freeTrial": "Mande ese",
     "demos": "Demo"
   },
   "hero": {
@@ -13,10 +13,10 @@
     "title": "Jere chak dimanch",
     "titleHighlight": "ak chak retrèt",
     "subtitle": "Syèj an dirèk, legliz timoun, pakin, kan ak legliz pitit — pou ekip ou a pran swen moun, pa lojistik.",
-    "ctaTrial": "Eseye gratis pandan 14 jou",
+    "ctaTrial": "Kreye kont",
     "ctaProduct": "Wè pwodwi a",
-    "trust1": "Esè gratis 14 jou",
-    "trust2": "Pa gen kat nan kòmansman",
+    "trust1": "Ese sou demann",
+    "trust2": "PayPal opsyonel nan enskripsyon",
     "trust3": "Anile nenpòt lè",
     "proof1": "Fèt pou ekip sèvis dimanch",
     "proof2": "Pare pou kongregasyon k ap grandi",
@@ -39,10 +39,10 @@
     "services": "Sèvis pa mwa",
     "hoursMonth": "Èdtan estime / mwa",
     "estimate": "≈ {{weekly}} èdtan/semèn · {{minutes}} minit kowòdinasyon / mwa",
-    "cta": "Kòmanse esè gratis"
+    "cta": "Kreye kont"
   },
   "sticky": {
-    "cta": "Eseye gratis pandan 14 jou"
+    "cta": "Kreye kont"
   },
   "socialProof": {
     "eyebrow": "Fèt pou legliz lokal la",
@@ -161,8 +161,8 @@
         "desc": "Kreye legliz ou, chwazi yon plan, epi verifye imèl ou."
       },
       "trial": {
-        "title": "Esè 14 jou",
-        "desc": "Konfigire layout ak ekip ou — pa gen kat nan kòmansman."
+        "title": "Mande ese oswa peye",
+        "desc": "Peye ak PayPal pou akse imedyat, oswa mande ese nan KahalZerem@gmail.com."
       },
       "operate": {
         "title": "Dirije dimanch",
@@ -242,7 +242,7 @@
     "eyebrow": "Pri",
     "title": "Plan pou",
     "titleHighlight": "etap ministè ou",
-    "subtitle": "Eseye nenpòt plan gratis pandan 14 jou. Pa gen kontra long tèm ni frè kache.",
+    "subtitle": "Kreye kont ou, peye le ou vle oswa mande yon ese. Pa gen kontra long tem ni fre kache.",
     "compareTitle": "Konparezon plan",
     "contactCustom": "Bezwen yon bagay pèsonalize?",
     "contactLink": "Kontakte nou pou yon devis adapte",
@@ -267,7 +267,7 @@
     "periodAnnual": "ane",
     "popular": "Pi popilè",
     "comingSoon": "Byento",
-    "startTrial": "Kòmanse esè gratis",
+    "startTrial": "Kreye kont",
     "talkSales": "Pale ak lavant",
     "basic": {
       "name": "Plan Semans",
@@ -344,12 +344,12 @@
     "title": "Kesyon komen",
     "items": {
       "trial": {
-        "q": "Kijan esè 14 jou a mache?",
-        "a": "Lè ou enskri, ou aktive plan ou chwazi a san chaj imedya. Ou resevwa yon imèl verifikasyon ak aksè konplè pandan esè a. Apre li fini, konfigire PayPal pou kontinye."
+        "q": "Kijan pou mande yon ese gratis?",
+        "a": "Kreye kont ou epi mande ese a nan app la, oswa ekri KahalZerem@gmail.com. Si nou apwouve li, nou bay akse pou kantite jou yo dako."
       },
       "paypal": {
-        "q": "Kijan mwen peye apre esè a?",
-        "a": "Abònman an jere san danje atravè PayPal. Ou ka anile nenpòt lè nan panèl bòdwo ou."
+        "q": "Kijan pou m peye?",
+        "a": "Ou ka peye ak PayPal nan enskripsyon oswa apre nan faktirasyon. Si ou peye san mande ese, chajman ak akse komanse imedyatman."
       },
       "email": {
         "q": "Èske mwen bezwen verifye imèl mwen?",

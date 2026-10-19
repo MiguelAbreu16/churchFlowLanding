@@ -91,11 +91,13 @@ export default function TermsContent() {
         emergencia se tratan bajo su responsabilidad.
       </p>
 
-      <h3>5. Facturación y trial</h3>
+      <h3>5. Facturación y prueba</h3>
       <p>
-        Los planes pueden incluir prueba de 14 días. Tras el trial se factura
-        según el plan elegido (p. ej. vía PayPal). Puedes cancelar al final del
-        período de facturación desde la app o el proveedor de pagos.
+        Puedes crear una cuenta sin pagar. El acceso de prueba gratuito se
+        otorga solo tras solicitud y aprobación (con duración personalizada), o
+        contactando a KahalZerem@gmail.com. Si activas PayPal sin solicitud de
+        prueba, el cobro del plan comienza de inmediato. Puedes cancelar al
+        final del período de facturación desde la app o el proveedor de pagos.
       </p>
 
       <h3>6. Limitación de responsabilidad</h3>
@@ -109,8 +111,8 @@ export default function TermsContent() {
 
       <h3>7. Contacto</h3>
       <p>
-        Para soporte: soporte@kahalzerem.com. El tratamiento de datos personales
-        se detalla en la Política de Privacidad.
+        Para soporte o solicitudes de prueba: KahalZerem@gmail.com. El
+        tratamiento de datos personales se detalla en la Política de Privacidad.
       </p>
     </>
   );

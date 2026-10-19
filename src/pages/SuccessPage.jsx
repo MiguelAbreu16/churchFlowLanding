@@ -52,8 +52,11 @@ export default function SuccessPage() {
               ¡Cuenta creada!
             </Typography>
             <Typography color="text.secondary" sx={{ mb: 4 }}>
-              Plan <strong>{plan}</strong> con prueba de 14 días. Revisa tu
-              correo para verificar tu cuenta antes de usar el panel.
+              Plan <strong>{plan}</strong> listo. Si pagaste con PayPal, ya
+              tienes acceso. Si no, puedes solicitar una prueba gratis desde la
+              app o escribiendo a{" "}
+              <strong>KahalZerem@gmail.com</strong>. Revisa tu correo para
+              verificar tu cuenta.
             </Typography>
             <Button
               variant="contained"
