@@ -10,7 +10,6 @@ import StepChurchInfo from "./StepChurchInfo";
 import StepAdminAccount from "./StepAdminAccount";
 import StepPlanPayment from "./StepPlanPayment";
 import {
-  Alert,
   Box,
   Stepper,
   Step,
@@ -21,7 +20,6 @@ import Church from "@mui/icons-material/Church";
 import Person from "@mui/icons-material/Person";
 import CreditCard from "@mui/icons-material/CreditCard";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const STEPS = [
   { label: "Tu Iglesia", icon: <Church /> },
@@ -47,9 +45,7 @@ const INITIAL_FORM = {
 
 export default function RegisterWizard() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
   const [params] = useSearchParams();
-  const referralCode = (params.get("ref") || "").trim();
   const { data: catalogData } = useQuery(PLAN_CATALOG);
 
   const [activeStep, setActiveStep] = useState(0);
@@ -152,7 +148,6 @@ export default function RegisterWizard() {
         billingCycle: form.billingCycle,
         acceptTerms: form.acceptTerms,
         termsVersion: CURRENT_TERMS_VERSION,
-        referralCode: referralCode || null,
       },
     }).then(({ data }) => ({
       token: data.registerChurch.token,
@@ -187,11 +182,6 @@ export default function RegisterWizard() {
 
   return (
     <Box>
-      {referralCode ? (
-        <Alert severity="info" sx={{ mb: 3 }}>
-          {t("register.referralNote", { code: referralCode.toUpperCase() })}
-        </Alert>
-      ) : null}
       <Stepper
         activeStep={activeStep}
         alternativeLabel={false}

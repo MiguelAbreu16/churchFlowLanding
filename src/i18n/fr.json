@@ -427,7 +427,6 @@
   "register": {
     "title": "Commencez votre transformation",
     "subtitle": "Configurez votre église sur Kahal Zerem et dirigez votre prochain culte avec clarté.",
-    "referralNote": "Ce compte est lié au code de parrainage {{code}}. La réduction de l'invitant commence quand vous payez votre première facture.",
     "hasAccount": "Vous avez déjà un compte ?",
     "login": "Connectez-vous ici"
   },
