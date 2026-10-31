@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Kids, camps and parking can be purchased on Seed and Growth when the plan does not include them. Kingdom includes them. Marketplace starts at Growth.",
+    "subtitle": "Seed covers the basics (ministry member lists). Growth adds cells, ministry ops, events and finances. Kingdom adds event planning, library, kids, marketplace and network.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
@@ -271,15 +271,15 @@
     "talkSales": "Talk to sales",
     "basic": {
       "name": "Seed Plan",
-      "description": "For small churches starting to digitize their services and people."
+      "description": "Basics: live service, visits, new believers, shifts, and ministry member lists."
     },
     "pro": {
       "name": "Growth Plan",
-      "description": "For growing congregations with events, finances and several ministries."
+      "description": "Cells, baptism, studies, ministry ops, events, finances, parking and analytics."
     },
     "enterprise": {
       "name": "Kingdom Plan",
-      "description": "For large churches, networks and multi-site ministries that need it all."
+      "description": "Event planning, library, kids church, marketplace, camps and apostle network."
     },
     "apostol": {
       "name": "Apostle / Multi-site",
@@ -306,24 +306,28 @@
       "addon": "Add-on ${{price}}/mo"
     },
     "modules": {
-      "churchLife": "Church life",
+      "churchLife": "Church life (ministry roster)",
       "visits": "Visits",
+      "newBelievers": "New believers",
+      "qrHub": "QR hub",
       "shifts": "Shifts",
-      "worship": "Worship",
       "liveService": "Live service",
       "publicSignup": "Public signup",
       "notifications": "Notifications",
       "studies": "Studies",
-      "library": "Library",
+      "baptism": "Baptism",
       "finances": "Finances",
       "events": "Events & tickets",
       "parking": "Parking",
       "analytics": "Analytics",
       "pulse": "Pulse",
-      "kids": "Kids",
+      "cells": "Growth / Cells",
+      "eventPlans": "Event planning",
+      "library": "Library",
+      "marketplace": "Marketplace",
+      "kids": "Kids church",
       "camps": "Camps",
-      "network": "Network / Campuses",
-      "marketplace": "Marketplace"
+      "network": "Apostle network / Campuses"
     },
     "features": {
       "members": "Up to {{n}} members",

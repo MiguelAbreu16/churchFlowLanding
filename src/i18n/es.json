@@ -52,7 +52,7 @@
   "modules": {
     "eyebrow": "Módulos del producto",
     "title": "Todo lo que opera tu iglesia",
-    "subtitle": "Niños, campamentos y estacionamiento se compran en Semilla y en Crecimiento si el plan no los trae. En Reino vienen incluidos. Marketplace está desde Crecimiento.",
+    "subtitle": "Semilla cubre lo básico (ministerios con lista de miembros). Crecimiento añade células, ops de ministerio, eventos y finanzas. Reino suma planificación, biblioteca, niños, marketplace y red.",
     "tabs": {
       "liveOps": "Operaciones en vivo",
       "layouts": "Layouts y capacidad",
@@ -271,15 +271,15 @@
     "talkSales": "Hablar con ventas",
     "basic": {
       "name": "Plan Semilla",
-      "description": "Para iglesias pequeñas que empiezan a digitalizar su servicio y su gente."
+      "description": "Lo básico: servicio en vivo, visitas, nuevos creyentes, turnos y ministerios con lista de miembros."
     },
     "pro": {
       "name": "Plan Crecimiento",
-      "description": "Para congregaciones en crecimiento con eventos, finanzas y varios ministerios."
+      "description": "Células, bautismos, estudios, ops de ministerio, eventos, finanzas, parking y métricas."
     },
     "enterprise": {
       "name": "Plan Reino",
-      "description": "Para iglesias grandes, redes y multisedes que lo necesitan todo."
+      "description": "Planificación de eventos, biblioteca, iglesia de niños, marketplace, campamentos y red apostólica."
     },
     "apostol": {
       "name": "Apóstol / Multisede",
@@ -306,24 +306,28 @@
       "addon": "Add-on ${{price}}/mes"
     },
     "modules": {
-      "churchLife": "Vida de iglesia",
+      "churchLife": "Vida de iglesia (lista de ministerios)",
       "visits": "Visitas",
+      "newBelievers": "Nuevos creyentes",
+      "qrHub": "Hub de QR",
       "shifts": "Turnos",
-      "worship": "Alabanza",
       "liveService": "Servicio en vivo",
       "publicSignup": "Registro público",
       "notifications": "Notificaciones",
       "studies": "Estudios",
-      "library": "Biblioteca",
+      "baptism": "Bautismos",
       "finances": "Finanzas",
       "events": "Eventos y boletos",
       "parking": "Estacionamiento",
       "analytics": "Analítica",
       "pulse": "Pulso",
-      "kids": "Niños",
+      "cells": "Crecimiento / Células",
+      "eventPlans": "Planificación de eventos",
+      "library": "Biblioteca",
+      "marketplace": "Marketplace",
+      "kids": "Iglesia de niños",
       "camps": "Campamentos",
-      "network": "Red / Sedes",
-      "marketplace": "Marketplace"
+      "network": "Red apostólica / Sedes"
     },
     "features": {
       "members": "Hasta {{n}} miembros",

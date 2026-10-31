@@ -5,9 +5,9 @@
 const SEED_MODULES = [
   "churchLife",
   "visits",
+  "newBelievers",
+  "qrHub",
   "shifts",
-  "worship",
-  "dance",
   "liveService",
   "publicSignup",
   "notifications",
@@ -15,15 +15,23 @@ const SEED_MODULES = [
 const GROWTH_MODULES = [
   ...SEED_MODULES,
   "studies",
-  "library",
+  "baptism",
   "finances",
   "events",
   "parking",
   "analytics",
   "pulse",
-  "marketplace",
+  "cells",
 ];
-const KINGDOM_MODULES = [...GROWTH_MODULES, "kids", "camps", "network"];
+const KINGDOM_MODULES = [
+  ...GROWTH_MODULES,
+  "eventPlans",
+  "library",
+  "marketplace",
+  "kids",
+  "camps",
+  "network",
+];
 
 export const PLANS = [
   {
