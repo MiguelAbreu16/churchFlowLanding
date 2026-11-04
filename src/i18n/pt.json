@@ -302,8 +302,7 @@
         "campusDiscount": "Desconto por campus",
         "prioritySupport": "Suporte prioritário"
       },
-      "unlimited": "Ilimitado",
-      "addon": "Add-on ${{price}}/mês"
+      "unlimited": "Ilimitado"
     },
     "modules": {
       "churchLife": "Vida da igreja (lista de ministérios)",
@@ -339,8 +338,7 @@
       "ushersUnlimited": "Introdutores ilimitados",
       "everythingIn": "Tudo do {{plan}}, mais:",
       "campusDiscount": "{{pct}}% de desconto por campus",
-      "prioritySupport": "Suporte prioritário",
-      "addOn": "Add-on {{module}}: ${{price}}/mês"
+      "prioritySupport": "Suporte prioritário"
     }
   },
   "faq": {

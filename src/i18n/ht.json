@@ -302,8 +302,7 @@
         "campusDiscount": "Rabè pa sit",
         "prioritySupport": "Sipò priyorite"
       },
-      "unlimited": "San limit",
-      "addon": "Add-on ${{price}}/mwa"
+      "unlimited": "San limit"
     },
     "modules": {
       "churchLife": "Lavi legliz (lis ministè)",
@@ -339,8 +338,7 @@
       "ushersUnlimited": "Asistan san limit",
       "everythingIn": "Tout sa ki nan {{plan}}, plis:",
       "campusDiscount": "{{pct}}% rabè pa sit",
-      "prioritySupport": "Sipò priyorite",
-      "addOn": "Add-on {{module}}: ${{price}}/mwa"
+      "prioritySupport": "Sipò priyorite"
     }
   },
   "faq": {

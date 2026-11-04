@@ -50,11 +50,6 @@ export const PLANS = [
       maxSeatsPerLayout: 500,
       maxUshers: 5,
     },
-    addOns: [
-      { key: "camps", priceMonthly: 20 },
-      { key: "kids", priceMonthly: 19 },
-      { key: "parking", priceMonthly: 15 },
-    ],
     campusDiscountPct: 0,
     prioritySupport: false,
     color: "#64748B",
@@ -76,10 +71,6 @@ export const PLANS = [
       maxSeatsPerLayout: 2000,
       maxUshers: 20,
     },
-    addOns: [
-      { key: "camps", priceMonthly: 20 },
-      { key: "kids", priceMonthly: 19 },
-    ],
     campusDiscountPct: 0,
     prioritySupport: false,
     color: "#eab308",
@@ -101,7 +92,6 @@ export const PLANS = [
       maxSeatsPerLayout: 10000,
       maxUshers: null,
     },
-    addOns: [],
     campusDiscountPct: 20,
     prioritySupport: true,
     color: "#1E293B",
@@ -131,7 +121,6 @@ export function mergeCatalog(catalog) {
       priceAnnual: row.priceAnnual,
       modules: row.modules,
       limits: Object.fromEntries(LIMIT_KEYS.map((k) => [k, row[k]])),
-      addOns: row.addOns || [],
       campusDiscountPct: row.campusDiscountPct,
       prioritySupport: row.prioritySupport,
     };
@@ -144,7 +133,7 @@ const limitText = (t, key, n) =>
     ? t(`plans.features.${key}Unlimited`)
     : t(`plans.features.${key}`, { n: fmt(n) });
 
-/** Card bullet list: limits, modules new vs. the previous plan, perks and add-ons. */
+/** Card bullet list: limits, modules new vs. the previous plan, and perks. */
 export function planFeatures(plan, t) {
   const index = PLANS.findIndex((p) => p.id === plan.id);
   const prev = PLANS[index - 1];
@@ -164,12 +153,6 @@ export function planFeatures(plan, t) {
     plan.campusDiscountPct > 0 &&
       t("plans.features.campusDiscount", { pct: plan.campusDiscountPct }),
     plan.prioritySupport && t("plans.features.prioritySupport"),
-    ...plan.addOns.map((a) =>
-      t("plans.features.addOn", {
-        module: t(`plans.modules.${a.key}`),
-        price: a.priceMonthly,
-      }),
-    ),
   ].filter(Boolean);
 }
 
@@ -182,13 +165,7 @@ export function comparisonRows(plans) {
     labelKey,
     cells: plans.map((p) => cell(p)),
   });
-  const moduleCell = (m) => (p) => {
-    if (p.modules.includes(m)) return true;
-    const addOn = p.addOns.find((a) => a.key === m);
-    return addOn
-      ? { key: "plans.compare.addon", params: { price: addOn.priceMonthly } }
-      : false;
-  };
+  const moduleCell = (m) => (p) => p.modules.includes(m);
   return [
     row("plans.compare.labels.members", (p) => limitCell(p.limits.maxMembers)),
     row("plans.compare.labels.users", (p) => limitCell(p.limits.maxUsers)),

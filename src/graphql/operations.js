@@ -18,10 +18,6 @@ export const PLAN_CATALOG = gql`
       maxUshers
       campusDiscountPct
       prioritySupport
-      addOns {
-        key
-        priceMonthly
-      }
     }
   }
 `;

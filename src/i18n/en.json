@@ -302,8 +302,7 @@
         "campusDiscount": "Campus discount",
         "prioritySupport": "Priority support"
       },
-      "unlimited": "Unlimited",
-      "addon": "Add-on ${{price}}/mo"
+      "unlimited": "Unlimited"
     },
     "modules": {
       "churchLife": "Church life (ministry roster)",
@@ -339,8 +338,7 @@
       "ushersUnlimited": "Unlimited ushers",
       "everythingIn": "Everything in {{plan}}, plus:",
       "campusDiscount": "{{pct}}% campus discount",
-      "prioritySupport": "Priority support",
-      "addOn": "{{module}} add-on: ${{price}}/mo"
+      "prioritySupport": "Priority support"
     }
   },
   "faq": {
