@@ -1,28 +1,30 @@
 import { createTheme } from "@mui/material/styles";
 
-// A more professional, trustworthy "Corporate SaaS" theme
-// Inspired by high-trust platforms like Stripe, Slack, and Linear
+const navy = "#1A3668";
+const gold = "#B8952C";
+
 export const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#2563EB", // Deep, reliable Blue
-      light: "#60A5FA",
-      dark: "#1E40AF",
+      main: navy,
+      light: "#2E4E86",
+      dark: "#12243F",
       contrastText: "#fff",
     },
     secondary: {
-      main: "#10B981", // Solid Green for success/conversion
-      light: "#34D399",
-      dark: "#059669",
+      main: gold,
+      light: "#D4B45A",
+      dark: "#8C7020",
+      contrastText: "#1A2332",
     },
     background: {
-      default: "#F8FAFC", // Soft Gray/White background
+      default: "#F7F4EF",
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#0F172A", // Deep Navy/Slate for readability
-      secondary: "#475569",
+      primary: "#1A2332",
+      secondary: "#4A5568",
       disabled: "#94A3B8",
     },
     divider: "#E2E8F0",
@@ -35,12 +37,12 @@ export const theme = createTheme({
     h1: { 
       fontWeight: 800, 
       letterSpacing: "-0.03em",
-      color: "#0F172A", 
+      color: "#1A2332",
     },
     h2: { 
       fontWeight: 700, 
       letterSpacing: "-0.02em",
-      color: "#0F172A",
+      color: "#1A2332",
     },
     h3: { 
       fontWeight: 700, 
@@ -69,7 +71,7 @@ export const theme = createTheme({
             padding: "100px 0",
           },
           "& .gradient-text": {
-            background: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
+            background: "linear-gradient(135deg, #1A3668 0%, #B8952C 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           },
@@ -82,7 +84,9 @@ export const theme = createTheme({
           textTransform: "none",
           borderRadius: 8,
           fontWeight: 600,
-          padding: "10px 20px",
+          minHeight: 44,
+          height: 44,
+          padding: "0 20px",
           transition: "all 0.2s ease-in-out",
         },
         containedPrimary: {

@@ -9,10 +9,10 @@
     "demos": "Demos"
   },
   "hero": {
-    "badge": "Operações, crianças, acampamentos e rede em um só lugar",
-    "title": "Opere cada domingo",
-    "titleHighlight": "e cada retiro",
-    "subtitle": "Assentos ao vivo, igreja infantil, estacionamento, acampamentos e igrejas filhas — para a equipe cuidar de pessoas, não da logística.",
+    "badge": "Do estacionamento ao discipulado, numa só casa",
+    "title": "Entre no templo",
+    "titleHighlight": "e veja o que cobre",
+    "subtitle": "Kahal Zerem acompanha o domingo e o que vem depois: a porta com QR, as pessoas, as células, o orçamento de um evento grande e a oferta.",
     "ctaTrial": "Criar conta",
     "ctaProduct": "Ver o produto",
     "trust1": "Teste sob solicitacao",
@@ -27,9 +27,12 @@
     "occupied": "ocupado",
     "tapFree": "Liberar assento",
     "tapOccupy": "Marcar ocupado",
-    "hint": "Toque em um assento para simular a operação de um porteiro.",
+    "hint": "Toque um assento: passa de livre a reservado, e de reservado a ocupado.",
     "legendFree": "Livre",
-    "legendOccupied": "Ocupado"
+    "legendOccupied": "Ocupado",
+    "tapReserve": "Marcar reservado",
+    "legendReserved": "Reservado",
+    "reserved": "reservados"
   },
   "roi": {
     "eyebrow": "Calculadora",
@@ -47,12 +50,12 @@
   "socialProof": {
     "eyebrow": "Feito para a igreja local",
     "title": "Infraestrutura operacional com coração pastoral",
-    "subtitle": "Culto ao vivo, igreja infantil, estacionamento, acampamentos e retiros, e rede multi-sede: tudo em um SaaS pensado para o ministério."
+    "subtitle": "Do estacionamento à célula, passando pela porta, pelas pessoas e pelo evento grande."
   },
   "modules": {
     "eyebrow": "Módulos do produto",
     "title": "Tudo o que sua igreja opera",
-    "subtitle": "Crianças, acampamentos e estacionamento podem ser comprados no Semente e no Crescimento quando o plano não os inclui. O Reino inclui. O marketplace começa no Crescimento.",
+    "subtitle": "Semilla abre a porta e cuida das pessoas. Crecimiento soma células, eventos, oferta e formação. Reino soma o evento grande, crianças, acampamentos, biblioteca e a rede.",
     "tabs": {
       "liveOps": "Operações ao vivo",
       "layouts": "Layouts e capacidade",
@@ -62,7 +65,13 @@
       "network": "Rede Apóstol",
       "analytics": "Analítica",
       "teams": "Equipes e papéis",
-      "kids": "Igreja infantil"
+      "kids": "Igreja infantil",
+      "qr": "Códigos QR",
+      "people": "Pessoas",
+      "cells": "Células",
+      "eventPlans": "Evento grande",
+      "formation": "Formação",
+      "offerings": "Oferta"
     },
     "liveOps": {
       "title": "Painel, incidentes e terminal",
@@ -71,7 +80,8 @@
         "Mapa de assentos ao vivo via WebSocket",
         "Feed de incidentes com escalonamento",
         "Visão de terminal para equipes do salão"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "layouts": {
       "title": "Editor de layout e níveis",
@@ -80,7 +90,8 @@
         "Construtor visual de assentos",
         "Vários níveis e zonas",
         "Ativação de layout por culto"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "teams": {
       "title": "Porteiros, funções e permissões",
@@ -128,7 +139,7 @@
       "bullets": [
         "Mapa de edifícios, andares e camas",
         "Inscrições, cobranças e chamada",
-        "Incluído no Plano Reino (add-on em outros planos)"
+        "Itinerário ao vivo, saúde e chat da equipe"
       ]
     },
     "network": {
@@ -148,7 +159,91 @@
       "bullets": [
         "Check-in individual ou familiar (irmãos)",
         "Retirada com QR, PIN e foto",
-        "Incluído no Reino. Add-on de $19/mês no Semente e no Crescimento"
+        "Salas por idade e alerta MISSING"
+      ]
+    },
+    "qr": {
+      "badge": "Semilla",
+      "title": "Um código abre o pedido",
+      "desc": "Cada QR é uma página que você monta com um modelo. Quem escaneia pede algo concreto, e o e-mail que chega depois você escreve.",
+      "bullets": [
+        "A página do código nasce de um modelo: boas-vindas simples, com redes ou com as próximas aulas. A tela do templo, os turnos, a biblioteca e o diretório têm o seu.",
+        "O criador de modelos de e-mail escreve o que chega depois: membresia aprovada ou recusada, servir no ministério, culto no lar, ingresso, aviso aos pais e convocação da equipe. Edita, pré-visualiza e pode desligar.",
+        "Inscrição em acampamento ou retiro (Reino)"
+      ],
+      "highlightEyebrow": "O que a igreja leva",
+      "highlightTitle": "Modelos de QR e modelos de e-mail",
+      "templates": "A página do código nasce de um modelo: boas-vindas simples, com redes ou com as próximas aulas. A tela do templo, os turnos, a biblioteca e o diretório têm o seu.",
+      "emails": "O criador de modelos de e-mail escreve o que chega depois: membresia aprovada ou recusada, servir no ministério, culto no lar, ingresso, aviso aos pais e convocação da equipe. Edita, pré-visualiza e pode desligar.",
+      "requestsTitle": "Pedidos",
+      "codesTitle": "Códigos essenciais",
+      "requests": [
+        "Inscrição em acampamento ou retiro (Reino)",
+        "Servir num ministério que você já criou",
+        "Novo convertido",
+        "Cadastro de membro",
+        "Avisar uma visita",
+        "Pedir um culto no lar"
+      ],
+      "codes": [
+        "Ingresso e check-in na porta (Crescimento)",
+        "Tela do templo ao vivo",
+        "Turnos da equipe",
+        "Retirada de crianças, com QR familiar (Reino)",
+        "Portal de adoração, dança e evangelismo",
+        "Biblioteca (Reino)",
+        "Diretório de serviços de membros (Reino)",
+        "Portal do ministério"
+      ]
+    },
+    "people": {
+      "badge": "Semilla",
+      "title": "Pessoas, visitas e ministérios",
+      "desc": "O diretório, a visita pastoral, o novo crente, o ministério e o turno vivem no mesmo cuidado.",
+      "bullets": [
+        "Diretório de membros",
+        "Visitas e novos crentes",
+        "Ministérios e turnos"
+      ]
+    },
+    "cells": {
+      "badge": "Crecimiento",
+      "title": "Células e La Cosecha",
+      "desc": "A reunião da semana, o acompanhamento de quem deu um passo de fé e a escola que aprova um líder.",
+      "bullets": [
+        "Relato da reunião e diretório",
+        "Ganhar, consolidar, discipular e enviar",
+        "Escola de líderes antes de multiplicar"
+      ]
+    },
+    "eventPlans": {
+      "badge": "Reino",
+      "title": "Plano do evento grande",
+      "desc": "Um congresso se planeja com checklist, convidados e orçamento: o que entra e o que sai.",
+      "bullets": [
+        "Checklist e responsáveis",
+        "Convidados e custos",
+        "Orçamento antes do dia"
+      ]
+    },
+    "formation": {
+      "badge": "Crecimiento+",
+      "title": "Aulas, batismo e biblioteca",
+      "desc": "Crecimiento leva estudos e batismo. Reino soma a biblioteca e o diretório de serviços dos membros.",
+      "bullets": [
+        "Aulas e avanço do aluno",
+        "Candidatos ao batismo",
+        "Biblioteca e serviços dos membros em Reino"
+      ]
+    },
+    "offerings": {
+      "badge": "Crecimiento",
+      "title": "Oferta registrada",
+      "desc": "O total do culto e o dízimo de cada pessoa ficam anotados, sem uma folha à parte.",
+      "bullets": [
+        "Total da oferta",
+        "Dízimo ligado a uma pessoa",
+        "Histórico da tesouraria"
       ]
     }
   },
@@ -249,18 +344,7 @@
     "pageEyebrow": "Preços transparentes",
     "pageTitle": "Sem surpresas.",
     "pageTitleHighlight": "Sem letra miúda.",
-    "pageSubtitle": "Escolha o plano que cabe na sua igreja. Altere ou cancele quando quiser.",
-    "addonEyebrow": "Incluído no Kingdom",
-    "addonTitle": "Apostle — rede multi-sede",
-    "addonSubtitle": "Gerencie igrejas filhas com um painel de rede e seletor de igreja. Incluído no Kingdom Plan; sem taxa separada.",
-    "addonsTitle": "Add-ons e multissede",
-    "addonsSubtitle": "Adicione só o módulo que falta, sem trocar de plano.",
-    "addonsList": {
-      "kids": "Crianças: $19/mês no Semente e no Crescimento (incluído no Reino)",
-      "parking": "Estacionamento: $15/mês no Semente (incluído a partir do Crescimento)",
-      "camps": "Acampamentos: $20/mês no Semente e Crescimento (incluído no Reino)",
-      "campusDiscount": "Reino: 20% de desconto por cada campus da sua rede"
-    }
+    "pageSubtitle": "Escolha o plano que cabe na sua igreja. Altere ou cancele quando quiser."
   },
   "plans": {
     "period": "mês",
@@ -375,15 +459,11 @@
       },
       "camps": {
         "q": "O que inclui o módulo de Acampamentos?",
-        "a": "Logística de retiros: mapa/planta, campistas, inscrições e cobranças, chamada, ônibus, itinerário ao vivo, alertas, saúde e chat da equipe. Incluído no Reino; add-on de $20/mês no Semente e Crescimento."
+        "a": "Logística de retiros: mapa/planta, campistas, inscrições e cobranças, chamada, ônibus, itinerário ao vivo, alertas, saúde e chat da equipe. Incluído no Reino."
       },
       "kids": {
         "q": "O que inclui Igreja das crianças?",
-        "a": "Check-in e retirada segura de crianças: cadastro com alergias e consentimentos, código familiar com QR, PIN e foto na retirada, planta de salas, alerta MISSING e relatórios. Incluído no Reino; add-on de $19/mês no Semente e no Crescimento."
-      },
-      "addons": {
-        "q": "O que são add-ons?",
-        "a": "Módulos que você pode somar em qualquer plano que não os inclua: Crianças ($19/mês no Semente e no Crescimento), Estacionamento ($15/mês no Semente; incluído a partir do Crescimento) e Acampamentos ($20/mês no Semente e Crescimento; incluído no Reino). Ative ou cancele em Faturamento."
+        "a": "Check-in e retirada segura de crianças: cadastro com alergias e consentimentos, código familiar com QR, PIN e foto na retirada, planta de salas, alerta MISSING e relatórios. Incluído no Reino."
       },
       "limits": {
         "q": "O que acontece se eu atingir o limite do plano?",
@@ -400,7 +480,7 @@
     "contact": "Falar com vendas"
   },
   "footer": {
-    "tagline": "Plataforma operacional para igrejas — culto ao vivo, igreja infantil, acampamentos e rede multi-sede.",
+    "tagline": "A casa da igreja: porta, pessoas, células, evento grande e oferta num só lugar.",
     "product": "Produto",
     "company": "Empresa",
     "modules": "Módulos",
@@ -510,5 +590,47 @@
         "desc": "Visibilidade de cobranças e status de cada filha."
       }
     ]
+  },
+  "walk": {
+    "eyebrow": "Dentro da igreja",
+    "title": "Um percurso pelo que já opera",
+    "subtitle": "Não é uma lista de promessas. É a ordem de um culto, e cada passo já está no aplicativo.",
+    "stops": {
+      "arrive": {
+        "plan": "Semilla e Crecimiento",
+        "title": "Você chega ao templo",
+        "body": "O estacionamento tem mapa. Os recepcionistas veem o santuário ao vivo e avisam um incidente sem perder o corredor."
+      },
+      "door": {
+        "plan": "Semilla",
+        "title": "Na porta, um código",
+        "body": "Um QR inscreve no acampamento, pede para servir num ministério já criado, e também abre o ingresso, a tela do templo, o turno e a retirada de uma criança."
+      },
+      "people": {
+        "plan": "Semilla",
+        "title": "Alguém entra e não se perde",
+        "body": "O diretório, a visita, o novo crente, o ministério e o turno ficam no mesmo cuidado de pessoas."
+      },
+      "cells": {
+        "plan": "Crecimiento",
+        "title": "A semana segue na célula",
+        "body": "O líder reporta a reunião. Quem deu um passo de fé entra em La Cosecha: ganhar, consolidar, discipular e enviar. A escola de líderes aprova antes de abrir outra célula."
+      },
+      "gathering": {
+        "plan": "Reino",
+        "title": "O evento grande tem orçamento",
+        "body": "Um congresso não é só uma data. O plano leva checklist, convidados e o dinheiro: o que entra e o que sai, antes de começar."
+      },
+      "formation": {
+        "plan": "Crecimiento e Reino",
+        "title": "Depois do culto, há formação",
+        "body": "As aulas e o batismo estão em Crecimiento. A biblioteca e o diretório de serviços dos membros, em Reino."
+      },
+      "house": {
+        "plan": "Crecimiento e Reino",
+        "title": "A casa também se administra",
+        "body": "A oferta fica registrada. O acampamento tem camas e lista. Várias sedes se veem juntas na rede."
+      }
+    }
   }
 }

@@ -15,7 +15,6 @@ const FAQ_KEYS = [
   "email",
   "plans",
   "limits",
-  "addons",
   "cancel",
   "camps",
   "kids",

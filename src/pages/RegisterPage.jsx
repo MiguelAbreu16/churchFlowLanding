@@ -14,7 +14,7 @@ export default function RegisterPage() {
   const plan = params.get("plan");
   const mode = params.get("mode");
 
-  // Legacy Apóstol add-on signup → Plan Reino (enterprise)
+  // Old Apóstol signup links open Plan Reino.
   if (plan === "apostol" || mode === "apostol") {
     return <Navigate to="/register?plan=enterprise" replace />;
   }

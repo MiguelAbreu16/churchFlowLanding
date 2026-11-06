@@ -9,10 +9,10 @@
     "demos": "Démos"
   },
   "hero": {
-    "badge": "Opérations, enfants, camps et réseau en un seul endroit",
-    "title": "Gérez chaque dimanche",
-    "titleHighlight": "et chaque retraite",
-    "subtitle": "Sièges en direct, église des enfants, parking, camps et églises filles — pour que votre équipe prenne soin des personnes, pas de la logistique.",
+    "badge": "Du parking au discipulat, dans une seule maison",
+    "title": "Entrez dans le temple",
+    "titleHighlight": "et voyez ce qu'il couvre",
+    "subtitle": "Kahal Zerem accompagne le dimanche et la suite : la porte avec un QR, les personnes, les cellules, le budget d'un grand événement et l'offrande.",
     "ctaTrial": "Creer un compte",
     "ctaProduct": "Voir le produit",
     "trust1": "Essai sur demande",
@@ -27,9 +27,12 @@
     "occupied": "occupé",
     "tapFree": "Libérer le siège",
     "tapOccupy": "Marquer occupé",
-    "hint": "Touchez un siège pour simuler l’opération d’un huissier.",
+    "hint": "Touchez un siège : il passe de libre à réservé, puis de réservé à occupé.",
     "legendFree": "Libre",
-    "legendOccupied": "Occupé"
+    "legendOccupied": "Occupé",
+    "tapReserve": "Marquer réservé",
+    "legendReserved": "Réservé",
+    "reserved": "réservés"
   },
   "roi": {
     "eyebrow": "Calculateur",
@@ -47,12 +50,12 @@
   "socialProof": {
     "eyebrow": "Conçu pour l’église locale",
     "title": "Infrastructure opérationnelle avec un cœur pastoral",
-    "subtitle": "Culte en direct, église des enfants, parking, camps et retraites, et réseau multi-sites : un SaaS pensé pour le ministère."
+    "subtitle": "Du parking à la cellule, en passant par la porte, les personnes et le grand événement."
   },
   "modules": {
     "eyebrow": "Modules du produit",
     "title": "Tout ce que votre église opère",
-    "subtitle": "Enfants, camps et parking s'achètent sur Semence et Croissance si le forfait ne les inclut pas. Royaume les inclut. Le marketplace commence à Croissance.",
+    "subtitle": "Semilla ouvre la porte et prend soin des personnes. Crecimiento ajoute cellules, événements, offrande et formation. Reino ajoute le grand événement, les enfants, les camps, la bibliothèque et le réseau.",
     "tabs": {
       "liveOps": "Opérations en direct",
       "layouts": "Plans et capacité",
@@ -62,7 +65,13 @@
       "network": "Réseau Apôtre",
       "analytics": "Analytique",
       "teams": "Équipes et rôles",
-      "kids": "Église des enfants"
+      "kids": "Église des enfants",
+      "qr": "Codes QR",
+      "people": "Personnes",
+      "cells": "Cellules",
+      "eventPlans": "Grand événement",
+      "formation": "Formation",
+      "offerings": "Offrande"
     },
     "liveOps": {
       "title": "Tableau de bord, incidents et terminal",
@@ -71,7 +80,8 @@
         "Carte des places en direct via WebSocket",
         "Flux d'incidents avec escalade",
         "Vue terminal pour les équipes au sol"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "layouts": {
       "title": "Éditeur de plan et niveaux",
@@ -80,7 +90,8 @@
         "Constructeur visuel de places",
         "Plusieurs niveaux et zones",
         "Activation du plan par culte"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "teams": {
       "title": "Ouvreurs, rôles et permissions",
@@ -128,7 +139,7 @@
       "bullets": [
         "Carte des bâtiments, étages et lits",
         "Inscriptions, paiements et appel",
-        "Inclus dans le plan Reino (add-on sur les autres plans)"
+        "Itinéraire en direct, santé et chat d’équipe"
       ]
     },
     "network": {
@@ -148,7 +159,91 @@
       "bullets": [
         "Check-in individuel ou familial (frères/sœurs)",
         "Retrait avec QR, PIN et photo",
-        "Inclus dans Royaume. Add-on 19 $/mois sur Semence et Croissance"
+        "Salles par âge et alerte MISSING"
+      ]
+    },
+    "qr": {
+      "badge": "Semilla",
+      "title": "Un code ouvre la demande",
+      "desc": "Chaque QR est une page que vous composez avec un modèle. Qui le scanne demande quelque chose de précis, et vous écrivez le courriel qui suit.",
+      "bullets": [
+        "La page du code part d’un modèle : accueil simple, avec les réseaux, ou avec les prochains cours. L’écran du temple, les tours, la bibliothèque et l’annuaire ont le leur.",
+        "Le créateur de modèles de courriel écrit ce qui arrive ensuite : adhésion acceptée ou refusée, servir dans le ministère, culte à la maison, billet, avis aux parents et convocation de l’équipe. On l’édite, on le prévisualise, on peut le couper.",
+        "Inscription à un camp ou une retraite (Royaume)"
+      ],
+      "highlightEyebrow": "Ce que l’église garde",
+      "highlightTitle": "Modèles de QR et modèles de courriel",
+      "templates": "La page du code part d’un modèle : accueil simple, avec les réseaux, ou avec les prochains cours. L’écran du temple, les tours, la bibliothèque et l’annuaire ont le leur.",
+      "emails": "Le créateur de modèles de courriel écrit ce qui arrive ensuite : adhésion acceptée ou refusée, servir dans le ministère, culte à la maison, billet, avis aux parents et convocation de l’équipe. On l’édite, on le prévisualise, on peut le couper.",
+      "requestsTitle": "Demandes",
+      "codesTitle": "Codes essentiels",
+      "requests": [
+        "Inscription à un camp ou une retraite (Royaume)",
+        "Servir dans un ministère déjà créé",
+        "Nouveau converti",
+        "Inscription d’un membre",
+        "Signaler une visite",
+        "Demander un culte à la maison"
+      ],
+      "codes": [
+        "Billet et check-in à la porte (Croissance)",
+        "Écran du temple en direct",
+        "Tours de l’équipe",
+        "Retrait des enfants, avec QR familial (Royaume)",
+        "Portail d’adoration, danse et évangélisation",
+        "Bibliothèque (Royaume)",
+        "Annuaire des services des membres (Royaume)",
+        "Portail du ministère"
+      ]
+    },
+    "people": {
+      "badge": "Semilla",
+      "title": "Personnes, visites et ministères",
+      "desc": "L'annuaire, la visite pastorale, le nouveau converti, le ministère et le tour vivent dans le même soin.",
+      "bullets": [
+        "Annuaire des membres",
+        "Visites et nouveaux convertis",
+        "Ministères et tours"
+      ]
+    },
+    "cells": {
+      "badge": "Crecimiento",
+      "title": "Cellules et La Cosecha",
+      "desc": "La réunion de la semaine, le suivi de celui qui a fait un pas de foi, et l'école qui approuve un responsable.",
+      "bullets": [
+        "Compte rendu et annuaire",
+        "Gagner, consolider, former et envoyer",
+        "École de responsables avant de multiplier"
+      ]
+    },
+    "eventPlans": {
+      "badge": "Reino",
+      "title": "Plan du grand événement",
+      "desc": "Un congrès se prépare avec une liste, des invités et un budget : ce qui entre et ce qui sort.",
+      "bullets": [
+        "Liste et responsables",
+        "Invités et coûts",
+        "Budget avant le jour"
+      ]
+    },
+    "formation": {
+      "badge": "Crecimiento+",
+      "title": "Cours, baptême et bibliothèque",
+      "desc": "Crecimiento porte les études et le baptême. Reino ajoute la bibliothèque et l'annuaire des services des membres.",
+      "bullets": [
+        "Cours et progrès de l'élève",
+        "Candidats au baptême",
+        "Bibliothèque et services des membres dans Reino"
+      ]
+    },
+    "offerings": {
+      "badge": "Crecimiento",
+      "title": "Offrande enregistrée",
+      "desc": "Le total du culte et la dîme de chaque personne sont notés, sans une feuille à part.",
+      "bullets": [
+        "Total de l'offrande",
+        "Dîme liée à une personne",
+        "Historique de la trésorerie"
       ]
     }
   },
@@ -249,18 +344,7 @@
     "pageEyebrow": "Tarifs transparents",
     "pageTitle": "Pas de surprises.",
     "pageTitleHighlight": "Pas de petits caractères.",
-    "pageSubtitle": "Choisissez le plan qui convient à votre église. Modifiez ou résiliez à tout moment.",
-    "addonEyebrow": "Inclus dans Kingdom",
-    "addonTitle": "Apostle — réseau multi-sites",
-    "addonSubtitle": "Gérez les églises filles avec un panneau réseau et un sélecteur d'église. Inclus dans le Kingdom Plan ; aucun frais séparé.",
-    "addonsTitle": "Add-ons et multisite",
-    "addonsSubtitle": "Ajoutez uniquement le module qui vous manque, sans changer de forfait.",
-    "addonsList": {
-      "kids": "Enfants : 19 $/mois avec Semence et Croissance (inclus dans Royaume)",
-      "parking": "Parking : 15 $/mois avec Semence (inclus dès Croissance)",
-      "camps": "Camps : 20 $/mois avec Semence et Croissance (inclus dans Royaume)",
-      "campusDiscount": "Royaume : 20 % de remise pour chaque site de votre réseau"
-    }
+    "pageSubtitle": "Choisissez le plan qui convient à votre église. Modifiez ou résiliez à tout moment."
   },
   "plans": {
     "period": "mois",
@@ -375,15 +459,11 @@
       },
       "camps": {
         "q": "Que comprend le module Camps ?",
-        "a": "Logistique des retraites : plan, campeurs, inscriptions et paiements, appel, bus, itinéraire en direct, alertes, santé et chat de l'équipe. Inclus dans Royaume ; add-on de 20 $/mois avec Semence et Croissance."
+        "a": "Logistique des retraites : plan, campeurs, inscriptions et paiements, appel, bus, itinéraire en direct, alertes, santé et chat de l’équipe. Inclus dans Royaume."
       },
       "kids": {
         "q": "Que comprend l'Église des enfants ?",
-        "a": "Check-in et récupération sécurisés des enfants : inscription avec allergies et consentements, code familial QR, PIN et photo à la récupération, plan des salles, alerte MISSING et rapports. Inclus dans Royaume ; add-on de 19 $/mois avec Semence et Croissance."
-      },
-      "addons": {
-        "q": "Que sont les add-ons ?",
-        "a": "Des modules à ajouter sur tout forfait qui ne les inclut pas : Enfants (19 $/mois avec Semence et Croissance), Parking (15 $/mois avec Semence ; inclus dès Croissance) et Camps (20 $/mois avec Semence et Croissance ; inclus dans Royaume). Activez-les ou annulez-les depuis Facturation."
+        "a": "Check-in et récupération sécurisés des enfants : inscription avec allergies et consentements, code familial QR, PIN et photo à la récupération, plan des salles, alerte MISSING et rapports. Inclus dans Royaume."
       },
       "limits": {
         "q": "Que se passe-t-il si j'atteins la limite de mon forfait ?",
@@ -400,7 +480,7 @@
     "contact": "Contacter les ventes"
   },
   "footer": {
-    "tagline": "Plateforme opérationnelle pour églises — culte en direct, église des enfants, camps et réseau multi-sites.",
+    "tagline": "La maison de l'église : porte, personnes, cellules, grand événement et offrande au même endroit.",
     "product": "Produit",
     "company": "Entreprise",
     "modules": "Modules",
@@ -510,5 +590,47 @@
         "desc": "Visibilité des frais et du statut de chaque église fille."
       }
     ]
+  },
+  "walk": {
+    "eyebrow": "Dans l'église",
+    "title": "Un parcours de ce qui fonctionne déjà",
+    "subtitle": "Ce n'est pas une liste de promesses. C'est l'ordre d'un culte, et chaque étape est déjà dans l'application.",
+    "stops": {
+      "arrive": {
+        "plan": "Semilla et Crecimiento",
+        "title": "Vous arrivez au temple",
+        "body": "Le parking a un plan. Les huissiers voient le sanctuaire en direct et signalent un incident sans perdre l'allée."
+      },
+      "door": {
+        "plan": "Semilla",
+        "title": "À la porte, un code",
+        "body": "Un QR inscrit au camp, demande à servir dans un ministère déjà créé, et ouvre aussi le billet, l’écran du temple, le tour et le retrait d’un enfant."
+      },
+      "people": {
+        "plan": "Semilla",
+        "title": "Quelqu'un entre et n'est pas perdu",
+        "body": "L'annuaire, la visite, le nouveau converti, le ministère et le tour restent dans le même soin des personnes."
+      },
+      "cells": {
+        "plan": "Crecimiento",
+        "title": "La semaine continue dans la cellule",
+        "body": "Le responsable rend compte de la réunion. Celui qui a fait un pas de foi entre dans La Cosecha : gagner, consolider, former et envoyer. L'école de responsables approuve avant d'ouvrir une autre cellule."
+      },
+      "gathering": {
+        "plan": "Reino",
+        "title": "Le grand événement a un budget",
+        "body": "Un congrès n'est pas seulement une date. Le plan porte une liste, des invités et l'argent : ce qui entre et ce qui sort, avant le jour J."
+      },
+      "formation": {
+        "plan": "Crecimiento et Reino",
+        "title": "Après le culte, on forme",
+        "body": "Les cours et le baptême sont dans Crecimiento. La bibliothèque et l'annuaire des services des membres, dans Reino."
+      },
+      "house": {
+        "plan": "Crecimiento et Reino",
+        "title": "La maison s'administre aussi",
+        "body": "L'offrande est enregistrée. Le camp a des lits et une liste. Plusieurs sites se regardent ensemble dans le réseau."
+      }
+    }
   }
 }

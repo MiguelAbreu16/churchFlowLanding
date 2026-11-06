@@ -2,6 +2,7 @@ import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import StickyMobileCta from "../components/common/StickyMobileCta";
 import HeroSection from "../components/home/HeroSection";
+import ChurchWalkSection from "../components/home/ChurchWalkSection";
 import SocialProofSection from "../components/home/SocialProofSection";
 import LiveDemosSection from "../components/home/LiveDemosSection";
 import FeatureModulesSection from "../components/home/FeatureModulesSection";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
+        <ChurchWalkSection />
         <SocialProofSection />
         <LiveDemosSection />
         <FeatureModulesSection />

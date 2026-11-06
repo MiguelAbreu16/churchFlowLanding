@@ -52,30 +52,6 @@ export default function PricingSection({ showComparison = true }) {
 
         {showComparison && <PricingComparisonTable />}
 
-        <Box
-          sx={{
-            mt: 6,
-            p: { xs: 2.5, md: 3 },
-            borderRadius: 3,
-            border: "1px solid",
-            borderColor: "divider",
-            bgcolor: "background.paper",
-            textAlign: "center",
-          }}
-        >
-          <Typography variant="h6" sx={{ fontWeight: 800, mb: 1 }}>
-            {t("pricing.addonsTitle")}
-          </Typography>
-          <Typography color="text.secondary" sx={{ maxWidth: 640, mx: "auto", mb: 2 }}>
-            {t("pricing.addonsSubtitle")}
-          </Typography>
-          {["kids", "parking", "camps", "campusDiscount"].map((key) => (
-            <Typography key={key} variant="body2" sx={{ fontWeight: 600, mb: 0.5 }}>
-              {t(`pricing.addonsList.${key}`)}
-            </Typography>
-          ))}
-        </Box>
-
         <Box sx={{ mt: 8, textAlign: "center" }}>
           <Typography variant="body2" color="text.secondary">
             {t("pricing.contactCustom")}{" "}

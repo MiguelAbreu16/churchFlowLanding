@@ -67,25 +67,6 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
         />
       )}
 
-      {plan.isAddon && !plan.popular && (
-        <Chip
-          label={t("pricing.addonEyebrow")}
-          size="small"
-          sx={{
-            position: "absolute",
-            top: -12,
-            left: "50%",
-            transform: "translateX(-50%)",
-            bgcolor: plan.color || "primary.dark",
-            color: "#fff",
-            fontWeight: 800,
-            fontSize: "0.7rem",
-            letterSpacing: 0.5,
-            px: 1,
-          }}
-        />
-      )}
-
       {selected && (
         <Chip
           label="SELECCIONADO"
@@ -189,11 +170,7 @@ export default function PricingCard({ plan, onSelect, selected = false }) {
                 }),
           }}
         >
-          {plan.isAddon
-            ? t("plans.apostol.name")
-            : plan.price
-              ? t("plans.startTrial")
-              : t("plans.talkSales")}
+          {plan.price ? t("plans.startTrial") : t("plans.talkSales")}
         </Button>
       )}
     </Box>

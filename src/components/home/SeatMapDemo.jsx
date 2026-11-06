@@ -14,17 +14,20 @@ const ROWS = 6;
 const COLS = 10;
 const AISLE_COL = 5;
 
+const NEXT_STATUS = {
+  free: "reserved",
+  reserved: "occupied",
+  occupied: "free",
+};
+
 function buildSeats() {
   const seats = [];
   for (let r = 0; r < ROWS; r++) {
     for (let c = 0; c < COLS; c++) {
       if (c === AISLE_COL) continue;
-      seats.push({
-        id: `${r}-${c}`,
-        row: r,
-        col: c,
-        status: Math.random() > 0.55 ? "occupied" : "free",
-      });
+      const roll = Math.random();
+      const status = roll > 0.72 ? "occupied" : roll > 0.52 ? "reserved" : "free";
+      seats.push({ id: `${r}-${c}`, row: r, col: c, status });
     }
   }
   return seats;
@@ -39,18 +42,17 @@ export default function SeatMapDemo() {
     () => seats.filter((s) => s.status === "occupied").length,
     [seats],
   );
+  const reserved = useMemo(
+    () => seats.filter((s) => s.status === "reserved").length,
+    [seats],
+  );
   const total = seats.length;
   const pct = Math.round((occupied / total) * 100);
 
   const toggle = (id) => {
     setSeats((prev) =>
       prev.map((s) =>
-        s.id === id
-          ? {
-              ...s,
-              status: s.status === "occupied" ? "free" : "occupied",
-            }
-          : s,
+        s.id === id ? { ...s, status: NEXT_STATUS[s.status] || "free" } : s,
       ),
     );
   };
@@ -73,7 +75,8 @@ export default function SeatMapDemo() {
     >
       <Stack
         direction="row"
-        sx={{ mb: 2, justifyContent: "space-between", alignItems: "center" }}
+        useFlexGap
+        sx={{ mb: 2, justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 1 }}
       >
         <Typography sx={{ fontWeight: 800, fontSize: "0.95rem" }}>
           {t("demo.title")}
@@ -89,7 +92,7 @@ export default function SeatMapDemo() {
             fontWeight: 700,
           }}
         >
-          {pct}% {t("demo.occupied")}
+          {pct}% {t("demo.occupied")} · {reserved} {t("demo.reserved")}
         </Typography>
       </Stack>
 
@@ -127,15 +130,21 @@ export default function SeatMapDemo() {
             return <Box key={`aisle-${i}`} />;
           }
           const seat = seats.find((s) => s.id === `${r}-${c}`);
-          const occupiedSeat = seat?.status === "occupied";
+          const status = seat?.status || "free";
+          const tip =
+            status === "occupied"
+              ? t("demo.tapFree")
+              : status === "reserved"
+                ? t("demo.tapOccupy")
+                : t("demo.tapReserve");
+          const fill =
+            status === "occupied"
+              ? theme.palette.primary.main
+              : status === "reserved"
+                ? theme.palette.secondary.main
+                : alpha("#fff", 0.12);
           return (
-            <Tooltip
-              key={seat.id}
-              title={
-                occupiedSeat ? t("demo.tapFree") : t("demo.tapOccupy")
-              }
-              arrow
-            >
+            <Tooltip key={seat.id} title={tip} arrow>
               <Box
                 component="button"
                 type="button"
@@ -147,9 +156,7 @@ export default function SeatMapDemo() {
                   borderRadius: 1,
                   cursor: "pointer",
                   p: 0,
-                  bgcolor: occupiedSeat
-                    ? theme.palette.primary.main
-                    : alpha("#fff", 0.12),
+                  bgcolor: fill,
                   transition: "transform 0.15s ease, background 0.15s ease",
                   "&:hover": { transform: "scale(1.08)" },
                 }}
@@ -159,7 +166,7 @@ export default function SeatMapDemo() {
         })}
       </Box>
 
-      <Stack direction="row" spacing={2} sx={{ mb: 1.5 }}>
+      <Stack direction="row" spacing={2} useFlexGap sx={{ mb: 1.5, flexWrap: "wrap" }}>
         <Stack direction="row" spacing={0.75} sx={{ alignItems: "center" }}>
           <Box
             sx={{
@@ -184,6 +191,19 @@ export default function SeatMapDemo() {
           />
           <Typography variant="caption" sx={{ color: alpha("#fff", 0.65) }}>
             {t("demo.legendOccupied")}
+          </Typography>
+        </Stack>
+        <Stack direction="row" spacing={0.75} sx={{ alignItems: "center" }}>
+          <Box
+            sx={{
+              width: 12,
+              height: 12,
+              borderRadius: 0.5,
+              bgcolor: theme.palette.secondary.main,
+            }}
+          />
+          <Typography variant="caption" sx={{ color: alpha("#fff", 0.65) }}>
+            {t("demo.legendReserved")}
           </Typography>
         </Stack>
       </Stack>

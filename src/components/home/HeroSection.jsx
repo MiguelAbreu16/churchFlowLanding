@@ -69,7 +69,7 @@ export default function HeroSection() {
                   justifyContent: { xs: "center", lg: "flex-start" },
                 }}
               >
-                <LogoMark size={72} markSize={68} variant="horizontal" />
+                <LogoMark size={72} markSize={68} />
               </Stack>
 
               <Chip
@@ -125,19 +125,17 @@ export default function HeroSection() {
                 <Button
                   variant="contained"
                   color="primary"
-                  size="large"
                   onClick={() => navigate("/register")}
                   endIcon={<ArrowForward />}
-                  sx={{ px: 3.5, py: 1.6, fontWeight: 800 }}
+                  sx={{ px: 3, fontWeight: 800 }}
                 >
                   {t("hero.ctaTrial")}
                 </Button>
                 <Button
                   variant="outlined"
-                  size="large"
                   startIcon={<Visibility />}
                   onClick={scrollToTour}
-                  sx={{ px: 3.5, py: 1.6 }}
+                  sx={{ px: 3 }}
                 >
                   {t("hero.ctaProduct")}
                 </Button>

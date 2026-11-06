@@ -9,10 +9,10 @@
     "demos": "Demos"
   },
   "hero": {
-    "badge": "Operations, kids ministry, camps, and network in one place",
-    "title": "Run every Sunday",
-    "titleHighlight": "and every retreat",
-    "subtitle": "Live seating, children's church, parking, camps, and daughter churches — so your staff cares for people, not logistics.",
+    "badge": "From the parking lot to discipleship, in one house",
+    "title": "Step into the church",
+    "titleHighlight": "and see what it covers",
+    "subtitle": "Kahal Zerem stays with Sunday and what follows: the door with a QR, the people, the cells, the budget of a large event, and the offering.",
     "ctaTrial": "Create account",
     "ctaProduct": "See the product",
     "trust1": "Trial on request",
@@ -27,9 +27,12 @@
     "occupied": "occupied",
     "tapFree": "Free seat",
     "tapOccupy": "Mark occupied",
-    "hint": "Tap a seat to simulate an usher on the floor.",
+    "hint": "Tap a seat: it goes from free to reserved, then from reserved to occupied.",
     "legendFree": "Free",
-    "legendOccupied": "Occupied"
+    "legendOccupied": "Occupied",
+    "tapReserve": "Mark reserved",
+    "legendReserved": "Reserved",
+    "reserved": "reserved"
   },
   "roi": {
     "eyebrow": "Calculator",
@@ -47,12 +50,12 @@
   "socialProof": {
     "eyebrow": "Built for the local church",
     "title": "Operational infrastructure with a pastoral heart",
-    "subtitle": "Live service, children's church, parking, camps & retreats, and multi-site network — all in one SaaS designed for ministry."
+    "subtitle": "From the parking lot to the cell, through the door, the people, and the large event."
   },
   "modules": {
     "eyebrow": "Product modules",
     "title": "Everything your church operates",
-    "subtitle": "Seed covers the basics (ministry member lists). Growth adds cells, ministry ops, events and finances. Kingdom adds event planning, library, kids, marketplace and network.",
+    "subtitle": "Semilla opens the door and cares for people. Crecimiento adds cells, events, offering, and formation. Reino adds the large event, kids, camps, the library, and the network.",
     "tabs": {
       "liveOps": "Live operations",
       "layouts": "Layouts & capacity",
@@ -62,7 +65,13 @@
       "network": "Apostle Network",
       "analytics": "Analytics",
       "teams": "Teams & roles",
-      "kids": "Children's Church"
+      "kids": "Children's Church",
+      "qr": "QR codes",
+      "people": "People",
+      "cells": "Cells",
+      "eventPlans": "Large event",
+      "formation": "Formation",
+      "offerings": "Offering"
     },
     "liveOps": {
       "title": "Dashboard, incidents & terminal",
@@ -71,7 +80,8 @@
         "Live seat map via WebSocket",
         "Incident feed with escalation",
         "Terminal view for floor teams"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "layouts": {
       "title": "Layout editor & levels",
@@ -80,7 +90,8 @@
         "Visual seat builder",
         "Multiple levels and zones",
         "Per-service layout activation"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "teams": {
       "title": "Ushers, roles & permissions",
@@ -128,7 +139,7 @@
       "bullets": [
         "Building, floor, and bed maps",
         "Sign-ups, payments, and roll call",
-        "Included in Kingdom Plan (add-on on lower plans)"
+        "Live itinerary, health, and staff chat"
       ]
     },
     "network": {
@@ -148,7 +159,91 @@
       "bullets": [
         "Individual or family (siblings) check-in",
         "Pickup with QR, PIN, and photo",
-        "Included in Kingdom. $19/mo add-on on Seed and Growth"
+        "Age-based rooms and a MISSING alert"
+      ]
+    },
+    "qr": {
+      "badge": "Semilla",
+      "title": "One code opens the request",
+      "desc": "Every QR is a page you build from a template. The person who scans it asks for something specific, and you write the email they receive next.",
+      "bullets": [
+        "The code page starts from a template: a simple welcome, one with social links, or one with the next classes. The sanctuary screen, shifts, the library, and the directory each have their own.",
+        "The email template builder writes what arrives next: membership approved or declined, serving in a ministry, a home service, a ticket, a note to parents, and a team call. Edit it, preview it, or turn it off.",
+        "Camp or retreat registration (Kingdom)"
+      ],
+      "highlightEyebrow": "What the church keeps",
+      "highlightTitle": "QR templates and email templates",
+      "templates": "The code page starts from a template: a simple welcome, one with social links, or one with the next classes. The sanctuary screen, shifts, the library, and the directory each have their own.",
+      "emails": "The email template builder writes what arrives next: membership approved or declined, serving in a ministry, a home service, a ticket, a note to parents, and a team call. Edit it, preview it, or turn it off.",
+      "requestsTitle": "Requests",
+      "codesTitle": "Essential codes",
+      "requests": [
+        "Camp or retreat registration (Kingdom)",
+        "Serve in a ministry you already created",
+        "New believer",
+        "Member registration",
+        "Report a visit",
+        "Request a home service"
+      ],
+      "codes": [
+        "Ticket and door check-in (Growth)",
+        "Live sanctuary screen",
+        "Team shifts",
+        "Child pickup, with a family QR (Kingdom)",
+        "Worship, dance, and evangelism portals",
+        "Library (Kingdom)",
+        "Member services directory (Kingdom)",
+        "Ministry portal"
+      ]
+    },
+    "people": {
+      "badge": "Semilla",
+      "title": "People, visits, and ministries",
+      "desc": "The directory, the pastoral visit, the new believer, the ministry, and the shift live in the same care.",
+      "bullets": [
+        "Member directory",
+        "Visits and new believers",
+        "Ministries and shifts"
+      ]
+    },
+    "cells": {
+      "badge": "Crecimiento",
+      "title": "Cells and La Cosecha",
+      "desc": "The weekly meeting, follow-up for someone who took a step of faith, and the school that approves a leader.",
+      "bullets": [
+        "Meeting report and directory",
+        "Win, consolidate, disciple, and send",
+        "Leaders' school before a cell multiplies"
+      ]
+    },
+    "eventPlans": {
+      "badge": "Reino",
+      "title": "Plan for the large event",
+      "desc": "A conference is planned with a checklist, guests, and a budget: what comes in and what goes out.",
+      "bullets": [
+        "Checklist and owners",
+        "Guests and costs",
+        "Budget before the day"
+      ]
+    },
+    "formation": {
+      "badge": "Crecimiento+",
+      "title": "Classes, baptism, and library",
+      "desc": "Crecimiento carries studies and baptism. Reino adds the library and the member-services directory.",
+      "bullets": [
+        "Classes and student progress",
+        "Baptism candidates",
+        "Library and member services in Reino"
+      ]
+    },
+    "offerings": {
+      "badge": "Crecimiento",
+      "title": "Offering on record",
+      "desc": "The service total and each person's tithe are written down, without a separate sheet.",
+      "bullets": [
+        "Offering total",
+        "Tithe tied to a person",
+        "Treasury history"
       ]
     }
   },
@@ -249,18 +344,7 @@
     "pageEyebrow": "Transparent pricing",
     "pageTitle": "No surprises.",
     "pageTitleHighlight": "No fine print.",
-    "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime.",
-    "addonEyebrow": "Included in Kingdom",
-    "addonTitle": "Apostle — multi-site network",
-    "addonSubtitle": "Manage daughter churches with a network panel and church switcher. Included in Kingdom Plan; no separate fee.",
-    "addonsTitle": "Add-ons and multi-site",
-    "addonsSubtitle": "Add just the module you need without switching plans.",
-    "addonsList": {
-      "kids": "Kids: $19/mo on Seed and Growth (included in Kingdom)",
-      "parking": "Parking: $15/mo on Seed (included from Growth)",
-      "camps": "Camps: $20/mo on Seed and Growth (included in Kingdom)",
-      "campusDiscount": "Kingdom: 20% discount for every campus in your network"
-    }
+    "pageSubtitle": "Pick the plan that fits your church. Change or cancel anytime."
   },
   "plans": {
     "period": "mo",
@@ -375,15 +459,11 @@
       },
       "camps": {
         "q": "What does the Camps module include?",
-        "a": "Retreat logistics: map/layout, campers, registrations and payments, roll call, buses, live itinerary, alerts, health and staff chat. Included in Kingdom; a $20/mo add-on on Seed and Growth."
+        "a": "Retreat logistics: map/layout, campers, registrations and payments, roll call, buses, live itinerary, alerts, health and staff chat. Included in Kingdom."
       },
       "kids": {
         "q": "What does Kids Church include?",
-        "a": "Secure kids check-in and pick-up: registration with allergies and consents, family QR code, PIN and photo at pick-up, room map, MISSING alert and reports. Included in Kingdom; a $19/mo add-on on Seed and Growth."
-      },
-      "addons": {
-        "q": "What are add-ons?",
-        "a": "Modules you can add on any plan that does not already include them: Kids ($19/mo on Seed and Growth), Parking ($15/mo on Seed; included from Growth) and Camps ($20/mo on Seed and Growth; included in Kingdom). Turn them on or off from Billing."
+        "a": "Secure kids check-in and pick-up: registration with allergies and consents, family QR code, PIN and photo at pick-up, room map, MISSING alert and reports. Included in Kingdom."
       },
       "limits": {
         "q": "What happens if I reach my plan limit?",
@@ -400,7 +480,7 @@
     "contact": "Contact sales"
   },
   "footer": {
-    "tagline": "Church ops platform — live service, children's church, camps, and multi-site network.",
+    "tagline": "The church house: door, people, cells, a large event, and the offering in one place.",
     "product": "Product",
     "company": "Company",
     "modules": "Modules",
@@ -510,5 +590,47 @@
         "desc": "See charges and status for each daughter church."
       }
     ]
+  },
+  "walk": {
+    "eyebrow": "Inside the church",
+    "title": "A walk through what already runs",
+    "subtitle": "This is not a list of promises. It is the order of a service, and each step is already in the app.",
+    "stops": {
+      "arrive": {
+        "plan": "Semilla and Crecimiento",
+        "title": "You arrive at the church",
+        "body": "Parking has a map. Ushers see the sanctuary live and report an incident without losing the aisle."
+      },
+      "door": {
+        "plan": "Semilla",
+        "title": "At the door, a code",
+        "body": "One QR signs a person up for camp, asks to serve in a ministry you already created, and also opens the ticket, the sanctuary screen, the shift, and a child pickup."
+      },
+      "people": {
+        "plan": "Semilla",
+        "title": "Someone comes in and is not lost",
+        "body": "The directory, the visit, the new believer, the ministry, and the shift stay in the same care for people."
+      },
+      "cells": {
+        "plan": "Crecimiento",
+        "title": "The week continues in the cell",
+        "body": "The leader reports the meeting. Someone who took a step of faith enters La Cosecha: win, consolidate, disciple, and send. The leaders' school approves before another cell opens."
+      },
+      "gathering": {
+        "plan": "Reino",
+        "title": "The large event has a budget",
+        "body": "A conference is more than a date. The plan carries a checklist, guests, and the money: what comes in and what goes out, before the day starts."
+      },
+      "formation": {
+        "plan": "Crecimiento and Reino",
+        "title": "After the service, people are formed",
+        "body": "Classes and baptism are in Crecimiento. The library and the member-services directory are in Reino."
+      },
+      "house": {
+        "plan": "Crecimiento and Reino",
+        "title": "The house is managed too",
+        "body": "The offering is recorded. Camp has beds and a roll. Several campuses are seen together in the network."
+      }
+    }
   }
 }

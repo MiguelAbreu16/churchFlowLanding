@@ -9,10 +9,10 @@
     "demos": "Demo"
   },
   "hero": {
-    "badge": "Operasyon, timoun, kan ak rezo nan yon sèl kote",
-    "title": "Jere chak dimanch",
-    "titleHighlight": "ak chak retrèt",
-    "subtitle": "Syèj an dirèk, legliz timoun, pakin, kan ak legliz pitit — pou ekip ou a pran swen moun, pa lojistik.",
+    "badge": "Soti nan pakin rive nan disip, nan yon sèl kay",
+    "title": "Antre nan tanp lan",
+    "titleHighlight": "epi wè sa li kouvri",
+    "subtitle": "Kahal Zerem akonpaye dimanch lan ak sa ki vin apre : pòt la ak QR, moun yo, selil yo, bidjè yon gwo evènman, ak ofrann lan.",
     "ctaTrial": "Kreye kont",
     "ctaProduct": "Wè pwodwi a",
     "trust1": "Ese sou demann",
@@ -27,9 +27,12 @@
     "occupied": "okipe",
     "tapFree": "Libere chèz",
     "tapOccupy": "Make okipe",
-    "hint": "Tape yon chèz pou simile travay yon usher.",
+    "hint": "Touche yon chèz: li soti lib pou ale rezève, epi soti rezève pou ale okipe.",
     "legendFree": "Lib",
-    "legendOccupied": "Okipe"
+    "legendOccupied": "Okipe",
+    "tapReserve": "Make rezève",
+    "legendReserved": "Rezève",
+    "reserved": "rezève"
   },
   "roi": {
     "eyebrow": "Kalkilatè",
@@ -47,12 +50,12 @@
   "socialProof": {
     "eyebrow": "Fèt pou legliz lokal la",
     "title": "Enfrastrikti operasyonèl ak kè pastoral",
-    "subtitle": "Sèvis an dirèk, legliz timoun, pakin, kan ak retrè, ak rezo milti-sit: yon SaaS panse pou ministè a."
+    "subtitle": "Soti nan pakin rive nan selil la, pase nan pòt la, moun yo, ak gwo evènman an."
   },
   "modules": {
     "eyebrow": "Modil pwodwi",
     "title": "Tout sa legliz ou a opere",
-    "subtitle": "Timoun, kan ak pakin achte nan Semans ak Kwasans si plan an pa gen yo. Wayòm enkli yo. Marketplace kòmanse nan Kwasans.",
+    "subtitle": "Semilla ouvri pòt la epi li pran swen moun. Crecimiento ajoute selil, evènman, ofrann ak fòmasyon. Reino ajoute gwo evènman an, timoun, kan, bibliyotèk ak rezo a.",
     "tabs": {
       "liveOps": "Operasyon an dirèk",
       "layouts": "Layout ak kapasite",
@@ -62,7 +65,13 @@
       "network": "Rezo Apòt",
       "analytics": "Analitik",
       "teams": "Ekip ak wòl",
-      "kids": "Legliz timoun"
+      "kids": "Legliz timoun",
+      "qr": "Kòd QR",
+      "people": "Moun",
+      "cells": "Selil",
+      "eventPlans": "Gwo evènman",
+      "formation": "Fòmasyon",
+      "offerings": "Ofrann"
     },
     "liveOps": {
       "title": "Tablo, ensidan ak tèminal",
@@ -71,7 +80,8 @@
         "Kat syèj an dirèk atravè WebSocket",
         "Fil ensidan ak eskalad",
         "Vizyon tèminal pou ekip sal la"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "layouts": {
       "title": "Editè layout ak nivo",
@@ -80,7 +90,8 @@
         "Konstriktè vizyèl syèj",
         "Plizyè nivo ak zòn",
         "Aktivasyon layout pou chak sèvis"
-      ]
+      ],
+      "badge": "Semilla"
     },
     "teams": {
       "title": "Ovrè, wòl ak pèmisyon",
@@ -128,7 +139,7 @@
       "bullets": [
         "Kat bilding, etaj ak kabann",
         "Enskripsyon, peman ak apel",
-        "Enkli nan Plan Reino (add-on nan lòt plan yo)"
+        "Itinerè an dirèk, sante ak chat ekip"
       ]
     },
     "network": {
@@ -148,7 +159,91 @@
       "bullets": [
         "Check-in endividyèl oswa fanmi (frè/sè)",
         "Retrè ak QR, PIN ak foto",
-        "Enkli nan Wayòm. Add-on $19/mwa nan Semans ak Kwasans"
+        "Sal selon laj ak alèt MISSING"
+      ]
+    },
+    "qr": {
+      "badge": "Semilla",
+      "title": "Yon kòd ouvri demann nan",
+      "desc": "Chak QR se yon paj ou monte ak yon modèl. Moun ki eskane a mande yon bagay presi, epi imèl ki vini apre a se ou ki ekri li.",
+      "bullets": [
+        "Paj kòd la soti nan yon modèl: byenvini senp, ak rezo, oswa ak pwochen klas yo. Ekran tanp lan, tou yo, bibliyotèk la ak anyè a gen pa yo.",
+        "Kreyatè modèl imèl la ekri sa ki rive apre: manm aksepte oswa refize, sèvi nan minister, sèvis lakay, tikè, avi pou paran, ak konvokasyon ekip la. Ou modifye li, ou gade previzyalizasyon an, ou ka fèmen li.",
+        "Enskripsyon nan yon kan oswa retrèt (Wayòm)"
+      ],
+      "highlightEyebrow": "Sa legliz la kenbe",
+      "highlightTitle": "Modèl QR ak modèl imèl",
+      "templates": "Paj kòd la soti nan yon modèl: byenvini senp, ak rezo, oswa ak pwochen klas yo. Ekran tanp lan, tou yo, bibliyotèk la ak anyè a gen pa yo.",
+      "emails": "Kreyatè modèl imèl la ekri sa ki rive apre: manm aksepte oswa refize, sèvi nan minister, sèvis lakay, tikè, avi pou paran, ak konvokasyon ekip la. Ou modifye li, ou gade previzyalizasyon an, ou ka fèmen li.",
+      "requestsTitle": "Demann",
+      "codesTitle": "Kòd esansyèl",
+      "requests": [
+        "Enskripsyon nan yon kan oswa retrèt (Wayòm)",
+        "Sèvi nan yon minister ou deja kreye",
+        "Nouvo kwayan",
+        "Enskripsyon manm",
+        "Avi yon vizit",
+        "Mande yon sèvis lakay"
+      ],
+      "codes": [
+        "Tikè ak check-in nan pòt la (Kwasans)",
+        "Ekran tanp lan an dirèk",
+        "Tou ekip la",
+        "Retrè timoun, ak QR fanmi (Wayòm)",
+        "Pòtay adorasyon, dans ak evanjelizasyon",
+        "Bibliyotèk (Wayòm)",
+        "Anyè sèvis manm yo (Wayòm)",
+        "Pòtay minister la"
+      ]
+    },
+    "people": {
+      "badge": "Semilla",
+      "title": "Moun, vizit ak ministè",
+      "desc": "Anyè a, vizit pastoral la, nouvo kwayan an, ministè a ak tou a viv nan menm swen an.",
+      "bullets": [
+        "Anyè manm yo",
+        "Vizit ak nouvo kwayan",
+        "Ministè ak tou"
+      ]
+    },
+    "cells": {
+      "badge": "Crecimiento",
+      "title": "Selil ak La Cosecha",
+      "desc": "Reyinyon semèn nan, swivi moun ki fè yon pa nan lafwa, ak lekòl ki apwouve yon lidè.",
+      "bullets": [
+        "Rapò reyinyon ak anyè",
+        "Genyen, konsolide, fòme epi voye",
+        "Lekòl lidè anvan miltiplikasyon"
+      ]
+    },
+    "eventPlans": {
+      "badge": "Reino",
+      "title": "Plan gwo evènman an",
+      "desc": "Yon kongrè planifye ak yon lis, envite ak bidjè: sa ki antre ak sa ki soti.",
+      "bullets": [
+        "Lis ak responsab",
+        "Envite ak pri",
+        "Bidjè anvan jou a"
+      ]
+    },
+    "formation": {
+      "badge": "Crecimiento+",
+      "title": "Klas, batèm ak bibliyotèk",
+      "desc": "Crecimiento pote etid ak batèm. Reino ajoute bibliyotèk la ak anyè sèvis manm yo.",
+      "bullets": [
+        "Klas ak pwogrè elèv la",
+        "Kandida batèm",
+        "Bibliyotèk ak sèvis manm nan Reino"
+      ]
+    },
+    "offerings": {
+      "badge": "Crecimiento",
+      "title": "Ofrann ki anrejistre",
+      "desc": "Total sèvis la ak ladim chak moun ekri, san yon fèy apa.",
+      "bullets": [
+        "Total ofrann lan",
+        "Ladim ki mare ak yon moun",
+        "Istorik trezò a"
       ]
     }
   },
@@ -249,18 +344,7 @@
     "pageEyebrow": "Pri transparan",
     "pageTitle": "Pa gen sipriz.",
     "pageTitleHighlight": "Pa gen ti lèt kache.",
-    "pageSubtitle": "Chwazi plan ki koresponn ak legliz ou. Chanje oswa anile nenpòt lè.",
-    "addonEyebrow": "Enkli nan Kingdom",
-    "addonTitle": "Apostle — rezo milti-sit",
-    "addonSubtitle": "Jere legliz pitit yo ak yon panèl rezo ak switcher legliz. Enkli nan Kingdom Plan; pa gen frè separe.",
-    "addonsTitle": "Add-on ak plizyè sit",
-    "addonsSubtitle": "Ajoute sèlman modil ou bezwen an, san chanje plan.",
-    "addonsList": {
-      "kids": "Timoun: $19/mwa nan Semans ak Kwasans (enkli nan Wayòm)",
-      "parking": "Pakin: $15/mwa nan Semans (enkli depi Kwasans)",
-      "camps": "Kan: $20/mwa nan Semans ak Kwasans (enkli nan Wayòm)",
-      "campusDiscount": "Wayòm: 20% rabè pou chak sit nan rezo ou"
-    }
+    "pageSubtitle": "Chwazi plan ki koresponn ak legliz ou. Chanje oswa anile nenpòt lè."
   },
   "plans": {
     "period": "mwa",
@@ -375,15 +459,11 @@
       },
       "camps": {
         "q": "Kisa modil Kan an genyen?",
-        "a": "Lojistik retrèt: plan, kanpè, enskripsyon ak peman, apèl, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Wayòm; add-on $20/mwa nan Semans ak Kwasans."
+        "a": "Lojistik retrèt: plan, kanpè, enskripsyon ak peman, apèl, otobis, itinerè an dirèk, alèt, sante ak chat ekip. Enkli nan Wayòm."
       },
       "kids": {
         "q": "Kisa Legliz timoun genyen?",
-        "a": "Check-in ak retrè timoun an sekirite: enskripsyon ak alèji ak konsantman, kòd fanmi QR, PIN ak foto lè w ap retire, plan sal, alèt MISSING ak rapò. Enkli nan Wayòm; add-on $19/mwa nan Semans ak Kwasans."
-      },
-      "addons": {
-        "q": "Kisa add-on yo ye?",
-        "a": "Modil ou ka ajoute nan nenpòt plan ki pa gen yo: Timoun ($19/mwa nan Semans ak Kwasans), Pakin ($15/mwa nan Semans; enkli depi Kwasans) ak Kan ($20/mwa nan Semans ak Kwasans; enkli nan Wayòm). Aktive oswa anile yo nan Faktirasyon."
+        "a": "Check-in ak retrè timoun an sekirite: enskripsyon ak alèji ak konsantman, kòd fanmi QR, PIN ak foto lè w ap retire, plan sal, alèt MISSING ak rapò. Enkli nan Wayòm."
       },
       "limits": {
         "q": "Kisa k ap pase si m rive nan limit plan mwen?",
@@ -400,7 +480,7 @@
     "contact": "Kontakte lavant"
   },
   "footer": {
-    "tagline": "Platfòm operasyon pou legliz — sèvis an dirèk, legliz timoun, kan ak rezo milti-sit.",
+    "tagline": "Kay legliz la: pòt, moun, selil, gwo evènman ak ofrann nan yon sèl kote.",
     "product": "Pwodwi",
     "company": "Konpayi",
     "modules": "Modil",
@@ -510,5 +590,47 @@
         "desc": "Vizibilite chaj ak estati chak legliz pitit."
       }
     ]
+  },
+  "walk": {
+    "eyebrow": "Anndan legliz la",
+    "title": "Yon vizit nan sa ki deja mache",
+    "subtitle": "Se pa yon lis pwomès. Se lòd yon sèvis, epi chak etap deja nan aplikasyon an.",
+    "stops": {
+      "arrive": {
+        "plan": "Semilla ak Crecimiento",
+        "title": "Ou rive nan tanp lan",
+        "body": "Pakin nan gen yon kat. Ujye yo wè sanktyè a an dirèk epi yo siyale yon ensidan san yo pa pèdi koulwa a."
+      },
+      "door": {
+        "plan": "Semilla",
+        "title": "Nan pòt la, yon kòd",
+        "body": "Yon QR enskri nan kan, mande pou sèvi nan yon minister ki deja kreye, epi li ouvri tikè a, ekran tanp lan, tou a, ak retrè yon timoun."
+      },
+      "people": {
+        "plan": "Semilla",
+        "title": "Yon moun antre epi li pa pèdi",
+        "body": "Anyè a, vizit la, nouvo kwayan an, ministè a ak tou a rete nan menm swen pou moun."
+      },
+      "cells": {
+        "plan": "Crecimiento",
+        "title": "Semèn nan kontinye nan selil la",
+        "body": "Lidè a rapòte reyinyon an. Moun ki fè yon pa nan lafwa a antre nan La Cosecha: genyen, konsolide, fòme epi voye. Lekòl lidè yo apwouve anvan yo ouvri yon lòt selil."
+      },
+      "gathering": {
+        "plan": "Reino",
+        "title": "Gwo evènman an gen bidjè",
+        "body": "Yon kongrè se pa sèlman yon dat. Plan an pote lis, envite ak lajan an: sa ki antre ak sa ki soti, anvan jou a kòmanse."
+      },
+      "formation": {
+        "plan": "Crecimiento ak Reino",
+        "title": "Apre sèvis la, gen fòmasyon",
+        "body": "Klas yo ak batèm nan nan Crecimiento. Bibliyotèk la ak anyè sèvis manm yo, nan Reino."
+      },
+      "house": {
+        "plan": "Crecimiento ak Reino",
+        "title": "Kay la jere tou",
+        "body": "Ofrann lan anrejistre. Kan an gen kabann ak lis. Plizyè sit gade ansanm nan rezo a."
+      }
+    }
   }
 }

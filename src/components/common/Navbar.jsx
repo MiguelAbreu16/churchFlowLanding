@@ -78,7 +78,7 @@ export default function Navbar() {
           >
             <Box
               sx={{
-                display: { xs: "none", lg: "flex" },
+                display: { xs: "none", md: "flex" },
                 alignItems: "center",
                 gap: 2,
               }}
@@ -117,6 +117,8 @@ export default function Navbar() {
                 window.location.href = loginUrl;
               }}
               sx={{
+                height: 44,
+                minHeight: 44,
                 fontWeight: 600,
                 color: "#475569",
                 whiteSpace: "nowrap",
@@ -129,11 +131,11 @@ export default function Navbar() {
             <Button
               variant="contained"
               color="primary"
-              size="small"
               onClick={() => navigate("/register")}
               sx={{
+                height: 44,
+                minHeight: 44,
                 px: { md: 1.75, lg: 2.5 },
-                py: 1,
                 whiteSpace: "nowrap",
                 flexShrink: 0,
               }}
@@ -162,41 +164,48 @@ export default function Navbar() {
             <CloseIcon />
           </IconButton>
         </Box>
-        <List>
+        <List disablePadding sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
           {NAV_LINKS.map((link) => (
             <ListItem
-              button
               key={link.to}
               component={Link}
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              sx={{ mb: 1, borderRadius: 2 }}
+              sx={{
+                height: 44,
+                minHeight: 44,
+                px: 2,
+                borderRadius: 1,
+                color: "text.primary",
+                textDecoration: "none",
+                "&:hover": { bgcolor: "action.hover" },
+              }}
             >
               <ListItemText
                 primary={link.label}
-                slotProps={{ primary: { sx: { fontWeight: 600 } } }}
+                slotProps={{
+                  primary: { sx: { fontWeight: 600, fontSize: "0.95rem", lineHeight: 1 } },
+                }}
               />
             </ListItem>
           ))}
-          <Box sx={{ mt: 4 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mt: 2 }}>
             <Button
               fullWidth
               variant="contained"
-              size="large"
               onClick={() => {
                 setMobileOpen(false);
                 navigate("/register");
               }}
-              sx={{ mb: 2 }}
+              sx={{ height: 44, minHeight: 44 }}
             >
               {t("nav.freeTrial")}
             </Button>
             <Button
               fullWidth
               variant="outlined"
-              size="large"
               onClick={() => { window.location.href = loginUrl; }}
-              sx={{ color: "text.primary", borderColor: "divider" }}
+              sx={{ height: 44, minHeight: 44, color: "text.primary", borderColor: "divider" }}
             >
               {t("nav.login")}
             </Button>

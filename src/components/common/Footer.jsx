@@ -32,7 +32,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        bgcolor: "#f8fafc",
+        bgcolor: "background.default",
         pt: 12,
         pb: 6,
         borderTop: `1px solid ${theme.palette.divider}`,
