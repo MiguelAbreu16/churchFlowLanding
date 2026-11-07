@@ -16,6 +16,7 @@ const GROWTH_MODULES = [
   ...SEED_MODULES,
   "studies",
   "baptism",
+  "childPresentation",
   "finances",
   "events",
   "parking",
