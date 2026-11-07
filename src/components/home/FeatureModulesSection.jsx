@@ -9,8 +9,6 @@ import {
   ListItemIcon,
   ListItemText,
   Grid,
-  alpha,
-  useTheme,
 } from "@mui/material";
 import Check from "@mui/icons-material/Check";
 import QrCode2 from "@mui/icons-material/QrCode2";
@@ -21,7 +19,7 @@ import School from "@mui/icons-material/School";
 import VolunteerActivism from "@mui/icons-material/VolunteerActivism";
 import { useTranslation } from "react-i18next";
 import { MODULE_PREVIEWS } from "../../constants/screenshots";
-import { SCREENSHOT_ASPECT } from "./ProductScreenshotCarousel";
+import TabletFrame from "./TabletFrame";
 
 const TAB_KEYS = [
   "qr",
@@ -49,7 +47,6 @@ const MODULE_ICONS = {
 };
 
 export default function FeatureModulesSection() {
-  const theme = useTheme();
   const { t } = useTranslation();
   const [tab, setTab] = useState(0);
   const activeKey = TAB_KEYS[tab];
@@ -148,37 +145,12 @@ export default function FeatureModulesSection() {
           </Grid>
           {activeKey === "qr" ? null : (
           <Grid size={{ xs: 12, md: 6 }}>
-            <Box
-              sx={{
-                borderRadius: 3,
-                overflow: "hidden",
-                border: `1px solid ${theme.palette.divider}`,
-                boxShadow: `0 20px 40px -15px ${alpha(theme.palette.primary.main, 0.15)}`,
-                bgcolor: "#f1f5f9",
-                aspectRatio: SCREENSHOT_ASPECT,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                p: 1,
-              }}
-            >
+            <Box>
               {MODULE_PREVIEWS[activeKey] ? (
-              <Box
-                component="img"
-                src={MODULE_PREVIEWS[activeKey]}
-                alt={t(`modules.${activeKey}.title`)}
-                loading="lazy"
-                decoding="async"
-                sx={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  width: "auto",
-                  height: "auto",
-                  objectFit: "contain",
-                  display: "block",
-                  borderRadius: 1,
-                }}
-              />
+                <TabletFrame
+                  src={MODULE_PREVIEWS[activeKey]}
+                  alt={t(`modules.${activeKey}.title`)}
+                />
               ) : (
                 <ModuleMark icon={MODULE_ICONS[activeKey]} label={t(`modules.${activeKey}.title`)} />
               )}

@@ -10,18 +10,19 @@ import ChevronLeft from "@mui/icons-material/ChevronLeft";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import TabletFrame, { TABLET_SCREEN_ASPECT } from "./TabletFrame";
 
 const MotionBox = motion.create(Box);
 
-/** Matches real app screenshots (~1024×476) */
-export const SCREENSHOT_ASPECT = "1024 / 476";
+/** Landscape tablet, including a little room for the bezel. */
+export const SCREENSHOT_ASPECT = "1180 / 900";
+export { TABLET_SCREEN_ASPECT };
 
 export default function ProductScreenshotCarousel({
   slides,
   autoPlayMs = 6000,
   showCaption = true,
   aspectRatio = SCREENSHOT_ASPECT,
-  objectFit = "contain",
   frameBg = "#f1f5f9",
   onSlideClick,
   startIndex = 0,
@@ -94,22 +95,7 @@ export default function ProductScreenshotCarousel({
               p: { xs: 0.5, md: 1 },
             }}
           >
-            <Box
-              component="img"
-              src={slide.src}
-              alt={t(slide.altKey)}
-              loading="lazy"
-              decoding="async"
-              sx={{
-                maxWidth: "100%",
-                maxHeight: "100%",
-                width: "auto",
-                height: "auto",
-                objectFit,
-                display: "block",
-                borderRadius: 1,
-              }}
-            />
+            <TabletFrame src={slide.src} alt={t(slide.altKey)} />
           </MotionBox>
         </AnimatePresence>
 

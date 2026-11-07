@@ -97,12 +97,16 @@ export const PRODUCT_TOUR_SLIDES = [
 
 export const MODULE_PREVIEWS = {
   liveOps: "/screenshots/dashboard.png",
+  people: "/screenshots/people.png",
+  cells: "/screenshots/cells.png",
+  eventPlans: "/screenshots/event-plans.png",
+  formation: "/screenshots/studies.png",
+  offerings: "/screenshots/finances.png",
   layouts: "/screenshots/layout-builder.png",
   events: "/screenshots/events.png",
   parking: "/screenshots/parking.png",
   camps: "/screenshots/camps-beds.png",
-  // Stand-in until dedicated kids screenshots ship (QR / check flow).
-  kids: "/screenshots/events-scanner.png",
+  kids: "/screenshots/kids.png",
   network: "/screenshots/network.png",
   analytics: "/screenshots/analytics.png",
 };
