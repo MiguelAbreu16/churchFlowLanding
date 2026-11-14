@@ -2,6 +2,7 @@ import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import StickyMobileCta from "../components/common/StickyMobileCta";
 import HeroSection from "../components/home/HeroSection";
+import ChurchAiStarSection from "../components/home/ChurchAiStarSection";
 import ChurchWalkSection from "../components/home/ChurchWalkSection";
 import SocialProofSection from "../components/home/SocialProofSection";
 import LiveDemosSection from "../components/home/LiveDemosSection";
@@ -10,6 +11,7 @@ import GrowthSection from "../components/home/GrowthSection";
 import HowItWorksSection from "../components/home/HowItWorksSection";
 import ProductTourSection from "../components/home/ProductTourSection";
 import ValueCalculator from "../components/home/ValueCalculator";
+import AiPlansSection from "../components/home/AiPlansSection";
 import PricingSection from "../components/home/PricingSection";
 import FAQSection from "../components/home/FAQSection";
 import CTABanner from "../components/home/CTABanner";
@@ -20,6 +22,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
+        <ChurchAiStarSection />
         <ChurchWalkSection />
         <SocialProofSection />
         <LiveDemosSection />
@@ -28,6 +31,7 @@ export default function HomePage() {
         <HowItWorksSection />
         <ProductTourSection />
         <ValueCalculator />
+        <AiPlansSection />
         <PricingSection />
         <FAQSection />
         <CTABanner />

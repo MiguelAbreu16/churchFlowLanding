@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Typography, alpha, useTheme } from "@mui/material";
+import AutoAwesomeOutlined from "@mui/icons-material/AutoAwesomeOutlined";
 import MapOutlined from "@mui/icons-material/MapOutlined";
 import PeopleOutlined from "@mui/icons-material/PeopleOutlined";
 import BarChartOutlined from "@mui/icons-material/BarChartOutlined";
@@ -7,6 +8,12 @@ import GroupsOutlined from "@mui/icons-material/GroupsOutlined";
 import ConfirmationNumberOutlined from "@mui/icons-material/ConfirmationNumberOutlined";
 
 const FEATURES = [
+  {
+    icon: <AutoAwesomeOutlined />,
+    title: "Church AI",
+    desc: "Copiloto pastoral y de operaciones con cupo en dólares. Kahal Zerem opera las keys; tú solo usas y mides el gasto.",
+    color: "#0EA5E9",
+  },
   {
     icon: <MapOutlined />,
     title: "Mapa de Asientos en Vivo",
