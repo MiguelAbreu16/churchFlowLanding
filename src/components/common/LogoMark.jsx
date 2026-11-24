@@ -1,4 +1,4 @@
-﻿import { Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { BRAND } from "../../constants/branding";
 
 const VARIANT_SRC = {
