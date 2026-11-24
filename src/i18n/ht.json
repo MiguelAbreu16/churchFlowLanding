@@ -28,11 +28,19 @@
     "tapFree": "Libere chèz",
     "tapOccupy": "Make okipe",
     "hint": "Touche yon chèz: li soti lib pou ale rezève, epi soti rezève pou ale okipe.",
+    "hintZones": "Zòn tanp lan. Touche yon chèz pou chanje eta li.",
     "legendFree": "Lib",
     "legendOccupied": "Okipe",
     "tapReserve": "Make rezève",
     "legendReserved": "Rezève",
-    "reserved": "rezève"
+    "reserved": "rezève",
+    "showZones": "Gade pa zòn",
+    "chairsLabel": "Chèz tanp lan",
+    "altar": "Lotèl",
+    "zoneA": "Zòn A · devan gòch",
+    "zoneB": "Zòn B · devan dwat",
+    "zoneC": "Zòn C · dèyè gòch",
+    "zoneD": "Zòn D · dèyè dwat"
   },
   "roi": {
     "eyebrow": "Kalkilatè",

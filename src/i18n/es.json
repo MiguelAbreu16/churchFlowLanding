@@ -67,14 +67,22 @@
   "demo": {
     "title": "Mapa en vivo (demo)",
     "occupied": "ocupado",
-    "tapFree": "Liberar asiento",
-    "tapOccupy": "Marcar ocupado",
-    "hint": "Toca un asiento: pasa de libre a reservado, y de reservado a ocupado.",
+    "tapFree": "Liberar silla",
+    "tapOccupy": "Marcar ocupada",
+    "hint": "Toca una silla: pasa de libre a reservada, y de reservada a ocupada.",
+    "hintZones": "Zonas del templo. Toca una silla para cambiar su estado.",
     "legendFree": "Libre",
     "legendOccupied": "Ocupado",
-    "tapReserve": "Marcar reservado",
+    "tapReserve": "Marcar reservada",
     "legendReserved": "Reservado",
-    "reserved": "reservados"
+    "reserved": "reservadas",
+    "showZones": "Ver por zonas",
+    "chairsLabel": "Sillas del templo",
+    "altar": "Altar",
+    "zoneA": "Zona A · frente izq.",
+    "zoneB": "Zona B · frente der.",
+    "zoneC": "Zona C · fondo izq.",
+    "zoneD": "Zona D · fondo der."
   },
   "roi": {
     "eyebrow": "Calculadora",

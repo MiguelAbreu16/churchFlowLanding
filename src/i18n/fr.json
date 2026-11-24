@@ -25,14 +25,22 @@
   "demo": {
     "title": "Carte en direct (démo)",
     "occupied": "occupé",
-    "tapFree": "Libérer le siège",
-    "tapOccupy": "Marquer occupé",
-    "hint": "Touchez un siège : il passe de libre à réservé, puis de réservé à occupé.",
+    "tapFree": "Libérer la chaise",
+    "tapOccupy": "Marquer occupée",
+    "hint": "Touchez une chaise : elle passe de libre à réservée, puis de réservée à occupée.",
+    "hintZones": "Zones du temple. Touchez une chaise pour changer son état.",
     "legendFree": "Libre",
     "legendOccupied": "Occupé",
-    "tapReserve": "Marquer réservé",
+    "tapReserve": "Marquer réservée",
     "legendReserved": "Réservé",
-    "reserved": "réservés"
+    "reserved": "réservées",
+    "showZones": "Voir par zones",
+    "chairsLabel": "Chaises du temple",
+    "altar": "Autel",
+    "zoneA": "Zone A · avant g.",
+    "zoneB": "Zone B · avant d.",
+    "zoneC": "Zone C · arrière g.",
+    "zoneD": "Zone D · arrière d."
   },
   "roi": {
     "eyebrow": "Calculateur",

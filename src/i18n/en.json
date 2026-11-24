@@ -25,14 +25,22 @@
   "demo": {
     "title": "Live map (demo)",
     "occupied": "occupied",
-    "tapFree": "Free seat",
+    "tapFree": "Free chair",
     "tapOccupy": "Mark occupied",
-    "hint": "Tap a seat: it goes from free to reserved, then from reserved to occupied.",
+    "hint": "Tap a chair: it goes from free to reserved, then from reserved to occupied.",
+    "hintZones": "Sanctuary zones. Tap a chair to change its status.",
     "legendFree": "Free",
     "legendOccupied": "Occupied",
     "tapReserve": "Mark reserved",
     "legendReserved": "Reserved",
-    "reserved": "reserved"
+    "reserved": "reserved",
+    "showZones": "View by zones",
+    "chairsLabel": "Sanctuary chairs",
+    "altar": "Altar",
+    "zoneA": "Zone A · front left",
+    "zoneB": "Zone B · front right",
+    "zoneC": "Zone C · back left",
+    "zoneD": "Zone D · back right"
   },
   "roi": {
     "eyebrow": "Calculator",
