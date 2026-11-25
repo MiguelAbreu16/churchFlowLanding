@@ -13,7 +13,7 @@ import {
 import Check from "@mui/icons-material/Check";
 import { useNavigate } from "react-router-dom";
 
-import { AI_PLANS, AI_CREDIT_PACKS } from "../../constants/aiPlans";
+import { AI_CREDIT_PACKS } from "../../constants/aiPlans";
 
 export default function AiPlansSection() {
   const theme = useTheme();
@@ -38,15 +38,15 @@ export default function AiPlansSection() {
               mb: 2,
             }}
           >
-            Planes de IA
+            Créditos de IA
           </Typography>
           <Typography
             variant="h2"
             sx={{ mb: 2, fontSize: { xs: "1.85rem", md: "2.5rem" } }}
           >
-            Paga por el uso de IA,
+            Compra créditos fijos,
             <br />
-            no por administrar keys
+            úsalos cuando quieras
           </Typography>
           <Typography
             sx={{
@@ -56,21 +56,21 @@ export default function AiPlansSection() {
               fontSize: "1.05rem",
             }}
           >
-            Independientes de Semilla, Crecimiento y Reino. El cupo se mide en
-            dólares reales (tokens → costo). Cuando se acaba, compras créditos.
+            Sin suscripción mensual de IA. Pagas un pack, el saldo se guarda y
+            solo baja cuando usas Church AI o Media AI.
           </Typography>
         </Box>
 
         <Grid container spacing={3}>
-          {AI_PLANS.map((plan) => (
-            <Grid key={plan.id} size={{ xs: 12, md: 4 }}>
+          {AI_CREDIT_PACKS.map((pack) => (
+            <Grid key={pack.id} size={{ xs: 12, md: 4 }}>
               <Paper
                 elevation={0}
                 sx={{
                   p: 3,
                   height: "100%",
                   borderRadius: 3,
-                  border: plan.popular
+                  border: pack.popular
                     ? `2px solid ${theme.palette.primary.main}`
                     : `1px solid ${alpha(theme.palette.divider, 0.9)}`,
                   position: "relative",
@@ -78,7 +78,7 @@ export default function AiPlansSection() {
                   flexDirection: "column",
                 }}
               >
-                {plan.popular ? (
+                {pack.popular ? (
                   <Chip
                     label="Más elegido"
                     color="primary"
@@ -92,30 +92,35 @@ export default function AiPlansSection() {
                   />
                 ) : null}
                 <Typography variant="h6" fontWeight={800}>
-                  {plan.name}
+                  +${pack.usd}
                 </Typography>
                 <Stack direction="baseline" spacing={0.5} mt={1} mb={1}>
                   <Typography variant="h3" fontWeight={800}>
-                    ${plan.priceMonthly}
+                    ${pack.usd}
                   </Typography>
-                  <Typography color="text.secondary">/mes</Typography>
+                  <Typography color="text.secondary">pago único</Typography>
                 </Stack>
                 <Typography variant="body2" color="text.secondary" mb={2}>
-                  Cupo incluido: ${plan.budgetUsd}/mes · anual ${plan.priceAnnual}
+                  Se guarda hasta gastarlo
                 </Typography>
                 <Typography variant="body2" mb={2} sx={{ flexGrow: 0 }}>
-                  {plan.description}
+                  {pack.description}
                 </Typography>
                 <Stack spacing={1} mb={3} sx={{ flexGrow: 1 }}>
-                  {plan.highlights.map((h) => (
-                    <Stack key={h} direction="row" spacing={1} alignItems="center">
+                  {pack.highlights.map((h) => (
+                    <Stack
+                      key={h}
+                      direction="row"
+                      spacing={1}
+                      alignItems="center"
+                    >
                       <Check sx={{ fontSize: 18, color: "success.main" }} />
                       <Typography variant="body2">{h}</Typography>
                     </Stack>
                   ))}
                 </Stack>
                 <Button
-                  variant={plan.popular ? "contained" : "outlined"}
+                  variant={pack.popular ? "contained" : "outlined"}
                   fullWidth
                   onClick={() => navigate("/register")}
                   sx={{ fontWeight: 700 }}
@@ -126,28 +131,6 @@ export default function AiPlansSection() {
             </Grid>
           ))}
         </Grid>
-
-        <Box sx={{ textAlign: "center", mt: 5 }}>
-          <Typography variant="subtitle1" fontWeight={700} mb={1}>
-            Créditos extra (no se reinician)
-          </Typography>
-          <Stack
-            direction="row"
-            spacing={1}
-            justifyContent="center"
-            flexWrap="wrap"
-            useFlexGap
-          >
-            {AI_CREDIT_PACKS.map((p) => (
-              <Chip
-                key={p.id}
-                label={`+$${p.usd}`}
-                variant="outlined"
-                sx={{ fontWeight: 700 }}
-              />
-            ))}
-          </Stack>
-        </Box>
       </Container>
     </Box>
   );

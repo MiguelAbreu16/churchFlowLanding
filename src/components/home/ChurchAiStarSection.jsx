@@ -115,7 +115,7 @@ export default function ChurchAiStarSection() {
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                 >
-                  Ver planes de IA
+                  Ver créditos de IA
                 </Button>
               </Stack>
             </Box>

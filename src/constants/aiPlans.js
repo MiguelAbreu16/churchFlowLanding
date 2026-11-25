@@ -1,53 +1,32 @@
-/** Mirror of backend/src/config/aiPlans.ts — AI add-on plans. */
-export const AI_PLANS = [
+/** Mirror of backend AI credit packs — fixed top-ups (never expire). */
+export const AI_CREDIT_PACKS = [
   {
-    id: "ai-seed",
-    code: "SEED",
-    name: "IA Semilla",
-    priceMonthly: 5,
-    priceAnnual: 48,
-    budgetUsd: 5,
-    description:
-      "Cupo mensual de $5 para el asistente pastoral: briefing del domingo, turnos y preguntas del equipo.",
-    highlights: ["Church AI chat", "Confirmaciones humanas", "Soporte por email"],
+    id: "credit_10",
+    usd: 10,
+    description: "Para probar Church AI en el equipo.",
+    highlights: ["Church AI chat", "Confirmaciones humanas", "Sin vencimiento"],
   },
   {
-    id: "ai-growth",
-    code: "GROWTH",
-    name: "IA Crecimiento",
-    priceMonthly: 20,
-    priceAnnual: 192,
-    budgetUsd: 20,
+    id: "credit_25",
+    usd: 25,
     popular: true,
-    description:
-      "Cupo de $20/mes con skills de operación, planes de evento con cupos de presupuesto y Media AI.",
+    description: "Uso habitual: skills, eventos y Media AI.",
     highlights: [
-      "Todo Semilla",
-      "Skills de operaciones",
+      "Church AI + skills",
       "Planes de evento",
       "Media AI (clips)",
+      "Sin vencimiento",
     ],
   },
   {
-    id: "ai-kingdom",
-    code: "KINGDOM",
-    name: "IA Reino",
-    priceMonthly: 75,
-    priceAnnual: 720,
-    budgetUsd: 75,
-    description:
-      "Cupo alto de $75/mes para equipos que viven en la IA todos los días.",
+    id: "credit_50",
+    usd: 50,
+    description: "Para equipos que usan la IA con frecuencia.",
     highlights: [
-      "Todo Crecimiento",
-      "Cupo alto",
-      "Prioridad de cola",
-      "Créditos a precio preferente",
+      "Mayor saldo",
+      "Church AI + Media AI",
+      "Sin pago mensual",
+      "Sin vencimiento",
     ],
   },
-];
-
-export const AI_CREDIT_PACKS = [
-  { id: "credit_10", usd: 10 },
-  { id: "credit_25", usd: 25 },
-  { id: "credit_50", usd: 50 },
 ];
